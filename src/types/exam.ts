@@ -14,9 +14,11 @@ export interface ExamSet {
   id: string;
   title: string;
   description: string;
+  passage?: string;
   difficulty: 'easy' | 'medium' | 'hard';
   grammarFocus?: string;
   questions: ExamQuestion[];
+  part?: number;
 }
 
 export interface PastQuestion {

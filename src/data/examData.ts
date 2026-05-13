@@ -2,6 +2,87 @@ import type { ExamSet, PastQuestionSet } from '../types/exam';
 
 export const examSets: ExamSet[] = [
   // ═══════════════════════════════════════════════════════════════
+  // WORKSHEET 1 — UNIT 1 & 2 for SPRING A LEVEL
+  // Section A: Cloze Test (Questions 1–20)
+  // ═══════════════════════════════════════════════════════════════
+  {
+    id: 'ws1-section-a',
+    title: 'Worksheet 1 — Section A: Cloze Test',
+    description: 'EMPOWER B1+ UNIT WORKSHEETS — WORKSHEET 1 - UNIT 1 & 2 for SPRING A LEVEL. Circle the best option for the blanks in the paragraphs.',
+    difficulty: 'medium',
+    grammarFocus: 'Present Perfect, Past Simple, Verb Patterns, Quantifiers',
+    questions: [
+      { id: 'ws1a-q1', type: 'multiple_choice', question: 'Paragraph 1: "Last week, I (1) _____ with my colleague over something very minor."', options: ['a) argued', 'b) persuaded', 'c) complained', 'd) refused', 'e) admitted'], correctAnswer: 0, explanation: '"argued" — had a disagreement.', difficulty: 'easy', grammarFocus: 'Vocabulary' },
+      { id: 'ws1a-q2', type: 'multiple_choice', question: 'Paragraph 1: "We usually (2) _____ well, but that day we just couldn\'t agree on anything."', options: ['a) reach', 'b) greet', 'c) insist', 'd) communicate', 'e) complain'], correctAnswer: 3, explanation: '"communicate" — exchange ideas effectively.', difficulty: 'easy', grammarFocus: 'Vocabulary' },
+      { id: 'ws1a-q3', type: 'multiple_choice', question: 'Paragraph 1: "I (3) _____ on finishing the discussion calmly, but she became more and more irritated."', options: ['a) admitted', 'b) insisted', 'c) encouraged', 'd) updated', 'e) greeted'], correctAnswer: 1, explanation: '"insisted on" — demanded firmly.', difficulty: 'medium', grammarFocus: 'Verb Patterns' },
+      { id: 'ws1a-q4', type: 'multiple_choice', question: 'Paragraph 1: "After the meeting, I (4) _____ to her and suggested we talk later."', options: ['a) reached out', 'b) got in touch', 'c) greeted', 'd) argued', 'e) refused'], correctAnswer: 1, explanation: '"got in touch" — contacted someone.', difficulty: 'easy', grammarFocus: 'Multi-word verbs' },
+      { id: 'ws1a-q5', type: 'multiple_choice', question: 'Paragraph 1: "Since then, she (5) _____ me, which makes me think she\'s still upset."', options: ["a) didn't contact", "b) doesn't contact", "c) isn't contacting", "d) wasn't contacting", "e) hasn't contacted"], correctAnswer: 4, explanation: '"hasn\'t contacted" — Present Perfect for unfinished time (since then).', difficulty: 'medium', grammarFocus: 'Present Perfect' },
+      { id: 'ws1a-q6', type: 'multiple_choice', question: 'Paragraph 2: "Last night we had a family dinner, and it (6) _____ much better than I expected."', options: ['a) goes', 'b) has gone', 'c) went', 'd) was going', 'e) has been going'], correctAnswer: 2, explanation: '"went" — Past Simple for completed event.', difficulty: 'easy', grammarFocus: 'Past Simple' },
+      { id: 'ws1a-q7', type: 'multiple_choice', question: 'Paragraph 2: "Everyone brought something to eat, and the food was absolutely (7) _____."', options: ['a) brilliant', 'b) filthy', 'c) enormous', 'd) delicious', 'e) furious'], correctAnswer: 3, explanation: '"delicious" — describes great-tasting food.', difficulty: 'easy', grammarFocus: 'Adjectives' },
+      { id: 'ws1a-q8', type: 'multiple_choice', question: 'Paragraph 2: "My cousin Mike (8) _____ about how long he had to wait in traffic, but then he relaxed."', options: ['a) complained', 'b) encouraged', 'c) admitted', 'd) persuaded', 'e) insisted'], correctAnswer: 0, explanation: '"complained" — expressed dissatisfaction.', difficulty: 'easy', grammarFocus: 'Vocabulary' },
+      { id: 'ws1a-q9', type: 'multiple_choice', question: 'Paragraph 2: "My sister (9) _____ us to organize another family gathering soon."', options: ['a) refused', 'b) persuaded', 'c) greeted', 'd) admitted', 'e) argued'], correctAnswer: 1, explanation: '"persuaded" — convinced someone.', difficulty: 'easy', grammarFocus: 'Verb Patterns' },
+      { id: 'ws1a-q10', type: 'multiple_choice', question: 'Paragraph 2: "We (10) _____ a great time together, filled with laughter, stories, and good memories."', options: ['a) have been having', 'b) have had', 'c) has had', 'd) was having', 'e) had'], correctAnswer: 4, explanation: '"had" — Past Simple for a completed experience.', difficulty: 'easy', grammarFocus: 'Past Simple' },
+      { id: 'ws1a-q11', type: 'multiple_choice', question: 'Paragraph 3: "I (11) _____ this new app for two weeks now."', options: ['a) used', 'b) have used', 'c) have been using', 'd) am using', 'e) was using'], correctAnswer: 2, explanation: '"have been using" — Present Perfect Continuous for duration.', difficulty: 'hard', grammarFocus: 'Present Perfect Continuous' },
+      { id: 'ws1a-q12', type: 'multiple_choice', question: 'Paragraph 3: "The developers (12) _____ me several times about new features and updates."', options: ['a) contact', 'b) have been contacting', 'c) contacted', 'd) have contacted', 'e) was contacting'], correctAnswer: 1, explanation: '"have been contacting" — repeated action up to now.', difficulty: 'hard', grammarFocus: 'Present Perfect Continuous' },
+      { id: 'ws1a-q13', type: 'multiple_choice', question: 'Paragraph 3: "I (13) _____ to learn all its functions, so I (14) _____ a lot of time on tutorials recently."', options: ['a) have been trying', 'b) have tried', 'c) tried', 'd) try', 'e) was trying'], correctAnswer: 0, explanation: '"have been trying" — ongoing effort.', difficulty: 'hard', grammarFocus: 'Present Perfect Continuous' },
+      { id: 'ws1a-q14', type: 'multiple_choice', question: 'Paragraph 3: "...so I (14) _____ a lot of time on tutorials recently."', options: ['a) have spent', 'b) have been spending', 'c) spent', 'd) am spending', 'e) was spending'], correctAnswer: 1, explanation: '"have been spending" — ongoing action with "recently".', difficulty: 'hard', grammarFocus: 'Present Perfect Continuous' },
+      { id: 'ws1a-q15', type: 'multiple_choice', question: 'Paragraph 3: "However, I (15) _____ to pay for the premium version because I want to try the free features longer."', options: ['a) persuaded', 'b) complained', 'c) insisted', 'd) encouraged', 'e) refused'], correctAnswer: 4, explanation: '"refused" — declined to do something.', difficulty: 'easy', grammarFocus: 'Vocabulary' },
+      { id: 'ws1a-q16', type: 'multiple_choice', question: 'Paragraph 4: "Yesterday, I (16) _____ so (17) _____ when my phone stopped working."', options: ['a) was', 'b) have been', 'c) am', 'd) were', 'e) had been'], correctAnswer: 0, explanation: '"was" — Past Simple state verb.', difficulty: 'easy', grammarFocus: 'Past Simple' },
+      { id: 'ws1a-q17', type: 'multiple_choice', question: 'Paragraph 4: "...I was so (17) _____ when my phone stopped working."', options: ['a) filthy', 'b) furious', 'c) tiny', 'd) brilliant', 'e) enormous'], correctAnswer: 1, explanation: '"furious" — extremely angry.', difficulty: 'easy', grammarFocus: 'Adjectives' },
+      { id: 'ws1a-q18', type: 'multiple_choice', question: 'Paragraph 4: "The screen was (18) _____ after I accidentally dropped it in the mud."', options: ['a) filthy', 'b) furious', 'c) tiny', 'd) miserable', 'e) brilliant'], correctAnswer: 0, explanation: '"filthy" — extremely dirty.', difficulty: 'easy', grammarFocus: 'Adjectives' },
+      { id: 'ws1a-q19', type: 'multiple_choice', question: 'Paragraph 4: "I (19) _____ to fix it myself, but I couldn\'t."', options: ['a) tried', 'b) have tried', 'c) am trying', 'd) try', 'e) had tried'], correctAnswer: 0, explanation: '"tried" — Past Simple for a completed attempt.', difficulty: 'easy', grammarFocus: 'Past Simple' },
+      { id: 'ws1a-q20', type: 'multiple_choice', question: 'Paragraph 4: "Finally, my wife (20) _____ on taking it to a repair shop, and I decided to go."', options: ['a) refused', 'b) complained', 'c) admitted', 'd) insisted', 'e) encouraged'], correctAnswer: 3, explanation: '"insisted" — demanded firmly.', difficulty: 'easy', grammarFocus: 'Verb Patterns' },
+    ],
+  },
+
+  // ═══════════════════════════════════════════════════════════════
+  // WORKSHEET 1 — Section B: Underline the correct phrase
+  // ═══════════════════════════════════════════════════════════════
+  {
+    id: 'ws1-section-b',
+    title: 'Worksheet 1 — Section B: Underline the Correct Phrase',
+    description: 'WORKSHEET 1 - UNIT 1 & 2. Choose the correct reflexive or phrasal verb expression.',
+    difficulty: 'easy',
+    grammarFocus: 'Reflexive Verbs, Phrasal Verbs (look)',
+    questions: [
+      { id: 'ws1b-q1', type: 'multiple_choice', question: 'B1: "It\'s important to _____ when you\'re learning new skills."', options: ['help yourself', 'teach yourself'], correctAnswer: 1, explanation: '"teach yourself" — learn independently.', difficulty: 'easy', grammarFocus: 'Reflexive verbs' },
+      { id: 'ws1b-q2', type: 'multiple_choice', question: 'B2: "When you visit someone\'s house, they say, \'Please, _____.\'"', options: ['make yourself at home', 'do it yourself'], correctAnswer: 0, explanation: '"make yourself at home" — feel comfortable.', difficulty: 'easy', grammarFocus: 'Reflexive verbs' },
+      { id: 'ws1b-q3', type: 'multiple_choice', question: 'B3: "If you don\'t feel well, remember to _____ and get some rest."', options: ['look after yourself', 'hurt yourself'], correctAnswer: 0, explanation: '"look after yourself" — take care of yourself.', difficulty: 'easy', grammarFocus: 'Reflexive verbs' },
+      { id: 'ws1b-q4', type: 'multiple_choice', question: 'B4: "The garden needs planting, but you can _____ instead of hiring a gardener."', options: ['do it yourself', 'be yourself'], correctAnswer: 0, explanation: '"do it yourself" — handle it without help.', difficulty: 'easy', grammarFocus: 'Reflexive verbs' },
+      { id: 'ws1b-q6', type: 'multiple_choice', question: 'B6: "I\'m going to _____ my phone because I can\'t find it anywhere."', options: ['look for', 'look at'], correctAnswer: 0, explanation: '"look for" — search for something.', difficulty: 'easy', grammarFocus: 'Phrasal verbs: look' },
+      { id: 'ws1b-q7', type: 'multiple_choice', question: 'B7: "I _____ meeting you next week."', options: ['look forward to', 'look around'], correctAnswer: 0, explanation: '"look forward to" — anticipate with pleasure.', difficulty: 'easy', grammarFocus: 'Phrasal verbs: look' },
+      { id: 'ws1b-q9', type: 'multiple_choice', question: 'B9: "Can you _____ the meaning of this word in the dictionary?"', options: ['look up', 'look at'], correctAnswer: 0, explanation: '"look up" — search for information.', difficulty: 'easy', grammarFocus: 'Phrasal verbs: look' },
+    ],
+  },
+
+  // ═══════════════════════════════════════════════════════════════
+  // WORKSHEET 1 — Section C: Fill in the blanks (first letter given)
+  // ═══════════════════════════════════════════════════════════════
+  {
+    id: 'ws1-section-c',
+    title: 'Worksheet 1 — Section C: Fill in the Blanks',
+    description: 'WORKSHEET 1 - UNIT 1 & 2. Fill in the blanks with one word. The first letter is given as a tip.',
+    difficulty: 'medium',
+    grammarFocus: 'Business & Professional Vocabulary',
+    questions: [
+      { id: 'ws1c-q1', type: 'fill_blank', question: 'C1: "I want to a_____ for the job tomorrow."', correctAnswer: 'apply', explanation: '"apply" — submit an application.', difficulty: 'easy', grammarFocus: 'Vocabulary' },
+      { id: 'ws1c-q2', type: 'fill_blank', question: 'C2: "The company is looking for a strong c_____ to fill the manager position."', correctAnswer: 'candidate', explanation: '"candidate" — a person applying for a position.', difficulty: 'medium', grammarFocus: 'Vocabulary' },
+      { id: 'ws1c-q3', type: 'fill_blank', question: 'C3: "She hopes to build a successful c_____ in marketing."', correctAnswer: 'career', explanation: '"career" — a professional path.', difficulty: 'easy', grammarFocus: 'Vocabulary' },
+      { id: 'ws1c-q4', type: 'fill_blank', question: 'C4: "He has a lot of k_____ about digital marketing strategies."', correctAnswer: 'knowledge', explanation: '"knowledge" — understanding of a subject.', difficulty: 'easy', grammarFocus: 'Vocabulary' },
+      { id: 'ws1c-q5', type: 'fill_blank', question: 'C5: "The e_____ decided to promote her after the project success."', correctAnswer: 'employer', explanation: '"employer" — the person/company that hires.', difficulty: 'medium', grammarFocus: 'Vocabulary' },
+      { id: 'ws1c-q6', type: 'fill_blank', question: 'C6: "I\'m in charge o_____ organizing the team meeting next week."', correctAnswer: 'of', explanation: '"in charge of" — responsible for.', difficulty: 'easy', grammarFocus: 'Prepositions' },
+      { id: 'ws1c-q7', type: 'fill_blank', question: 'C7: "It\'s always good to have strong business c_____ in your industry."', correctAnswer: 'connections', explanation: '"connections" — professional contacts.', difficulty: 'medium', grammarFocus: 'Vocabulary' },
+      { id: 'ws1c-q8', type: 'fill_blank', question: 'C8: "I think you should give it a t_____ and apply for the internship!"', correctAnswer: 'try', explanation: '"give it a try" — attempt something.', difficulty: 'easy', grammarFocus: 'Collocations' },
+      { id: 'ws1c-q9', type: 'fill_blank', question: 'C9: "After sending, remember to d_____ the email if it\'s not needed."', correctAnswer: 'delete', explanation: '"delete" — remove permanently.', difficulty: 'easy', grammarFocus: 'Vocabulary' },
+      { id: 'ws1c-q10', type: 'fill_blank', question: 'C10: "You need to i_____ the new software before you can use it."', correctAnswer: 'install', explanation: '"install" — set up software/hardware.', difficulty: 'easy', grammarFocus: 'Vocabulary' },
+      { id: 'ws1c-q11', type: 'fill_blank', question: 'C11: "A: I love working here! — B: M_____, too."', correctAnswer: 'Me', explanation: '"Me, too" — agreement expression.', difficulty: 'easy', grammarFocus: 'Discourse' },
+      { id: 'ws1c-q12', type: 'fill_blank', question: 'C12: "A: I don\'t like cold coffee. — B: Me, n_____."', correctAnswer: 'neither', explanation: '"Me, neither" — negative agreement.', difficulty: 'easy', grammarFocus: 'Discourse' },
+      { id: 'ws1c-q13', type: 'fill_blank', question: 'C13: "After years of practice, she became f_____ in Spanish."', correctAnswer: 'fluent', explanation: '"fluent" — able to speak a language well.', difficulty: 'easy', grammarFocus: 'Vocabulary' },
+      { id: 'ws1c-q14', type: 'fill_blank', question: 'C14: "To perform well in the play, actors need to m_____ their lines."', correctAnswer: 'memorise', explanation: '"memorise" — commit to memory.', difficulty: 'medium', grammarFocus: 'Vocabulary' },
+    ],
+  },
+
+  // ═══════════════════════════════════════════════════════════════
   // WORKSHEET 2 — UNIT 3 & 4 for SPRING A LEVEL
   // Section A: Cloze Test (Questions 1–15)
   // ═══════════════════════════════════════════════════════════════
@@ -831,6 +912,130 @@ export const examSets: ExamSet[] = [
         difficulty: 'medium',
         grammarFocus: 'Future Perfect',
       },
+    ],
+  },
+
+  // ═══════════════════════════════════════════════════════════════
+  // WORKSHEET 4 — UNIT 7 & 8 for SPRING A LEVEL
+  // Section A: Cloze Test (Questions 1–15)
+  // ═══════════════════════════════════════════════════════════════
+  {
+    id: 'ws4-section-a',
+    title: 'Worksheet 4 — Section A: Cloze Test',
+    description: 'EMPOWER B1+ UNIT WORKSHEETS — WORKSHEET 4 - UNIT 7 & 8 for SPRING A LEVEL. Modals of deduction, quantifiers, and verb patterns.',
+    difficulty: 'hard',
+    grammarFocus: 'Modals of Deduction, Quantifiers, Verb Patterns',
+    questions: [
+      { id: 'ws4a-q1', type: 'multiple_choice', question: 'Paragraph 1: "Someone (1) _____ be here. The dog is barking at the door."', options: ['a) might', 'b) can\'t', 'c) must', 'd) may not', 'e) could'], correctAnswer: 0, explanation: '"might" — possibility/uncertainty.', difficulty: 'medium', grammarFocus: 'Modals of Deduction' },
+      { id: 'ws4a-q2', type: 'multiple_choice', question: 'Paragraph 1: "...so it (2) _____ be the postman outside."', options: ['a) may', 'b) must', 'c) may not', 'd) can\'t', 'e) might not'], correctAnswer: 0, explanation: '"may" — possibility.', difficulty: 'medium', grammarFocus: 'Modals of Deduction' },
+      { id: 'ws4a-q3', type: 'multiple_choice', question: 'Paragraph 1: "That (3) _____ be Sarah. She always listens to that band."', options: ['a) may', 'b) can\'t', 'c) could', 'd) must', 'e) might'], correctAnswer: 3, explanation: '"must" — strong deduction based on evidence.', difficulty: 'medium', grammarFocus: 'Modals of Deduction' },
+      { id: 'ws4a-q4', type: 'multiple_choice', question: 'Paragraph 1: "Hmm... it (4) _____ be her, I\'m not 100% sure."', options: ['a) might not', 'b) can\'t', 'c) must', 'd) should', 'e) has to'], correctAnswer: 0, explanation: '"might not" — uncertain negative deduction.', difficulty: 'medium', grammarFocus: 'Modals of Deduction' },
+      { id: 'ws4a-q5', type: 'multiple_choice', question: 'Paragraph 1: "Still, someone (5) _____ be upstairs — the music is definitely not coming from the radio."', options: ['a) can\'t', 'b) may', 'c) could', 'd) might not', 'e) must'], correctAnswer: 4, explanation: '"must" — strong deduction from evidence.', difficulty: 'medium', grammarFocus: 'Modals of Deduction' },
+      { id: 'ws4a-q6', type: 'multiple_choice', question: 'Paragraph 2: "I think I bought (6) _____ food."', options: ['a) too', 'b) too much', 'c) enough', 'd) too many', 'e) very little'], correctAnswer: 1, explanation: '"too much" — excessive amount (uncountable noun).', difficulty: 'easy', grammarFocus: 'Quantifiers' },
+      { id: 'ws4a-q7', type: 'multiple_choice', question: 'Paragraph 2: "I invited only (7) _____ people."', options: ['a) a little', 'b) too many', 'c) enough', 'd) many', 'e) a few'], correctAnswer: 4, explanation: '"a few" — a small number.', difficulty: 'easy', grammarFocus: 'Quantifiers' },
+      { id: 'ws4a-q8', type: 'multiple_choice', question: 'Paragraph 2: "I didn\'t have (8) _____ time to clean the house properly before they came."', options: ['a) much', 'b) too much', 'c) too many', 'd) many', 'e) very little'], correctAnswer: 0, explanation: '"much" — with uncountable noun in negative.', difficulty: 'easy', grammarFocus: 'Quantifiers' },
+      { id: 'ws4a-q9', type: 'multiple_choice', question: 'Paragraph 2: "I also added (9) _____ salt to the soup."', options: ['a) much', 'b) many', 'c) too many', 'd) too much', 'e) enough'], correctAnswer: 3, explanation: '"too much" — excessive (salt is uncountable).', difficulty: 'easy', grammarFocus: 'Quantifiers' },
+      { id: 'ws4a-q10', type: 'multiple_choice', question: 'Paragraph 2: "Next time, I\'ll prepare just (10) _____ snacks."', options: ['a) much', 'b) many', 'c) enough', 'd) a little', 'e) too many'], correctAnswer: 2, explanation: '"enough" — sufficient amount.', difficulty: 'easy', grammarFocus: 'Quantifiers' },
+      { id: 'ws4a-q11', type: 'multiple_choice', question: 'Paragraph 3: "I didn\'t mind (11) _____ my sister with her homework."', options: ['a) helping', 'b) to help', 'c) to helping', 'd) by helping', 'e) help'], correctAnswer: 0, explanation: '"mind + gerund": "didn\'t mind helping".', difficulty: 'medium', grammarFocus: 'Verb Patterns' },
+      { id: 'ws4a-q12', type: 'multiple_choice', question: 'Paragraph 3: "She had promised (12) _____ it on her own."', options: ['a) doing', 'b) to doing', 'c) to do', 'd) about to do', 'e) do'], correctAnswer: 2, explanation: '"promise + to infinitive": "promised to do".', difficulty: 'medium', grammarFocus: 'Verb Patterns' },
+      { id: 'ws4a-q13', type: 'multiple_choice', question: 'Paragraph 3: "Before we started, I remembered (13) _____ the worksheet we needed."', options: ['a) print', 'b) to print', 'c) printing', 'd) to printing', 'e) printed'], correctAnswer: 2, explanation: '"remember + gerund" — recall a past action: "remembered printing".', difficulty: 'hard', grammarFocus: 'Verb Patterns' },
+      { id: 'ws4a-q14', type: 'multiple_choice', question: 'Paragraph 3: "She was worried about (14) _____ the test."', options: ['a) fail', 'b) to fail', 'c) to failing', 'd) failed', 'e) failing'], correctAnswer: 4, explanation: '"worried about + gerund": "about failing".', difficulty: 'medium', grammarFocus: 'Verb Patterns' },
+      { id: 'ws4a-q15', type: 'multiple_choice', question: 'Paragraph 3: "In the end, we even watched a short video (15) _____ the topic before her quiz."', options: ['a) revise', 'b) revising', 'c) to revising', 'd) to revise', 'e) revised'], correctAnswer: 1, explanation: '"revising" — gerund as a participle modifier.', difficulty: 'medium', grammarFocus: 'Verb Patterns' },
+    ],
+  },
+
+  // ═══════════════════════════════════════════════════════════════
+  // WORKSHEET 4 — Section C: Fill in the blanks
+  // ═══════════════════════════════════════════════════════════════
+  {
+    id: 'ws4-section-c',
+    title: 'Worksheet 4 — Section C: Fill in the Blanks',
+    description: 'WORKSHEET 4 - UNIT 7 & 8. Fill in the blanks with the correct words/phrases from the word box.',
+    difficulty: 'medium',
+    grammarFocus: 'Housing & Media Vocabulary',
+    questions: [
+      { id: 'ws4c-q1', type: 'fill_blank', question: 'C1: "We keep old furniture and boxes in the _____. It\'s the room just under the roof."', correctAnswer: 'attic', explanation: '"attic" — room under the roof.', difficulty: 'easy', grammarFocus: 'Vocabulary' },
+      { id: 'ws4c-q2', type: 'fill_blank', question: 'C2: "If there\'s a fire, the alarm will _____ everyone to leave the building immediately."', correctAnswer: 'warn', explanation: '"warn" — alert of danger.', difficulty: 'easy', grammarFocus: 'Vocabulary' },
+      { id: 'ws4c-q3', type: 'fill_blank', question: 'C3: "He lives in a student _____ near the university."', correctAnswer: 'accommodation', explanation: '"accommodation" — a place to live.', difficulty: 'medium', grammarFocus: 'Vocabulary' },
+      { id: 'ws4c-q4', type: 'fill_blank', question: 'C4: "They had to clean up the water that had spilled all _____ the kitchen floor."', correctAnswer: 'over', explanation: '"all over" — everywhere on a surface.', difficulty: 'easy', grammarFocus: 'Prepositions' },
+      { id: 'ws4c-q5', type: 'fill_blank', question: 'C5: "Can you _____ me to call the dentist tomorrow? I always forget!"', correctAnswer: 'remind', explanation: '"remind" — help someone remember.', difficulty: 'easy', grammarFocus: 'Vocabulary' },
+      { id: 'ws4c-q6', type: 'fill_blank', question: 'C6: "The lights were on in the _____, but no one was down there. It was a bit creepy."', correctAnswer: 'basement', explanation: '"basement" — underground room.', difficulty: 'easy', grammarFocus: 'Vocabulary' },
+      { id: 'ws4c-q7', type: 'fill_blank', question: 'C7: "Let\'s sit together and _____ some ideas for the school project before we start writing."', correctAnswer: 'brainstorm', explanation: '"brainstorm" — generate ideas collaboratively.', difficulty: 'easy', grammarFocus: 'Vocabulary' },
+      { id: 'ws4c-q8', type: 'fill_blank', question: 'C8: "I didn\'t want to go to the event, but she managed to _____ me with free pizza."', correctAnswer: 'persuade', explanation: '"persuade" — convince someone.', difficulty: 'easy', grammarFocus: 'Vocabulary' },
+      { id: 'ws4c-q9', type: 'fill_blank', question: 'C9: "I follow that travel blog because I _____ to their weekly newsletter."', correctAnswer: 'subscribe', explanation: '"subscribe" — sign up for regular content.', difficulty: 'easy', grammarFocus: 'Vocabulary' },
+      { id: 'ws4c-q10', type: 'fill_blank', question: 'C10: "Your _____ shows only what your friends post and the latest updates."', correctAnswer: 'newsfeed', explanation: '"newsfeed" — a stream of updates on social media.', difficulty: 'easy', grammarFocus: 'Vocabulary' },
+      { id: 'ws4c-q11', type: 'fill_blank', question: 'C11: "Cats, dogs, fish — we talked about pets and _____ like that in biology class today."', correctAnswer: 'stuff', explanation: '"stuff" — informal word for things.', difficulty: 'easy', grammarFocus: 'Vocabulary' },
+      { id: 'ws4c-q12', type: 'fill_blank', question: 'C12: "_____, the concert is cancelled. I just saw the announcement online."', correctAnswer: 'Apparently', explanation: '"Apparently" — based on what is heard/seen.', difficulty: 'medium', grammarFocus: 'Discourse markers' },
+    ],
+  },
+
+  // ═══════════════════════════════════════════════════════════════
+  // WORKSHEET 5 — UNIT 9 & 10 for SPRING A LEVEL
+  // Section A: Cloze Test (Questions 1–10)
+  // ═══════════════════════════════════════════════════════════════
+  {
+    id: 'ws5-section-a',
+    title: 'Worksheet 5 — Section A: Cloze Test',
+    description: 'EMPOWER B1+ UNIT WORKSHEETS — WORKSHEET 5 - UNIT 9 & 10 for SPRING A LEVEL. Passive Voice, Relative Clauses, and Word Formation.',
+    difficulty: 'hard',
+    grammarFocus: 'Passive Voice, Relative Clauses, Word Formation',
+    questions: [
+      { id: 'ws5a-q1', type: 'multiple_choice', question: 'Paragraph 1: "The film was visually impressive, and many scenes (1) _____ with special effects that looked incredibly realistic."', options: ['a) were shot', 'b) were shooting', 'c) shot', 'd) shoot', 'e) being shot'], correctAnswer: 0, explanation: '"were shot" — Past Simple Passive.', difficulty: 'medium', grammarFocus: 'Passive Voice' },
+      { id: 'ws5a-q2', type: 'multiple_choice', question: 'Paragraph 1: "The audience was clearly (2) _____ throughout the movie."', options: ['a) bored', 'b) boring', 'c) fascination', 'd) fascinated', 'e) fascinates'], correctAnswer: 3, explanation: '"fascinated" — adjective describing feeling.', difficulty: 'easy', grammarFocus: 'Word Formation' },
+      { id: 'ws5a-q3', type: 'multiple_choice', question: 'Paragraph 1: "The movie (3) _____ by a relatively unknown director."', options: ['a) directed', 'b) was directing', 'c) was directed', 'd) directing', 'e) has directing'], correctAnswer: 2, explanation: '"was directed" — Past Simple Passive.', difficulty: 'medium', grammarFocus: 'Passive Voice' },
+      { id: 'ws5a-q4', type: 'multiple_choice', question: 'Paragraph 1: "All the main roles (4) _____ by new young actors."', options: ['a) are played', 'b) played', 'c) were played', 'd) had played', 'e) are playing'], correctAnswer: 2, explanation: '"were played" — Past Simple Passive.', difficulty: 'medium', grammarFocus: 'Passive Voice' },
+      { id: 'ws5a-q5', type: 'multiple_choice', question: 'Paragraph 1: "He (5) _____ to see it again next weekend."', options: ['a) plans', 'b) is planned', 'c) planning', 'd) planned', 'e) is planning'], correctAnswer: 4, explanation: '"is planning" — Present Continuous for a near-future arrangement.', difficulty: 'easy', grammarFocus: 'Future Forms' },
+      { id: 'ws5a-q6', type: 'multiple_choice', question: 'Paragraph 2: "I went to a film festival (6) _____ was held in the city centre."', options: ['a) who', 'b) which', 'c) that', 'd) whose', 'e) where'], correctAnswer: 1, explanation: '"which" — relative pronoun for things.', difficulty: 'easy', grammarFocus: 'Relative Clauses' },
+      { id: 'ws5a-q7', type: 'multiple_choice', question: 'Paragraph 2: "There were a lot of movies (7) _____ directors were famous."', options: ['a) whose', 'b) who', 'c) that', 'd) which', 'e) where'], correctAnswer: 0, explanation: '"whose" — possessive relative pronoun.', difficulty: 'medium', grammarFocus: 'Relative Clauses' },
+      { id: 'ws5a-q8', type: 'multiple_choice', question: 'Paragraph 2: "Michael Moore (8) _____ is known for making documentaries, attended the festival."', options: ['a) who', 'b) whose', 'c) that', 'd) whom', 'e) that'], correctAnswer: 0, explanation: '"who" — relative pronoun for people (non-defining).', difficulty: 'easy', grammarFocus: 'Relative Clauses' },
+      { id: 'ws5a-q9', type: 'multiple_choice', question: 'Paragraph 2: "I think he is a really (9) _____ director."', options: ['a) creative', 'b) creator', 'c) create', 'd) creatively', 'e) creation'], correctAnswer: 0, explanation: '"creative" — adjective form.', difficulty: 'easy', grammarFocus: 'Word Formation' },
+      { id: 'ws5a-q10', type: 'multiple_choice', question: 'Paragraph 2: "If I had gone, I (10) _____ the award-winning film."', options: ['a) would see', 'b) had seen', 'c) could see', 'd) saw', 'e) would have seen'], correctAnswer: 4, explanation: '"would have seen" — Third Conditional (past unreal).', difficulty: 'hard', grammarFocus: 'Third Conditional' },
+    ],
+  },
+
+  // ═══════════════════════════════════════════════════════════════
+  // WORKSHEET 5 — Section C: Circle the correct word/phrase
+  // ═══════════════════════════════════════════════════════════════
+  {
+    id: 'ws5-section-c',
+    title: 'Worksheet 5 — Section C: Circle the Correct Word/Phrase',
+    description: 'WORKSHEET 5 - UNIT 9 & 10. Choose the correct word/phrase in context.',
+    difficulty: 'medium',
+    grammarFocus: 'Word Formation, Collocations, Prepositions',
+    questions: [
+      { id: 'ws5c-q1', type: 'multiple_choice', question: 'C1: "The audience was clearly _____ by the comedian\'s jokes during the show."', options: ['amusing', 'amused', 'amuse'], correctAnswer: 1, explanation: '"amused" — describes feeling (past participle adjective).', difficulty: 'easy', grammarFocus: 'Word Formation' },
+      { id: 'ws5c-q2', type: 'multiple_choice', question: 'C2: "She made a _____ donation to help the homeless."', options: ['charity', 'charitable'], correctAnswer: 1, explanation: '"charitable" — adjective modifying "donation".', difficulty: 'medium', grammarFocus: 'Word Formation' },
+      { id: 'ws5c-q3', type: 'multiple_choice', question: 'C3: "A: Why don\'t we go to that new jazz club? B: It _____ great."', options: ['sounds', 'looks', 'doubts'], correctAnswer: 0, explanation: '"sounds" — reacting to a suggestion.', difficulty: 'easy', grammarFocus: 'Vocabulary' },
+      { id: 'ws5c-q4', type: 'multiple_choice', question: 'C4: "She didn\'t _____ the message on the board because she arrived late."', options: ['watch', 'see', 'hear'], correctAnswer: 1, explanation: '"see" — notice visually.', difficulty: 'easy', grammarFocus: 'Vocabulary' },
+      { id: 'ws5c-q5', type: 'multiple_choice', question: 'C5: "I couldn\'t _____ the music clearly because the speakers were too far away."', options: ['listen', 'hear', 'watch'], correctAnswer: 1, explanation: '"hear" — perceive sound involuntarily.', difficulty: 'easy', grammarFocus: 'Vocabulary' },
+      { id: 'ws5c-q6', type: 'multiple_choice', question: 'C6: "She hopes to _____ the competition and get the first prize."', options: ['beat', 'lose', 'win'], correctAnswer: 2, explanation: '"win" — succeed in a competition.', difficulty: 'easy', grammarFocus: 'Vocabulary' },
+      { id: 'ws5c-q7', type: 'multiple_choice', question: 'C7: "Taking care of the camera equipment was his main _____ during the film project."', options: ['responsible', 'responsibility', 'responsibly'], correctAnswer: 1, explanation: '"responsibility" — noun form.', difficulty: 'medium', grammarFocus: 'Word Formation' },
+      { id: 'ws5c-q8', type: 'multiple_choice', question: 'C8: "They were extremely proud _____ their team for finishing the film on time and under budget."', options: ['in', 'at', 'of'], correctAnswer: 2, explanation: '"proud of" — correct preposition.', difficulty: 'easy', grammarFocus: 'Prepositions' },
+      { id: 'ws5c-q9', type: 'multiple_choice', question: 'C9: "The students were asked to _____ research on the history of cinema."', options: ['make', 'take', 'do'], correctAnswer: 2, explanation: '"do research" — correct collocation.', difficulty: 'easy', grammarFocus: 'Collocations' },
+      { id: 'ws5c-q10', type: 'multiple_choice', question: 'C10: "Let\'s _____ a break before we watch the next short film."', options: ['make', 'take', 'do'], correctAnswer: 1, explanation: '"take a break" — correct collocation.', difficulty: 'easy', grammarFocus: 'Collocations' },
+      { id: 'ws5c-q11', type: 'multiple_choice', question: 'C11: "You\'ve _____ great progress in your English this term."', options: ['made', 'taken', 'done'], correctAnswer: 0, explanation: '"made progress" — correct collocation.', difficulty: 'easy', grammarFocus: 'Collocations' },
+      { id: 'ws5c-q12', type: 'multiple_choice', question: 'C12: "I decided not to accept the role in the play because it didn\'t feel right _____ me."', options: ['in', 'for', 'about'], correctAnswer: 1, explanation: '"right for me" — correct preposition.', difficulty: 'easy', grammarFocus: 'Prepositions' },
+      { id: 'ws5c-q13', type: 'multiple_choice', question: 'C13: "Even after many years, the dog\'s _____ to its owner never changed."', options: ['loyal', 'loyalty'], correctAnswer: 1, explanation: '"loyalty" — noun form (subject of sentence).', difficulty: 'medium', grammarFocus: 'Word Formation' },
+      { id: 'ws5c-q14', type: 'multiple_choice', question: 'C14: "The chef used a very _____ way to decorate the cake."', options: ['create', 'creative', 'creation'], correctAnswer: 1, explanation: '"creative" — adjective modifying "way".', difficulty: 'easy', grammarFocus: 'Word Formation' },
+      { id: 'ws5c-q15', type: 'multiple_choice', question: 'C15: "The event was very well _____; everything happened on time and ran smoothly."', options: ['organise', 'organised', 'organiser'], correctAnswer: 1, explanation: '"organised" — past participle as adjective.', difficulty: 'easy', grammarFocus: 'Word Formation' },
+    ],
+  },
+
+  // ═══════════════════════════════════════════════════════════════
+  // WORKSHEET 5 — Section F: Modals of Past Deduction
+  // ═══════════════════════════════════════════════════════════════
+  {
+    id: 'ws5-section-f',
+    title: 'Worksheet 5 — Section F: Modals of Past Deduction',
+    description: 'WORKSHEET 5 - UNIT 9 & 10. Circle the correct modal verb for past deduction.',
+    difficulty: 'hard',
+    grammarFocus: 'Modals of Past Deduction',
+    questions: [
+      { id: 'ws5f-q1', type: 'multiple_choice', question: 'F1: "I don\'t know why Jack didn\'t come to the party. He _____ have been busy."', options: ['may', "mustn't"], correctAnswer: 0, explanation: '"may have been" — possible past deduction.', difficulty: 'medium', grammarFocus: 'Modals of Past Deduction' },
+      { id: 'ws5f-q2', type: 'multiple_choice', question: 'F2: "This is not Menderes Street. We _____ have taken the wrong road."', options: ["can't", 'must'], correctAnswer: 1, explanation: '"must have taken" — strong deduction about the past.', difficulty: 'medium', grammarFocus: 'Modals of Past Deduction' },
+      { id: 'ws5f-q3', type: 'multiple_choice', question: 'F3: "A: I talked to your science teacher yesterday. B: You _____ have talked to her because she wasn\'t at school yesterday."', options: ["can't", "shouldn't"], correctAnswer: 0, explanation: '"can\'t have talked" — impossible past event.', difficulty: 'medium', grammarFocus: 'Modals of Past Deduction' },
+      { id: 'ws5f-q4', type: 'multiple_choice', question: 'F4: "The street is wet this morning. I\'m not sure but it _____ have rained last night."', options: ['could', 'must'], correctAnswer: 0, explanation: '"could have rained" — uncertain possibility about the past.', difficulty: 'medium', grammarFocus: 'Modals of Past Deduction' },
+      { id: 'ws5f-q5', type: 'multiple_choice', question: 'F5: "I _____ have bought so many clothes in the sales. I don\'t have any money left."', options: ["shouldn't", "mustn't"], correctAnswer: 0, explanation: '"shouldn\'t have bought" — regret/criticism about the past.', difficulty: 'medium', grammarFocus: 'Modals of Past Deduction' },
     ],
   },
 ];

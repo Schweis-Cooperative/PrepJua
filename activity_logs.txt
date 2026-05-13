@@ -1,0 +1,444 @@
+[TEST] Hello from verification
+[VERIFY] Direct Express test on port 3001
+[VERIFY] Vite proxy -> Express 3001
+[2026-05-09T18:35:02.487Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:35:02.529Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:35:04.752Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:35:04.777Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:35:06.597Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:35:06.699Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:35:08.521Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:35:08.545Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:35:09.788Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:35:09.817Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:35:10.987Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:35:11.012Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:35:12.388Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:35:12.410Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:35:13.384Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:35:13.419Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:35:14.530Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:35:14.496Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:35:15.737Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:35:15.787Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:35:19.292Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:35:19.388Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:35:20.916Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:35:20.939Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:35:23.471Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:35:23.492Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:35:25.534Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:35:25.496Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:35:28.583Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:35:28.622Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:35:29.619Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:35:29.574Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:35:30.902Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:35:30.928Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:35:32.243Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:35:32.263Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:35:33.391Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:35:33.333Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:35:34.667Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:35:34.622Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:35:42.651Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:35:42.670Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:35:48.584Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:35:48.631Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:00.727Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:01.013Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:17.974Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:18.088Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:18.118Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:18.084Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:19.600Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:19.755Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:19.788Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:19.752Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:20.703Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:20.785Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:20.904Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:20.876Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:23.128Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:23.084Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:23.102Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:23.157Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:24.364Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:24.335Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:24.362Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:24.393Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:26.378Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:26.326Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:26.296Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:26.403Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:28.960Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:29.012Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:31.279Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:31.328Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:32.171Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:31.974Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:32.768Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:32.798Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:35.374Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:35.436Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:35.863Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:35.617Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:37.468Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:37.561Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:37.693Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:37.751Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:39.227Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:39.329Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:40.327Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:40.312Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:52.512Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:52.476Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:52.542Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:52.710Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:55.007Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:55.233Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:56.041Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:56.010Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:56.511Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:56.820Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:58.912Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:58.877Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:59.517Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:36:59.598Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:37:04.194Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:37:04.417Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:37:04.474Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:37:04.318Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:37:15.509Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:37:15.934Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:37:21.816Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:37:22.178Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:37:31.730Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:37:31.701Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:37:33.171Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:37:36.204Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:37:36.275Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:37:36.404Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:37:36.765Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:37:36.919Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:37:36.205Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:37:40.151Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:37:40.115Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:37:40.229Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:37:40.335Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:37:40.366Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:37:40.596Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:37:43.381Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:37:43.162Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:37:43.466Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:37:43.279Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:37:43.488Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:37:43.502Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:37:45.607Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:37:46.117Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:37:46.225Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:37:46.310Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:37:46.396Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:37:46.653Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:37:48.983Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:37:48.963Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:37:49.015Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:37:49.009Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:37:49.500Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:37:49.617Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:38:18.047Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:38:18.104Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:38:19.664Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:38:19.677Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:38:20.845Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:38:20.859Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:38:21.993Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:38:22.007Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:38:23.328Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:38:23.317Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:38:25.081Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:38:25.072Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:38:26.937Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:38:26.949Z] User: Unknown User | Action: Navigated to /
+[2026-05-09T18:38:27.564Z] User: dsfvdsf | Action: Registered / Entered Name
+[2026-05-09T18:38:28.724Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:38:28.712Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:38:29.703Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:38:29.734Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:38:30.808Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:38:30.818Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:38:32.209Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:38:32.219Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:38:33.250Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:38:33.295Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:38:35.242Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:38:35.254Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:38:36.713Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:38:36.726Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:38:37.708Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:38:37.720Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:38:38.708Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:38:38.716Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:38:40.038Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:38:40.029Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:38:41.363Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:38:41.356Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:38:43.071Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:38:43.102Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:38:44.740Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:38:44.647Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:38:46.299Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:38:46.293Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:38:47.508Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:38:47.503Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:38:48.664Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:38:48.656Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:38:49.500Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:38:49.490Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:38:50.337Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:38:50.345Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:39:11.034Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:39:11.063Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:39:12.693Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:39:12.700Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:39:14.196Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:39:14.203Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:39:15.075Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:39:15.055Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:39:16.020Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:39:16.025Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:39:16.963Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:39:16.969Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:39:18.339Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:39:18.352Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:39:19.582Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:39:19.589Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:39:20.684Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:39:20.677Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:39:21.637Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:39:21.643Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:39:22.429Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:39:22.435Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:39:23.235Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:39:23.249Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:39:24.060Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:39:24.068Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:39:25.014Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:39:25.030Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:39:26.104Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:39:26.112Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:39:26.863Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:39:26.855Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:39:27.827Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:39:27.818Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:39:28.533Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:39:28.528Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:39:29.249Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:39:29.238Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:39:30.011Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:39:30.005Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:39:30.848Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:39:30.868Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:39:32.143Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:39:32.160Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:39:33.724Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:39:33.700Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:39:35.012Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:39:35.006Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:39:35.877Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:39:35.886Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:39:36.607Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:39:36.618Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:01.220Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:01.284Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:02.341Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:02.351Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:03.579Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:03.571Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:04.579Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:05.328Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:05.335Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:04.573Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:06.220Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:06.214Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:07.287Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:07.300Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:08.395Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:08.407Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:09.753Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:09.744Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:10.543Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:10.536Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:11.604Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:11.614Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:12.303Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:12.294Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:13.129Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:13.123Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:13.973Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:13.967Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:14.832Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:14.838Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:15.849Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:15.822Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:17.535Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:17.506Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:18.269Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:18.260Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:19.370Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:19.377Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:20.190Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:20.198Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:20.985Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:20.995Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:22.293Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:22.311Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:23.144Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:23.152Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:24.929Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:24.947Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:26.572Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:26.610Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:27.676Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:27.686Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:28.642Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:28.655Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:29.544Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:29.538Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:58.806Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:40:58.773Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:41:00.108Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:41:00.102Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:41:00.992Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:41:00.998Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:41:01.720Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:41:01.726Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:41:02.560Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:41:02.553Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:41:03.461Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:41:03.468Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:41:04.611Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:41:04.617Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:41:05.351Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:41:05.344Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:41:06.464Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:41:06.471Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:41:07.733Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:41:07.710Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:41:08.677Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:41:08.686Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:41:09.733Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:41:09.740Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:41:10.860Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:41:10.871Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:41:11.733Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:41:11.742Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:41:12.777Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:41:12.770Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:41:13.797Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:41:13.777Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:41:14.772Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:41:14.779Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:41:15.621Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:41:15.615Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:41:16.520Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:41:16.513Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:41:17.383Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:41:17.377Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:41:18.267Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:41:18.260Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:41:19.198Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:41:19.191Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:41:20.566Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:41:20.556Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:41:21.164Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:41:21.190Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:41:21.856Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:41:21.870Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:41:22.781Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-09T18:41:22.788Z] User: dsfvdsf | Action: Navigated to /
+[FINAL] End-to-end verified
+[2026-05-10T01:01:04.643Z] User: Unknown User | Action: Navigated to /
+[2026-05-10T01:01:04.652Z] User: Unknown User | Action: Navigated to /
+[2026-05-10T01:01:06.800Z] User: Unknown User | Action: Navigated to /
+[2026-05-10T01:01:06.797Z] User: Unknown User | Action: Navigated to /
+[2026-05-10T01:01:08.041Z] User: Unknown User | Action: Navigated to /
+[2026-05-10T01:01:08.038Z] User: Unknown User | Action: Navigated to /
+[2026-05-10T01:01:09.394Z] User: Unknown User | Action: Navigated to /
+[2026-05-10T01:01:09.391Z] User: Unknown User | Action: Navigated to /
+[2026-05-10T01:01:11.504Z] User: Unknown User | Action: Navigated to /
+[2026-05-10T01:01:11.499Z] User: Unknown User | Action: Navigated to /
+[2026-05-10T01:01:12.651Z] User: Unknown User | Action: Navigated to /
+[2026-05-10T01:01:12.647Z] User: Unknown User | Action: Navigated to /
+[2026-05-10T01:01:14.072Z] User: Unknown User | Action: Navigated to /
+[2026-05-10T01:01:14.075Z] User: Unknown User | Action: Navigated to /
+[2026-05-10T01:01:14.977Z] User: Unknown User | Action: Navigated to /
+[2026-05-10T01:01:14.984Z] User: Unknown User | Action: Navigated to /
+[2026-05-10T01:01:16.093Z] User: Unknown User | Action: Navigated to /
+[2026-05-10T01:01:16.087Z] User: Unknown User | Action: Navigated to /
+[2026-05-10T01:01:17.607Z] User: Unknown User | Action: Navigated to /
+[2026-05-10T01:01:17.610Z] User: Unknown User | Action: Navigated to /
+[2026-05-10T01:01:18.837Z] User: Unknown User | Action: Navigated to /
+[2026-05-10T01:01:18.844Z] User: Unknown User | Action: Navigated to /
+[2026-05-10T01:01:20.076Z] User: Unknown User | Action: Navigated to /
+[2026-05-10T01:01:20.083Z] User: Unknown User | Action: Navigated to /
+[2026-05-10T01:01:21.246Z] User: Unknown User | Action: Navigated to /
+[2026-05-10T01:01:21.255Z] User: Unknown User | Action: Navigated to /
+[2026-05-10T01:05:58.641Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-10T01:05:58.701Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-10T01:06:24.198Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-10T01:06:24.223Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-10T01:07:10.608Z] User: dsfvdsf | Action: Navigated to /grammar
+[2026-05-10T01:07:31.357Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-10T01:07:46.070Z] User: dsfvdsf | Action: Navigated to /grammar
+[2026-05-10T01:07:50.331Z] User: dsfvdsf | Action: Navigated to /
+[2026-05-10T01:17:28.116Z] User: Unknown User | Action: Navigated to /
+[2026-05-10T01:17:28.108Z] User: Unknown User | Action: Navigated to /
+[2026-05-10T01:17:33.161Z] User: Marijua | Action: Registered / Entered Name
+[2026-05-10T01:17:35.662Z] User: Marijua | Action: Navigated to /uoe
+[2026-05-10T01:17:40.450Z] User: Marijua | Action: Navigated to /uoe/cloze
+[2026-05-10T01:17:46.452Z] User: Marijua | Action: Navigated to /grammar
+[2026-05-10T01:17:46.988Z] User: Marijua | Action: Navigated to /wordpower
+[2026-05-10T01:17:48.919Z] User: Marijua | Action: Navigated to /exam-practice
+[2026-05-10T01:17:48.359Z] User: Marijua | Action: Navigated to /past-questions
+[2026-05-10T01:17:59.928Z] User: Marijua | Action: Navigated to /
+[2026-05-10T01:19:44.357Z] User: Marijua | Action: Navigated to /
+[2026-05-10T01:19:44.361Z] User: Marijua | Action: Navigated to /
+[2026-05-11T12:14:48.584Z] IP: 127.0.0.1 | User: Marijua | [2026-05-11T15:15:00.000Z] Action: Navigated to /grammar
+[2026-05-11T12:14:48.652Z] IP: 127.0.0.1 | User: Marijua | [2026-05-11T15:15:01.000Z] Action: VOCAB: ✅ Marked Learned — "eloquent" (vocab_001)
+[2026-05-11T12:14:48.665Z] IP: 127.0.0.1 | User: Marijua | [2026-05-11T15:15:02.000Z] Action: ANSWER [Grammar]: ❌ INCORRECT | Q: "Choose the correct form" | User: "has gone" | Correct: "had gone" (gram_q1)
+[2026-05-11T12:14:48.678Z] IP: 127.0.0.1 | User: Marijua | [2026-05-11T15:15:03.000Z] Action: SCORE [Grammar]: Present Perfect — 7/10 (70%)
+[2026-05-11T12:14:48.692Z] IP: 127.0.0.1 | User: Marijua | [2026-05-11T15:15:04.000Z] Action: AI [Explanation Requested]: Q: "Choose the form" | User: "has gone" | Correct: "had gone"
+[2026-05-11T12:14:48.708Z] IP: 127.0.0.1 | User: TestStudent | [2026-05-11T15:15:05.000Z] Action: Navigated to /
+[2026-05-11T12:57:16.510Z] IP: 127.0.0.1 | User: Unknown User | [2026-05-11T12:57:16.408Z] Action: Navigated to /
+[2026-05-11T12:57:16.564Z] IP: 127.0.0.1 | User: Unknown User | [2026-05-11T12:57:16.413Z] Action: Navigated to /
+[2026-05-11T12:57:22.192Z] IP: 127.0.0.1 | User: Marijua | [2026-05-11T12:57:22.101Z] Action: Registered / Entered Name
+[2026-05-11T12:58:18.229Z] IP: 127.0.0.1 | User: Marijua | [2026-05-11T12:58:18.179Z] Action: VOCAB: ✅ Marked Learned — "have a lot in common" (v-u3-01)
+[2026-05-11T12:58:37.093Z] IP: 127.0.0.1 | User: Marijua | [2026-05-11T12:58:37.077Z] Action: VOCAB: ❌ Marked Unlearned — "have a lot in common" (v-u3-01)
+[2026-05-11T12:59:33.163Z] IP: 127.0.0.1 | User: Marijua | [2026-05-11T12:59:33.098Z] Action: Navigated to /exam-practice
+[2026-05-11T12:59:41.435Z] IP: 127.0.0.1 | User: Marijua | [2026-05-11T12:59:41.138Z] Action: Navigated to /
+[2026-05-11T12:59:47.596Z] IP: 127.0.0.1 | User: Marijua | [2026-05-11T12:59:47.559Z] Action: Navigated to /profile
+[2026-05-11T13:00:27.931Z] IP: 127.0.0.1 | User: Marijua | [2026-05-11T13:00:27.874Z] Action: Navigated to /cheat-sheet
+[2026-05-11T13:00:31.024Z] IP: 127.0.0.1 | User: Marijua | [2026-05-11T13:00:31.009Z] Action: Navigated to /mistake-book
+[2026-05-11T13:00:32.357Z] IP: 127.0.0.1 | User: Marijua | [2026-05-11T13:00:32.348Z] Action: Navigated to /irregular-verbs
+[2026-05-11T13:00:35.261Z] IP: 127.0.0.1 | User: Marijua | [2026-05-11T13:00:35.254Z] Action: Navigated to /past-questions
+[2026-05-11T13:00:39.065Z] IP: 127.0.0.1 | User: Marijua | [2026-05-11T13:00:39.047Z] Action: Navigated to /exam-practice
+[2026-05-11T13:02:30.368Z] IP: 127.0.0.1 | User: Marijua | [2026-05-11T13:02:30.307Z] Action: Navigated to /writing
+[2026-05-11T13:03:28.564Z] IP: 127.0.0.1 | User: Marijua | [2026-05-11T13:03:28.533Z] Action: Navigated to /reading
+[2026-05-11T13:03:29.623Z] IP: 127.0.0.1 | User: Marijua | [2026-05-11T13:03:29.609Z] Action: Navigated to /reading/rp-friendship
+[2026-05-11T13:03:33.489Z] IP: 127.0.0.1 | User: Marijua | [2026-05-11T13:03:33.463Z] Action: Navigated to /reading
+[2026-05-11T13:03:50.111Z] IP: 127.0.0.1 | User: Marijua | [2026-05-11T13:03:50.103Z] Action: Navigated to /reading
+[2026-05-11T13:03:51.092Z] IP: 127.0.0.1 | User: Marijua | [2026-05-11T13:03:51.080Z] Action: Navigated to /uoe
+[2026-05-11T13:03:52.767Z] IP: 127.0.0.1 | User: Marijua | [2026-05-11T13:03:52.756Z] Action: Navigated to /uoe/cloze
+[2026-05-11T13:04:00.795Z] IP: 127.0.0.1 | User: Marijua | [2026-05-11T13:04:00.783Z] Action: Navigated to /uoe
+[2026-05-11T13:04:01.483Z] IP: 127.0.0.1 | User: Marijua | [2026-05-11T13:04:01.470Z] Action: Navigated to /uoe/rewrite
+[2026-05-11T13:04:03.196Z] IP: 127.0.0.1 | User: Marijua | [2026-05-11T13:04:03.093Z] Action: Navigated to /uoe
+[2026-05-11T13:04:03.825Z] IP: 127.0.0.1 | User: Marijua | [2026-05-11T13:04:03.793Z] Action: Navigated to /uoe/mock
+[2026-05-11T13:04:08.168Z] IP: 127.0.0.1 | User: Marijua | [2026-05-11T13:04:08.148Z] Action: Navigated to /wordpower
+[2026-05-11T13:04:46.808Z] IP: 127.0.0.1 | User: Marijua | [2026-05-11T13:04:46.577Z] Action: Navigated to /wordpower/wp-have
+[2026-05-11T13:04:52.692Z] IP: 127.0.0.1 | User: Marijua | [2026-05-11T13:04:52.675Z] Action: Navigated to /wordpower
+[2026-05-11T13:04:53.299Z] IP: 127.0.0.1 | User: Marijua | [2026-05-11T13:04:53.283Z] Action: Navigated to /grammar
+[2026-05-11T13:04:54.632Z] IP: 127.0.0.1 | User: Marijua | [2026-05-11T13:04:54.618Z] Action: Navigated to /grammar/narrative-tenses
+[2026-05-11T13:04:57.705Z] IP: 127.0.0.1 | User: Marijua | [2026-05-11T13:04:57.697Z] Action: Navigated to /
+[2026-05-11T20:47:02.937Z] IP: 127.0.0.1 | User: Marijua | [2026-05-11T20:47:02.403Z] Action: Navigated to /
+[2026-05-11T20:47:03.346Z] IP: 127.0.0.1 | User: Marijua | [2026-05-11T20:47:02.419Z] Action: Navigated to /

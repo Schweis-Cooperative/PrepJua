@@ -5,7 +5,7 @@ import { ArrowLeft, Clock, CheckCircle2, AlertTriangle } from 'lucide-react';
 import { uoeMockExams } from '../data/uoeData';
 import { compareAnswers } from '../utils/normalize';
 import { useMistakeBook } from '../hooks/useMistakeBook';
-import { logActivity } from '../utils/activity';
+import { logAnswer, logScore } from '../utils/logger';
 
 export default function UoEMock() {
   const exam = uoeMockExams[0];
@@ -51,10 +51,16 @@ export default function UoEMock() {
     let correct = 0;
     exam.questions.forEach((q) => {
       let isCorrect = false;
+      let userAns = '';
+      let correctAns = '';
       if (q.type === 'multiple_choice') {
         isCorrect = answers[q.id] === q.correctAnswer;
+        userAns = q.options?.[answers[q.id] as number] || 'No answer';
+        correctAns = q.options?.[q.correctAnswer as number] || '';
       } else {
         isCorrect = compareAnswers(textInputs[q.id] || '', String(q.correctAnswer));
+        userAns = textInputs[q.id] || 'No answer';
+        correctAns = String(q.correctAnswer);
       }
       if (isCorrect) correct++;
       else {
@@ -63,12 +69,20 @@ export default function UoEMock() {
           questionId: q.id,
           type: 'uoe',
           question: q.question,
-          userAnswer: q.type === 'multiple_choice' ? (q.options?.[answers[q.id] as number] || 'No answer') : (textInputs[q.id] || 'No answer'),
-          correctAnswer: q.type === 'multiple_choice' ? (q.options?.[q.correctAnswer as number] || '') : String(q.correctAnswer),
+          userAnswer: userAns,
+          correctAnswer: correctAns,
         });
       }
+      logAnswer({
+        section: 'UoE Mock Exam',
+        questionId: q.id,
+        question: q.question,
+        userAnswer: userAns,
+        correctAnswer: correctAns,
+        isCorrect,
+      });
     });
-    logActivity('Completed UoE Mock Exam', `Score: ${correct}/${exam.questions.length}`);
+    logScore('UoE Mock Exam', exam.title, correct, exam.questions.length);
   }, [answers, textInputs, exam, addMistake]);
 
   const question = exam.questions[currentIndex];

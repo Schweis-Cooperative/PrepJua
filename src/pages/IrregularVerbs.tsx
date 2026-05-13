@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { BookMarked, Volume2, Search, PenTool, CheckCircle2, RotateCcw } from 'lucide-react';
 import { irregularVerbs } from '../data/irregularVerbsData';
 import { compareWithSlash } from '../utils/normalize';
+import { logAnswer, logScore } from '../utils/logger';
 
 type ModeType = 'list' | 'practice';
 
@@ -61,7 +62,16 @@ export default function IrregularVerbs() {
     setSubmitted(true);
     const v2Correct = compareWithSlash(v2Input, currentVerb.v2);
     const v3Correct = compareWithSlash(v3Input, currentVerb.v3);
-    if (v2Correct && v3Correct) setScore((s) => s + 1);
+    const isCorrect = v2Correct && v3Correct;
+    if (isCorrect) setScore((s) => s + 1);
+    logAnswer({
+      section: 'Irregular Verbs',
+      questionId: currentVerb.id,
+      question: `V1: ${currentVerb.v1} — fill V2 and V3`,
+      userAnswer: `V2: "${v2Input}", V3: "${v3Input}"`,
+      correctAnswer: `V2: "${currentVerb.v2}", V3: "${currentVerb.v3}"`,
+      isCorrect,
+    });
   };
 
   const nextVerb = () => {
@@ -72,6 +82,7 @@ export default function IrregularVerbs() {
       setSubmitted(false);
     } else {
       setFinished(true);
+      logScore('Irregular Verbs', 'Verb Practice', score, practiceVerbs.length);
     }
   };
 

@@ -7,7 +7,7 @@ import { useProgress } from '../hooks/useProgress';
 import { useMistakeBook } from '../hooks/useMistakeBook';
 import AIExplanation from '../components/AIExplanation';
 import EmptyState from '../components/EmptyState';
-import { logActivity } from '../utils/activity';
+import { logAnswer, logScore } from '../utils/logger';
 
 export default function ReadingTest() {
   const { id } = useParams<{ id: string }>();
@@ -35,7 +35,8 @@ export default function ReadingTest() {
   const handleAnswer = useCallback((index: number) => {
     if (selectedAnswer !== null) return;
     setSelectedAnswer(index);
-    if (index === question.correctAnswer) {
+    const isCorrect = index === question.correctAnswer;
+    if (isCorrect) {
       setScore((s) => s + 1);
     } else {
       addMistake({
@@ -47,6 +48,14 @@ export default function ReadingTest() {
         correctAnswer: question.options[question.correctAnswer],
       });
     }
+    logAnswer({
+      section: 'Reading',
+      questionId: question.id,
+      question: question.question,
+      userAnswer: question.options[index],
+      correctAnswer: question.options[question.correctAnswer],
+      isCorrect,
+    });
   }, [selectedAnswer, question, addMistake, passage.id]);
 
   const nextQuestion = () => {
@@ -56,7 +65,7 @@ export default function ReadingTest() {
     } else {
       setFinished(true);
       completeReadingTest(passage.id);
-      logActivity('Completed Reading Test', `${passage.title} — Score: ${score}/${passage.questions.length}`);
+      logScore('Reading', passage.title, score, passage.questions.length);
     }
   };
 

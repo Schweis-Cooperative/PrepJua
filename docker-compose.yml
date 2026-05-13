@@ -2,8 +2,15 @@ services:
   prepjua:
     build: .
     container_name: prepjua-app
-    restart: always
+    restart: unless-stopped
     ports:
       - "3000:3000"
     environment:
       - NODE_ENV=production
+    volumes:
+      - prepjua-logs:/app/logs
+      - prepjua-user-logs:/app/user_logs
+
+volumes:
+  prepjua-logs:
+  prepjua-user-logs:

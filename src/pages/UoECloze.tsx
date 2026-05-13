@@ -6,7 +6,7 @@ import { clozeTests } from '../data/uoeData';
 import { useMistakeBook } from '../hooks/useMistakeBook';
 import { useProgress } from '../hooks/useProgress';
 import AIExplanation from '../components/AIExplanation';
-import { logActivity } from '../utils/activity';
+import { logAnswer, logScore } from '../utils/logger';
 
 export default function UoECloze() {
   const [testIndex, setTestIndex] = useState(0);
@@ -29,7 +29,8 @@ export default function UoECloze() {
     completeUoeTest(test.id);
     let correct = 0;
     test.blanks.forEach((blank) => {
-      if (answers[blank.id] === blank.correctAnswer) {
+      const isCorrect = answers[blank.id] === blank.correctAnswer;
+      if (isCorrect) {
         correct++;
       } else {
         addMistake({
@@ -41,8 +42,16 @@ export default function UoECloze() {
           correctAnswer: blank.options[blank.correctAnswer],
         });
       }
+      logAnswer({
+        section: 'UoE Cloze',
+        questionId: blank.id,
+        question: `Cloze: ${test.title} — Blank ${blank.id}`,
+        userAnswer: blank.options[answers[blank.id] ?? -1] || 'No answer',
+        correctAnswer: blank.options[blank.correctAnswer],
+        isCorrect,
+      });
     });
-    logActivity('Completed Cloze Test', `${test.title} — Score: ${correct}/${test.blanks.length}`);
+    logScore('UoE Cloze', test.title, correct, test.blanks.length);
   };
 
   const allAnswered = test.blanks.every((b) => answers[b.id] !== undefined && answers[b.id] !== null);
@@ -51,14 +60,14 @@ export default function UoECloze() {
     : 0;
 
   const renderPassage = () => {
-    const parts = test.passage.split(/(\{\{b\d+\}\})/);
+    const parts = test.passage.split(/(\{\{[^}]+\}\})/);
     return parts.map((part, i) => {
-      const match = part.match(/\{\{(b\d+)\}\}/);
+      const match = part.match(/\{\{([^}]+)\}\}/);
       if (!match) return <span key={i}>{part}</span>;
 
       const blankId = match[1];
       const blank = test.blanks.find((b) => b.id === blankId);
-      if (!blank) return <span key={i}>[?]</span>;
+      if (!blank) return <span key={i} className="text-zinc-600 font-mono">____</span>;
 
       const answered = answers[blankId] !== undefined && answers[blankId] !== null;
       const isCorrect = submitted && answers[blankId] === blank.correctAnswer;

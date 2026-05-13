@@ -1,6 +1,7 @@
 import { Sparkles, Loader2 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useAIExplanation } from '../hooks/useAIExplanation';
+import { logAI } from '../utils/logger';
 
 interface AIExplanationProps {
   correctAnswer: string;
@@ -23,7 +24,10 @@ export default function AIExplanation({
     <div className="mt-3">
       {!explanation && !loading && (
         <button
-          onClick={() => fetchExplanation(correctAnswer, userAnswer, questionContext)}
+          onClick={() => {
+            fetchExplanation(correctAnswer, userAnswer, questionContext);
+            logAI('Explanation Requested', `Q: "${questionContext}" | User: "${userAnswer}" | Correct: "${correctAnswer}"`);
+          }}
           className="flex items-center gap-2 px-4 py-2 text-xs font-medium text-indigo-300 bg-indigo-500/10 hover:bg-indigo-500/20 border border-indigo-500/20 rounded-lg transition-all duration-200"
           id="ai-explain-btn"
         >

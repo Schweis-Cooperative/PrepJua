@@ -57,13 +57,17 @@ function AnimatedRoutes() {
   );
 }
 
+import { ProgressProvider } from './context/ProgressContext';
+
 export default function App() {
   return (
     <BrowserRouter>
-      <RouteTracker />
-      <Layout>
-        <AnimatedRoutes />
-      </Layout>
+      <ProgressProvider>
+        <RouteTracker />
+        <Layout>
+          <AnimatedRoutes />
+        </Layout>
+      </ProgressProvider>
     </BrowserRouter>
   );
 }

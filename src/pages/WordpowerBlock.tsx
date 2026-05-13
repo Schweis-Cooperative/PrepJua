@@ -16,7 +16,7 @@ import { wordpowerData } from '../data/wordpowerData';
 import { useMistakeBook } from '../hooks/useMistakeBook';
 import AIExplanation from '../components/AIExplanation';
 import EmptyState from '../components/EmptyState';
-import { logActivity } from '../utils/activity';
+import { logAnswer, logScore } from '../utils/logger';
 
 type TabType = 'study' | 'exercise';
 
@@ -56,7 +56,8 @@ export default function WordpowerBlock() {
             if (showResult) return;
             setSelectedAnswer(index);
             setShowResult(true);
-            if (index === currentExercise.correctAnswer) {
+            const isCorrect = index === currentExercise.correctAnswer;
+            if (isCorrect) {
                 setScore((s) => s + 1);
             } else {
                 addMistake({
@@ -71,6 +72,16 @@ export default function WordpowerBlock() {
                             : String(currentExercise.correctAnswer),
                 });
             }
+            logAnswer({
+                section: 'Wordpower',
+                questionId: currentExercise.id,
+                question: currentExercise.question,
+                userAnswer: currentExercise.options?.[index] ?? String(index),
+                correctAnswer: typeof currentExercise.correctAnswer === 'number'
+                    ? currentExercise.options?.[currentExercise.correctAnswer] ?? ''
+                    : String(currentExercise.correctAnswer),
+                isCorrect,
+            });
         },
         [showResult, currentExercise, addMistake, block.id]
     );
@@ -91,6 +102,14 @@ export default function WordpowerBlock() {
                 correctAnswer: String(currentExercise.correctAnswer),
             });
         }
+        logAnswer({
+            section: 'Wordpower',
+            questionId: currentExercise.id,
+            question: currentExercise.question,
+            userAnswer: fillInput,
+            correctAnswer: String(currentExercise.correctAnswer),
+            isCorrect,
+        });
     }, [showResult, fillInput, currentExercise, addMistake, block.id]);
 
     const nextExercise = () => {
@@ -101,7 +120,7 @@ export default function WordpowerBlock() {
             setShowResult(false);
         } else {
             setFinished(true);
-            logActivity('Completed Wordpower', `${block.title} — Score: ${score}/${exercises.length}`);
+            logScore('Wordpower', block.title, score, exercises.length);
         }
     };
 

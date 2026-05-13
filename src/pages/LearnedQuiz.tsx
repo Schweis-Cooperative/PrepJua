@@ -5,7 +5,7 @@ import { ArrowLeft, CheckCircle2, XCircle, RotateCcw, AlertTriangle } from 'luci
 import { vocabularyData } from '../data/vocabularyData';
 import { useProgress } from '../hooks/useProgress';
 import EmptyState from '../components/EmptyState';
-import { logActivity } from '../utils/activity';
+import { logAnswer, logScore } from '../utils/logger';
 
 export default function LearnedQuiz() {
   const { learnedWords, isWordLearned, removeLearnedWord } = useProgress();
@@ -44,12 +44,21 @@ export default function LearnedQuiz() {
     (index: number) => {
       if (selectedAnswer !== null) return;
       setSelectedAnswer(index);
-      if (index === currentQuestion.correctAnswer) {
+      const isCorrect = index === currentQuestion.correctAnswer;
+      if (isCorrect) {
         setScore((s) => s + 1);
       } else {
         removeLearnedWord(currentQuestion.word.id);
         setRemovedWords((prev) => [...prev, currentQuestion.word.word]);
       }
+      logAnswer({
+        section: 'Learned Quiz',
+        questionId: currentQuestion.word.id,
+        question: `What does "${currentQuestion.word.word}" mean?`,
+        userAnswer: currentQuestion.options[index],
+        correctAnswer: currentQuestion.word.translation,
+        isCorrect,
+      });
     },
     [selectedAnswer, currentQuestion, removeLearnedWord]
   );
@@ -60,7 +69,7 @@ export default function LearnedQuiz() {
       setSelectedAnswer(null);
     } else {
       setFinished(true);
-      logActivity('Completed Learned Quiz', `Score: ${score}/${questions.length}`);
+      logScore('Learned Quiz', 'Learned Words Quiz', score, questions.length);
     }
   };
 

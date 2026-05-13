@@ -1,9 +1,6 @@
 import type { ReadingPassage } from '../types/reading';
 
 export const readingPassages: ReadingPassage[] = [
-  // ═══════════════════════════════════════════════════════════════
-  // From page-01/02 — 60 years and 1,000 miles
-  // ═══════════════════════════════════════════════════════════════
   {
     id: 'rp-friendship',
     title: '60 Years and 1,000 Miles — How a Word Game Brought Two Unlikely People Together',
@@ -30,78 +27,74 @@ And what happened next? Well, Spencer and Rosalind are still playing the word ga
     questions: [
       {
         id: 'rp-f-q1',
-        question: 'Spencer ve Rosalind nasıl tanıştı?',
+        question: 'How did Spencer and Rosalind first meet?',
         options: [
-          'Sosyal medya aracılığıyla',
-          'Bir kelime oyunu uygulaması sayesinde',
-          'Bir restoranda tesadüfen',
-          'Ortak bir arkadaş aracılığıyla',
+          'Through social media',
+          'Via a word-game application',
+          'By chance in a restaurant',
+          'Through a mutual friend',
         ],
         correctAnswer: 1,
-        explanation: 'Metne göre, ikisi de aynı kelime oyunu uygulamasını oynamaya başladıklarında tanışmışlardır.',
+        explanation: 'According to the text, they met when they both started playing a popular word-game app on their mobile phones.',
       },
       {
         id: 'rp-f-q2',
-        question: 'Spencer neden uygulamayı silmeye karar verdi?',
+        question: 'Why did Spencer decide to delete the app for a while?',
         options: [
-          'Rosalind\'dan sıkıldığı için',
-          'New York\'ta iş aradığı ve çok meşgul olduğu için',
-          'Uygulamada sorun olduğu için',
-          'Yeni bir oyun bulduğu için',
+          'He was bored of playing with Rosalind',
+          'He was busy looking for a job in New York',
+          'The application was malfunctioning',
+          'He found a new game to play',
         ],
         correctAnswer: 1,
-        explanation: 'Spencer New York\'ta iş arıyordu ve hayatı çok yoğunlaşmıştı; oynamaya vakti kalmamıştı.',
+        explanation: 'Spencer was looking for a job in New York and his life was getting too busy to play.',
       },
       {
         id: 'rp-f-q3',
-        question: 'Amy Butler bu hikâyedeki rolü nedir?',
+        question: 'What was Amy Butler\'s role in the story?',
         options: [
-          'Rosalind\'ın kızıdır',
-          'Spencer\'ın bir arkadaşının annesidir ve buluşmayı organize etmiştir',
-          'Gazeteci olarak haberi yazmıştır',
-          'Kelime oyununu geliştiren kişidir',
+          'She is Rosalind\'s daughter',
+          'She is a friend\'s mother who organized the meeting',
+          'She is a journalist who wrote the story',
+          'She is the developer of the word-game app',
         ],
         correctAnswer: 1,
-        explanation: 'Amy Butler, Spencer\'ın arkadaşlarından birinin annesidir ve ikisinin buluşmasını organize etmiştir.',
+        explanation: 'Amy Butler is the mother of one of Spencer\'s friends and she arranged the meeting between him and Rosalind.',
       },
       {
         id: 'rp-f-q4',
-        question: 'Rosalind, buluşmalarının neden bu kadar büyük bir haber olduğunu anlayamadı. Ona göre neden?',
+        question: 'Why was Rosalind surprised that their meeting became such a big news story?',
         options: [
-          'İki ünlü kişinin buluşması olduğu için',
-          'İyi bir ilişki kurmaları gayet doğaldı ve alışılmadık bir şey yoktu',
-          'Çok pahalı bir etkinlik düzenledikleri için',
-          'Oyunu birlikte kazandıkları için',
+          'Because they are both famous people',
+          'She felt it was natural to have a good relationship and not unusual',
+          'Because the meeting was very expensive',
+          'Because they won the game together',
         ],
         correctAnswer: 1,
-        explanation: 'Rosalind, iyi bir ilişki kurmalarının gayet doğal olduğunu ve bunda alışılmadık bir şey olmadığını hissediyordu.',
+        explanation: 'Rosalind felt that it was quite natural that they should have a good relationship and there wasn\'t anything unusual about it.',
       },
       {
         id: 'rp-f-q5',
-        question: '"Shoot for the stars" ifadesinin Türkçe karşılığı aşağıdakilerden hangisidir?',
+        question: 'What does the idiom "Shoot for the stars" mean in this context?',
         options: [
-          'Yıldızları say',
-          'Hayallerinin peşinden git, en yükseğini hedefle',
-          'Geceyi izle',
-          'Hızlı hareket et',
+          'Count the stars at night',
+          'Aim for the highest goals and follow your dreams',
+          'Watch the sky carefully',
+          'Move as fast as possible',
         ],
         correctAnswer: 1,
-        explanation: '"Shoot for the stars" = en yükseği hedefle, hayallerinin peşinden git deyimsel bir ifadedir.',
+        explanation: '"Shoot for the stars" means to set high goals and try to achieve them.',
       },
     ],
     vocabularyHighlights: [
-      { word: 'at the heart of', definition: 'Bir şeyin merkezinde / özünde' },
-      { word: 'by chance', definition: 'Tesadüfen, rastgele' },
-      { word: 'got on really well', definition: 'Çok iyi anlaştılar' },
-      { word: 'went viral', definition: 'İnternette çok hızlı yayıldı' },
-      { word: 'keep in touch', definition: 'İletişimde / bağlantıda kalmak' },
-      { word: 'different backgrounds', definition: 'Farklı çevreler / geçmişler' },
+      { word: 'at the heart of', definition: 'To be the most important part of something' },
+      { word: 'by chance', definition: 'Accidentally or without planning' },
+      { word: 'got on really well', definition: 'Had a very good and friendly relationship' },
+      { word: 'went viral', definition: 'Spread quickly and widely on the internet' },
+      { word: 'keep in touch', definition: 'To maintain communication with someone' },
+      { word: 'different backgrounds', definition: 'Different social or cultural origins' },
     ],
   },
-
-  // ═══════════════════════════════════════════════════════════════
-  // From page-21 — Culture Shock article
-  // ═══════════════════════════════════════════════════════════════
   {
     id: 'rp-culturemee',
     title: 'Culture Shock? There\'s an App to Deal with That',
@@ -124,172 +117,72 @@ An essential aim of John and Dee's project is to create an online community of p
     questions: [
       {
         id: 'rp-c-q1',
-        question: 'CultureMee uygulamasını diğer seyahat uygulamalarından ayıran temel özellik nedir?',
+        question: 'What makes CultureMee different from other travel apps?',
         options: [
-          'Daha ucuz otel bulmayı sağlar',
-          'Ziyaret edilen ülkenin kültürü hakkında da bilgi verir',
-          'Sadece Avrupa ülkelerini kapsar',
-          'Yalnızca restoranları listeler',
+          'It helps find cheaper hotels',
+          'It provides insights into the culture of the country',
+          'It only covers European countries',
+          'It only lists restaurants',
         ],
         correctAnswer: 1,
-        explanation: 'CultureMee yalnızca seyahat tavsiyesi vermekle kalmaz, ziyaret edilen ülkenin kültürüne dair içgörüler de sunar.',
+        explanation: 'CultureMee gives straightforward travel advice and also provides insights into the culture of the country.',
       },
       {
         id: 'rp-c-q2',
-        question: 'John ve Dee, uygulama fikrini nereden edinmiştir?',
+        question: 'How did John and Dee get the idea for the app?',
         options: [
-          'Bir teknoloji konferansından',
-          'Doğu Afrika\'da tatildeyken gezi rehberlerinin yetersiz kaldığını fark ettiklerinde',
-          'Üniversitede bir proje olarak',
-          'Bir arkadaşın önerisinden',
+          'From a technology conference',
+          'When they realized guidebooks were insufficient during a holiday in East Africa',
+          'As a university project',
+          'From a suggestion by a friend',
         ],
         correctAnswer: 1,
-        explanation: 'Doğu Afrika\'da tatildeyken rehber kitaplarının kültürel bilgi ve pratik detaylar konusunda yetersiz kaldığını fark etmişlerdir.',
+        explanation: 'The idea came while they were on holiday in East Africa and found it difficult to find practical and cultural details.',
       },
       {
         id: 'rp-c-q3',
-        question: '"integral" kelimesi metinde hangi anlamda kullanılmıştır?',
+        question: 'What does the word "integral" mean in the text?',
         options: [
-          'Ek, isteğe bağlı',
-          'Temel, ayrılmaz',
-          'Matematiksel',
-          'Geçici, kısa süreli',
+          'Optional or extra',
+          'Essential and necessary',
+          'Mathematical',
+          'Temporary',
         ],
         correctAnswer: 1,
-        explanation: 'Metinde "integral" kelimesi "temel, ayrılmaz bir parça" anlamında kullanılmıştır.',
+        explanation: 'In this context, "integral" means an essential part of the whole.',
       },
       {
         id: 'rp-c-q4',
-        question: 'CultureMee\'nin uzun vadeli hedefi nedir?',
+        question: 'What is the long-term goal of the CultureMee project?',
         options: [
-          'Tüm gezi rehber kitaplarını ortadan kaldırmak',
-          'Seyahat ve kültüre ilgi duyan insanlardan oluşan bir çevrimiçi topluluk oluşturmak',
-          'Sadece video içerik üretmek',
-          'Yalnızca İrlanda kültürünü tanıtmak',
+          'To replace all physical guidebooks',
+          'To create an online community of travel and culture enthusiasts',
+          'To produce only video content',
+          'To promote only Irish culture',
         ],
         correctAnswer: 1,
-        explanation: 'John ve Dee\'nin temel hedefi, seyahat ve kültürle ilgilenen insanlardan oluşan bir çevrimiçi topluluk oluşturmaktır.',
+        explanation: 'An essential aim is to create an online community that augments the app with their own stories.',
       },
       {
         id: 'rp-c-q5',
-        question: 'Metne göre hangisi DOĞRUDUR?',
+        question: 'Which statement is TRUE according to the text?',
         options: [
-          'Uygulama yalnızca kültürel tavsiyelere odaklanır, pratik seyahat tavsiyesi vermez',
-          'CultureMee zaten başarılı olmuştur ve uluslararası ödüller kazanmıştır',
-          'John ve Dee\'nin rehber kitabı Doğu Afrika\'da ihtiyaç duydukları her şeyi sağlamıştır',
-          'Uygulamadaki tüm röportajlar ülkeden gelen kişilerle yapılmıştır',
+          'The app does not give practical travel advice',
+          'CultureMee has already won several international awards',
+          'The couple\'s guidebook in Africa provided everything they needed',
+          'All interviews in the app are with locals only',
         ],
         correctAnswer: 1,
-        explanation: 'Metinde uygulamanın hızla popülerlik kazandığı ve birçok uluslararası ödül kazandığı belirtilmektedir.',
+        explanation: 'The text states that the app covers locations worldwide and has won several international awards.',
       },
     ],
     vocabularyHighlights: [
-      { word: 'insights', definition: 'İçgörüler, derinlemesine bilgi ve anlayış' },
-      { word: 'integral', definition: 'Temel, ayrılmaz, bütünleyici' },
-      { word: 'approach', definition: 'Yaklaşım, bakış açısı' },
-      { word: 'supplement', definition: 'Desteklemek, ek olarak eklemek' },
-      { word: 'with authority', definition: 'Yetkin bir şekilde, otorite ile' },
-      { word: 'augment', definition: 'Artırmak, geliştirmek, büyütmek' },
-    ],
-  },
-
-  // ═══════════════════════════════════════════════════════════════
-  // From page-25 — Hungry Adventures Blog
-  // ═══════════════════════════════════════════════════════════════
-  {
-    id: 'rp-hungry-adventures',
-    title: 'Hungry Adventures — Travelling and Eating Around the World',
-    text: `'Have you eaten?' — 13th May
-
-Singaporeans are my kind of people — they're passionate about food and eating!
-
-People here eat often — they have five or six meals a day. Instead of 'Hello' or 'How are you?' they ask, 'Have you eaten?' And it's hard to believe just how many different kinds of food you can get in this tiny country — Chinese, Indian, Arabic, European and many, many more.
-
-The best meal of the day today was lunch. The main course was muri ghonto or fish head curry — far more delicious than it sounds! It's a southern Indian dish. You can have it with rice, but we had it the way the Chinese do, with a soft bread roll.
-
-Dessert was cendol — coconut milk, ice and green noodles. It's a typical Southeast Asian dish. It wasn't as sweet as I expected, but the noodles were lovely — a bit like jelly.
-
-There are places to eat here to suit everyone — from food stalls in shopping centres to more upmarket (and more expensive!) restaurants. My plan is to try as many as I can in the short time I'm here.
-
-Hawker centres — street food, but not on the streets — 14th May
-
-Singapore is famous for its street food, but it's been illegal to sell cooked food in the streets for many years. So, if you're looking for Singapore's famous street food, hawker centres are the places to go. These are indoor food courts with stalls that sell freshly cooked food. You choose your hawker stall according to what kind of cuisine you want — Thai, Malay, Chinese, Indian, Japanese or Korean.
-
-I went to the Golden Mile Food Centre — it was amazing to see so many different food stalls under one roof. Sup tulang, a Malay-Indian dish of beef bones in a red spicy sauce, looked very tasty. But in the end I wanted something lighter, so I chose ayam buah keluak, a Peranakan (Chinese-Malay) dish. It's chicken with Indonesian black nuts, served with steamed rice. A good choice — one of the most unusual dishes I've ever tasted.
-
-Little India, big appetite — 15th May
-
-This part of Singapore was full of the sights and smells of India. I ate thosai — crispy Indian pancakes made from rice and lentils. They were served with rich and spicy dips and vegetable curry. The meal was light and fresh — delicious!
-
-Still full from my Indian lunch, I explored the Arab Quarter. There was plenty of great food available, but sadly I wasn't hungry! I'll have to come back to Singapore. I didn't have a chance to explore Chinatown either.
-
-By the evening I was hungry again, so I tried some of the barbecued food at Lau Pa Sat, an old market. I went for Malaysian chicken satay, pieces of chicken on sticks served with spicy peanut sauce. Absolutely delicious!`,
-    wordCount: 395,
-    estimatedTime: 7,
-    difficulty: 'easy',
-    questions: [
-      {
-        id: 'rp-h-q1',
-        question: 'Singapurluların yemek sevgisini gösteren iki alışkanlık nedir?',
-        options: [
-          'Günde 5-6 öğün yerler ve selamlaşırken "Yedin mi?" diye sorarlar',
-          'Sadece Çin yemeği yerler ve çok az yerler',
-          'Sadece dışarıda yemek yerler ve hiç evde pişirmezler',
-          'Her gün aynı yemeği tercih ederler',
-        ],
-        correctAnswer: 0,
-        explanation: 'Metinde Singapurluların günde 5-6 öğün yedikleri ve selamlaşırken "Have you eaten?" (Yedin mi?) diye sordukları belirtilmiştir.',
-      },
-      {
-        id: 'rp-h-q2',
-        question: 'Blog yazarı balık kafa körisi (fish head curry) hakkında ne düşünüyor?',
-        options: [
-          'Kulağa hoş geliyor ama lezzetli değil',
-          'Kulağa hoş gelmiyor ama aslında çok lezzetli',
-          'Hiç denememiş',
-          'Çok pahalı olduğunu düşünüyor',
-        ],
-        correctAnswer: 1,
-        explanation: 'Yazar "far more delicious than it sounds" (kulağa geldiğinden çok daha lezzetli) demiştir.',
-      },
-      {
-        id: 'rp-h-q3',
-        question: 'Neden Singapur\'da sokaklarda pişmiş yemek satışı yapılmıyor?',
-        options: [
-          'Yeterli müşteri olmadığı için',
-          'Uzun yıllardır yasak olduğu için',
-          'Hava çok sıcak olduğu için',
-          'Restoran sahipleri itiraz ettiği için',
-        ],
-        correctAnswer: 1,
-        explanation: 'Metinde sokaklarda pişmiş yemek satmanın uzun yıllardır yasak olduğu belirtilmiştir.',
-      },
-      {
-        id: 'rp-h-q4',
-        question: 'Yazar Arap Mahallesi\'nde neden yemek yemedi?',
-        options: [
-          'Orada yemek yoktu',
-          'Çok pahalıydı',
-          'Hindistan yemeğinden hâlâ tok olduğu için',
-          'Mahalle kapalıydı',
-        ],
-        correctAnswer: 2,
-        explanation: 'Yazar "Still full from my Indian lunch" (Hindistan öğle yemeğinden hâlâ tok) diyerek yemek yeyemediğini belirtmiştir.',
-      },
-      {
-        id: 'rp-h-q5',
-        question: 'Yazarın Singapur\'da keşfe çıkamadığı bölge hangisidir?',
-        options: ['Little India', 'Golden Mile Food Centre', 'Chinatown', 'Lau Pa Sat'],
-        correctAnswer: 2,
-        explanation: 'Yazar "I didn\'t have a chance to explore Chinatown either" diye belirtmiştir.',
-      },
-    ],
-    vocabularyHighlights: [
-      { word: 'passionate about', definition: 'Tutkulu, çok hevesli' },
-      { word: 'upmarket', definition: 'Lüks, üst segment' },
-      { word: 'hawker centre', definition: 'Kapalı sokak yemek alanı (Singapur)' },
-      { word: 'cuisine', definition: 'Mutfak (bir ülkenin yemek kültürü)' },
-      { word: 'satay', definition: 'Çubukta marine edilmiş et (Güneydoğu Asya yemeği)' },
+      { word: 'insights', definition: 'Deep understanding of a person or thing' },
+      { word: 'integral', definition: 'Necessary to make a whole complete; essential' },
+      { word: 'approach', definition: 'A way of dealing with something' },
+      { word: 'supplement', definition: 'Something that completes or enhances something else' },
+      { word: 'with authority', definition: 'In a way that shows great knowledge' },
+      { word: 'augment', definition: 'To make something greater by adding to it' },
     ],
   },
 ];

@@ -7,7 +7,7 @@ import { useProgress } from '../hooks/useProgress';
 import { useMistakeBook } from '../hooks/useMistakeBook';
 import AIExplanation from '../components/AIExplanation';
 import EmptyState from '../components/EmptyState';
-import { logActivity } from '../utils/activity';
+import { logAnswer, logScore } from '../utils/logger';
 
 type TabType = 'lesson' | 'quiz';
 
@@ -43,7 +43,8 @@ export default function GrammarTopic() {
     (index: number) => {
       if (selectedAnswer !== null) return;
       setSelectedAnswer(index);
-      if (index === currentQuestion.correctAnswer) {
+      const isCorrect = index === currentQuestion.correctAnswer;
+      if (isCorrect) {
         setScore((s) => s + 1);
       } else {
         addMistake({
@@ -55,6 +56,14 @@ export default function GrammarTopic() {
           correctAnswer: currentQuestion.options[currentQuestion.correctAnswer],
         });
       }
+      logAnswer({
+        section: 'Grammar',
+        questionId: currentQuestion.id,
+        question: currentQuestion.question,
+        userAnswer: currentQuestion.options[index],
+        correctAnswer: currentQuestion.options[currentQuestion.correctAnswer],
+        isCorrect,
+      });
     },
     [selectedAnswer, currentQuestion, addMistake, topic.id]
   );
@@ -66,7 +75,7 @@ export default function GrammarTopic() {
     } else {
       setFinished(true);
       completeGrammarTopic(topic.id);
-      logActivity('Completed Grammar Topic', `${topic.title} — Score: ${score}/${topic.questions.length}`);
+      logScore('Grammar', topic.title, score, topic.questions.length);
     }
   };
 

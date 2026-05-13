@@ -5,7 +5,7 @@ import { ArrowLeft, CheckCircle2, XCircle, RotateCcw } from 'lucide-react';
 import { vocabularyData } from '../data/vocabularyData';
 import { useProgress } from '../hooks/useProgress';
 import { useMistakeBook } from '../hooks/useMistakeBook';
-import { logActivity } from '../utils/activity';
+import { logAnswer, logScore } from '../utils/logger';
 
 export default function GeneralQuiz() {
   const { learnedWords, isWordLearned } = useProgress();
@@ -37,7 +37,8 @@ export default function GeneralQuiz() {
     (index: number) => {
       if (selectedAnswer !== null) return;
       setSelectedAnswer(index);
-      if (index === currentQuestion.correctAnswer) {
+      const isCorrect = index === currentQuestion.correctAnswer;
+      if (isCorrect) {
         setScore((s) => s + 1);
       } else {
         addMistake({
@@ -49,6 +50,14 @@ export default function GeneralQuiz() {
           correctAnswer: currentQuestion.word.translation,
         });
       }
+      logAnswer({
+        section: 'Vocabulary Quiz',
+        questionId: currentQuestion.word.id,
+        question: `What does "${currentQuestion.word.word}" mean?`,
+        userAnswer: currentQuestion.options[index],
+        correctAnswer: currentQuestion.word.translation,
+        isCorrect,
+      });
     },
     [selectedAnswer, currentQuestion, addMistake]
   );
@@ -59,7 +68,7 @@ export default function GeneralQuiz() {
       setSelectedAnswer(null);
     } else {
       setFinished(true);
-      logActivity('Completed Vocabulary Quiz', `Score: ${score}/${questions.length}`);
+      logScore('Vocabulary Quiz', 'Quick Vocabulary Quiz', score, questions.length);
     }
   };
 

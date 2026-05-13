@@ -6,7 +6,7 @@ import { rewriteQuestions } from '../data/uoeData';
 import { compareAnswers } from '../utils/normalize';
 import { useMistakeBook } from '../hooks/useMistakeBook';
 import AIExplanation from '../components/AIExplanation';
-import { logActivity } from '../utils/activity';
+import { logAnswer, logScore } from '../utils/logger';
 
 export default function UoERewrite() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -36,6 +36,14 @@ export default function UoERewrite() {
         correctAnswer: question.correctAnswer,
       });
     }
+    logAnswer({
+      section: 'UoE Rewrite',
+      questionId: question.id,
+      question: `Rewrite: "${question.originalSentence}" using ${question.keyword}`,
+      userAnswer: userInput,
+      correctAnswer: question.correctAnswer,
+      isCorrect: correct,
+    });
   };
 
   const nextQuestion = () => {
@@ -46,7 +54,7 @@ export default function UoERewrite() {
       setIsCorrect(false);
     } else {
       setFinished(true);
-      logActivity('Completed Rewrite Exercise', `Score: ${score}/${rewriteQuestions.length}`);
+      logScore('UoE Rewrite', 'Sentence Rewrite', score, rewriteQuestions.length);
     }
   };
 
