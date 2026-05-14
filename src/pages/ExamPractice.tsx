@@ -267,16 +267,16 @@ export default function ExamPractice() {
                         whileHover={{ scale: 1.05, y: -2 }}
                         whileTap={{ scale: 0.95 }}
                         onClick={() => setSelectedPart(part)}
-                        disabled={part > 4}
+                        disabled={part > 5}
                         className={`p-6 rounded-2xl border-2 text-center transition-all ${
-                          part <= 4 
+                          part <= 5 
                             ? 'glass-card border-amber-500/20 hover:border-amber-500/50 text-amber-400' 
                             : 'bg-zinc-900/50 border-zinc-800 text-zinc-700 cursor-not-allowed'
                         }`}
                       >
                         <span className="block text-2xl font-black mb-1">PART {part}</span>
                         <span className="text-[10px] font-bold uppercase tracking-tighter">
-                          {part <= 4 ? 'Available Now' : 'Coming Soon'}
+                          {part <= 5 ? 'Available Now' : 'Coming Soon'}
                         </span>
                       </motion.button>
                     ))}
@@ -299,7 +299,8 @@ export default function ExamPractice() {
                           if (selectedPart === 1) return endOfYearExamSets.slice(0, 20);
                           if (selectedPart === 2) return endOfYearExamSets.slice(20, 40);
                           if (selectedPart === 3) return endOfYearExamSets.slice(40, 51);
-                          if (selectedPart === 4) return endOfYearExamSets.slice(51);
+                          if (selectedPart === 4) return endOfYearExamSets.slice(51, 57);
+                          if (selectedPart === 5) return endOfYearExamSets.slice(57);
                           return [];
                         })()
                       ).map((set, i) => (

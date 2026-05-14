@@ -170,23 +170,176 @@ export const aLevelExamSets: ExamSet[] = [
 
 54. Your body's chemistry benefits significantly from coffee. Both regular and decaf coffee seem to have a protective effect on your liver; research shows that coffee drinkers are more likely to have liver enzyme levels within a healthy range. Additionally, it helps your body process glucose better, which lowers the risk of developing type 2 diabetes.
 
-55. While coffee has many benefits, it is possible to have too much of a good thing. Excessive caffeine intake can lead to a jittery feeling, increased heart rate, and high blood pressure. It can also interfere with your sleep cycle if consumed late in the day. For some people, too much coffee may even trigger anxiety or digestive discomfort.
-
-Main Ideas:
-A. Protecting your internal organs
-B. The mental boost from caffeine
-C. Why too much can be a problem
-D. A drink full of natural compounds
-E. Coffee and a longer life
-F. How coffee helps with exercise`,
+55. While coffee has many health benefits, it's important to consume it in moderation. Excess caffeine can lead to jitteriness, increased heart rate, and disrupted sleep patterns. High intake is generally discouraged for individuals with high blood pressure or those who are sensitive to stimulants.`,
     difficulty: 'hard',
-    grammarFocus: 'Reading: Paragraph-Heading Matching',
+    grammarFocus: 'Paragraph Matching',
     questions: [
-      { id: 'alm3-q51', type: 'multiple_choice', question: 'Match the main idea for Paragraph 51:', options: ['A', 'B', 'C', 'D', 'E', 'F'], correctAnswer: 4, explanation: 'Paragraph 51 discusses reduced mortality risk and cardiovascular health.', difficulty: 'hard', grammarFocus: 'Paragraph Matching' },
-      { id: 'alm3-q52', type: 'multiple_choice', question: 'Match the main idea for Paragraph 52:', options: ['A', 'B', 'C', 'D', 'E', 'F'], correctAnswer: 1, explanation: 'Paragraph 52 describes cognitive benefits and energy levels.', difficulty: 'hard', grammarFocus: 'Paragraph Matching' },
-      { id: 'alm3-q53', type: 'multiple_choice', question: 'Match the main idea for Paragraph 53:', options: ['A', 'B', 'C', 'D', 'E', 'F'], correctAnswer: 3, explanation: 'Paragraph 53 describes the chemical composition and natural compounds.', difficulty: 'hard', grammarFocus: 'Paragraph Matching' },
-      { id: 'alm3-q54', type: 'multiple_choice', question: 'Match the main idea for Paragraph 54:', options: ['A', 'B', 'C', 'D', 'E', 'F'], correctAnswer: 0, explanation: 'Paragraph 54 discusses liver and metabolic health (organs).', difficulty: 'hard', grammarFocus: 'Paragraph Matching' },
-      { id: 'alm3-q55', type: 'multiple_choice', question: 'Match the main idea for Paragraph 55:', options: ['A', 'B', 'C', 'D', 'E', 'F'], correctAnswer: 2, explanation: 'Paragraph 55 discusses negative side effects and risks.', difficulty: 'hard', grammarFocus: 'Paragraph Matching' },
+      { id: 'alm3-q51', type: 'multiple_choice', question: 'Match the main idea for Paragraph 51:', options: ['A. Impact on Energy', 'B. Liver and Glucose Benefits', 'C. Cardiovascular & Longevity', 'D. Chemical Complexity', 'E. Potential Risks', 'F. General History'], correctAnswer: 2, explanation: 'Paragraph 51 discusses health benefits and longevity.', difficulty: 'medium', grammarFocus: 'Paragraph Matching' },
+      { id: 'alm3-q52', type: 'multiple_choice', question: 'Match the main idea for Paragraph 52:', options: ['A. Impact on Energy', 'B. Liver and Glucose Benefits', 'C. Cardiovascular & Longevity', 'D. Chemical Complexity', 'E. Potential Risks', 'F. General History'], correctAnswer: 0, explanation: 'Paragraph 52 discusses waking up and cognitive function.', difficulty: 'medium', grammarFocus: 'Paragraph Matching' },
+      { id: 'alm3-q53', type: 'multiple_choice', question: 'Match the main idea for Paragraph 53:', options: ['A. Impact on Energy', 'B. Liver and Glucose Benefits', 'C. Cardiovascular & Longevity', 'D. Chemical Complexity', 'E. Potential Risks', 'F. General History'], correctAnswer: 3, explanation: 'Paragraph 53 discusses compounds and antioxidants.', difficulty: 'medium', grammarFocus: 'Paragraph Matching' },
+      { id: 'alm3-q54', type: 'multiple_choice', question: 'Match the main idea for Paragraph 54:', options: ['A. Impact on Energy', 'B. Liver and Glucose Benefits', 'C. Cardiovascular & Longevity', 'D. Chemical Complexity', 'E. Potential Risks', 'F. General History'], correctAnswer: 1, explanation: 'Paragraph 54 discusses liver health and glucose processing.', difficulty: 'medium', grammarFocus: 'Paragraph Matching' },
+      { id: 'alm3-q55', type: 'multiple_choice', question: 'Match the main idea for Paragraph 55:', options: ['A. Impact on Energy', 'B. Liver and Glucose Benefits', 'C. Cardiovascular & Longevity', 'D. Chemical Complexity', 'E. Potential Risks', 'F. General History'], correctAnswer: 4, explanation: 'Paragraph 55 discusses negative side effects and risks.', difficulty: 'hard', grammarFocus: 'Paragraph Matching' },
+    ],
+  },
+
+  // ═══════════════════════════════════════════════════════════════
+  // A LEVEL EXAM PRACTICE — MONTHLY 4 (SPRING EDITION)
+  // Part A: Use of English (Q1–16)
+  // ═══════════════════════════════════════════════════════════════
+  {
+    id: 'alevel-m4-partA',
+    title: 'A-Level Monthly 4 (Spring) — Part A: Use of English',
+    description: 'Cloze test focusing on conditionals and verb patterns. Texts about a singer\'s journey and Naomi Campbell.',
+    difficulty: 'hard',
+    grammarFocus: 'Conditionals (2nd & 3rd), Verb Patterns, Gerunds/Infinitives',
+    questions: [
+      { id: 'alm4-q1', type: 'multiple_choice', question: 'Q1: "If my parents had been richer, I could (1) __________ gone to music school."', options: ['have', 'had', 'has', 'having'], correctAnswer: 0, explanation: 'Third Conditional modal perfect (could have + V3).', difficulty: 'medium', grammarFocus: 'Conditionals' },
+      { id: 'alm4-q2', type: 'multiple_choice', question: 'Q2: "And if I (2) __________ done that, I could have had a professional music teacher."', options: ['was', 'did', 'have', 'had'], correctAnswer: 3, explanation: 'Third Conditional if-clause (if + past perfect).', difficulty: 'medium', grammarFocus: 'Conditionals' },
+      { id: 'alm4-q3', type: 'multiple_choice', question: 'Q3: "But if I had studied at a music school, I (3) __________ had much free time for other things."', options: ['hadn\'t had', 'wouldn\'t have', 'didn\'t have', 'won\'t have'], correctAnswer: 1, explanation: 'Third Conditional result clause (would have + V3).', difficulty: 'hard', grammarFocus: 'Conditionals' },
+      { id: 'alm4-q4', type: 'multiple_choice', question: 'Q4: "If I\'d taken one of my recordings, I could (4) __________ it to him that day."', options: ['had given', 'give', 'have given', 'gave'], correctAnswer: 2, explanation: 'Ability in the past (could have + V3).', difficulty: 'medium', grammarFocus: 'Modals' },
+      { id: 'alm4-q5', type: 'multiple_choice', question: 'Q5: "My friends all say, \'If I (5) __________ you, I\'d definitely take the opportunity.\'"', options: ['had', 'were', 'am', 'be'], correctAnswer: 1, explanation: 'Second Conditional (if I were you).', difficulty: 'easy', grammarFocus: 'Conditionals' },
+      { id: 'alm4-q6', type: 'multiple_choice', question: 'Q6: "If you went on tour, (6) __________ see some amazing places."', options: ['you\'ve', 'you\'ll', 'you\'d have', 'you\'d'], correctAnswer: 3, explanation: 'Second Conditional result clause (would + V1).', difficulty: 'medium', grammarFocus: 'Conditionals' },
+      { id: 'alm4-q7', type: 'multiple_choice', question: 'Q7: "If I (7) __________ the job, I\'d have to move to another city."', options: ['took', 'had taken', 'have taken', 'will take'], correctAnswer: 0, explanation: 'Second Conditional if-clause (past simple).', difficulty: 'medium', grammarFocus: 'Conditionals' },
+      { id: 'alm4-q8', type: 'multiple_choice', question: 'Q8: "...and they\'d (8) __________ to university without me."', options: ['go', 'went', 'gone', 'going'], correctAnswer: 0, explanation: 'Bare infinitive after "would".', difficulty: 'easy', grammarFocus: 'Verb Patterns' },
+      { id: 'alm4-q9', type: 'multiple_choice', question: 'Q9: "As a child, Naomi Campbell always wanted (9) __________ famous..."', options: ['be', 'to be', 'being', 'been'], correctAnswer: 1, explanation: 'want + to-infinitive.', difficulty: 'easy', grammarFocus: 'Verb Patterns' },
+      { id: 'alm4-q10', type: 'multiple_choice', question: 'Q10: "...but she never expected (10) __________ a supermodel."', options: ['to become', 'become', 'becoming', 'became'], correctAnswer: 0, explanation: 'expect + to-infinitive.', difficulty: 'easy', grammarFocus: 'Verb Patterns' },
+      { id: 'alm4-q11', type: 'multiple_choice', question: 'Q11: "She enjoyed (11) __________ in public..."', options: ['appeared', 'appear', 'to appear', 'appearing'], correctAnswer: 3, explanation: 'enjoy + gerund (-ing).', difficulty: 'easy', grammarFocus: 'Verb Patterns' },
+      { id: 'alm4-q12', type: 'multiple_choice', question: 'Q12: "...modelling agency spotted her and insisted on (12) __________ her a contract."', options: ['gave', 'to give', 'give', 'giving'], correctAnswer: 3, explanation: 'insist on + gerund (-ing).', difficulty: 'medium', grammarFocus: 'Verb Patterns' },
+      { id: 'alm4-q13', type: 'multiple_choice', question: 'Q13: "...even magazines like Vogue agreed (13) __________ her photo..."', options: ['to use', 'using', 'used', 'use'], correctAnswer: 0, explanation: 'agree + to-infinitive.', difficulty: 'easy', grammarFocus: 'Verb Patterns' },
+      { id: 'alm4-q14', type: 'multiple_choice', question: 'Q14: "...Naomi decided (14) __________ her singing career..."', options: ['launch', 'launching', 'to launch', 'launched'], correctAnswer: 2, explanation: 'decide + to-infinitive.', difficulty: 'easy', grammarFocus: 'Verb Patterns' },
+      { id: 'alm4-q15', type: 'multiple_choice', question: 'Q15: "...but she failed (15) __________ the critics."', options: ['impressing', 'to impress', 'impressed', 'impress'], correctAnswer: 1, explanation: 'fail + to-infinitive.', difficulty: 'easy', grammarFocus: 'Verb Patterns' },
+      { id: 'alm4-q16', type: 'multiple_choice', question: 'Q16: "...she has spent over two decades (16) __________ as a model."', options: ['work', 'to work', 'working', 'worked'], correctAnswer: 2, explanation: 'spend time + gerund (-ing).', difficulty: 'medium', grammarFocus: 'Verb Patterns' },
+    ],
+  },
+
+  // ═══════════════════════════════════════════════════════════════
+  // Part B, C, D: Grammar, Sentence Comp & Word Form (Q17–29)
+  // ═══════════════════════════════════════════════════════════════
+  {
+    id: 'alevel-m4-partBCD',
+    title: 'A-Level Monthly 4 (Spring) — Part B, C, D: Advanced Grammar',
+    description: 'Sentence restatement, completion, and word form selection. Tests tenses, modals, and word families.',
+    difficulty: 'hard',
+    grammarFocus: 'Future Perfect, Reported Speech, Modals, Word Formation',
+    questions: [
+      { id: 'alm4-q17', type: 'multiple_choice', question: 'Q17: Choose the similar meaning: "She will have finished the project by next Monday."', options: ['a) She started working on the project last Monday and will finish it soon.', 'b) She will still be in the middle of working on the project when next Monday comes.', 'c) She won\'t be working on the project on Monday because it will have been finished by then.', 'd) She is going to start working on the project next Monday.'], correctAnswer: 2, explanation: 'Future Perfect indicates completion by a certain time.', difficulty: 'medium', grammarFocus: 'Future Perfect' },
+      { id: 'alm4-q18', type: 'multiple_choice', question: 'Q18: Choose the similar meaning: "I have never been to Paris before," she told him.', options: ['a) She told him that she had never been to Paris before that time.', 'b) She said that she has never gone to Paris until that moment.', 'c) She admitted that she had already visited Paris once before.', 'd) She explained that she would never go to Paris in the future.'], correctAnswer: 0, explanation: 'Reported speech: Present Perfect becomes Past Perfect.', difficulty: 'medium', grammarFocus: 'Reported Speech' },
+      { id: 'alm4-q19', type: 'multiple_choice', question: 'Q19: Choose the similar meaning: "The meeting was cancelled because there weren\'t enough attendants."', options: ['a) We had a meeting because too many attendants showed up.', 'b) There were so few attendants that the meeting was cancelled.', 'c) It was such a crowded meeting that we didn\'t attend it.', 'd) When the meeting was cancelled, very few attendants had come.'], correctAnswer: 1, explanation: 'Cause and effect restatement using "so... that".', difficulty: 'medium', grammarFocus: 'Sentence Transformation' },
+      { id: 'alm4-q20', type: 'multiple_choice', question: 'Q20: Choose the similar meaning: "We haven\'t taken the car to be serviced since we bought it."', options: ['a) The car has been checked several times since we bought it.', 'b) They haven\'t allowed us to take our car to be serviced since we bought it.', 'c) We had to take our car to be serviced after we bought it.', 'd) Our car hasn\'t been serviced since we bought it.'], correctAnswer: 3, explanation: 'Paraphrasing a negative present perfect statement.', difficulty: 'easy', grammarFocus: 'Present Perfect' },
+      { id: 'alm4-q21', type: 'multiple_choice', question: 'Q21: Choose the similar meaning: "Mount Everest is higher than any other mountain in the world."', options: ['a) Mount Everest is one of the highest mountains but not the highest.', 'b) Some mountains in the world are just as high as Mount Everest.', 'c) There isn\'t any mountain as high as Mount Everest in the world.', 'd) Mount Everest is high, but there are a few higher mountains.'], correctAnswer: 2, explanation: 'Comparative "higher than any other" equals "no other is as high as".', difficulty: 'medium', grammarFocus: 'Comparatives' },
+      { id: 'alm4-q22', type: 'multiple_choice', question: 'Q22: "You __________; it is a legal requirement for all drivers."', options: ['a) don\'t have to wear a seatbelt while driving on empty roads', 'b) must wear a seatbelt whenever you are driving', 'c) shouldn\'t wear your seatbelt if you are a careful driver', 'd) mustn\'t wear your seatbelt when you\'re stuck in traffic'], correctAnswer: 1, explanation: '"must" for legal obligation.', difficulty: 'easy', grammarFocus: 'Modals' },
+      { id: 'alm4-q23', type: 'multiple_choice', question: 'Q23: "The book __________ is now being made into a movie."', options: ['a) which I borrowed it from the library last week', 'b) who was written by a very famous author in Paris', 'c) that I read during my holiday and really enjoyed', 'd) whose it was published over fifty years ago'], correctAnswer: 2, explanation: 'Correct relative clause structure without redundant object.', difficulty: 'medium', grammarFocus: 'Relative Clauses' },
+      { id: 'alm4-q24', type: 'multiple_choice', question: 'Q24: "If we had booked the hotel in advance, __________."', options: ['a) the hotel receptionist will help us', 'b) there won\'t be any financial loss', 'c) we can receive higher prices', 'd) we would have gotten a discount'], correctAnswer: 3, explanation: 'Third conditional result clause.', difficulty: 'medium', grammarFocus: 'Conditionals' },
+      { id: 'alm4-q25', type: 'multiple_choice', question: 'Q25: "By the time Julia retires from the human resources department, __________."', options: ['a) she will have interviewed more than 200 candidates', 'b) she has been working for that company for twenty years', 'c) she is looking for a job with better conditions and benefits', 'd) we will be throwing a retirement party for her next Saturday'], correctAnswer: 0, explanation: 'Future perfect with "By the time".', difficulty: 'medium', grammarFocus: 'Future Perfect' },
+      { id: 'alm4-q26', type: 'multiple_choice', question: 'Q26: "The audience was clearly __________ by the comedian\'s jokes during the show."', options: ['a) amused', 'b) amusing', 'c) amuse', 'd) amusement'], correctAnswer: 0, explanation: 'Adjective -ed form for feeling.', difficulty: 'easy', grammarFocus: 'Word Formation' },
+      { id: 'alm4-q27', type: 'multiple_choice', question: 'Q27: "My dog Lucy has always been __________ to me since I adopted her..."', options: ['a) loyalty', 'b) disloyalty', 'c) loyal', 'd) loyally'], correctAnswer: 2, explanation: 'Adjective form of loyal.', difficulty: 'easy', grammarFocus: 'Word Formation' },
+      { id: 'alm4-q28', type: 'multiple_choice', question: 'Q28: "I work at a small company where employees need to be __________ to deal with the problems."', options: ['a) inflexibility', 'b) flex', 'c) flexibility', 'd) flexible'], correctAnswer: 3, explanation: 'Adjective form of flexible.', difficulty: 'easy', grammarFocus: 'Word Formation' },
+      { id: 'alm4-q29', type: 'multiple_choice', question: 'Q29: "The chef used a very __________ way to decorate the cake..."', options: ['a) create', 'b) creative', 'c) creator', 'd) creation'], correctAnswer: 1, explanation: 'Adjective form of creative.', difficulty: 'easy', grammarFocus: 'Word Formation' },
+    ],
+  },
+
+  // ═══════════════════════════════════════════════════════════════
+  // Part E: Vocabulary & Context (Q30–40)
+  // ═══════════════════════════════════════════════════════════════
+  {
+    id: 'alevel-m4-partE',
+    title: 'A-Level Monthly 4 (Spring) — Part E: Lexical Proficiency',
+    description: 'Vocabulary multiple choice focusing on phrasal verbs, collocations, and contextual definitions.',
+    difficulty: 'hard',
+    grammarFocus: 'Vocabulary, Phrasal Verbs, Collocations',
+    questions: [
+      { id: 'alm4-q30', type: 'multiple_choice', question: 'Q30: "The air __________ in the city is getting worse due to the increase in traffic."', options: ['a) destruction', 'b) conservation', 'c) pollution', 'd) environment'], correctAnswer: 2, explanation: '"air pollution" — contamination of the air.', difficulty: 'easy', grammarFocus: 'Vocabulary' },
+      { id: 'alm4-q31', type: 'multiple_choice', question: 'Q31: "Add some milk, then __________ the soup for one or two minutes."', options: ['a) chop', 'b) stir', 'c) mash', 'd) serve'], correctAnswer: 1, explanation: '"stir" — move a spoon round in order to mix.', difficulty: 'easy', grammarFocus: 'Vocabulary' },
+      { id: 'alm4-q32', type: 'multiple_choice', question: 'Q32: "Katy is popular and friendly but her twin sister is very __________."', options: ['a) honest', 'b) determined', 'c) shy', 'd) talented'], correctAnswer: 2, explanation: 'Contrast to popular/friendly.', difficulty: 'easy', grammarFocus: 'Vocabulary' },
+      { id: 'alm4-q33', type: 'multiple_choice', question: 'Q33: "Jon and I have a lot in __________ – we both like fishing, football and computer games."', options: ['a) common', 'b) together', 'c) share', 'd) background'], correctAnswer: 0, explanation: '"have a lot in common" — share interests.', difficulty: 'easy', grammarFocus: 'Collocations' },
+      { id: 'alm4-q34', type: 'multiple_choice', question: 'Q34: "We keep old furniture and boxes in the __________. It\'s the room just under the roof."', options: ['a) basement', 'b) attic', 'c) garage', 'd) garden'], correctAnswer: 1, explanation: '"attic" — space/room just below the roof.', difficulty: 'easy', grammarFocus: 'Vocabulary' },
+      { id: 'alm4-q35', type: 'multiple_choice', question: 'Q35: "I didn\'t want to go to the event, but she managed to __________ me with free pizza."', options: ['a) pretend', 'b) promise', 'c) persuade', 'd) prevent'], correctAnswer: 2, explanation: '"persuade" — convince someone to do something.', difficulty: 'medium', grammarFocus: 'Vocabulary' },
+      { id: 'alm4-q36', type: 'multiple_choice', question: 'Q36: "__________ is the work of collecting, writing and publishing news stories."', options: ['a) Journalism', 'b) Literature', 'c) Recycling', 'd) Poetry'], correctAnswer: 0, explanation: 'Definition of Journalism.', difficulty: 'easy', grammarFocus: 'Vocabulary' },
+      { id: 'alm4-q37', type: 'multiple_choice', question: 'Q37: "To __________ traffic accidents, drivers should follow speed limits carefully."', options: ['a) conserve', 'b) damage', 'c) protect', 'd) prevent'], correctAnswer: 3, explanation: '"prevent" — stop something from happening.', difficulty: 'easy', grammarFocus: 'Vocabulary' },
+      { id: 'alm4-q38', type: 'multiple_choice', question: 'Q38: "I don\'t have my own house, so I __________ the house I live in."', options: ['a) borrow', 'b) lend', 'c) rent', 'd) sell'], correctAnswer: 2, explanation: '"rent" — pay for the use of a property.', difficulty: 'easy', grammarFocus: 'Vocabulary' },
+      { id: 'alm4-q39', type: 'multiple_choice', question: 'Q39: "How do you cope __________ the noise of the traffic outside your house?"', options: ['a) about', 'b) with', 'c) on', 'd) for'], correctAnswer: 1, explanation: '"cope with" — deal effectively with something difficult.', difficulty: 'medium', grammarFocus: 'Phrasal Verbs' },
+      { id: 'alm4-q40', type: 'multiple_choice', question: 'Q40: "It\'s impossible to rely __________ public transport in this town – the buses are always late."', options: ['a) with', 'b) about', 'c) for', 'd) on'], correctAnswer: 3, explanation: '"rely on" — depend on.', difficulty: 'easy', grammarFocus: 'Phrasal Verbs' },
+    ],
+  },
+
+  // ═══════════════════════════════════════════════════════════════
+  // Part F: Reading Comprehension — Interior Design (Q41–45)
+  // ═══════════════════════════════════════════════════════════════
+  {
+    id: 'alevel-m4-reading1',
+    title: 'A-Level Monthly 4 (Spring) — Reading I: Interior Design',
+    description: 'Read the text about the principles of interior design and answer the comprehension questions.',
+    passage: `1 There's more to interior design than just decorating a space. It's about creating a balanced environment with harmony and quality of life for the people who use it. It involves psychology, art, and an understanding of architectural structure.
+
+2 The key to successful interior design lies in understanding the space and the people who will be using it. The design should not only be aesthetically pleasing but also functional. It goes far beyond pretty colours and nice furniture. It should reflect the personalities and needs of its inhabitants, transforming a house into a home. Sophie Platt, a famous interior designer, explains, "Interior design is a conversation between space and user. It's not about following trends, but about creating spaces that are authentic and personal."
+
+3 Colour plays a significant role in interior design. The chosen shades can affect the mood of a room. Bright colours can energize a space, while muted tones create a calm and relaxing atmosphere. Lighting is another critical aspect. Natural light can make a room appear larger and more inviting, while artificial light can highlight certain areas and create visual interest. Space planning is also vital to ensure efficient use of space. Designers must consider the flow of movement within a room and arrange furniture accordingly. They also need to consider the balance between empty spaces and furnishings.
+
+4 Textiles bring warmth and texture into a space. They can add layers of interest and tie a room together. From rugs and curtains to pillows and throws, textiles can completely transform a room. But you must give careful thought to how they are used. "Don't throw textiles into a room without considering what you are trying to achieve," Sophie says. "Sustainability is becoming increasingly important in interior design," she adds. "Clients are more aware of their environmental impact and want to include sustainable materials and energy-efficient practices in their homes."
+
+5 In conclusion, interior design is both an art and science. It's about understanding how different elements can transform a space to improve the quality of life for those living in it. It's about creating environments that are not only beautiful but also meaningful and sustainable.`,
+    difficulty: 'hard',
+    grammarFocus: 'Reading Comprehension',
+    questions: [
+      { id: 'alm4-q41', type: 'multiple_choice', question: 'Q41: The main aim of the text is to __________.', options: ['a) explain how to choose colours for a room', 'b) describe interior design as more than just decoration', 'c) promote Sophie Platt\'s interior design services', 'd) compare traditional and modern design trends'], correctAnswer: 1, explanation: 'The text defines interior design as a complex field involving psychology, function, and harmony.', difficulty: 'medium', grammarFocus: 'Reading Comprehension' },
+      { id: 'alm4-q42', type: 'multiple_choice', question: 'Q42: It is clear from the text that __________.', options: ['a) trends are the most important part of interior design', 'b) lighting and colour affect the mood and feel of a space', 'c) textiles should be used without much planning', 'd) natural light makes rooms smaller and less inviting'], correctAnswer: 1, explanation: 'Paragraph 3 discusses the impact of colour and light on atmosphere.', difficulty: 'easy', grammarFocus: 'Reading Comprehension' },
+      { id: 'alm4-q43', type: 'multiple_choice', question: 'Q43: We understand from the text that __________.', options: ['a) interior design ignores the needs of the people using the space', 'b) sustainability is not a concern for modern clients', 'c) space planning focuses only on aesthetics, not movement', 'd) designers should create personal and functional environments'], correctAnswer: 3, explanation: 'Paragraph 2 and 5 emphasize the importance of functionality and personal connection.', difficulty: 'medium', grammarFocus: 'Reading Comprehension' },
+      { id: 'alm4-q44', type: 'multiple_choice', question: 'Q44: "transform" in paragraph 4 means __________.', options: ['a) change', 'b) decorate', 'c) balance', 'd) energize'], correctAnswer: 0, explanation: 'In this context, transform means to fundamentally change the appearance/character.', difficulty: 'medium', grammarFocus: 'Vocabulary in Context' },
+      { id: 'alm4-q45', type: 'multiple_choice', question: 'Q45: The word "they" in paragraph 3 refers to __________.', options: ['a) clients', 'b) textiles', 'c) designers', 'd) factories'], correctAnswer: 2, explanation: '"They" refers to the designers mentioned earlier in the sentence.', difficulty: 'easy', grammarFocus: 'Reference' },
+    ],
+  },
+
+  // ═══════════════════════════════════════════════════════════════
+  // Part F: Reading Comprehension — Regrets & Choices (Q46–50)
+  // ═══════════════════════════════════════════════════════════════
+  {
+    id: 'alevel-m4-reading2',
+    title: 'A-Level Monthly 4 (Spring) — Reading II: Hindsight & Choices',
+    description: 'Read the reflective essay about life regrets and choices, then answer the questions.',
+    passage: `1 It's a classic question often asked in interviews or late-night conversations: "If you could live your life again, what would you do differently?" Of course, it's an impossible fantasy, but thinking about it can give you an interesting perspective on your own life and the choices you've made. With the wisdom and hindsight of my 40 years, here are a few things I would change.
+
+2 Firstly, I would have worried less about what other people thought of me. When you are young, it feels so important to be popular and to fit in. I remember hesitating to try new hobbies or wear certain clothes because I was afraid of the the consequences of being different. If I had been more confident in myself, I would have pursued my interest in theatre and drama instead of choosing a more 'sensible' subject at university. Life is too short to live it according to other people's expectations.
+
+3 Secondly, I would have travelled more when I had the opportunity and fewer responsibilities. After university, I was offered a chance to teach English in South Korea for a year. I turned it down because I thought starting my career path immediately was more important. I regret that decision now. If I had taken that year to travel, I'm sure I would have learned so much more about the world and myself than I did in that first year in an office. I've been saving up for a big trip recently, but it's much more difficult to arrange now with a mortgage and a family.
+
+4 Finally, I would have been kinder to my body. That means I would have eaten less junk food, exercised more regularly, and definitely worn sunscreen every day! When you're 20, you feel invincible, as if you will be young and healthy forever. You don't appreciate your health until you start to lose it. But does thinking like this actually help? Perhaps not. While it's a fun exercise, it's also true that every decision I've made, good or bad, has led me to where I am today. And I wouldn't trade my current life, my family, and my friends for anything. Maybe the real lesson isn't about wishing you could change the past. Maybe it's about using the wisdom you've gained to appreciate the present and make better choices for the future, starting from now.`,
+    difficulty: 'hard',
+    grammarFocus: 'Reading Comprehension, Inference',
+    questions: [
+      { id: 'alm4-q46', type: 'multiple_choice', question: 'Q46: We understand from the text that the writer __________.', options: ['a) always chose sensible subjects like theatre at university', 'b) worried less about popularity when young', 'c) regrets not pursuing interests due to others\' opinions', 'd) never hesitated to try new clothes or hobbies'], correctAnswer: 2, explanation: 'The writer expresses regret about not pursuing theatre because of trying to fit in.', difficulty: 'medium', grammarFocus: 'Reading Comprehension' },
+      { id: 'alm4-q47', type: 'multiple_choice', question: 'Q47: According to the text, __________.', options: ['a) his early career start prevented world exploration', 'b) travelling is easier now with a family and mortgage', 'c) the writer accepted the offer to teach in South Korea', 'd) office work taught more than travel would have'], correctAnswer: 0, explanation: 'Choosing an immediate career path stopped him from travelling to South Korea.', difficulty: 'medium', grammarFocus: 'Reading Comprehension' },
+      { id: 'alm4-q48', type: 'multiple_choice', question: 'Q48: We understand from the text that it is difficult to travel now because __________.', options: ['a) there are no good opportunities like teaching abroad', 'b) responsibilities like family make it harder to arrange', 'c) junk food and no exercise keep people at home', 'd) young people feel invincible and avoid trips'], correctAnswer: 1, explanation: 'The writer mentions a mortgage and a family as current obstacles.', difficulty: 'medium', grammarFocus: 'Inference' },
+      { id: 'alm4-q49', type: 'multiple_choice', question: 'Q49: The writer mentions that he turned down __________.', options: ['a) an opportunity to travel with his family', 'b) a chance to study theatre and drama', 'c) a promotion at his first office job', 'd) a job overseas after finishing university'], correctAnswer: 3, explanation: 'He turned down a teaching job in South Korea.', difficulty: 'easy', grammarFocus: 'Reading Comprehension' },
+      { id: 'alm4-q50', type: 'multiple_choice', question: 'Q50: "invincible" in paragraph 4 means __________.', options: ['a) unhealthy', 'b) unbeatable', 'c) temporary', 'd) lazy'], correctAnswer: 1, explanation: 'Invincible means too powerful to be defeated or overcome.', difficulty: 'hard', grammarFocus: 'Vocabulary in Context' },
+    ],
+  },
+
+  // ═══════════════════════════════════════════════════════════════
+  // Part F: Reading Comprehension — Crowded Places (Q51–55)
+  // ═══════════════════════════════════════════════════════════════
+  {
+    id: 'alevel-m4-reading3',
+    title: 'A-Level Monthly 4 (Spring) — Reading III: Crowded Places',
+    description: 'Read the text about the psychological impact of crowds and how to manage crowd sensitivity.',
+    passage: `1 Some people love being in crowded places, feeding off the energy of the masses. Others, however, prefer quiet, less populated environments. It's not that they dislike people; they just find crowds overwhelming. A crowd for such people offers many challenges.
+
+2 Understanding why people may not enjoy crowded spaces is the first step towards empathy. One reason could be an overload of the senses. In a crowd, there are numerous sights, sounds, and smells that can be too much for some individuals to handle. Another factor could be social anxiety. This involves fear or stress about social situations. For those with social anxiety, a crowd can seem like an intimidating barrier.
+
+3 Not to forget, some individuals simply value personal space and solitude. Being in a crowd could feel like being intruded upon and disrupt their sense of peace. Many people feel invaded in a crowd situation. Once you understand these things, it can give you strategies to help people like this.
+
+4 So, what can we do to help those who don't like crowds? It starts with understanding and respecting their preferences. Avoid pushing them into situations where they feel uncomfortable. When planning events, consider creating quiet spaces where attendees can withdraw if they feel overwhelmed. Provide clear information about the event's expected crowd size and the availability of less crowded alternatives.
+
+5 In public places, consider using headphones to cut down on noise, or choose off-peak times to visit popular venues. Small changes like these can significantly improve experiences for people who find crowds overwhelming. Another useful strategy is to practice mindfulness techniques, which can help manage feelings of stress and anxiety in crowded places.
+
+6 Respecting each other's comfort zones and understanding personal boundaries are key. Just because someone doesn't enjoy crowds, it doesn't mean they don't enjoy social interaction. In fact, they might prefer meaningful one-on-one interactions or small group settings. Remember, everyone's comfort levels and preferences are different. What might feel energising to some can feel draining to others. The key is empathy, understanding, and respect for each other's personal spaces and comfort zones.`,
+    difficulty: 'hard',
+    grammarFocus: 'Reading Comprehension',
+    questions: [
+      { id: 'alm4-q51', type: 'multiple_choice', question: 'Q51: Developing an understanding of crowd sensitivity is important to __________.', options: ['a) encourage people to stay home more often', 'b) help event planners sell more tickets', 'c) foster empathy toward those who find crowds overwhelming', 'd) limit quiet spaces in public venues'], correctAnswer: 2, explanation: 'Paragraph 2 highlights empathy as the primary goal of understanding.', difficulty: 'medium', grammarFocus: 'Reading Comprehension' },
+      { id: 'alm4-q52', type: 'multiple_choice', question: 'Q52: It is clear from paragraph 2 that the writer thinks __________.', options: ['a) crowds always cause social anxiety for everyone', 'b) sensory overload is one reason people avoid crowds', 'c) people in crowds never value personal space', 'd) empathy means forcing people into crowded events'], correctAnswer: 1, explanation: 'Paragraph 2 lists sensory overload as a common factor.', difficulty: 'medium', grammarFocus: 'Reading Comprehension' },
+      { id: 'alm4-q53', type: 'multiple_choice', question: 'Q53: __________ is a strategy people can use to manage noise levels when in public places.', options: ['a) practicing mindfulness techniques', 'b) avoiding all social interaction in large groups', 'c) visiting popular venues only during weekends', 'd) using headphones to reduce auditory input'], correctAnswer: 3, explanation: 'Paragraph 5 mentions headphones for cutting down on noise.', difficulty: 'easy', grammarFocus: 'Reading Comprehension' },
+      { id: 'alm4-q54', type: 'multiple_choice', question: 'Q54: According to paragraph 4, event planners can support people who may feel overwhelmed by __________.', options: ['a) increasing the volume of music to drown out crowd noise', 'b) limiting event duration to under one hour', 'c) setting up quiet areas where people can take a break', 'd) requiring all attendees to practice mindfulness in peaceful spaces'], correctAnswer: 2, explanation: 'Paragraph 4 suggests creating quiet spaces for withdrawal.', difficulty: 'medium', grammarFocus: 'Reading Comprehension' },
+      { id: 'alm4-q55', type: 'multiple_choice', question: 'Q55: "intimidating" in paragraph 2 refers to __________.', options: ['a) frightening', 'b) accessable', 'c) insignificant', 'd) organized'], correctAnswer: 0, explanation: 'Intimidating means frightening or overawing.', difficulty: 'hard', grammarFocus: 'Vocabulary in Context' },
     ],
   },
 ];
