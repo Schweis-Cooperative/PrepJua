@@ -718,4 +718,98 @@ export const wordpowerData: WordpowerBlock[] = [
             },
         ],
     },
+
+  // ═══════════════════════════════════════════════════════════════
+  // UNIT 1 — WORDPOWER: yourself
+  // ═══════════════════════════════════════════════════════════════
+  {
+    id: 'wp-yourself',
+    unit: 1,
+    rootWord: 'yourself',
+    title: 'Wordpower: yourself',
+    description: 'The word "yourself" (and other reflexive pronouns) is used in many common expressions in English.',
+    usages: [
+      {
+        id: 'wp-self-u1',
+        meaning: 'talk to yourself',
+        meaningTr: 'kendi kendine konuşmak.',
+        examples: ['I often talk to myself when I am alone.'],
+      },
+      {
+        id: 'wp-self-u2',
+        meaning: 'teach yourself',
+        meaningTr: 'kendi kendine bir şeyler öğretmek.',
+        examples: ['I taught myself how to play the guitar.'],
+      },
+      {
+        id: 'wp-self-u3',
+        meaning: 'do it yourself (DIY)',
+        meaningTr: 'kendin hallet, kendin yap.',
+        examples: ['Instead of hiring a professional, I decided to do it myself.'],
+      },
+      {
+        id: 'wp-self-u4',
+        meaning: 'make yourself at home',
+        meaningTr: 'kendi evinde gibi hisset.',
+        examples: ['Please, come in and make yourself at home!'],
+      },
+      {
+        id: 'wp-self-u5',
+        meaning: 'help yourself',
+        meaningTr: 'buyur al, servis et.',
+        examples: ['There is plenty of food on the table, so help yourself.'],
+      },
+      {
+        id: 'wp-self-u6',
+        meaning: 'be yourself',
+        meaningTr: 'kendin ol.',
+        examples: ['The most important thing is to be yourself.'],
+      },
+      {
+        id: 'wp-self-u7',
+        meaning: 'tell yourself',
+        meaningTr: 'kendi kendine söylemek.',
+        examples: ['I kept telling myself that everything would be okay.'],
+      },
+      {
+        id: 'wp-self-u8',
+        meaning: 'look after yourself',
+        meaningTr: 'kendine iyi bak.',
+        examples: ['Have a safe trip and look after yourself.'],
+      },
+      {
+        id: 'wp-self-u9',
+        meaning: 'enjoy yourself',
+        meaningTr: 'eğlenmene bak.',
+        examples: ['Have a great holiday and enjoy yourself!'],
+      },
+      {
+        id: 'wp-self-u10',
+        meaning: 'hurt yourself',
+        meaningTr: 'kendini incitmek.',
+        examples: ['Be careful with that knife, or you might hurt yourself.'],
+      },
+    ],
+    exercises: [
+      {
+        id: 'wp-self-ex1',
+        type: 'match',
+        instruction: 'Match the phrases with the correct situations.',
+        question: 'Someone visits your house for the first time.',
+        options: ['make yourself at home', 'help yourself', 'be yourself'],
+        correctAnswer: 0,
+        explanation: 'Misafir geldiğinde "kendi evindeymişsin gibi davran" anlamında kullanılır.',
+      },
+      {
+        id: 'wp-self-ex2',
+        type: 'match',
+        instruction: 'Match the phrases with the correct situations.',
+        question: 'You want someone to take some food.',
+        options: ['be yourself', 'help yourself', 'look after yourself'],
+        correctAnswer: 1,
+        explanation: 'Yemek teklif ederken "buyur al / servis et" anlamında kullanılır.',
+      },
+    ],
+  },
+
 ];
