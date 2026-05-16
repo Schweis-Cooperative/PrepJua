@@ -482,3 +482,9 @@
 [2026-05-16T14:54:58.557Z] IP: 127.0.0.1 | User: Marijua | [2026-05-16T14:54:58.498Z] Action: Navigated to /
 [2026-05-16T14:56:25.018Z] IP: 127.0.0.1 | User: Marijua | [2026-05-16T14:56:25.005Z] Action: Navigated to /
 [2026-05-16T14:56:25.030Z] IP: 127.0.0.1 | User: Marijua | [2026-05-16T14:56:25.013Z] Action: Navigated to /
+[2026-05-16T15:12:36.347Z] IP: 127.0.0.1 | User: Marijua | [2026-05-16T15:12:35.897Z] Action: Navigated to /
+[2026-05-16T15:12:36.422Z] IP: 127.0.0.1 | User: Marijua | [2026-05-16T15:12:35.909Z] Action: Navigated to /
+[2026-05-16T15:15:31.259Z] IP: 127.0.0.1 | User: Marijua | [2026-05-16T15:15:31.237Z] Action: Navigated to /wordpower
+[2026-05-16T15:15:31.808Z] IP: 127.0.0.1 | User: Marijua | [2026-05-16T15:15:31.789Z] Action: Navigated to /grammar
+[2026-05-16T15:15:32.549Z] IP: 127.0.0.1 | User: Marijua | [2026-05-16T15:15:32.539Z] Action: Navigated to /reading
+[2026-05-16T15:15:33.240Z] IP: 127.0.0.1 | User: Marijua | [2026-05-16T15:15:33.213Z] Action: Navigated to /grammar

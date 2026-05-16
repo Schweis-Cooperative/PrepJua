@@ -1,11 +1,6 @@
 import { useState, useMemo, useCallback, memo, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import * as ReactWindow from 'react-window';
-// @ts-ignore
-import { AutoSizer } from 'react-virtualized-auto-sizer';
-
-const { FixedSizeList } = ReactWindow as any;
 import { Search, BookOpen, Check, Star, ArrowRight, Sparkles, ChevronLeft, ChevronRight, ChevronsLeft, ChevronsRight, List as ListIcon } from 'lucide-react';
 import { vocabularyData } from '../data/vocabularyData';
 import { useProgress } from '../hooks/useProgress';
@@ -171,34 +166,7 @@ export default function VocabularyDashboard() {
   const totalWords = vocabularyData.length;
   const learnedCount = learnedWords.length;
 
-  const AutoSizerAny = AutoSizer as any;
 
-  // Virtualization Grid Row Component
-  const Row = useCallback(({ index, style, data }: any) => {
-    const { items, columns, isLearned, onToggle } = data;
-    const startIndex = index * columns;
-    const rowItems = items.slice(startIndex, startIndex + columns);
-
-    return (
-      <div style={style} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 pb-4 px-1">
-        {rowItems.map((word: any) => (
-          <div key={word.id} className="h-full">
-            <WordCard
-              word={word}
-              learned={isLearned(word.id)}
-              onToggle={onToggle}
-            />
-          </div>
-        ))}
-        {/* Placeholder divs to maintain grid structure in incomplete rows */}
-        {rowItems.length < columns && 
-          Array.from({ length: columns - rowItems.length }).map((_, i) => (
-            <div key={`empty-${i}`} className="invisible" />
-          ))
-        }
-      </div>
-    );
-  }, []);
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -301,44 +269,27 @@ export default function VocabularyDashboard() {
         </div>
       </motion.div>
 
-      {/* Word Grid — Virtualized for locked 60 FPS */}
-      <div className="h-[600px] w-full">
-        {filteredWords.length > 0 ? (
-          <AutoSizerAny>
-            {({ height, width }: any) => {
-              const columns = width >= 1024 ? 3 : width >= 640 ? 2 : 1;
-              const rowCount = Math.ceil(pageWords.length / columns);
-              const rowHeight = 260; // Approximate card height + gap
-
-              return (
-                <FixedSizeList
-                  height={height}
-                  itemCount={rowCount}
-                  itemSize={rowHeight}
-                  width={width}
-                  itemData={{
-                    items: pageWords,
-                    columns,
-                    isLearned: isWordLearned,
-                    onToggle: handleToggle
-                  }}
-                  className="custom-scrollbar"
-                >
-                  {Row}
-                </FixedSizeList>
-              );
-            }}
-          </AutoSizerAny>
-        ) : (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            className="text-center py-16"
-          >
-            <p className="text-zinc-500 text-sm">No words found matching your criteria.</p>
-          </motion.div>
-        )}
+      {/* Word Grid — Paginated for performance */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        {pageWords.map((word) => (
+          <WordCard
+            key={word.id}
+            word={word}
+            learned={isWordLearned(word.id)}
+            onToggle={handleToggle}
+          />
+        ))}
       </div>
+
+      {filteredWords.length === 0 && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          className="text-center py-16"
+        >
+          <p className="text-zinc-500 text-sm">No words found matching your criteria.</p>
+        </motion.div>
+      )}
 
       {/* Pagination Controls */}
       {totalPages > 1 && (
