@@ -1,5 +1,5 @@
 import { useState, useCallback, useMemo } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { 
   ClipboardList, 
   CheckCircle2, 
@@ -342,38 +342,9 @@ export default function ExamPractice() {
     );
   }
 
-  if (!exam) return null;
-
-function LevelCard({ level, title, desc, color, onClick }: any) {
-  const colorMap: Record<string, string> = {
-    rose: 'from-rose-500/20 to-pink-500/20 border-rose-500/30 text-rose-400',
-    indigo: 'from-indigo-500/20 to-purple-500/20 border-indigo-500/30 text-indigo-400',
-  };
-
-  return (
-    <motion.button
-      whileHover={{ y: -5, scale: 1.02 }}
-      whileTap={{ scale: 0.98 }}
-      onClick={onClick}
-      className={`relative group overflow-hidden glass-card rounded-3xl p-8 text-left border-2 transition-all ${colorMap[color]}`}
-    >
-      <div className={`w-16 h-16 rounded-2xl bg-${color}-500/10 flex items-center justify-center mb-6`}>
-        <GraduationCap size={32} />
-      </div>
-      <div className="flex items-center gap-2 mb-2">
-        <span className={`text-4xl font-black opacity-20`}>{level}</span>
-        <h3 className="text-xl font-bold text-white">{title}</h3>
-      </div>
-      <p className="text-xs text-zinc-400 leading-relaxed mb-6">{desc}</p>
-      <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-white/50 group-hover:text-white transition-colors">
-        Browse Monthly Tests <ChevronRight size={14} />
-      </div>
-      <div className={`absolute -right-4 -bottom-4 w-24 h-24 bg-${color}-500/10 blur-3xl rounded-full group-hover:scale-150 transition-transform`} />
-    </motion.button>
-  );
-}
 
   if (finished) {
+    if (!exam) return null;
     return (
       <div className="max-w-2xl mx-auto">
         <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} className="glass-card rounded-2xl p-8 text-center">

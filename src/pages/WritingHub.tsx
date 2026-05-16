@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { PenTool, Upload, Loader2, FileText, Lightbulb, ChevronRight, MessageSquare, Info, BookOpen } from 'lucide-react';
+import { motion } from 'framer-motion';
+import { PenTool, Upload, Loader2, Lightbulb, ChevronRight, MessageSquare, Info, BookOpen } from 'lucide-react';
 import { writingTopics } from '../data/cheatSheetData';
 import { writingTips } from '../data/writingTipsData';
 import { gradeEssay } from '../utils/ai';
