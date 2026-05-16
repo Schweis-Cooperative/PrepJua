@@ -301,9 +301,8 @@ export default function VocabularyDashboard() {
       {/* Word Grid — Virtualized for locked 60 FPS */}
       <div className="h-[600px] w-full">
         {filteredWords.length > 0 ? (
-          {/* @ts-ignore */}
           <AutoSizer>
-            {({ height, width }: any) => {
+            {({ height, width }: { height: number; width: number }) => {
               const columns = width >= 1024 ? 3 : width >= 640 ? 2 : 1;
               const rowCount = Math.ceil(pageWords.length / columns);
               const rowHeight = 260; // Approximate card height + gap
