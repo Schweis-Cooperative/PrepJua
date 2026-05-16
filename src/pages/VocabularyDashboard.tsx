@@ -23,7 +23,96 @@ const categories: { value: CategoryType; label: string }[] = [
   { value: 'conjunction', label: 'Conjunctions' },
 ];
 
+// Isolate Search to prevent re-rendering the whole dashboard on every keystroke
+const VocabularySearch = memo(function VocabularySearch({
+  onSearchChange,
+}: {
+  onSearchChange: (search: string) => void;
+}) {
+  const [localSearch, setLocalSearch] = useState('');
+
+  // Debounce logic inside the isolated component
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      onSearchChange(localSearch);
+    }, 250);
+    return () => clearTimeout(timer);
+  }, [localSearch, onSearchChange]);
+
+  return (
+    <div className="relative mb-4">
+      <Search size={18} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-zinc-500" />
+      <input
+        type="text"
+        value={localSearch}
+        onChange={(e) => setLocalSearch(e.target.value)}
+        placeholder="Search words or translations..."
+        className="w-full pl-11 pr-4 py-3 bg-zinc-900 border border-zinc-800 rounded-xl text-sm text-zinc-200 placeholder:text-zinc-600 focus:outline-none focus:border-emerald-500/50 focus:ring-1 focus:ring-emerald-500/20 transition-all"
+        id="vocab-search"
+      />
+    </div>
+  );
+});
+
+// Isolate Filters
+const VocabularyFilters = memo(function VocabularyFilters({
+  activeTab,
+  activeCategory,
+  onTabChange,
+  onCategoryChange,
+  learnedCount,
+  totalWords,
+}: {
+  activeTab: TabType;
+  activeCategory: CategoryType;
+  onTabChange: (tab: TabType) => void;
+  onCategoryChange: (cat: CategoryType) => void;
+  learnedCount: number;
+  totalWords: number;
+}) {
+  return (
+    <>
+      {/* Tabs */}
+      <div className="flex gap-1 mb-4 bg-zinc-900 p-1 rounded-lg border border-zinc-800 w-fit">
+        {(['all', 'learned', 'unlearned'] as TabType[]).map((tab) => (
+          <button
+            key={tab}
+            onClick={() => onTabChange(tab)}
+            className={`px-4 py-1.5 rounded-md text-xs font-medium transition-all ${
+              activeTab === tab
+                ? 'bg-zinc-700 text-white'
+                : 'text-zinc-500 hover:text-zinc-300'
+            }`}
+          >
+            {tab.charAt(0).toUpperCase() + tab.slice(1)}
+            {tab === 'learned' && ` (${learnedCount})`}
+            {tab === 'unlearned' && ` (${totalWords - learnedCount})`}
+          </button>
+        ))}
+      </div>
+
+      {/* Category pills */}
+      <div className="flex flex-wrap gap-2">
+        {categories.map((cat) => (
+          <button
+            key={cat.value}
+            onClick={() => onCategoryChange(cat.value)}
+            className={`px-3 py-1 rounded-full text-xs font-medium transition-all border ${
+              activeCategory === cat.value
+                ? 'bg-emerald-500/10 text-emerald-400 border-emerald-500/30'
+                : 'bg-zinc-900 text-zinc-500 border-zinc-800 hover:text-zinc-300 hover:border-zinc-700'
+            }`}
+          >
+            {cat.label}
+          </button>
+        ))}
+      </div>
+    </>
+  );
+});
+
 // Memoized card component — strictly only re-renders when props change
+// Removed 'glass-card' to optimize paint performance
 const WordCard = memo(function WordCard({
   word,
   learned,
@@ -35,8 +124,9 @@ const WordCard = memo(function WordCard({
 }) {
   return (
     <div
-      className={`h-full group relative glass-card rounded-xl p-5 hover:border-zinc-600/80 transition-colors ${learned ? 'border-emerald-500/20' : ''
-        }`}
+      className={`h-full group relative bg-zinc-900 border border-zinc-800/80 rounded-xl p-5 hover:border-zinc-600/80 transition-colors ${
+        learned ? 'border-emerald-500/30 bg-emerald-950/10' : ''
+      }`}
     >
       {learned && (
         <div className="absolute top-3 right-3">
@@ -65,10 +155,11 @@ const WordCard = memo(function WordCard({
 
       <button
         onClick={() => onToggle(word.id)}
-        className={`w-full flex items-center justify-center gap-2 py-2 rounded-lg text-xs font-medium transition-colors ${learned
+        className={`w-full flex items-center justify-center gap-2 py-2 rounded-lg text-xs font-medium transition-colors ${
+          learned
             ? 'bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500/20 border border-emerald-500/20'
             : 'bg-zinc-800 text-zinc-400 hover:bg-zinc-700 hover:text-white border border-zinc-700'
-          }`}
+        }`}
       >
         {learned ? (
           <>
@@ -85,7 +176,6 @@ const WordCard = memo(function WordCard({
 });
 
 export default function VocabularyDashboard() {
-  const [inputValue, setInputValue] = useState('');
   const [search, setSearch] = useState('');
   const [activeTab, setActiveTab] = useState<TabType>('all');
   const [activeCategory, setActiveCategory] = useState<CategoryType>('all');
@@ -124,15 +214,6 @@ export default function VocabularyDashboard() {
     [filteredWords, safePage]
   );
 
-  // Debounce search input to prevent lag
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setSearch(inputValue);
-      setPage(0);
-    }, 250);
-    return () => clearTimeout(timer);
-  }, [inputValue]);
-
   // Click outside to close page menu
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
@@ -155,7 +236,8 @@ export default function VocabularyDashboard() {
   }, []);
 
   const handleSearchChange = useCallback((val: string) => {
-    setInputValue(val);
+    setSearch(val);
+    setPage(0);
   }, []);
 
   const handlePageChange = useCallback((p: number) => {
@@ -165,8 +247,6 @@ export default function VocabularyDashboard() {
 
   const totalWords = vocabularyData.length;
   const learnedCount = learnedWords.length;
-
-
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -206,7 +286,7 @@ export default function VocabularyDashboard() {
         </div>
 
         {/* Progress */}
-        <div className="glass-card rounded-2xl p-6 mb-6">
+        <div className="bg-zinc-900 border border-zinc-800/80 rounded-2xl p-6 mb-6">
           <div className="flex items-center gap-3 mb-3">
             <div className="w-10 h-10 rounded-xl bg-emerald-500/10 flex items-center justify-center">
               <BookOpen size={20} className="text-emerald-400" />
@@ -221,52 +301,15 @@ export default function VocabularyDashboard() {
           <ProgressBar value={learnedCount} max={totalWords} color="bg-emerald-500" />
         </div>
 
-        {/* Search */}
-        <div className="relative mb-4">
-          <Search size={18} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-zinc-500" />
-          <input
-            type="text"
-            value={inputValue}
-            onChange={(e) => handleSearchChange(e.target.value)}
-            placeholder="Search words or translations..."
-            className="w-full pl-11 pr-4 py-3 bg-zinc-900 border border-zinc-800 rounded-xl text-sm text-zinc-200 placeholder:text-zinc-600 focus:outline-none focus:border-emerald-500/50 focus:ring-1 focus:ring-emerald-500/20 transition-all"
-            id="vocab-search"
-          />
-        </div>
-
-        {/* Tabs */}
-        <div className="flex gap-1 mb-4 bg-zinc-900 p-1 rounded-lg border border-zinc-800 w-fit">
-          {(['all', 'learned', 'unlearned'] as TabType[]).map((tab) => (
-            <button
-              key={tab}
-              onClick={() => handleTabChange(tab)}
-              className={`px-4 py-1.5 rounded-md text-xs font-medium transition-all ${activeTab === tab
-                  ? 'bg-zinc-700 text-white'
-                  : 'text-zinc-500 hover:text-zinc-300'
-                }`}
-            >
-              {tab.charAt(0).toUpperCase() + tab.slice(1)}
-              {tab === 'learned' && ` (${learnedCount})`}
-              {tab === 'unlearned' && ` (${totalWords - learnedCount})`}
-            </button>
-          ))}
-        </div>
-
-        {/* Category pills */}
-        <div className="flex flex-wrap gap-2">
-          {categories.map((cat) => (
-            <button
-              key={cat.value}
-              onClick={() => handleCategoryChange(cat.value)}
-              className={`px-3 py-1 rounded-full text-xs font-medium transition-all border ${activeCategory === cat.value
-                  ? 'bg-emerald-500/10 text-emerald-400 border-emerald-500/30'
-                  : 'bg-zinc-900 text-zinc-500 border-zinc-800 hover:text-zinc-300 hover:border-zinc-700'
-                }`}
-            >
-              {cat.label}
-            </button>
-          ))}
-        </div>
+        <VocabularySearch onSearchChange={handleSearchChange} />
+        <VocabularyFilters 
+          activeTab={activeTab}
+          activeCategory={activeCategory}
+          onTabChange={handleTabChange}
+          onCategoryChange={handleCategoryChange}
+          learnedCount={learnedCount}
+          totalWords={totalWords}
+        />
       </motion.div>
 
       {/* Word Grid — Paginated for performance */}
@@ -294,7 +337,7 @@ export default function VocabularyDashboard() {
       {/* Pagination Controls */}
       {totalPages > 1 && (
         <div className="flex flex-col items-center justify-center gap-4 mt-8 mb-8">
-          <div className="flex items-center gap-2 bg-zinc-900/80 p-2 rounded-2xl border border-zinc-800/80 backdrop-blur-sm shadow-xl shadow-black/20">
+          <div className="flex items-center gap-2 bg-zinc-900/80 p-2 rounded-2xl border border-zinc-800/80 shadow-xl shadow-black/20">
             <button
               onClick={() => handlePageChange(0)}
               disabled={safePage === 0}
@@ -328,7 +371,7 @@ export default function VocabularyDashboard() {
                     animate={{ opacity: 1, y: 0, scale: 1 }}
                     exit={{ opacity: 0, y: 10, scale: 0.95 }}
                     transition={{ duration: 0.15 }}
-                    className="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 w-64 max-h-64 overflow-y-auto custom-scrollbar glass-card rounded-2xl border border-zinc-700 shadow-2xl z-50 p-3"
+                    className="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 w-64 max-h-64 overflow-y-auto custom-scrollbar bg-zinc-900 rounded-2xl border border-zinc-700 shadow-2xl z-50 p-3"
                   >
                     <div className="text-xs font-semibold text-zinc-500 mb-3 px-2 uppercase tracking-wider">Go to Page...</div>
                     <div className="grid grid-cols-4 gap-2">
