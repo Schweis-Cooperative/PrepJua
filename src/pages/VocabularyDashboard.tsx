@@ -327,7 +327,7 @@ export default function VocabularyDashboard() {
                 </FixedSizeList>
               );
             }}
-          </AutoSizer>
+          </AutoSizerAny>
         ) : (
           <motion.div
             initial={{ opacity: 0 }}
