@@ -1,8 +1,8 @@
 import { useState, useMemo, useCallback, memo, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FixedSizeList as List } from 'react-window';
-import AutoSizer from 'react-virtualized-auto-sizer';
+import { FixedSizeList } from 'react-window';
+import { AutoSizer } from 'react-virtualized-auto-sizer';
 import { Search, BookOpen, Check, Star, ArrowRight, Sparkles, ChevronLeft, ChevronRight, ChevronsLeft, ChevronsRight, List as ListIcon } from 'lucide-react';
 import { vocabularyData } from '../data/vocabularyData';
 import { useProgress } from '../hooks/useProgress';
@@ -306,7 +306,7 @@ export default function VocabularyDashboard() {
               const rowHeight = 260; // Approximate card height + gap
 
               return (
-                <List
+                <FixedSizeList
                   height={height}
                   itemCount={rowCount}
                   itemSize={rowHeight}
@@ -320,7 +320,7 @@ export default function VocabularyDashboard() {
                   className="custom-scrollbar"
                 >
                   {Row}
-                </List>
+                </FixedSizeList>
               );
             }}
           </AutoSizer>
