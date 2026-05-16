@@ -1,7 +1,7 @@
 import { useState, useMemo, useCallback, memo, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Search, BookOpen, Check, Star, ArrowRight, Sparkles, ChevronLeft, ChevronRight, ChevronsLeft, ChevronsRight, List as ListIcon } from 'lucide-react';
+import { Search, BookOpen, Check, Star, ArrowRight, Sparkles, ChevronLeft, ChevronRight, ChevronsLeft, ChevronsRight, List as ListIcon, Bookmark, Flame } from 'lucide-react';
 import { vocabularyData } from '../data/vocabularyData';
 import { useProgress } from '../hooks/useProgress';
 import { useLocalStorage } from '../hooks/useLocalStorage';
@@ -112,15 +112,18 @@ const VocabularyFilters = memo(function VocabularyFilters({
 });
 
 // Memoized card component — strictly only re-renders when props change
-// Removed 'glass-card' to optimize paint performance
 const WordCard = memo(function WordCard({
   word,
   learned,
+  bookmarked,
   onToggle,
+  onBookmark,
 }: {
   word: { id: string; word: string; translation: string; example: string; category: string };
   learned: boolean;
+  bookmarked: boolean;
   onToggle: (id: string) => void;
+  onBookmark: (id: string) => void;
 }) {
   return (
     <div
@@ -128,13 +131,24 @@ const WordCard = memo(function WordCard({
         learned ? 'border-emerald-500/30 bg-emerald-950/10' : ''
       }`}
     >
-      {learned && (
-        <div className="absolute top-3 right-3">
+      {/* Top-right icons: bookmark + learned */}
+      <div className="absolute top-3 right-3 flex items-center gap-1.5">
+        <button
+          onClick={() => onBookmark(word.id)}
+          title={bookmarked ? 'Remove from collection' : 'Add to collection'}
+          className="w-6 h-6 rounded-full flex items-center justify-center hover:bg-zinc-800 transition-colors"
+        >
+          <Bookmark
+            size={13}
+            className={bookmarked ? 'text-amber-400 fill-amber-400' : 'text-zinc-600 hover:text-zinc-400'}
+          />
+        </button>
+        {learned && (
           <div className="w-5 h-5 rounded-full bg-emerald-500/20 flex items-center justify-center">
             <Check size={12} className="text-emerald-400" />
           </div>
-        </div>
-      )}
+        )}
+      </div>
 
       <div className="flex items-start justify-between mb-2">
         <div>
@@ -183,12 +197,46 @@ export default function VocabularyDashboard() {
   const [isPageMenuOpen, setIsPageMenuOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
   const [username] = useLocalStorage('username', '');
-  const { learnedWords, toggleLearnedWord, isWordLearned } = useProgress();
+  const {
+    learnedWords,
+    toggleLearnedWord,
+    isWordLearned,
+    streak,
+    customCollections,
+    createCollection,
+    toggleWordInCollection,
+  } = useProgress();
 
-  // Stable toggle callback
+  // Ensure a default "Favorites" collection always exists
+  const favCollection = useMemo(
+    () => customCollections.find(c => c.name === 'Favorites'),
+    [customCollections]
+  );
+  useEffect(() => {
+    if (!favCollection && customCollections.length === 0) {
+      createCollection('Favorites');
+    }
+  }, [favCollection, customCollections.length, createCollection]);
+
+  const favCollectionId = favCollection?.id || '';
+  const favWordIds = useMemo(
+    () => new Set(favCollection?.wordIds || []),
+    [favCollection?.wordIds]
+  );
+
+  // Stable callbacks
   const handleToggle = useCallback(
     (id: string) => toggleLearnedWord(id),
     [toggleLearnedWord]
+  );
+
+  const handleBookmark = useCallback(
+    (wordId: string) => {
+      if (favCollectionId) {
+        toggleWordInCollection(favCollectionId, wordId);
+      }
+    },
+    [favCollectionId, toggleWordInCollection]
   );
 
   const filteredWords = useMemo(() => {
@@ -299,6 +347,23 @@ export default function VocabularyDashboard() {
             </div>
           </div>
           <ProgressBar value={learnedCount} max={totalWords} color="bg-emerald-500" />
+
+          {/* Streak indicator */}
+          <div className="flex items-center gap-3 mt-4 pt-4 border-t border-zinc-800/60">
+            <div className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold ${
+              streak.current > 0
+                ? 'bg-amber-500/10 text-amber-400 border border-amber-500/20'
+                : 'bg-zinc-800/50 text-zinc-500 border border-zinc-700/50'
+            }`}>
+              <Flame size={14} className={streak.current > 0 ? 'text-amber-400' : 'text-zinc-600'} />
+              {streak.current} day{streak.current !== 1 ? 's' : ''} streak
+            </div>
+            {streak.longest > 0 && (
+              <span className="text-[11px] text-zinc-600">
+                Best: {streak.longest} day{streak.longest !== 1 ? 's' : ''}
+              </span>
+            )}
+          </div>
         </div>
 
         <VocabularySearch onSearchChange={handleSearchChange} />
@@ -319,7 +384,9 @@ export default function VocabularyDashboard() {
             key={word.id}
             word={word}
             learned={isWordLearned(word.id)}
+            bookmarked={favWordIds.has(word.id)}
             onToggle={handleToggle}
+            onBookmark={handleBookmark}
           />
         ))}
       </div>

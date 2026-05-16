@@ -1,8 +1,10 @@
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
+import { ErrorBoundary } from 'react-error-boundary';
 import Layout from './components/Layout';
 import PageTransition from './components/PageTransition';
 import RouteTracker from './components/RouteTracker';
+import ErrorFallback from './components/ErrorFallback';
 
 // Pages
 import VocabularyDashboard from './pages/VocabularyDashboard';
@@ -32,26 +34,26 @@ function AnimatedRoutes() {
   return (
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
-        <Route path="/" element={<PageTransition><VocabularyDashboard /></PageTransition>} />
-        <Route path="/learned-quiz" element={<PageTransition><LearnedQuiz /></PageTransition>} />
-        <Route path="/quiz" element={<PageTransition><GeneralQuiz /></PageTransition>} />
-        <Route path="/grammar" element={<PageTransition><GrammarHub /></PageTransition>} />
-        <Route path="/grammar/:id" element={<PageTransition><GrammarTopic /></PageTransition>} />
-        <Route path="/uoe" element={<PageTransition><UoEHub /></PageTransition>} />
-        <Route path="/uoe/cloze" element={<PageTransition><UoECloze /></PageTransition>} />
-        <Route path="/uoe/rewrite" element={<PageTransition><UoERewrite /></PageTransition>} />
-        <Route path="/uoe/mock" element={<PageTransition><UoEMock /></PageTransition>} />
-        <Route path="/reading" element={<PageTransition><ReadingHub /></PageTransition>} />
-        <Route path="/reading/:id" element={<PageTransition><ReadingTest /></PageTransition>} />
-        <Route path="/writing" element={<PageTransition><WritingHub /></PageTransition>} />
-        <Route path="/exam-practice" element={<PageTransition><ExamPractice /></PageTransition>} />
-        <Route path="/past-questions" element={<PageTransition><PastQuestions /></PageTransition>} />
-        <Route path="/irregular-verbs" element={<PageTransition><IrregularVerbs /></PageTransition>} />
-        <Route path="/profile" element={<PageTransition><Profile /></PageTransition>} />
-        <Route path="/cheat-sheet" element={<PageTransition><CheatSheet /></PageTransition>} />
-        <Route path="/mistake-book" element={<PageTransition><MistakeBook /></PageTransition>} />
-        <Route path="/wordpower" element={<PageTransition><WordpowerHub /></PageTransition>} />
-        <Route path="/wordpower/:id" element={<PageTransition><WordpowerBlock /></PageTransition>} />
+        <Route path="/" element={<PageTransition><ErrorBoundary FallbackComponent={ErrorFallback}><VocabularyDashboard /></ErrorBoundary></PageTransition>} />
+        <Route path="/learned-quiz" element={<PageTransition><ErrorBoundary FallbackComponent={ErrorFallback}><LearnedQuiz /></ErrorBoundary></PageTransition>} />
+        <Route path="/quiz" element={<PageTransition><ErrorBoundary FallbackComponent={ErrorFallback}><GeneralQuiz /></ErrorBoundary></PageTransition>} />
+        <Route path="/grammar" element={<PageTransition><ErrorBoundary FallbackComponent={ErrorFallback}><GrammarHub /></ErrorBoundary></PageTransition>} />
+        <Route path="/grammar/:id" element={<PageTransition><ErrorBoundary FallbackComponent={ErrorFallback}><GrammarTopic /></ErrorBoundary></PageTransition>} />
+        <Route path="/uoe" element={<PageTransition><ErrorBoundary FallbackComponent={ErrorFallback}><UoEHub /></ErrorBoundary></PageTransition>} />
+        <Route path="/uoe/cloze" element={<PageTransition><ErrorBoundary FallbackComponent={ErrorFallback}><UoECloze /></ErrorBoundary></PageTransition>} />
+        <Route path="/uoe/rewrite" element={<PageTransition><ErrorBoundary FallbackComponent={ErrorFallback}><UoERewrite /></ErrorBoundary></PageTransition>} />
+        <Route path="/uoe/mock" element={<PageTransition><ErrorBoundary FallbackComponent={ErrorFallback}><UoEMock /></ErrorBoundary></PageTransition>} />
+        <Route path="/reading" element={<PageTransition><ErrorBoundary FallbackComponent={ErrorFallback}><ReadingHub /></ErrorBoundary></PageTransition>} />
+        <Route path="/reading/:id" element={<PageTransition><ErrorBoundary FallbackComponent={ErrorFallback}><ReadingTest /></ErrorBoundary></PageTransition>} />
+        <Route path="/writing" element={<PageTransition><ErrorBoundary FallbackComponent={ErrorFallback}><WritingHub /></ErrorBoundary></PageTransition>} />
+        <Route path="/exam-practice" element={<PageTransition><ErrorBoundary FallbackComponent={ErrorFallback}><ExamPractice /></ErrorBoundary></PageTransition>} />
+        <Route path="/past-questions" element={<PageTransition><ErrorBoundary FallbackComponent={ErrorFallback}><PastQuestions /></ErrorBoundary></PageTransition>} />
+        <Route path="/irregular-verbs" element={<PageTransition><ErrorBoundary FallbackComponent={ErrorFallback}><IrregularVerbs /></ErrorBoundary></PageTransition>} />
+        <Route path="/profile" element={<PageTransition><ErrorBoundary FallbackComponent={ErrorFallback}><Profile /></ErrorBoundary></PageTransition>} />
+        <Route path="/cheat-sheet" element={<PageTransition><ErrorBoundary FallbackComponent={ErrorFallback}><CheatSheet /></ErrorBoundary></PageTransition>} />
+        <Route path="/mistake-book" element={<PageTransition><ErrorBoundary FallbackComponent={ErrorFallback}><MistakeBook /></ErrorBoundary></PageTransition>} />
+        <Route path="/wordpower" element={<PageTransition><ErrorBoundary FallbackComponent={ErrorFallback}><WordpowerHub /></ErrorBoundary></PageTransition>} />
+        <Route path="/wordpower/:id" element={<PageTransition><ErrorBoundary FallbackComponent={ErrorFallback}><WordpowerBlock /></ErrorBoundary></PageTransition>} />
       </Routes>
     </AnimatePresence>
   );
@@ -61,13 +63,15 @@ import { ProgressProvider } from './context/ProgressContext';
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <ProgressProvider>
-        <RouteTracker />
-        <Layout>
-          <AnimatedRoutes />
-        </Layout>
-      </ProgressProvider>
-    </BrowserRouter>
+    <ErrorBoundary FallbackComponent={ErrorFallback}>
+      <BrowserRouter>
+        <ProgressProvider>
+          <RouteTracker />
+          <Layout>
+            <AnimatedRoutes />
+          </Layout>
+        </ProgressProvider>
+      </BrowserRouter>
+    </ErrorBoundary>
   );
 }

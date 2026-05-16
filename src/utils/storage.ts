@@ -1,5 +1,22 @@
+import localforage from 'localforage';
+
 const PREFIX = 'prepjua_';
 
+// Configure localforage to use IndexedDB with a fallback chain
+localforage.config({
+  driver: [localforage.INDEXEDDB, localforage.LOCALSTORAGE],
+  name: 'PrepJua',
+  storeName: 'progress',
+  description: 'PrepJua user progress and collections',
+});
+
+// ─── Synchronous localStorage helpers (for initial hydration only) ─────
+
+/**
+ * Synchronous read from localStorage.
+ * Used ONLY for initial React state hydration (useState initializer).
+ * All subsequent writes go through async IndexedDB via `setStorageItemAsync`.
+ */
 export function getStorageItem<T>(key: string, defaultValue: T): T {
   try {
     const item = localStorage.getItem(PREFIX + key);
@@ -9,6 +26,10 @@ export function getStorageItem<T>(key: string, defaultValue: T): T {
   }
 }
 
+/**
+ * @deprecated Use setStorageItemAsync for all new code.
+ * Kept for backward compatibility during migration.
+ */
 export function setStorageItem<T>(key: string, value: T): void {
   try {
     localStorage.setItem(PREFIX + key, JSON.stringify(value));
@@ -20,6 +41,59 @@ export function setStorageItem<T>(key: string, value: T): void {
 export function removeStorageItem(key: string): void {
   localStorage.removeItem(PREFIX + key);
 }
+
+// ─── Async IndexedDB helpers (primary storage layer) ───────────────────
+
+/**
+ * Async write to IndexedDB via localforage.
+ * Also mirrors to localStorage for fast synchronous hydration on next load.
+ */
+export async function setStorageItemAsync<T>(key: string, value: T): Promise<void> {
+  try {
+    // Write to IndexedDB (async, non-blocking)
+    await localforage.setItem(PREFIX + key, value);
+    // Mirror to localStorage for fast sync hydration
+    try {
+      localStorage.setItem(PREFIX + key, JSON.stringify(value));
+    } catch {
+      // localStorage quota exceeded — IndexedDB has it, so this is fine
+    }
+  } catch (e) {
+    console.error(`[storage] Failed to save "${key}" to IndexedDB:`, e);
+    // Fallback: try localStorage directly
+    try {
+      localStorage.setItem(PREFIX + key, JSON.stringify(value));
+    } catch {
+      // Both failed — data loss risk, but do not crash
+    }
+  }
+}
+
+/**
+ * Async read from IndexedDB via localforage.
+ * Falls back to localStorage if IndexedDB has no value (migration path).
+ */
+export async function getStorageItemAsync<T>(key: string, defaultValue: T): Promise<T> {
+  try {
+    const value = await localforage.getItem<T>(PREFIX + key);
+    if (value !== null && value !== undefined) {
+      return value;
+    }
+    // Fallback: check localStorage (handles migration from old data)
+    const lsItem = localStorage.getItem(PREFIX + key);
+    if (lsItem) {
+      const parsed = JSON.parse(lsItem) as T;
+      // Migrate to IndexedDB for future reads
+      await localforage.setItem(PREFIX + key, parsed);
+      return parsed;
+    }
+    return defaultValue;
+  } catch {
+    return defaultValue;
+  }
+}
+
+// ─── Export / Import / Backup ──────────────────────────────────────────
 
 export function exportAllData(): string {
   const data: Record<string, unknown> = {};
@@ -51,9 +125,11 @@ export function importAllData(jsonString: string): boolean {
     }
     keysToRemove.forEach(k => localStorage.removeItem(k));
 
-    // Import new data
+    // Import new data to both localStorage and IndexedDB
     Object.entries(data).forEach(([key, value]) => {
-      localStorage.setItem(key, typeof value === 'string' ? value : JSON.stringify(value));
+      const strValue = typeof value === 'string' ? value : JSON.stringify(value);
+      localStorage.setItem(key, strValue);
+      localforage.setItem(key, value).catch(() => {});
     });
 
     return true;
