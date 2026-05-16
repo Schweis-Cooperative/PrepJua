@@ -5,21 +5,21 @@ export const vocabularyData: VocabularyWord[] = [
     id: 'v-new-hw-1',
     word: 'reach out',
     translation: 'Ulaşmak',
-    example: '', 
+    example: 'If you have any questions, don\'t hesitate to reach out to me. - Eğer herhangi bir sorunuz olursa, bana ulaşmaktan çekinmeyin.', 
     category: 'phrase',
   },
   {
     id: 'v-new-hw-2',
     word: 'criticise',
     translation: 'Eleştirmek',
-    example: '', 
+    example: 'It is unfair to criticise him without knowing the full story. - Tüm hikayeyi bilmeden onu eleştirmek haksızlıktır.', 
     category: 'verb',
   },
   {
     id: 'v-new-hw-4',
     word: 'memorise',
     translation: 'Ezberlemek',
-    example: '', 
+    example: 'I need to memorise these new vocabulary words before the test. - Sınavdan önce bu yeni kelimeleri ezberlemem gerekiyor.', 
     category: 'verb',
   },
 
@@ -27,84 +27,84 @@ export const vocabularyData: VocabularyWord[] = [
     id: 'v-u1-extra-01',
     word: 'common',
     translation: 'Ortak',
-    example: '', // To be filled if needed or left blank for fast track
+    example: 'Traffic congestion is a common problem in big cities. - Trafik sıkışıklığı büyük şehirlerde ortak bir sorundur.', // To be filled if needed or left blank for fast track
     category: 'adjective',
   },
   {
     id: 'v-u1-extra-02',
     word: 'exist',
     translation: 'Var olmak, var olan',
-    example: '', // To be filled if needed or left blank for fast track
+    example: 'Many people wonder if life could exist on other planets. - Çoğu insan başka gezegenlerde yaşamın var olup olamayacağını merak ediyor.', // To be filled if needed or left blank for fast track
     category: 'verb',
   },
   {
     id: 'v-u1-extra-03',
     word: 'develop',
     translation: 'Geliştirmek',
-    example: '', // To be filled if needed or left blank for fast track
+    example: 'Reading regularly can help you develop your language skills. - Düzenli okumak dil becerilerinizi geliştirmenize yardımcı olabilir.', // To be filled if needed or left blank for fast track
     category: 'verb',
   },
   {
     id: 'v-u1-extra-04',
     word: 'fluent',
     translation: 'Akıcı (dil konuşma)',
-    example: '', // To be filled if needed or left blank for fast track
+    example: 'She lived in London for five years, so she is completely fluent. - Londra\'da beş yıl yaşadı, bu yüzden tamamen akıcı konuşuyor.', // To be filled if needed or left blank for fast track
     category: 'adjective',
   },
   {
     id: 'v-u1-extra-05',
     word: 'agree',
     translation: 'Katılmak (bir fikre)',
-    example: '', // To be filled if needed or left blank for fast track
+    example: 'I completely agree with your opinion on this matter. - Bu konudaki fikrine tamamen katılıyorum.', // To be filled if needed or left blank for fast track
     category: 'verb',
   },
   {
     id: 'v-u1-extra-06',
     word: 'neither',
     translation: 'İkisi de değil (olumsuz katılım)',
-    example: '', // To be filled if needed or left blank for fast track
+    example: 'I don\'t like coffee, and neither does my brother. - Ben kahve sevmem, kardeşim de sevmez.', // To be filled if needed or left blank for fast track
     category: 'adverb',
   },
   {
     id: 'v-u2-extra-01',
     word: 'press',
     translation: 'Tuşlamak, basmak',
-    example: '', // To be filled if needed or left blank for fast track
+    example: 'Please press the red button to start the machine. - Makineyi başlatmak için lütfen kırmızı tuşa basın.', // To be filled if needed or left blank for fast track
     category: 'verb',
   },
   {
     id: 'v-u2-extra-02',
     word: 'undo',
     translation: 'Geri almak (işlemi)',
-    example: '', // To be filled if needed or left blank for fast track
+    example: 'Is there a way to undo this action on the computer? - Bilgisayarda bu işlemi geri almanın bir yolu var mı?', // To be filled if needed or left blank for fast track
     category: 'verb',
   },
   {
     id: 'v-u2-extra-03',
     word: 'charge',
     translation: 'Şarj etmek',
-    example: '', // To be filled if needed or left blank for fast track
+    example: 'I forgot to charge my phone, so the battery is dead. - Telefonumu şarj etmeyi unuttum, bu yüzden şarjı bitti.', // To be filled if needed or left blank for fast track
     category: 'verb',
   },
   {
     id: 'v-u2-extra-04',
     word: 'business contract',
     translation: 'İş sözleşmesi',
-    example: '', // To be filled if needed or left blank for fast track
+    example: 'They signed a new business contract with an international firm. - Uluslararası bir firmayla yeni bir iş sözleşmesi imzaladılar.', // To be filled if needed or left blank for fast track
     category: 'phrase',
   },
   {
     id: 'v-u2-extra-05',
     word: 'make contact',
     translation: 'Temas kurmak, iletişime geçmek',
-    example: '', // To be filled if needed or left blank for fast track
+    example: 'We are trying to make contact with the manager to discuss the issue. - Sorunu görüşmek üzere yöneticiyle temas kurmaya çalışıyoruz.', // To be filled if needed or left blank for fast track
     category: 'phrase',
   },
   {
     id: 'v-u2-extra-06',
     word: 'emphasis',
     translation: 'Vurgu',
-    example: '', // To be filled if needed or left blank for fast track
+    example: 'The teacher put a strong emphasis on speaking practice. - Öğretmen konuşma pratiğine güçlü bir vurgu yaptı.', // To be filled if needed or left blank for fast track
     category: 'noun',
   },
   // ═══════════════════════════════════════════════════════════════
@@ -1945,1428 +1945,1428 @@ export const vocabularyData: VocabularyWord[] = [
     id: 'successful',
     word: 'successful',
     translation: 'başarılı',
-    example: '',
+    example: 'She became a very successful entrepreneur in a short time. - Kısa sürede çok başarılı bir girişimci oldu.',
     category: 'phrase'
   },
   {
     id: 'talented',
     word: 'talented',
     translation: 'yetenekli',
-    example: '',
+    example: 'He is a talented musician who plays three different instruments. - Üç farklı enstrüman çalan yetenekli bir müzisyendir.',
     category: 'phrase'
   },
   {
     id: 'intelligent',
     word: 'intelligent',
     translation: 'zeki',
-    example: '',
+    example: 'Dolphins are known to be highly intelligent animals. - Yunusların son derece zeki hayvanlar olduğu bilinmektedir.',
     category: 'phrase'
   },
   {
     id: 'confident',
     word: 'confident',
     translation: 'öz güvenli',
-    example: '',
+    example: 'You need to be confident during your job interview. - İş görüşmende öz güvenli olman gerekiyor.',
     category: 'phrase'
   },
   {
     id: 'determined',
     word: 'determined',
     translation: 'kararlı',
-    example: '',
+    example: 'Despite the difficulties, she remained determined to win the race. - Zorluklara rağmen, yarışı kazanmakta kararlı kaldı.',
     category: 'phrase'
   },
   {
     id: 'achievement',
     word: 'achievement',
     translation: 'başarı',
-    example: '',
+    example: 'Graduating from university was her greatest achievement. - Üniversiteden mezun olmak onun en büyük başarısıydı.',
     category: 'phrase'
   },
   {
     id: 'attitude',
     word: 'attitude',
     translation: 'tutum',
-    example: '',
+    example: 'Having a positive attitude can change your whole life. - Pozitif bir tutuma sahip olmak tüm hayatınızı değiştirebilir.',
     category: 'phrase'
   },
   {
     id: 'give-up',
     word: 'give up',
     translation: 'vazgeçmek',
-    example: '',
+    example: 'No matter how hard it gets, you should never give up. - Ne kadar zorlaşırsa zorlaşsın, asla vazgeçmemelisin.',
     category: 'phrase'
   },
   {
     id: 'sociable',
     word: 'sociable',
     translation: 'sosyal',
-    example: '',
+    example: 'My sister is very sociable and loves meeting new people. - Kız kardeşim çok sosyaldir ve yeni insanlarla tanışmayı sever.',
     category: 'phrase'
   },
   {
     id: 'outgoing',
     word: 'outgoing',
     translation: 'uyumlu',
-    example: '',
+    example: 'He has an outgoing personality and easily makes friends. - Uyumlu ve dışa dönük bir kişiliği var ve kolayca arkadaş edinir.',
     category: 'phrase'
   },
   {
     id: 'talkative',
     word: 'talkative',
     translation: 'konuşkan',
-    example: '',
+    example: 'She is usually quiet, but she gets talkative when she is excited. - Genelde sessizdir ama heyecanlandığında konuşkan olur.',
     category: 'phrase'
   },
   {
     id: 'shy',
     word: 'shy',
     translation: 'utangaç',
-    example: '',
+    example: 'The little boy was too shy to speak to the guests. - Küçük çocuk misafirlerle konuşamayacak kadar utangaçtı.',
     category: 'phrase'
   },
   {
     id: 'reserved',
     word: 'reserved',
     translation: 'duygu belli etmeyen',
-    example: '',
+    example: 'He is a reserved person who rarely shares his feelings. - Duygularını nadiren paylaşan, duygu belli etmeyen biridir.',
     category: 'phrase'
   },
   {
     id: 'lively',
     word: 'lively',
     translation: 'canlı',
-    example: '',
+    example: 'The city center is always lively and full of energy. - Şehir merkezi her zaman canlı ve enerji doludur.',
     category: 'phrase'
   },
   {
     id: 'serious',
     word: 'serious',
     translation: 'ciddi',
-    example: '',
+    example: 'We need to have a serious conversation about your future. - Geleceğin hakkında ciddi bir konuşma yapmamız gerekiyor.',
     category: 'phrase'
   },
   {
     id: 'sensitive',
     word: 'sensitive',
     translation: 'hassas',
-    example: '',
+    example: 'My skin is very sensitive to sunlight. - Cildim güneş ışığına karşı çok hassas.',
     category: 'phrase'
   },
   {
     id: 'valued',
     word: 'valued',
     translation: 'değerli',
-    example: '',
+    example: 'As a member of this team, your opinions are highly valued. - Bu takımın bir üyesi olarak, fikirleriniz oldukça değerlidir.',
     category: 'phrase'
   },
   {
     id: 'movement',
     word: 'movement',
     translation: 'eylem',
-    example: '',
+    example: 'There is a growing movement to protect the environment. - Çevreyi korumak için büyüyen bir eylem var.',
     category: 'phrase'
   },
   {
     id: 'despite',
     word: 'despite',
     translation: 'rağmen',
-    example: '',
+    example: 'He went to work despite being very ill. - Çok hasta olmasına rağmen işe gitti.',
     category: 'phrase'
   },
   {
     id: 'songwriters',
     word: 'songwriters',
     translation: 'söz yazarı',
-    example: '',
+    example: 'The most successful songwriters often write from their own experiences. - En başarılı söz yazarları genellikle kendi deneyimlerinden yazarlar.',
     category: 'phrase'
   },
   {
     id: 'bright',
     word: 'bright',
     translation: 'zeki',
-    example: '',
+    example: 'She is a bright student who always gets the highest grades. - O, her zaman en yüksek notları alan zeki bir öğrencidir.',
     category: 'phrase'
   },
   {
     id: 'towards',
     word: 'towards',
     translation: 'karşı',
-    example: '',
+    example: 'The dog ran towards me as soon as I opened the gate. - Kapıyı açar açmaz köpek bana karşı koştu.',
     category: 'phrase'
   },
   {
     id: 'ability',
     word: 'ability',
     translation: 'yetenek',
-    example: '',
+    example: 'He has the ability to learn new languages very quickly. - Yeni dilleri çok hızlı öğrenme yeteneğine sahiptir.',
     category: 'phrase'
   },
   {
     id: 'pick-up',
     word: 'pick up',
     translation: 'almak, teslim almak',
-    example: '',
+    example: 'Can you pick up the package from the post office? - Postaneden paketi teslim alabilir misin?',
     category: 'phrase'
   },
   {
     id: 'pollution',
     word: 'pollution',
     translation: 'kirlilik',
-    example: '',
+    example: 'Air pollution is a major problem in industrial cities. - Hava kirliliği sanayi şehirlerinde büyük bir sorundur.',
     category: 'phrase'
   },
   {
     id: 'endangered',
     word: 'endangered',
     translation: 'tehlikede',
-    example: '',
+    example: 'Pandas are considered an endangered species. - Pandalar tehlikede olan bir tür olarak kabul edilir.',
     category: 'phrase'
   },
   {
     id: 'damaged',
     word: 'damaged',
     translation: 'zarar görmüş',
-    example: '',
+    example: 'The storm damaged several houses in the neighborhood. - Fırtına mahalledeki birkaç eve zarar verdi.',
     category: 'phrase'
   },
   {
     id: 'protect',
     word: 'protect',
     translation: 'korumak',
-    example: '',
+    example: 'We must protect the forests for future generations. - Gelecek nesiller için ormanları korumalıyız.',
     category: 'phrase'
   },
   {
     id: 'environment',
     word: 'environment',
     translation: 'çevre',
-    example: '',
+    example: 'It is our responsibility to take care of the environment. - Çevreye iyi bakmak bizim sorumluluğumuzdur.',
     category: 'phrase'
   },
   {
     id: 'creature',
     word: 'creature',
     translation: 'yaratık',
-    example: '',
+    example: 'The deep ocean is home to many strange creatures. - Derin okyanus birçok tuhaf yaratığa ev sahipliği yapar.',
     category: 'phrase'
   },
   {
     id: 'destroy',
     word: 'destroy',
     translation: 'yerle bir etmek',
-    example: '',
+    example: 'The earthquake could destroy the entire city. - Deprem tüm şehri yerle bir edebilir.',
     category: 'phrase'
   },
   {
     id: 'species',
     word: 'species',
     translation: 'tür',
-    example: '',
+    example: 'There are thousands of different species of birds in the world. - Dünyada binlerce farklı kuş türü bulunmaktadır.',
     category: 'phrase'
   },
   {
     id: 'survive',
     word: 'survive',
     translation: 'hayatta kalmak',
-    example: '',
+    example: 'Camels can survive in the desert without water for days. - Develer çölde günlerce susuz hayatta kalabilirler.',
     category: 'phrase'
   },
   {
     id: 'limit',
     word: 'limit',
     translation: 'sınırlamak',
-    example: '',
+    example: 'We should limit the amount of sugar we eat every day. - Her gün yediğimiz şeker miktarını sınırlamalıyız.',
     category: 'phrase'
   },
   {
     id: 'branch',
     word: 'branch',
     translation: 'dal, branş',
-    example: '',
+    example: 'The bird built its nest on a high branch of the tree. - Kuş yuvasını ağacın yüksek bir dalına yaptı.',
     category: 'phrase'
   },
   {
     id: 'petals',
     word: 'petals',
     translation: 'taç yaprak',
-    example: '',
+    example: 'The rose had beautiful red petals. - Gülün güzel kırmızı taç yaprakları vardı.',
     category: 'phrase'
   },
   {
     id: 'feathers',
     word: 'feathers',
     translation: 'tüy',
-    example: '',
+    example: 'The parrot has brightly colored feathers. - Papağanın parlak renkli tüyleri vardır.',
     category: 'phrase'
   },
   {
     id: 'scales',
     word: 'scales',
     translation: 'pul',
-    example: '',
+    example: 'Fish are covered in scales to protect their bodies. - Balıklar vücutlarını korumak için pullarla kaplıdır.',
     category: 'phrase'
   },
   {
     id: 'fur',
     word: 'fur',
     translation: 'kürk',
-    example: '',
+    example: 'Cats have soft fur that keeps them warm in winter. - Kedilerin kışın onları sıcak tutan yumuşak kürkleri vardır.',
     category: 'phrase'
   },
   {
     id: 'bay',
     word: 'bay',
     translation: 'koy',
-    example: '',
+    example: 'They rented a small boat to sail around the bay. - Koyun etrafında yelken açmak için küçük bir tekne kiraladılar.',
     category: 'phrase'
   },
   {
     id: 'waterfall',
     word: 'waterfall',
     translation: 'şelale',
-    example: '',
+    example: 'We hiked for hours just to see the beautiful waterfall. - Sadece güzel şelaleyi görmek için saatlerce yürüdük.',
     category: 'phrase'
   },
   {
     id: 'cave',
     word: 'cave',
     translation: 'mağara',
-    example: '',
+    example: 'The explorers found ancient drawings inside the dark cave. - Kaşifler karanlık mağaranın içinde antik çizimler buldular.',
     category: 'phrase'
   },
   {
     id: 'paws',
     word: 'paws',
     translation: 'pati',
-    example: '',
+    example: 'The dog left muddy paws all over the clean floor. - Köpek temiz zeminin her yerinde çamurlu pati izleri bıraktı.',
     category: 'phrase'
   },
   {
     id: 'web',
     word: 'web',
     translation: 'ağ',
-    example: '',
+    example: 'The spider spun a complex web in the corner of the room. - Örümcek odanın köşesinde karmaşık bir ağ ördü.',
     category: 'phrase'
   },
   {
     id: 'hook',
     word: 'hook',
     translation: 'kanca',
-    example: '',
+    example: 'He used a sharp hook to catch the large fish. - Büyük balığı yakalamak için keskin bir kanca kullandı.',
     category: 'phrase'
   },
   {
     id: 'sticking',
     word: 'sticking',
     translation: 'yapışmak',
-    example: '',
+    example: 'The glue is sticking the pieces of paper together perfectly. - Yapıştırıcı kağıt parçalarını birbirine mükemmel bir şekilde yapıştırıyor.',
     category: 'phrase'
   },
   {
     id: 'arctic',
     word: 'arctic',
     translation: 'kutup',
-    example: '',
+    example: 'Polar bears live in the freezing cold conditions of the arctic. - Kutup ayıları kutbun dondurucu soğuk koşullarında yaşarlar.',
     category: 'phrase'
   },
   {
     id: 'inspire',
     word: 'inspire',
     translation: 'ilham almak',
-    example: '',
+    example: 'Her speech will inspire many young artists to follow their dreams. - Onun konuşması birçok genç sanatçıya hayallerinin peşinden gitmeleri için ilham alacaktır.',
     category: 'phrase'
   },
   {
     id: 'seeds',
     word: 'seeds',
     translation: 'tohum',
-    example: '',
+    example: 'We planted some seeds in the garden and waited for them to grow. - Bahçeye biraz tohum ektik ve büyümelerini bekledik.',
     category: 'phrase'
   },
   {
     id: 'rose',
     word: 'rose',
     translation: 'gül',
-    example: '',
+    example: 'He gave her a single red rose on their anniversary. - Yıl dönümlerinde ona tek bir kırmızı gül verdi.',
     category: 'phrase'
   },
   {
     id: 'pine-tree',
     word: 'pine tree',
     translation: 'çam ağacı',
-    example: '',
+    example: 'The forest was full of tall pine trees that smelled wonderful. - Orman harika kokan uzun çam ağaçlarıyla doluydu.',
     category: 'phrase'
   },
   {
     id: 'souvenir-shop',
     word: 'souvenir shop',
     translation: 'hediyelik eşya dükkanı',
-    example: '',
+    example: 'We bought some gifts for our friends from the souvenir shop. - Hediyelik eşya dükkanından arkadaşlarımız için bazı hediyeler aldık.',
     category: 'phrase'
   },
   {
     id: 'bottle-opener',
     word: 'bottle opener',
     translation: 'şişe açacağı',
-    example: '',
+    example: 'Can you pass me the bottle opener so I can open this drink? - Bu içeceği açabilmem için bana şişe açacağını uzatır mısın?',
     category: 'phrase'
   },
   {
     id: 'window-seat',
     word: 'window seat',
     translation: 'cam kenarı',
-    example: '',
+    example: 'I always request a window seat when I fly so I can see the clouds. - Uçtuğumda her zaman cam kenarı isterim böylece bulutları görebilirim.',
     category: 'phrase'
   },
   {
     id: 'dishwasher',
     word: 'dishwasher',
     translation: 'bulaşık makinesi',
-    example: '',
+    example: 'Please put your dirty plates in the dishwasher after dinner. - Lütfen akşam yemeğinden sonra kirli tabaklarını bulaşık makinesine koy.',
     category: 'phrase'
   },
   {
     id: 'insect-repellent',
     word: 'insect repellent',
     translation: 'böcek savar',
-    example: '',
+    example: 'Don\'t forget to use insect repellent to keep the mosquitoes away. - Sivrisinekleri uzak tutmak için böcek savar kullanmayı unutma.',
     category: 'phrase'
   },
   {
     id: 'insights',
     word: 'insights',
     translation: 'iç yüzünü anlamak',
-    example: '',
+    example: 'The documentary provided deep insights into the lives of wild animals. - Belgesel vahşi hayvanların yaşamlarının iç yüzünü anlamak için derin bilgiler sundu.',
     category: 'phrase'
   },
   {
     id: 'approach-to',
     word: 'approach to',
     translation: 'yaklaşım',
-    example: '',
+    example: 'We need to find a new approach to solving this math problem. - Bu matematik problemini çözmek için yeni bir yaklaşım bulmalıyız.',
     category: 'phrase'
   },
   {
     id: 'vaccinations',
     word: 'vaccinations',
     translation: 'aşı',
-    example: '',
+    example: 'Make sure you get all your travel vaccinations before visiting the country. - Ülkeyi ziyaret etmeden önce tüm seyahat aşılarınızı yaptırdığınızdan emin olun.',
     category: 'phrase'
   },
   {
     id: 'plantain',
     word: 'plantain',
     translation: 'muz türü',
-    example: '',
+    example: 'She fried some plantain to serve with the main dish. - Ana yemekle servis etmek için biraz muz türü (plantain) kızarttı.',
     category: 'phrase'
   },
   {
     id: 'contribute',
     word: 'contribute',
     translation: 'katkıda bulunmak',
-    example: '',
+    example: 'Everyone should contribute ideas during the brainstorming session. - Beyin fırtınası oturumu sırasında herkes fikirlere katkıda bulunmalıdır.',
     category: 'phrase'
   },
   {
     id: 'herbs',
     word: 'herbs',
     translation: 'bitki',
-    example: '',
+    example: 'Adding fresh herbs like basil and mint makes the soup taste better. - Fesleğen ve nane gibi taze bitkiler eklemek çorbanın tadını güzelleştirir.',
     category: 'phrase'
   },
   {
     id: 'mention',
     word: 'mention',
     translation: 'bahsetmek',
-    example: '',
+    example: 'Did he mention what time the meeting is going to start? - Toplantının saat kaçta başlayacağından bahsetti mi?',
     category: 'phrase'
   },
   {
     id: 'in-advance',
     word: 'in advance',
     translation: 'önceden',
-    example: '',
+    example: 'You need to book your train tickets weeks in advance. - Tren biletlerinizi haftalar önceden ayırtmanız gerekiyor.',
     category: 'phrase'
   },
   {
     id: 'steamed-rice',
     word: 'steamed rice',
     translation: 'buharda pilav',
-    example: '',
+    example: 'I ordered a bowl of steamed rice to go with the spicy chicken. - Baharatlı tavuğun yanına bir kase buharda pilav sipariş ettim.',
     category: 'phrase'
   },
   {
     id: 'randomly',
     word: 'randomly',
     translation: 'rastgele',
-    example: '',
+    example: 'The teacher randomly picked a student to answer the question. - Öğretmen soruyu cevaplaması için rastgele bir öğrenci seçti.',
     category: 'phrase'
   },
   {
     id: 'explore',
     word: 'explore',
     translation: 'keşfetmek',
-    example: '',
+    example: 'We spent the whole afternoon trying to explore the historical ruins. - Bütün öğleden sonrayı tarihi kalıntıları keşfetmeye çalışarak geçirdik.',
     category: 'phrase'
   },
   {
     id: 'bride',
     word: 'bride',
     translation: 'gelin',
-    example: '',
+    example: 'The bride looked stunning in her elegant white dress. - Gelin zarif beyaz elbisesi içinde çarpıcı görünüyordu.',
     category: 'phrase'
   },
   {
     id: 'groom',
     word: 'groom',
     translation: 'damat',
-    example: '',
+    example: 'The groom waited nervously at the altar for the ceremony to begin. - Damat törenin başlaması için mihrapta gergin bir şekilde bekledi.',
     category: 'phrase'
   },
   {
     id: 'moving-house',
     word: 'moving house',
     translation: 'ev taşımak',
-    example: '',
+    example: 'We are moving house next week, so we are busy packing boxes. - Haftaya ev taşıyoruz, bu yüzden kutuları paketlemekle meşgulüz.',
     category: 'phrase'
   },
   {
     id: 'move-out-of',
     word: 'move out of',
     translation: 'bir yerden çıkmak',
-    example: '',
+    example: 'He decided to move out of his parents\' house and live on his own. - Ailesinin evinden çıkmaya ve kendi başına yaşamaya karar verdi.',
     category: 'phrase'
   },
   {
     id: 'terrace',
     word: 'terrace',
     translation: 'teras',
-    example: '',
+    example: 'We sat on the terrace enjoying the beautiful sunset. - Güzel gün batımının tadını çıkararak terasta oturduk.',
     category: 'phrase'
   },
   {
     id: 'renting',
     word: 'renting',
     translation: 'kiralamak',
-    example: '',
+    example: 'Renting an apartment in the city center is becoming very expensive. - Şehir merkezinde bir daire kiralamak çok pahalı hale geliyor.',
     category: 'phrase'
   },
   {
     id: 'block',
     word: 'block',
     translation: 'apartman',
-    example: '',
+    example: 'They live in the modern block of apartments at the end of the street. - Sokağın sonundaki modern apartman bloğunda yaşıyorlar.',
     category: 'phrase'
   },
   {
     id: 'neighbourhood',
     word: 'neighbourhood',
     translation: 'mahalle',
-    example: '',
+    example: 'We live in a quiet and friendly neighbourhood. - Sessiz ve samimi bir mahallede yaşıyoruz.',
     category: 'phrase'
   },
   {
     id: 'ground-floor',
     word: 'ground floor',
     translation: 'zemin kat',
-    example: '',
+    example: 'Our office is located on the ground floor of the building. - Ofisimiz binanın zemin katında yer almaktadır.',
     category: 'phrase'
   },
   {
     id: 'landing',
     word: 'landing',
     translation: 'sahanlık',
-    example: '',
+    example: 'She waited for him on the landing at the top of the stairs. - Merdivenlerin başındaki sahanlıkta onu bekledi.',
     category: 'phrase'
   },
   {
     id: 'argue-with',
     word: 'argue with',
     translation: 'tartışmak',
-    example: '',
+    example: 'I don\'t want to argue with you over such a small mistake. - Böyle küçük bir hata yüzünden seninle tartışmak istemiyorum.',
     category: 'phrase'
   },
   {
     id: 'cope-with',
     word: 'cope with',
     translation: 'başa çıkmak',
-    example: '',
+    example: 'It can be difficult to cope with stress during exam week. - Sınav haftasında stresle başa çıkmak zor olabilir.',
     category: 'phrase'
   },
   {
     id: 'care-about',
     word: 'care about',
     translation: 'umursamak',
-    example: '',
+    example: 'Good teachers deeply care about the success of their students. - İyi öğretmenler öğrencilerinin başarısını derinden umursarlar.',
     category: 'phrase'
   },
   {
     id: 'worry-about',
     word: 'worry about',
     translation: 'endişelenmek',
-    example: '',
+    example: 'You shouldn\'t worry about things you cannot control. - Kontrol edemeyeceğin şeyler için endişelenmemelisin.',
     category: 'phrase'
   },
   {
     id: 'complain-about',
     word: 'complain about',
     translation: 'şikayet etmek',
-    example: '',
+    example: 'Customers often complain about the slow service in this restaurant. - Müşteriler genellikle bu restorandaki yavaş servisten şikayet ederler.',
     category: 'phrase'
   },
   {
     id: 'rely-on',
     word: 'rely on',
     translation: 'güvenmek',
-    example: '',
+    example: 'You can always rely on me if you need any support. - Herhangi bir desteğe ihtiyacın olursa her zaman bana güvenebilirsin.',
     category: 'phrase'
   },
   {
     id: 'depend-on',
     word: 'depend on',
     translation: 'bağlı olmak',
-    example: '',
+    example: 'The success of the project will depend on how hard we work. - Projenin başarısı ne kadar sıkı çalıştığımıza bağlı olacak.',
     category: 'phrase'
   },
   {
     id: 'apologise-for',
     word: 'apologise for',
     translation: 'özür dilemek',
-    example: '',
+    example: 'I must apologise for arriving late to the dinner. - Akşam yemeğine geç geldiğim için özür dilemeliyim.',
     category: 'phrase'
   },
   {
     id: 'believe-in',
     word: 'believe in',
     translation: 'inanmak',
-    example: '',
+    example: 'If you believe in yourself, you can achieve anything. - Kendine inanırsan, her şeyi başarabilirsin.',
     category: 'phrase'
   },
   {
     id: 'succeed-in',
     word: 'succeed in',
     translation: 'başarmak',
-    example: '',
+    example: 'She worked hard to succeed in passing the advanced English exam. - İleri düzey İngilizce sınavını geçmeyi başarmak için çok çalıştı.',
     category: 'phrase'
   },
   {
     id: 'belong-to',
     word: 'belong to',
     translation: 'ait olmak',
-    example: '',
+    example: 'Does this black umbrella belong to anyone in the office? - Bu siyah şemsiye ofisteki herhangi birine ait mi?',
     category: 'phrase'
   },
   {
     id: 'apologise-to',
     word: 'apologise to',
     translation: 'özür dilemek',
-    example: '',
+    example: 'You should apologise to your sister for breaking her toy. - Oyuncağını kırdığın için kız kardeşinden özür dilemelisin.',
     category: 'phrase'
   },
   {
     id: 'complain-to',
     word: 'complain to',
     translation: 'şikayet etmek',
-    example: '',
+    example: 'If the hotel room is dirty, you should complain to the manager. - Eğer otel odası kirliyse, yöneticiye şikayet etmelisin.',
     category: 'phrase'
   },
   {
     id: 'outskirts',
     word: 'outskirts',
     translation: 'şehrin etekleri',
-    example: '',
+    example: 'They bought a quiet house on the outskirts of the city. - Şehrin eteklerinde sessiz bir ev aldılar.',
     category: 'phrase'
   },
   {
     id: 'entire',
     word: 'entire',
     translation: 'tamamı',
-    example: '',
+    example: 'I was so hungry that I ate the entire pizza by myself. - O kadar açtım ki pizzanın tamamını tek başıma yedim.',
     category: 'phrase'
   },
   {
     id: 'accommodation',
     word: 'accommodation',
     translation: 'konaklama',
-    example: '',
+    example: 'We need to find cheap accommodation for our trip to London. - Londra seyahatimiz için ucuz bir konaklama bulmalıyız.',
     category: 'phrase'
   },
   {
     id: 'range',
     word: 'range',
     translation: 'aralık',
-    example: '',
+    example: 'The store offers a wide range of organic products. - Mağaza geniş bir organik ürün aralığı sunuyor.',
     category: 'phrase'
   },
   {
     id: 'hosts',
     word: 'hosts',
     translation: 'ev sahipleri',
-    example: '',
+    example: 'Our hosts were very welcoming and made us feel at home. - Ev sahiplerimiz çok misafirperverdi ve bizi evimizde hissettirdi.',
     category: 'phrase'
   },
   {
     id: 'nearby',
     word: 'nearby',
     translation: 'yakınlarda',
-    example: '',
+    example: 'There is a great cafe nearby where we can grab a coffee. - Yakınlarda kahve alabileceğimiz harika bir kafe var.',
     category: 'phrase'
   },
   {
     id: 'theft',
     word: 'theft',
     translation: 'hırsızlık',
-    example: '',
+    example: 'He reported the theft of his bicycle to the local police. - Bisikletinin hırsızlığını yerel polise bildirdi.',
     category: 'phrase'
   },
   {
     id: 'create',
     word: 'create',
     translation: 'yaratmak',
-    example: '',
+    example: 'The artist used recycled materials to create a beautiful sculpture. - Sanatçı güzel bir heykel yaratmak için geri dönüştürülmüş malzemeler kullandı.',
     category: 'phrase'
   },
   {
     id: 'hold-a-meeting',
     word: 'hold a meeting',
     translation: 'toplantı yapmak',
-    example: '',
+    example: 'We will hold a meeting tomorrow to discuss the new project. - Yeni projeyi tartışmak için yarın toplantı yapacağız.',
     category: 'phrase'
   },
   {
     id: 'subscriber',
     word: 'subscriber',
     translation: 'abone',
-    example: '',
+    example: 'He is a loyal subscriber to several tech magazines. - O, birkaç teknoloji dergisine sadık bir abonedir.',
     category: 'phrase'
   },
   {
     id: 'series',
     word: 'series',
     translation: 'dizi',
-    example: '',
+    example: 'I spent the whole weekend watching a new drama series on TV. - Bütün hafta sonunu televizyonda yeni bir drama dizisi izleyerek geçirdim.',
     category: 'phrase'
   },
   {
     id: 'episode',
     word: 'episode',
     translation: 'bölüm',
-    example: '',
+    example: 'The final episode of the show was full of surprising twists. - Şovun son bölümü şaşırtıcı olaylarla doluydu.',
     category: 'phrase'
   },
   {
     id: 'deliver',
     word: 'deliver',
     translation: 'teslimat',
-    example: '',
+    example: 'The courier will deliver the package to your house tomorrow morning. - Kurye paketi yarın sabah evinize teslim edecek.',
     category: 'phrase'
   },
   {
     id: 'post-on',
     word: 'post on',
     translation: 'gönderi paylaşmak',
-    example: '',
+    example: 'Don\'t forget to post on social media to announce the event. - Etkinliği duyurmak için sosyal medyada gönderi paylaşmayı unutma.',
     category: 'phrase'
   },
   {
     id: 'advise',
     word: 'advise',
     translation: 'tavsiye etmek',
-    example: '',
+    example: 'I strongly advise you to study hard before the final exams. - Final sınavlarından önce sıkı çalışmanı şiddetle tavsiye ederim.',
     category: 'phrase'
   },
   {
     id: 'were-offering',
     word: 'were offering',
     translation: 'teklif yapmak',
-    example: '',
+    example: 'They were offering a massive discount on all electronics yesterday. - Dün tüm elektronik ürünlerde büyük bir teklif yapıyorlardı.',
     category: 'phrase'
   },
   {
     id: 'warn',
     word: 'warn',
     translation: 'uyarmak',
-    example: '',
+    example: 'I must warn you that the roads are very icy today. - Bugün yolların çok buzlu olduğu konusunda seni uyarmalıyım.',
     category: 'phrase'
   },
   {
     id: 'promise',
     word: 'promise',
     translation: 'söz vermek',
-    example: '',
+    example: 'I promise to call you as soon as I arrive at the station. - İstasyona varır varmaz seni arayacağıma söz veriyorum.',
     category: 'phrase'
   },
   {
     id: 'recommend',
     word: 'recommend',
     translation: 'tavsiye',
-    example: '',
+    example: 'Can you recommend a good restaurant for our anniversary dinner? - Yıl dönümü yemeğimiz için iyi bir restoran tavsiye edebilir misin?',
     category: 'phrase'
   },
   {
     id: 'threaten',
     word: 'threaten',
     translation: 'tehdit etmek',
-    example: '',
+    example: 'The storm began to threaten the small coastal village. - Fırtına küçük sahil köyünü tehdit etmeye başladı.',
     category: 'phrase'
   },
   {
     id: 'offer',
     word: 'offer',
     translation: 'teklif etmek',
-    example: '',
+    example: 'They decided to offer him the job because of his excellent skills. - Mükemmel becerilerinden dolayı ona işi teklif etmeye karar verdiler.',
     category: 'phrase'
   },
   {
     id: 'suggest',
     word: 'suggest',
     translation: 'önermek',
-    example: '',
+    example: 'I suggest that we leave early to avoid the heavy traffic. - Yoğun trafikten kaçınmak için erken çıkmamızı öneriyorum.',
     category: 'phrase'
   },
   {
     id: 'attend',
     word: 'attend',
     translation: 'katılmak',
-    example: '',
+    example: 'All students must attend the lecture on Monday morning. - Tüm öğrenciler pazartesi sabahı derse katılmalıdır.',
     category: 'phrase'
   },
   {
     id: 'basis',
     word: 'basis',
     translation: 'temel',
-    example: '',
+    example: 'They meet on a regular basis to practice their English speaking. - İngilizce konuşma pratikleri yapmak için düzenli bir temel üzerinde buluşuyorlar.',
     category: 'phrase'
   },
   {
     id: 'come-across',
     word: 'come across',
     translation: 'karşılaşmak',
-    example: '',
+    example: 'I happened to come across an old friend while walking in the park. - Parkta yürürken tesadüfen eski bir arkadaşla karşılaştım.',
     category: 'phrase'
   },
   {
     id: 'genuine',
     word: 'genuine',
     translation: 'gerçek',
-    example: '',
+    example: 'Her smile showed that she had a genuine interest in the topic. - Gülümsemesi konuya karşı gerçek bir ilgisi olduğunu gösterdi.',
     category: 'phrase'
   },
   {
     id: 'kept',
     word: 'kept',
     translation: 'tutmak, sürmek',
-    example: '',
+    example: 'He kept the secret to himself for many years. - Sırrını uzun yıllar kendine sakladı (tuttu).',
     category: 'phrase'
   },
   {
     id: 'submitted',
     word: 'submitted',
     translation: 'teslim etmek',
-    example: '',
+    example: 'All applications must be submitted by the end of the week. - Tüm başvurular hafta sonuna kadar teslim edilmelidir.',
     category: 'phrase'
   },
   {
     id: 'setting-up',
     word: 'setting up',
     translation: 'kurmak',
-    example: '',
+    example: 'They are setting up the stage for tonight\'s concert. - Bu geceki konser için sahneyi kuruyorlar.',
     category: 'phrase'
   },
   {
     id: 'get-through',
     word: 'get through',
     translation: 'başarmak',
-    example: '',
+    example: 'It was a tough time, but we managed to get through it together. - Zor bir dönemdi, ama birlikte atlatmayı başardık.',
     category: 'phrase'
   },
   {
     id: 'according-to',
     word: 'according to',
     translation: 'göre',
-    example: '',
+    example: 'According to the weather forecast, it will rain tomorrow. - Hava tahminlerine göre, yarın yağmur yağacak.',
     category: 'phrase'
   },
   {
     id: 'wished',
     word: 'wished',
     translation: 'dilemek',
-    example: '',
+    example: 'I wished I had studied harder for the math exam. - Keşke matematik sınavına daha çok çalışsaydım diye diledim.',
     category: 'phrase'
   },
   {
     id: 'enquiries',
     word: 'enquiries',
     translation: 'soruşturma',
-    example: '',
+    example: 'For any further enquiries, please contact the main office. - Daha fazla soruşturma için lütfen ana ofisle iletişime geçin.',
     category: 'phrase'
   },
   {
     id: 'pretending',
     word: 'pretending',
     translation: 'mış gibi yapmak',
-    example: '',
+    example: 'The kids were pretending to be brave explorers in the jungle. - Çocuklar ormanda cesur kaşiflermiş gibi yapıyorlardı.',
     category: 'phrase'
   },
   {
     id: 'believe-to',
     word: 'believe to',
     translation: 'inanmak',
-    example: '',
+    example: 'This painting is widely believe to be the work of a famous artist. - Bu tablonun yaygın olarak ünlü bir sanatçının eseri olduğuna inanılır.',
     category: 'phrase'
   },
   {
     id: 'disappointed',
     word: 'disappointed',
     translation: 'hayal kırıklığına uğramış',
-    example: '',
+    example: 'I was very disappointed when my favorite team lost the match. - Favori takımım maçı kaybettiğinde çok hayal kırıklığına uğradım.',
     category: 'phrase'
   },
   {
     id: 'disappointing',
     word: 'disappointing',
     translation: 'hayal kırıklığı yaratan',
-    example: '',
+    example: 'The ending of the movie was quite disappointing. - Filmin sonu oldukça hayal kırıklığı yaratıcıydı.',
     category: 'phrase'
   },
   {
     id: 'amused',
     word: 'amused',
     translation: 'eğlenmiş',
-    example: '',
+    example: 'The children were highly amused by the clown\'s funny tricks. - Çocuklar palyaçonun komik numaralarıyla çok eğlenmişlerdi.',
     category: 'phrase'
   },
   {
     id: 'amusing',
     word: 'amusing',
     translation: 'eğlenceli',
-    example: '',
+    example: 'He told us an amusing story about his travel adventures. - Bize seyahat maceraları hakkında eğlenceli bir hikaye anlattı.',
     category: 'phrase'
   },
   {
     id: 'depressed',
     word: 'depressed',
     translation: 'depresif',
-    example: '',
+    example: 'She felt depressed after failing the important driving test. - Önemli direksiyon sınavında başarısız olduktan sonra depresif hissetti.',
     category: 'phrase'
   },
   {
     id: 'depressing',
     word: 'depressing',
     translation: 'üzücü',
-    example: '',
+    example: 'The constant rain all week was really depressing. - Bütün hafta süren sürekli yağmur gerçekten üzücüydü.',
     category: 'phrase'
   },
   {
     id: 'character',
     word: 'character',
     translation: 'karakter',
-    example: '',
+    example: 'He is the main character in the newly released novel. - Yeni yayımlanan romanın ana karakteri o.',
     category: 'phrase'
   },
   {
     id: 'event',
     word: 'event',
     translation: 'etkinlik',
-    example: '',
+    example: 'The annual sports event attracts athletes from all over the country. - Yıllık spor etkinliği ülkenin dört bir yanından sporcuları çeker.',
     category: 'phrase'
   },
   {
     id: 'gulf',
     word: 'gulf',
     translation: 'körfez',
-    example: '',
+    example: 'The ship sailed smoothly across the calm waters of the gulf. - Gemi körfezin sakin sularında pürüzsüzce ilerledi.',
     category: 'phrase'
   },
   {
     id: 'profits',
     word: 'profits',
     translation: 'kâr',
-    example: '',
+    example: 'The company saw a huge increase in its profits this year. - Şirket bu yıl kârında büyük bir artış gördü.',
     category: 'phrase'
   },
   {
     id: 'charity',
     word: 'charity',
     translation: 'hayır kurumu',
-    example: '',
+    example: 'She donated all of her old clothes to a local charity. - Tüm eski kıyafetlerini yerel bir hayır kurumuna bağışladı.',
     category: 'phrase'
   },
   {
     id: 'beauty',
     word: 'beauty',
     translation: 'güzellik',
-    example: '',
+    example: 'The natural beauty of the national park is truly breathtaking. - Milli parkın doğal güzelliği gerçekten nefes kesicidir.',
     category: 'phrase'
   },
   {
     id: 'celebration',
     word: 'celebration',
     translation: 'kutlama',
-    example: '',
+    example: 'We are having a big celebration for his retirement next week. - Haftaya onun emekliliği için büyük bir kutlama yapıyoruz.',
     category: 'phrase'
   },
   {
     id: 'celebrate',
     word: 'celebrate',
     translation: 'kutlamak',
-    example: '',
+    example: 'How do you usually celebrate your birthday with your friends? - Doğum gününü arkadaşlarınla genelde nasıl kutlarsın?',
     category: 'phrase'
   },
   {
     id: 'charitable',
     word: 'charitable',
     translation: 'hayırsever',
-    example: '',
+    example: 'They do a lot of charitable work to help the homeless. - Evsizlere yardım etmek için çok sayıda hayırsever iş yaparlar.',
     category: 'phrase'
   },
   {
     id: 'creative',
     word: 'creative',
     translation: 'yaratıcı',
-    example: '',
+    example: 'She is a creative designer who always comes up with unique ideas. - O, her zaman eşsiz fikirler bulan yaratıcı bir tasarımcıdır.',
     category: 'phrase'
   },
   {
     id: 'creativity',
     word: 'creativity',
     translation: 'yaratıcılık',
-    example: '',
+    example: 'Writing a good story requires a lot of imagination and creativity. - İyi bir hikaye yazmak çok fazla hayal gücü ve yaratıcılık gerektirir.',
     category: 'phrase'
   },
   {
     id: 'cultural',
     word: 'cultural',
     translation: 'kültürel',
-    example: '',
+    example: 'The city is famous for its historical and cultural heritage. - Şehir, tarihi ve kültürel mirasıyla ünlüdür.',
     category: 'phrase'
   },
   {
     id: 'development',
     word: 'development',
     translation: 'gelişim',
-    example: '',
+    example: 'Healthy food is essential for the physical development of children. - Sağlıklı yiyecekler çocukların fiziksel gelişimi için gereklidir.',
     category: 'phrase'
   },
   {
     id: 'musical',
     word: 'musical',
     translation: 'müzikal',
-    example: '',
+    example: 'He showed a great musical talent from a very young age. - Çok genç yaşlardan itibaren harika bir müzikal yetenek gösterdi.',
     category: 'phrase'
   },
   {
     id: 'musician',
     word: 'musician',
     translation: 'müzisyen',
-    example: '',
+    example: 'The famous musician performed perfectly in front of thousands of fans. - Ünlü müzisyen binlerce hayranının önünde mükemmel bir performans sergiledi.',
     category: 'phrase'
   },
   {
     id: 'organised',
     word: 'organised',
     translation: 'organize',
-    example: '',
+    example: 'She is very organised and always keeps her desk perfectly clean. - O çok organizedir ve masasını her zaman mükemmel temiz tutar.',
     category: 'phrase'
   },
   {
     id: 'organiser',
     word: 'organiser',
     translation: 'organizatör',
-    example: '',
+    example: 'The event organiser made sure everything went smoothly. - Etkinlik organizatörü her şeyin sorunsuz gitmesini sağladı.',
     category: 'phrase'
   },
   {
     id: 'organize',
     word: 'organize',
     translation: 'organize etmek',
-    example: '',
+    example: 'We need to organize a surprise party for her birthday. - Onun doğum günü için sürpriz bir parti organize etmeliyiz.',
     category: 'phrase'
   },
   {
     id: 'performer',
     word: 'performer',
     translation: 'sanatçı',
-    example: '',
+    example: 'The street performer amazed the crowd with his magic tricks. - Sokak sanatçısı sihir numaralarıyla kalabalığı şaşkına çevirdi.',
     category: 'phrase'
   },
   {
     id: 'perform',
     word: 'perform',
     translation: 'performans sergilemek',
-    example: '',
+    example: 'The choir will perform classical songs at the winter concert. - Koro kış konserinde klasik şarkılar performans sergileyecek.',
     category: 'phrase'
   },
   {
     id: 'wait-a-second',
     word: 'wait a second',
     translation: 'bir saniye bekle',
-    example: '',
+    example: 'Please wait a second, I need to find my keys. - Lütfen bir saniye bekle, anahtarlarımı bulmam lazım.',
     category: 'phrase'
   },
   {
     id: 'one-moment-please',
     word: 'one moment please',
     translation: 'bir an lütfen',
-    example: '',
+    example: 'One moment please, I will connect you to the manager. - Bir an lütfen, sizi yöneticiye bağlayacağım.',
     category: 'phrase'
   },
   {
     id: 'let-me-check-for-you',
     word: 'let me check for you',
     translation: 'sizin için kontrol edeyim',
-    example: '',
+    example: 'Let me check for you if we have that shirt in your size. - O gömleğin bedeninize uygun olanı var mı, sizin için kontrol edeyim.',
     category: 'phrase'
   },
   {
     id: 'misses',
     word: 'misses',
     translation: 'ıskalamak',
-    example: '',
+    example: 'If he misses the train, he will be late for the meeting. - Treni ıskalarsa, toplantıya geç kalacak.',
     category: 'phrase'
   },
   {
     id: 'referee',
     word: 'referee',
     translation: 'hakem',
-    example: '',
+    example: 'The referee blew the whistle to start the football match. - Hakem futbol maçını başlatmak için düdük çaldı.',
     category: 'phrase'
   },
   {
     id: 'afraid-of',
     word: 'afraid of',
     translation: 'korkmak',
-    example: '',
+    example: 'My little brother is very afraid of the dark. - Küçük kardeşim karanlıktan çok korkar.',
     category: 'phrase'
   },
   {
     id: 'scared-of',
     word: 'scared of',
     translation: 'korkmuş',
-    example: '',
+    example: 'She was too scared of heights to look down from the balcony. - Balkondan aşağı bakamayacak kadar yükseklikten korkmuştu.',
     category: 'phrase'
   },
   {
     id: 'essential-for',
     word: 'essential for',
     translation: 'gerekli',
-    example: '',
+    example: 'Water is absolutely essential for the survival of all living things. - Su, tüm canlıların hayatta kalması için kesinlikle gereklidir.',
     category: 'phrase'
   },
   {
     id: 'nervous',
     word: 'nervous',
     translation: 'gergin',
-    example: '',
+    example: 'I always feel nervous before speaking in front of a large crowd. - Büyük bir kalabalığın önünde konuşmadan önce her zaman gergin hissederim.',
     category: 'phrase'
   },
   {
     id: 'tired-of',
     word: 'tired of',
     translation: 'bıkmış',
-    example: '',
+    example: 'I am so tired of doing the same boring tasks every single day. - Her gün aynı sıkıcı görevleri yapmaktan çok bıktım.',
     category: 'phrase'
   },
   {
     id: 'right-for',
     word: 'right for',
     translation: 'için doğru',
-    example: '',
+    example: 'You need to decide if this career path is really right for you. - Bu kariyer yolunun senin için gerçekten doğru olup olmadığına karar vermelisin.',
     category: 'phrase'
   },
   {
     id: 'similar-to',
     word: 'similar to',
     translation: 'benzer',
-    example: '',
+    example: 'Your new phone looks very similar to the one I bought last year. - Yeni telefonun geçen yıl aldığım telefona çok benzer görünüyor.',
     category: 'phrase'
   },
   {
     id: 'popular-with',
     word: 'popular with',
     translation: 'ile popüler',
-    example: '',
+    example: 'The new teacher is extremely popular with all the students. - Yeni öğretmen tüm öğrencilerle son derece popüler.',
     category: 'phrase'
   },
   {
     id: 'perfect-to',
     word: 'perfect to',
     translation: 'için mükemmel',
-    example: '',
+    example: 'This sunny weather is perfect to go for a long walk in the park. - Bu güneşli hava parkta uzun bir yürüyüşe çıkmak için mükemmel.',
     category: 'phrase'
   },
   {
     id: 'definitely',
     word: 'definitely',
     translation: 'kesinlikle',
-    example: '',
+    example: 'I will definitely call you when I get home tonight. - Bu gece eve vardığımda seni kesinlikle arayacağım.',
     category: 'phrase'
   },
   {
     id: 'speaking-of',
     word: 'speaking of',
     translation: 'demişken',
-    example: '',
+    example: 'Speaking of movies, did you watch the new sci-fi film yet? - Filmlerden demişken, yeni bilim kurgu filmini izledin mi?',
     category: 'phrase'
   },
   {
     id: 'that-reminds-me',
     word: 'that reminds me',
     translation: 'o bana şunu hatırlattı',
-    example: '',
+    example: 'That reminds me, I need to buy some milk on the way back. - O bana şunu hatırlattı, dönüş yolunda biraz süt almam lazım.',
     category: 'phrase'
   },
   {
     id: 'you-ve-got-nothing',
     word: 'you\'ve got nothing',
     translation: 'hiçbir şeyin yok',
-    example: '',
+    example: 'Feel free to reach out if you need any help with your project. - Projenle ilgili yardıma ihtiyacın olursa bana ulaşmaktan çekinme.',
     category: 'phrase'
   },
   {
     id: 'by-the-way',
     word: 'by the way',
     translation: 'bu arada',
-    example: '',
+    example: 'By the way, what time does the concert start tonight? - Bu arada, bu gece konser saat kaçta başlıyor?',
     category: 'phrase'
   },
   {
     id: 'i-was-saying',
     word: 'I was saying',
     translation: 'diyordum ki',
-    example: '',
+    example: 'As I was saying before we were interrupted, the project is almost done. - Bölünmeden önce diyordum ki, proje neredeyse bitti.',
     category: 'phrase'
   },
   {
     id: 'i-m-still-worried',
     word: 'I\'m still worried',
     translation: 'hala endişeliyim',
-    example: '',
+    example: 'By the way, did you finish reading that book I lent you? - Bu arada, sana ödünç verdiğim o kitabı okumayı bitirdin mi?',
     category: 'phrase'
   },
   {
     id: 'identify',
     word: 'identify',
     translation: 'belirlemek',
-    example: '',
+    example: 'It is important to identify the problem before trying to solve it. - Çözmeye çalışmadan önce sorunu belirlemek önemlidir.',
     category: 'phrase'
   },
   {
     id: 'disappear',
     word: 'disappear',
     translation: 'kaybolmak',
-    example: '',
+    example: 'The magician made the coin disappear in front of our eyes. - Sihirbaz gözlerimizin önünde madeni parayı kaybolmak (yok etmek) suretiyle büyüledi.',
     category: 'phrase'
   },
   {
     id: 'value',
     word: 'value',
     translation: 'değer',
-    example: '',
+    example: 'This antique vase has a very high historical value. - Bu antika vazonun çok yüksek tarihi bir değeri var.',
     category: 'phrase'
   },
   {
     id: 'hurt',
     word: 'hurt',
     translation: 'incitmek',
-    example: '',
+    example: 'Be careful with that knife, you might hurt yourself. - O bıçakla dikkatli ol, kendini incitirsin.',
     category: 'phrase'
   },
   {
     id: 'adopted',
     word: 'adopted',
     translation: 'evlat edinmek',
-    example: '',
+    example: 'They decided to adopt a beautiful rescue dog from the shelter. - Barınaktan güzel bir kurtarma köpeği evlat edinmeye karar verdiler.',
     category: 'phrase'
   },
   {
     id: 'honour',
     word: 'honour',
     translation: 'onur',
-    example: '',
+    example: 'It is a great honour to receive this prestigious award today. - Bugün bu prestijli ödülü almak büyük bir onur.',
     category: 'phrase'
   },
   {
     id: 'retirement',
     word: 'retirement',
     translation: 'emeklilik',
-    example: '',
+    example: 'He is planning to travel the world after his retirement next year. - Gelecek yılki emekliliğinden sonra dünyayı gezmeyi planlıyor.',
     category: 'phrase'
   },
   {
     id: 'thick',
     word: 'thick',
     translation: 'kalın',
-    example: '',
+    example: 'You should wear a thick coat because it is freezing outside. - Dışarısı dondurucu soğuk olduğu için kalın bir kaban giymelisin.',
     category: 'phrase'
   },
   {
     id: 'constantly',
     word: 'constantly',
     translation: 'sürekli',
-    example: '',
+    example: 'The baby was crying constantly throughout the entire flight. - Bebek tüm uçuş boyunca sürekli ağlıyordu.',
     category: 'phrase'
   },
   {
     id: 'reached',
     word: 'reached',
     translation: 'ulaşmak',
-    example: '',
+    example: 'We finally reached the top of the mountain after hours of climbing. - Saatler süren tırmanışın ardından nihayet dağın zirvesine ulaştık.',
     category: 'phrase'
   },
   {
     id: 'negotiate',
     word: 'negotiate',
     translation: 'müzakere',
-    example: '',
+    example: 'They had to negotiate a better deal with the suppliers. - Tedarikçilerle daha iyi bir anlaşmayı müzakere etmek zorundaydılar.',
     category: 'phrase'
   },
   {
     id: 'pressure',
     word: 'pressure',
     translation: 'baskı',
-    example: '',
+    example: 'She performs very well even under extreme pressure at work. - İş yerinde aşırı baskı altındayken bile çok iyi performans sergiler.',
     category: 'phrase'
   },
   {
     id: 'ambitious',
     word: 'ambitious',
     translation: 'hırslı',
-    example: '',
+    example: 'He is an ambitious young lawyer who wants to become a partner soon. - Yakında ortak olmak isteyen hırslı genç bir avukattır.',
     category: 'phrase'
   },
   {
     id: 'anxious',
     word: 'anxious',
     translation: 'endişeli',
-    example: '',
+    example: 'I always feel anxious waiting for my exam results to be announced. - Sınav sonuçlarımın açıklanmasını beklerken her zaman endişeli hissederim.',
     category: 'phrase'
   },
   {
     id: 'misjudged',
     word: 'misjudged',
     translation: 'yanlış yargılama',
-    example: '',
+    example: 'I completely misjudged his character; he is actually a very nice guy. - Karakterini tamamen yanlış yargılamışım; aslında çok iyi bir adam.',
     category: 'phrase'
   },
   {
     id: 'smoother',
     word: 'smoother',
     translation: 'pürüzsüz',
-    example: '',
+    example: 'Using this special lotion makes your skin feel much smoother. - Bu özel losyonu kullanmak cildinizin çok daha pürüzsüz hissetmesini sağlar.',
     category: 'phrase'
   },
   {
     id: 'nowadays',
     word: 'nowadays',
     translation: 'bugünlerde',
-    example: '',
+    example: 'Nowadays, teenagers spend too much time on their mobile phones. - Bugünlerde gençler cep telefonlarında çok fazla zaman harcıyorlar.',
     category: 'phrase'
   },
   {
     id: 'presence',
     word: 'presence',
     translation: 'var olmak',
-    example: '',
+    example: 'Her calm presence in the room helped everyone relax. - Odadaki sakin varlığı herkesin rahatlamasına yardımcı oldu.',
     category: 'phrase'
   },
   {
     id: 'avoid',
     word: 'avoid',
     translation: 'kaçınmak',
-    example: '',
+    example: 'You should try to avoid eating too much sugar for a healthy diet. - Sağlıklı bir diyet için çok fazla şeker yemekten kaçınmaya çalışmalısın.',
     category: 'phrase'
   },
   {
     id: 'adapted',
     word: 'adapted',
     translation: 'uyarlanmış',
-    example: '',
+    example: 'The popular novel was successfully adapted into an award-winning movie. - Popüler roman başarılı bir şekilde ödüllü bir filme uyarlandı.',
     category: 'phrase'
   },
   {
     id: 'award',
     word: 'award',
     translation: 'ödül',
-    example: '',
+    example: 'She won the first prize award for her excellent science project. - Mükemmel bilim projesi için birincilik ödülünü kazandı.',
     category: 'phrase'
   },
   {
     id: 'mess-with',
     word: 'mess with',
     translation: 'bulaşmak',
-    example: '',
+    example: 'You shouldn\'t mess with the wiring if you don\'t know what you are doing. - Ne yaptığını bilmiyorsan kablolarla bulaşmamalısın.',
     category: 'phrase'
   },
   {
     id: 'miss',
     word: 'miss',
     translation: 'özlemek',
-    example: '',
+    example: 'I really miss the traditional food my grandmother used to make. - Büyükannemin eskiden yaptığı geleneksel yemekleri gerçekten özlüyorum.',
     category: 'phrase'
   },
   {
     id: 'thin',
     word: 'thin',
     translation: 'ince',
-    example: '',
+    example: 'The ice on the lake is too thin to walk on safely. - Göldeki buz güvenle yürümek için çok ince.',
     category: 'phrase'
   },
   {
     id: 'closed',
     word: 'closed',
     translation: 'kapalı',
-    example: '',
+    example: 'The library is closed on Sundays and public holidays. - Kütüphane pazar günleri ve resmi tatillerde kapalıdır.',
     category: 'phrase'
   },
   {
     id: 'shelves',
     word: 'shelves',
     translation: 'raf',
-    example: '',
+    example: 'We need to put up some new shelves to hold all these books. - Tüm bu kitapları koymak için bazı yeni raflar kurmalıyız.',
     category: 'phrase'
   },
   {
     id: 'rebellious',
     word: 'rebellious',
     translation: 'asi',
-    example: '',
+    example: 'As a teenager, he had a very rebellious attitude towards authority. - Bir genç olarak, otoriteye karşı çok asi bir tutumu vardı.',
     category: 'phrase'
   },
   {
     id: 'relaxed',
     word: 'relaxed',
     translation: 'rahat',
-    example: '',
+    example: 'He looked completely relaxed while reading a book on the beach. - Sahilde kitap okurken tamamen rahat görünüyordu.',
     category: 'phrase'
   },
   {
     id: 'therefore',
     word: 'therefore',
     translation: 'bu yüzden',
-    example: '',
+    example: 'He was injured, and therefore he couldn\'t play in the final match. - O yaralıydı ve bu yüzden final maçında oynayamadı.',
     category: 'phrase'
   },
   {
     id: 'provide',
     word: 'provide',
     translation: 'sağlamak',
-    example: '',
+    example: 'The hotel will provide fresh towels and soap for all guests. - Otel tüm misafirler için taze havlu ve sabun sağlayacaktır.',
     category: 'phrase'
   },
   {
     id: 'deal-with',
     word: 'deal with',
     translation: 'ilgilenmek',
-    example: '',
+    example: 'She has to deal with angry customers every day at her job. - İşinde her gün kızgın müşterilerle ilgilenmek zorundadır.',
     category: 'phrase'
   },
   {
     id: 'improve',
     word: 'improve',
     translation: 'iyileştirmek',
-    example: '',
+    example: 'Practicing every day will help you improve your speaking skills. - Her gün pratik yapmak konuşma becerilerini iyileştirmene yardımcı olacaktır.',
     category: 'phrase'
   },
 
@@ -3374,462 +3374,462 @@ export const vocabularyData: VocabularyWord[] = [
     id: 'v-c-make-a-good-impression',
     word: 'make a good impression',
     translation: 'iyi bir izlenim bırakmak',
-    example: '',
+    example: 'It is important to dress nicely to make a good impression at the interview. - Görüşmede iyi bir izlenim bırakmak için güzel giyinmek önemlidir.',
     category: 'phrase',
   },
   {
     id: 'v-c-i-m-not-so-sure-about-that',
     word: 'I\'m not so sure about that',
     translation: 'Ondan o kadar emin değilim',
-    example: '',
+    example: 'The scientist was able to identify the rare bird species. - Bilim insanı nadir kuş türünü belirlemeyi başardı.',
     category: 'phrase',
   },
   {
     id: 'v-c-i-see-where-you-re-coming-from',
     word: 'I see where you\'re coming from',
     translation: 'Ne demek istediğini anlıyorum',
-    example: '',
+    example: 'I see where you\'re coming from, but I still think we should try the other option. - Ne demek istediğini anlıyorum ama hala diğer seçeneği denememiz gerektiğini düşünüyorum.',
     category: 'phrase',
   },
   {
     id: 'v-c-to-be-turned-into',
     word: 'to be turned into',
     translation: 'dönüştürülmek',
-    example: '',
+    example: 'The old factory is going to be turned into a modern art museum. - Eski fabrika modern bir sanat müzesine dönüştürülecek.',
     category: 'phrase',
   },
   {
     id: 'v-c-take-it-back',
     word: 'take it back',
     translation: 'geri götürmek, iade etmek',
-    example: '',
+    example: 'If the shirt doesn\'t fit, you can take it back to the store. - Eğer gömlek uymazsa, onu mağazaya geri götürebilirsin.',
     category: 'phrase',
   },
   {
     id: 'v-c-turn-it-off-and-on-again',
     word: 'turn it off and on again',
     translation: 'kapatıp tekrar açmak',
-    example: '',
+    example: 'When my computer freezes, I usually just turn it off and on again. - Bilgisayarım donduğunda, genelde sadece kapatıp tekrar açarım.',
     category: 'phrase',
   },
   {
     id: 'v-c-claim-on-your-insurance',
     word: 'claim on your insurance',
     translation: 'sigortadan talep etmek',
-    example: '',
+    example: 'If your car is stolen, you must make a claim on your insurance. - Eğer arabanız çalınırsa, sigortadan talep etmek zorundasınız.',
     category: 'phrase',
   },
   {
     id: 'v-c-what-have-i-got-to-lose',
     word: 'what have I got to lose',
     translation: 'kaybedecek neyim var ki',
-    example: '',
+    example: 'I might as well apply for the job; what have I got to lose? - İşe başvursam iyi olur; kaybedecek neyim var ki?',
     category: 'phrase',
   },
   {
     id: 'v-c-broken-down',
     word: 'broken down',
     translation: 'bozulmak (araba, makine vb.)',
-    example: '',
+    example: 'My car has broken down twice this week on the highway. - Arabam bu hafta otoyolda iki kez bozuldu.',
     category: 'phrase',
   },
   {
     id: 'v-c-spill',
     word: 'spill',
     translation: 'dökmek (sıvı)',
-    example: '',
+    example: 'Be careful not to spill hot coffee on your clean shirt. - Temiz gömleğine sıcak kahve dökmemeye dikkat et.',
     category: 'phrase',
   },
   {
     id: 'v-c-annoying',
     word: 'annoying',
     translation: 'sinir bozucu',
-    example: '',
+    example: 'That loud noise coming from the street is really annoying. - Sokaktan gelen o yüksek ses gerçekten sinir bozucu.',
     category: 'phrase',
   },
   {
     id: 'v-c-frozen-screen',
     word: 'frozen screen',
     translation: 'donmuş ekran',
-    example: '',
+    example: 'I couldn\'t save my document because of the frozen screen. - Donmuş ekran yüzünden belgemi kaydedemedim.',
     category: 'phrase',
   },
   {
     id: 'v-c-you-won-t-believe-what-i-did',
     word: 'you won\'t believe what I did',
     translation: 'ne yaptığıma inanamayacaksın',
-    example: '',
+    example: 'The old hospital is going to be turned into luxury apartments. - Eski hastane lüks dairelere dönüştürülecek.',
     category: 'phrase',
   },
   {
     id: 'v-c-it-turned-out',
     word: 'it turned out',
     translation: 'ortaya çıktı ki, meğerse',
-    example: '',
+    example: 'It turned out that we had been completely wrong all along. - Ortaya çıktı ki başından beri tamamen haksızmışız.',
     category: 'phrase',
   },
   {
     id: 'v-c-coincidence',
     word: 'coincidence',
     translation: 'tesadüf',
-    example: '',
+    example: 'Meeting you here in Paris is such a crazy coincidence! - Seninle burada Paris\'te karşılaşmak ne çılgın bir tesadüf!',
     category: 'phrase',
   },
   {
     id: 'v-c-in-the-end',
     word: 'in the end',
     translation: 'sonunda',
-    example: '',
+    example: 'We tried our best, but in the end, it wasn\'t enough. - Elimizden gelenin en iyisini yaptık, ama sonunda yeterli olmadı.',
     category: 'phrase',
   },
   {
     id: 'v-c-luckily',
     word: 'luckily',
     translation: 'şans eseri, neyse ki',
-    example: '',
+    example: 'Luckily, I found my lost wallet under the car seat. - Şans eseri, kayıp cüzdanımı araba koltuğunun altında buldum.',
     category: 'phrase',
   },
   {
     id: 'v-c-straight-away',
     word: 'straight away',
     translation: 'hemen, derhal',
-    example: '',
+    example: 'If you feel chest pain, you should see a doctor straight away. - Eğer göğüs ağrısı hissederseniz, derhal bir doktora görünmelisiniz.',
     category: 'phrase',
   },
   {
     id: 'v-c-freecycling',
     word: 'freecycling',
     translation: 'bedava eşya takası',
-    example: '',
+    example: 'Freecycling is a great way to give away things you no longer need. - Bedava eşya takası, artık ihtiyacınız olmayan eşyaları vermenin harika bir yoludur.',
     category: 'phrase',
   },
   {
     id: 'v-c-get-a-refund',
     word: 'get a refund',
     translation: 'para iadesi almak',
-    example: '',
+    example: 'If the product is damaged, you have the right to get a refund. - Eğer ürün hasarlıysa, para iadesi alma hakkınız vardır.',
     category: 'phrase',
   },
   {
     id: 'v-c-do-you-need-a-hand',
     word: 'do you need a hand',
     translation: 'yardıma ihtiyacın var mı',
-    example: '',
+    example: 'Those boxes look very heavy, do you need a hand carrying them? - O kutular çok ağır görünüyor, taşırken yardıma ihtiyacın var mı?',
     category: 'phrase',
   },
   {
     id: 'v-c-ask-a-favour-in-return',
     word: 'ask a favour in return',
     translation: 'karşılığında bir iyilik istemek',
-    example: '',
+    example: 'I will help you, but I might ask a favour in return someday. - Sana yardım edeceğim, ama bir gün karşılığında bir iyilik isteyebilirim.',
     category: 'phrase',
   },
   {
     id: 'v-c-give-someone-a-hand',
     word: 'give someone a hand',
     translation: 'birine yardım etmek',
-    example: '',
+    example: 'Can you give me a hand with this difficult math homework? - Bu zor matematik ödevinde bana yardım edebilir misin?',
     category: 'phrase',
   },
   {
     id: 'v-c-take-photos',
     word: 'take photos',
     translation: 'fotoğraf çekmek',
-    example: '',
+    example: 'We stopped at the beautiful bridge to take photos of the sunset. - Gün batımının fotoğraf çekmek için o güzel köprüde durduk.',
     category: 'phrase',
   },
   {
     id: 'v-c-give-someone-a-lift',
     word: 'give someone a lift',
     translation: 'birini arabayla bırakmak',
-    example: '',
+    example: 'It is raining heavily, let me give you a lift to the station. - Şiddetli yağmur yağıyor, seni arabayla istasyona bırakayım.',
     category: 'phrase',
   },
   {
     id: 'v-c-talk-through',
     word: 'talk through',
     translation: 'enine boyuna konuşmak, tartışmak',
-    example: '',
+    example: 'Let\'s sit down and talk through the problem before making a decision. - Karar vermeden önce oturup problemi enine boyuna tartışalım.',
     category: 'phrase',
   },
   {
     id: 'v-c-for-example',
     word: 'for example',
     translation: 'örneğin',
-    example: '',
+    example: 'You can eat many healthy foods, for example, apples and carrots. - Birçok sağlıklı yiyecek yiyebilirsiniz, örneğin, elma ve havuç.',
     category: 'phrase',
   },
   {
     id: 'v-c-spread-my-wings',
     word: 'spread my wings',
     translation: 'kanatlarını açmak, yeni şeyler denemek',
-    example: '',
+    example: 'Going to university abroad will allow me to spread my wings. - Yurtdışında üniversiteye gitmek kanatlarını açmama (yeni şeyler denememe) olanak tanıyacak.',
     category: 'phrase',
   },
   {
     id: 'v-c-resigned',
     word: 'resigned',
     translation: 'istifa etmek',
-    example: '',
+    example: 'The manager resigned from his position after the scandal was revealed. - Yönetici skandal ortaya çıktıktan sonra görevinden istifa etti.',
     category: 'phrase',
   },
   {
     id: 'v-c-bored-in-my-job',
     word: 'bored in my job',
     translation: 'işimden sıkıldım',
-    example: '',
+    example: 'I feel so bored in my job because every day is exactly the same. - İşimden sıkıldım çünkü her gün tamamen aynı.',
     category: 'phrase',
   },
   {
     id: 'v-c-ask-for-recommendations',
     word: 'ask for recommendations',
     translation: 'tavsiye istemek',
-    example: '',
+    example: 'We should ask for recommendations from the locals for a good restaurant. - İyi bir restoran için yerel halktan tavsiye istemeliyiz.',
     category: 'phrase',
   },
   {
     id: 'v-c-worth-asking',
     word: 'worth asking',
     translation: 'sormaya değer',
-    example: '',
+    example: 'I don\'t think he will agree, but it is still worth asking. - Kabul edeceğini sanmıyorum ama yine de sormaya değer.',
     category: 'phrase',
   },
   {
     id: 'v-c-huge-diamond',
     word: 'huge diamond',
     translation: 'kocaman elmas',
-    example: '',
+    example: 'The thief managed to steal the huge diamond from the museum display. - Hırsız müze vitrinindeki kocaman elması çalmayı başardı.',
     category: 'phrase',
   },
   {
     id: 'v-c-ridiculous',
     word: 'ridiculous',
     translation: 'saçma, gülünç',
-    example: '',
+    example: 'It is absolutely ridiculous to pay that much money for a plain t-shirt. - Düz bir tişört için o kadar para ödemek kesinlikle gülünç.',
     category: 'phrase',
   },
   {
     id: 'v-c-take-presents',
     word: 'take presents',
     translation: 'hediye götürmek',
-    example: '',
+    example: 'It is polite to take presents when you are invited to someone\'s house. - Birinin evine davet edildiğinde hediye götürmek kibarlıktır.',
     category: 'phrase',
   },
   {
     id: 'v-c-arrive-on-time',
     word: 'arrive on time',
     translation: 'zamanında varmak',
-    example: '',
+    example: 'Please make sure to arrive on time for your dentist appointment. - Lütfen dişçi randevunuza zamanında varmaya özen gösterin.',
     category: 'phrase',
   },
   {
     id: 'v-c-take-your-shoes-off',
     word: 'take your shoes off',
     translation: 'ayakkabılarını çıkarmak',
-    example: '',
+    example: 'In our culture, you must take your shoes off before entering the house. - Kültürümüzde, eve girmeden önce ayakkabılarını çıkarmalısın.',
     category: 'phrase',
   },
   {
     id: 'v-c-is-there-anything-we-can-do-to-help',
     word: 'is there anything we can do to help',
     translation: 'yardım edebileceğimiz bir şey var mı',
-    example: '',
+    example: 'We heard the bad news; is there anything we can do to help? - Kötü haberi duyduk; yardım edebileceğimiz bir şey var mı?',
     category: 'phrase',
   },
   {
     id: 'v-c-is-it-ok-if-i',
     word: 'is it OK if I',
     translation: 'yapsam olur mu / sorun olur mu',
-    example: '',
+    example: 'Is it OK if I leave the office early today to see my doctor? - Bugün doktorumu görmek için ofisten erken çıksam sorun olur mu?',
     category: 'phrase',
   },
   {
     id: 'v-c-it-s-all-under-control',
     word: 'it\'s all under control',
     translation: 'her şey kontrol altında',
-    example: '',
+    example: 'We were worried about the exam, but it turned out to be quite easy. - Sınav için endişeliydik ama ortaya çıktı ki oldukça kolaymış.',
     category: 'phrase',
   },
   {
     id: 'v-c-do-you-mind-if-i',
     word: 'do you mind if I',
     translation: 'yapsam sakıncası var mı',
-    example: '',
+    example: 'Do you mind if I open the window to get some fresh air? - Biraz temiz hava almak için pencereyi açsam sakıncası var mı?',
     category: 'phrase',
   },
   {
     id: 'v-c-not-at-all',
     word: 'not at all',
     translation: 'hiç de bile, rica ederim',
-    example: '',
+    example: 'Do you mind if I sit here? - Not at all, please go ahead. - Buraya oturmamın sakıncası var mı? - Hiç de bile, lütfen buyrun.',
     category: 'phrase',
   },
   {
     id: 'v-c-it-s-hot-in-here',
     word: 'it\'s hot in here',
     translation: 'burası çok sıcak',
-    example: '',
+    example: 'Do you mind if I sit next to you during the presentation? - Sunum sırasında yanına otursam sakıncası var mı?',
     category: 'phrase',
   },
   {
     id: 'v-c-i-imagine-you-re',
     word: 'I imagine you\'re',
     translation: 'olduğunu tahmin ediyorum',
-    example: '',
+    example: 'I imagine you\'re tired after such a long journey. - Böyle uzun bir yolculuktan sonra yorgun olduğunu tahmin ediyorum.',
     category: 'phrase',
   },
   {
     id: 'v-c-that-must-be-exciting',
     word: 'that must be exciting',
     translation: 'bu heyecan verici olmalı',
-    example: '',
+    example: 'You are traveling to Japan? Wow, that must be exciting! - Japonya\'ya mı seyahat ediyorsun? Vay canına, bu heyecan verici olmalı!',
     category: 'phrase',
   },
   {
     id: 'v-c-action-shots',
     word: 'action shots',
     translation: 'hareketli çekimler',
-    example: '',
+    example: 'The sports photographer took incredible action shots during the final match. - Spor fotoğrafçısı final maçı sırasında inanılmaz hareketli çekimler yaptı.',
     category: 'phrase',
   },
   {
     id: 'v-c-generally',
     word: 'generally',
     translation: 'genellikle',
-    example: '',
+    example: 'Generally, it is warmer in the south than in the north. - Genellikle güney, kuzeyden daha sıcaktır.',
     category: 'phrase',
   },
   {
     id: 'v-c-normally',
     word: 'normally',
     translation: 'normalde',
-    example: '',
+    example: 'I normally wake up at 7 AM, but today I slept until 9 AM. - Normalde sabah 7\'de uyanırım ama bugün 9\'a kadar uyudum.',
     category: 'phrase',
   },
   {
     id: 'v-c-typically',
     word: 'typically',
     translation: 'tipik olarak',
-    example: '',
+    example: 'Typically, a British breakfast includes eggs, bacon, and beans. - Tipik olarak, bir İngiliz kahvaltısı yumurta, pastırma ve fasulye içerir.',
     category: 'phrase',
   },
   {
     id: 'v-c-as-a-rule',
     word: 'as a rule',
     translation: 'kural olarak, genel olarak',
-    example: '',
+    example: 'As a rule, you should not eat heavily right before going to bed. - Genel kural olarak, yatmadan hemen önce ağır yememelisiniz.',
     category: 'phrase',
   },
   {
     id: 'v-c-a-couple-of',
     word: 'a couple of',
     translation: 'birkaç',
-    example: '',
+    example: 'I just need a couple of minutes to finish typing this email. - Bu e-postayı yazmayı bitirmek için birkaç dakikaya ihtiyacım var.',
     category: 'phrase',
   },
   {
     id: 'v-c-sort-of-thing',
     word: 'sort of thing',
     translation: 'o tarz şeyler',
-    example: '',
+    example: 'I enjoy hiking, camping, and that sort of thing. - Doğa yürüyüşü, kamp ve o tarz şeylerden hoşlanırım.',
     category: 'phrase',
   },
   {
     id: 'v-c-kind-of-thing',
     word: 'kind of thing',
     translation: 'bu tarz bir şey',
-    example: '',
+    example: 'Action movies aren\'t really my kind of thing. - Aksiyon filmleri pek benim tarzım bir şey değil.',
     category: 'phrase',
   },
   {
     id: 'v-c-vague-language',
     word: 'vague language',
     translation: 'belirsiz dil',
-    example: '',
+    example: 'Politicians often use vague language to avoid answering direct questions. - Politikacılar doğrudan soruları yanıtlamaktan kaçınmak için genellikle belirsiz dil kullanırlar.',
     category: 'phrase',
   },
   {
     id: 'v-c-except-for',
     word: 'except for',
     translation: 'haricinde, -den başka',
-    example: '',
+    example: 'Everyone attended the meeting except for John, who was sick. - Hasta olan John haricinde herkes toplantıya katıldı.',
     category: 'phrase',
   },
   {
     id: 'v-c-it-s-meant-to-be',
     word: 'it\'s meant to be',
     translation: 'olduğu söyleniyor, olması bekleniyor',
-    example: '',
+    example: 'That movie is meant to be very good. - O filmin çok iyi olduğu söyleniyor.',
     category: 'phrase',
   },
   {
     id: 'v-c-highly-recommended',
     word: 'highly recommended',
     translation: 'şiddetle tavsiye edilen',
-    example: '',
+    example: 'This book is highly recommended for anyone interested in history. - Bu kitap tarihle ilgilenen herkes için şiddetle tavsiye edilir.',
     category: 'phrase',
   },
   {
     id: 'v-c-it-s-supposed-to-be',
     word: 'it\'s supposed to be',
     translation: 'olduğu söyleniyor, olması bekleniyor',
-    example: '',
+    example: 'It\'s supposed to be sunny today. - Bugün havanın güneşli olması bekleniyor.',
     category: 'phrase',
   },
   {
     id: 'v-c-i-m-not-a-big-fan-of',
     word: 'I\'m not a big fan of',
     translation: 'nın büyük bir hayranı değilim, pek sevmem',
-    example: '',
+    example: 'I\'m not a big fan of spicy food, to be honest. - Dürüst olmak gerekirse, acılı yemeklerin pek hayranı değilim.',
     category: 'phrase',
   },
   {
     id: 'v-c-i-doubt',
     word: 'I doubt',
     translation: 'şüpheliyim',
-    example: '',
+    example: 'I doubt that they will arrive on time in this heavy traffic. - Bu yoğun trafikte zamanında varacaklarından şüpheliyim.',
     category: 'phrase',
   },
   {
     id: 'v-c-just-a-moment',
     word: 'just a moment',
     translation: 'sadece bir an, bir saniye',
-    example: '',
+    example: 'Could you wait just a moment while I find your file? - Dosyanızı bulurken sadece bir saniye bekler misiniz?',
     category: 'phrase',
   },
   {
     id: 'v-c-let-me-check',
     word: 'let me check',
     translation: 'kontrol edeyim',
-    example: '',
+    example: 'Let me check the schedule to see if the doctor is available. - Doktorun müsait olup olmadığını görmek için programı kontrol edeyim.',
     category: 'phrase',
   },
   {
     id: 'v-c-public-speaking',
     word: 'public speaking',
     translation: 'topluluk önünde konuşma',
-    example: '',
+    example: 'Many people have a deep fear of public speaking. - Birçok insanın topluluk önünde konuşma konusunda derin bir korkusu vardır.',
     category: 'phrase',
   },
   {
     id: 'v-c-what-if-she-says-no',
     word: 'what if she says no',
     translation: 'ya hayır derse',
-    example: '',
+    example: 'I want to ask her to the party, but what if she says no? - Onu partiye davet etmek istiyorum, ama ya hayır derse?',
     category: 'phrase',
   },
   {
     id: 'v-c-as-i-was-saying',
     word: 'as I was saying',
     translation: 'dediğim gibi',
-    example: '',
+    example: 'As I was saying before the phone rang, we need to finish this report. - Telefon çalmadan önce dediğim gibi, bu raporu bitirmemiz gerekiyor.',
     category: 'phrase',
   },
   {
     id: 'v-c-changing-the-subject',
     word: 'changing the subject',
     translation: 'konuyu değiştirmek',
-    example: '',
+    example: 'Anyway, changing the subject completely, what are you doing this weekend? - Her neyse, konuyu tamamen değiştirirsek, bu hafta sonu ne yapıyorsun?',
     category: 'phrase',
   }
 ];

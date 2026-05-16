@@ -1,0 +1,1427 @@
+[
+  {
+    "id": "v-new-hw-1",
+    "word": "reach out",
+    "translation": "Ulaşmak"
+  },
+  {
+    "id": "v-new-hw-2",
+    "word": "criticise",
+    "translation": "Eleştirmek"
+  },
+  {
+    "id": "v-new-hw-4",
+    "word": "memorise",
+    "translation": "Ezberlemek"
+  },
+  {
+    "id": "v-u1-extra-01",
+    "word": "common",
+    "translation": "Ortak"
+  },
+  {
+    "id": "v-u1-extra-02",
+    "word": "exist",
+    "translation": "Var olmak, var olan"
+  },
+  {
+    "id": "v-u1-extra-03",
+    "word": "develop",
+    "translation": "Geliştirmek"
+  },
+  {
+    "id": "v-u1-extra-04",
+    "word": "fluent",
+    "translation": "Akıcı (dil konuşma)"
+  },
+  {
+    "id": "v-u1-extra-05",
+    "word": "agree",
+    "translation": "Katılmak (bir fikre)"
+  },
+  {
+    "id": "v-u1-extra-06",
+    "word": "neither",
+    "translation": "İkisi de değil (olumsuz katılım)"
+  },
+  {
+    "id": "v-u2-extra-01",
+    "word": "press",
+    "translation": "Tuşlamak, basmak"
+  },
+  {
+    "id": "v-u2-extra-02",
+    "word": "undo",
+    "translation": "Geri almak (işlemi)"
+  },
+  {
+    "id": "v-u2-extra-03",
+    "word": "charge",
+    "translation": "Şarj etmek"
+  },
+  {
+    "id": "v-u2-extra-04",
+    "word": "business contract",
+    "translation": "İş sözleşmesi"
+  },
+  {
+    "id": "v-u2-extra-05",
+    "word": "make contact",
+    "translation": "Temas kurmak, iletişime geçmek"
+  },
+  {
+    "id": "v-u2-extra-06",
+    "word": "emphasis",
+    "translation": "Vurgu"
+  },
+  {
+    "id": "successful",
+    "word": "successful",
+    "translation": "başarılı"
+  },
+  {
+    "id": "talented",
+    "word": "talented",
+    "translation": "yetenekli"
+  },
+  {
+    "id": "intelligent",
+    "word": "intelligent",
+    "translation": "zeki"
+  },
+  {
+    "id": "confident",
+    "word": "confident",
+    "translation": "öz güvenli"
+  },
+  {
+    "id": "determined",
+    "word": "determined",
+    "translation": "kararlı"
+  },
+  {
+    "id": "achievement",
+    "word": "achievement",
+    "translation": "başarı"
+  },
+  {
+    "id": "attitude",
+    "word": "attitude",
+    "translation": "tutum"
+  },
+  {
+    "id": "give-up",
+    "word": "give up",
+    "translation": "vazgeçmek"
+  },
+  {
+    "id": "sociable",
+    "word": "sociable",
+    "translation": "sosyal"
+  },
+  {
+    "id": "outgoing",
+    "word": "outgoing",
+    "translation": "uyumlu"
+  },
+  {
+    "id": "talkative",
+    "word": "talkative",
+    "translation": "konuşkan"
+  },
+  {
+    "id": "shy",
+    "word": "shy",
+    "translation": "utangaç"
+  },
+  {
+    "id": "reserved",
+    "word": "reserved",
+    "translation": "duygu belli etmeyen"
+  },
+  {
+    "id": "lively",
+    "word": "lively",
+    "translation": "canlı"
+  },
+  {
+    "id": "serious",
+    "word": "serious",
+    "translation": "ciddi"
+  },
+  {
+    "id": "sensitive",
+    "word": "sensitive",
+    "translation": "hassas"
+  },
+  {
+    "id": "valued",
+    "word": "valued",
+    "translation": "değerli"
+  },
+  {
+    "id": "movement",
+    "word": "movement",
+    "translation": "eylem"
+  },
+  {
+    "id": "despite",
+    "word": "despite",
+    "translation": "rağmen"
+  },
+  {
+    "id": "songwriters",
+    "word": "songwriters",
+    "translation": "söz yazarı"
+  },
+  {
+    "id": "bright",
+    "word": "bright",
+    "translation": "zeki"
+  },
+  {
+    "id": "towards",
+    "word": "towards",
+    "translation": "karşı"
+  },
+  {
+    "id": "ability",
+    "word": "ability",
+    "translation": "yetenek"
+  },
+  {
+    "id": "pick-up",
+    "word": "pick up",
+    "translation": "almak, teslim almak"
+  },
+  {
+    "id": "pollution",
+    "word": "pollution",
+    "translation": "kirlilik"
+  },
+  {
+    "id": "endangered",
+    "word": "endangered",
+    "translation": "tehlikede"
+  },
+  {
+    "id": "damaged",
+    "word": "damaged",
+    "translation": "zarar görmüş"
+  },
+  {
+    "id": "protect",
+    "word": "protect",
+    "translation": "korumak"
+  },
+  {
+    "id": "environment",
+    "word": "environment",
+    "translation": "çevre"
+  },
+  {
+    "id": "creature",
+    "word": "creature",
+    "translation": "yaratık"
+  },
+  {
+    "id": "destroy",
+    "word": "destroy",
+    "translation": "yerle bir etmek"
+  },
+  {
+    "id": "species",
+    "word": "species",
+    "translation": "tür"
+  },
+  {
+    "id": "survive",
+    "word": "survive",
+    "translation": "hayatta kalmak"
+  },
+  {
+    "id": "limit",
+    "word": "limit",
+    "translation": "sınırlamak"
+  },
+  {
+    "id": "branch",
+    "word": "branch",
+    "translation": "dal, branş"
+  },
+  {
+    "id": "petals",
+    "word": "petals",
+    "translation": "taç yaprak"
+  },
+  {
+    "id": "feathers",
+    "word": "feathers",
+    "translation": "tüy"
+  },
+  {
+    "id": "scales",
+    "word": "scales",
+    "translation": "pul"
+  },
+  {
+    "id": "fur",
+    "word": "fur",
+    "translation": "kürk"
+  },
+  {
+    "id": "bay",
+    "word": "bay",
+    "translation": "koy"
+  },
+  {
+    "id": "waterfall",
+    "word": "waterfall",
+    "translation": "şelale"
+  },
+  {
+    "id": "cave",
+    "word": "cave",
+    "translation": "mağara"
+  },
+  {
+    "id": "paws",
+    "word": "paws",
+    "translation": "pati"
+  },
+  {
+    "id": "web",
+    "word": "web",
+    "translation": "ağ"
+  },
+  {
+    "id": "hook",
+    "word": "hook",
+    "translation": "kanca"
+  },
+  {
+    "id": "sticking",
+    "word": "sticking",
+    "translation": "yapışmak"
+  },
+  {
+    "id": "arctic",
+    "word": "arctic",
+    "translation": "kutup"
+  },
+  {
+    "id": "inspire",
+    "word": "inspire",
+    "translation": "ilham almak"
+  },
+  {
+    "id": "seeds",
+    "word": "seeds",
+    "translation": "tohum"
+  },
+  {
+    "id": "rose",
+    "word": "rose",
+    "translation": "gül"
+  },
+  {
+    "id": "pine-tree",
+    "word": "pine tree",
+    "translation": "çam ağacı"
+  },
+  {
+    "id": "souvenir-shop",
+    "word": "souvenir shop",
+    "translation": "hediyelik eşya dükkanı"
+  },
+  {
+    "id": "bottle-opener",
+    "word": "bottle opener",
+    "translation": "şişe açacağı"
+  },
+  {
+    "id": "window-seat",
+    "word": "window seat",
+    "translation": "cam kenarı"
+  },
+  {
+    "id": "dishwasher",
+    "word": "dishwasher",
+    "translation": "bulaşık makinesi"
+  },
+  {
+    "id": "insect-repellent",
+    "word": "insect repellent",
+    "translation": "böcek savar"
+  },
+  {
+    "id": "insights",
+    "word": "insights",
+    "translation": "iç yüzünü anlamak"
+  },
+  {
+    "id": "approach-to",
+    "word": "approach to",
+    "translation": "yaklaşım"
+  },
+  {
+    "id": "vaccinations",
+    "word": "vaccinations",
+    "translation": "aşı"
+  },
+  {
+    "id": "plantain",
+    "word": "plantain",
+    "translation": "muz türü"
+  },
+  {
+    "id": "contribute",
+    "word": "contribute",
+    "translation": "katkıda bulunmak"
+  },
+  {
+    "id": "herbs",
+    "word": "herbs",
+    "translation": "bitki"
+  },
+  {
+    "id": "mention",
+    "word": "mention",
+    "translation": "bahsetmek"
+  },
+  {
+    "id": "in-advance",
+    "word": "in advance",
+    "translation": "önceden"
+  },
+  {
+    "id": "steamed-rice",
+    "word": "steamed rice",
+    "translation": "buharda pilav"
+  },
+  {
+    "id": "randomly",
+    "word": "randomly",
+    "translation": "rastgele"
+  },
+  {
+    "id": "explore",
+    "word": "explore",
+    "translation": "keşfetmek"
+  },
+  {
+    "id": "bride",
+    "word": "bride",
+    "translation": "gelin"
+  },
+  {
+    "id": "groom",
+    "word": "groom",
+    "translation": "damat"
+  },
+  {
+    "id": "moving-house",
+    "word": "moving house",
+    "translation": "ev taşımak"
+  },
+  {
+    "id": "move-out-of",
+    "word": "move out of",
+    "translation": "bir yerden çıkmak"
+  },
+  {
+    "id": "terrace",
+    "word": "terrace",
+    "translation": "teras"
+  },
+  {
+    "id": "renting",
+    "word": "renting",
+    "translation": "kiralamak"
+  },
+  {
+    "id": "block",
+    "word": "block",
+    "translation": "apartman"
+  },
+  {
+    "id": "neighbourhood",
+    "word": "neighbourhood",
+    "translation": "mahalle"
+  },
+  {
+    "id": "ground-floor",
+    "word": "ground floor",
+    "translation": "zemin kat"
+  },
+  {
+    "id": "landing",
+    "word": "landing",
+    "translation": "sahanlık"
+  },
+  {
+    "id": "argue-with",
+    "word": "argue with",
+    "translation": "tartışmak"
+  },
+  {
+    "id": "cope-with",
+    "word": "cope with",
+    "translation": "başa çıkmak"
+  },
+  {
+    "id": "care-about",
+    "word": "care about",
+    "translation": "umursamak"
+  },
+  {
+    "id": "worry-about",
+    "word": "worry about",
+    "translation": "endişelenmek"
+  },
+  {
+    "id": "complain-about",
+    "word": "complain about",
+    "translation": "şikayet etmek"
+  },
+  {
+    "id": "rely-on",
+    "word": "rely on",
+    "translation": "güvenmek"
+  },
+  {
+    "id": "depend-on",
+    "word": "depend on",
+    "translation": "bağlı olmak"
+  },
+  {
+    "id": "apologise-for",
+    "word": "apologise for",
+    "translation": "özür dilemek"
+  },
+  {
+    "id": "believe-in",
+    "word": "believe in",
+    "translation": "inanmak"
+  },
+  {
+    "id": "succeed-in",
+    "word": "succeed in",
+    "translation": "başarmak"
+  },
+  {
+    "id": "belong-to",
+    "word": "belong to",
+    "translation": "ait olmak"
+  },
+  {
+    "id": "apologise-to",
+    "word": "apologise to",
+    "translation": "özür dilemek"
+  },
+  {
+    "id": "complain-to",
+    "word": "complain to",
+    "translation": "şikayet etmek"
+  },
+  {
+    "id": "outskirts",
+    "word": "outskirts",
+    "translation": "şehrin etekleri"
+  },
+  {
+    "id": "entire",
+    "word": "entire",
+    "translation": "tamamı"
+  },
+  {
+    "id": "accommodation",
+    "word": "accommodation",
+    "translation": "konaklama"
+  },
+  {
+    "id": "range",
+    "word": "range",
+    "translation": "aralık"
+  },
+  {
+    "id": "hosts",
+    "word": "hosts",
+    "translation": "ev sahipleri"
+  },
+  {
+    "id": "nearby",
+    "word": "nearby",
+    "translation": "yakınlarda"
+  },
+  {
+    "id": "theft",
+    "word": "theft",
+    "translation": "hırsızlık"
+  },
+  {
+    "id": "create",
+    "word": "create",
+    "translation": "yaratmak"
+  },
+  {
+    "id": "hold-a-meeting",
+    "word": "hold a meeting",
+    "translation": "toplantı yapmak"
+  },
+  {
+    "id": "subscriber",
+    "word": "subscriber",
+    "translation": "abone"
+  },
+  {
+    "id": "series",
+    "word": "series",
+    "translation": "dizi"
+  },
+  {
+    "id": "episode",
+    "word": "episode",
+    "translation": "bölüm"
+  },
+  {
+    "id": "deliver",
+    "word": "deliver",
+    "translation": "teslimat"
+  },
+  {
+    "id": "post-on",
+    "word": "post on",
+    "translation": "gönderi paylaşmak"
+  },
+  {
+    "id": "advise",
+    "word": "advise",
+    "translation": "tavsiye etmek"
+  },
+  {
+    "id": "were-offering",
+    "word": "were offering",
+    "translation": "teklif yapmak"
+  },
+  {
+    "id": "warn",
+    "word": "warn",
+    "translation": "uyarmak"
+  },
+  {
+    "id": "promise",
+    "word": "promise",
+    "translation": "söz vermek"
+  },
+  {
+    "id": "recommend",
+    "word": "recommend",
+    "translation": "tavsiye"
+  },
+  {
+    "id": "threaten",
+    "word": "threaten",
+    "translation": "tehdit etmek"
+  },
+  {
+    "id": "offer",
+    "word": "offer",
+    "translation": "teklif etmek"
+  },
+  {
+    "id": "suggest",
+    "word": "suggest",
+    "translation": "önermek"
+  },
+  {
+    "id": "attend",
+    "word": "attend",
+    "translation": "katılmak"
+  },
+  {
+    "id": "basis",
+    "word": "basis",
+    "translation": "temel"
+  },
+  {
+    "id": "come-across",
+    "word": "come across",
+    "translation": "karşılaşmak"
+  },
+  {
+    "id": "genuine",
+    "word": "genuine",
+    "translation": "gerçek"
+  },
+  {
+    "id": "kept",
+    "word": "kept",
+    "translation": "tutmak, sürmek"
+  },
+  {
+    "id": "submitted",
+    "word": "submitted",
+    "translation": "teslim etmek"
+  },
+  {
+    "id": "setting-up",
+    "word": "setting up",
+    "translation": "kurmak"
+  },
+  {
+    "id": "get-through",
+    "word": "get through",
+    "translation": "başarmak"
+  },
+  {
+    "id": "according-to",
+    "word": "according to",
+    "translation": "göre"
+  },
+  {
+    "id": "wished",
+    "word": "wished",
+    "translation": "dilemek"
+  },
+  {
+    "id": "enquiries",
+    "word": "enquiries",
+    "translation": "soruşturma"
+  },
+  {
+    "id": "pretending",
+    "word": "pretending",
+    "translation": "mış gibi yapmak"
+  },
+  {
+    "id": "believe-to",
+    "word": "believe to",
+    "translation": "inanmak"
+  },
+  {
+    "id": "disappointed",
+    "word": "disappointed",
+    "translation": "hayal kırıklığına uğramış"
+  },
+  {
+    "id": "disappointing",
+    "word": "disappointing",
+    "translation": "hayal kırıklığı yaratan"
+  },
+  {
+    "id": "amused",
+    "word": "amused",
+    "translation": "eğlenmiş"
+  },
+  {
+    "id": "amusing",
+    "word": "amusing",
+    "translation": "eğlenceli"
+  },
+  {
+    "id": "depressed",
+    "word": "depressed",
+    "translation": "depresif"
+  },
+  {
+    "id": "depressing",
+    "word": "depressing",
+    "translation": "üzücü"
+  },
+  {
+    "id": "character",
+    "word": "character",
+    "translation": "karakter"
+  },
+  {
+    "id": "event",
+    "word": "event",
+    "translation": "etkinlik"
+  },
+  {
+    "id": "gulf",
+    "word": "gulf",
+    "translation": "körfez"
+  },
+  {
+    "id": "profits",
+    "word": "profits",
+    "translation": "kâr"
+  },
+  {
+    "id": "charity",
+    "word": "charity",
+    "translation": "hayır kurumu"
+  },
+  {
+    "id": "beauty",
+    "word": "beauty",
+    "translation": "güzellik"
+  },
+  {
+    "id": "celebration",
+    "word": "celebration",
+    "translation": "kutlama"
+  },
+  {
+    "id": "celebrate",
+    "word": "celebrate",
+    "translation": "kutlamak"
+  },
+  {
+    "id": "charitable",
+    "word": "charitable",
+    "translation": "hayırsever"
+  },
+  {
+    "id": "creative",
+    "word": "creative",
+    "translation": "yaratıcı"
+  },
+  {
+    "id": "creativity",
+    "word": "creativity",
+    "translation": "yaratıcılık"
+  },
+  {
+    "id": "cultural",
+    "word": "cultural",
+    "translation": "kültürel"
+  },
+  {
+    "id": "development",
+    "word": "development",
+    "translation": "gelişim"
+  },
+  {
+    "id": "musical",
+    "word": "musical",
+    "translation": "müzikal"
+  },
+  {
+    "id": "musician",
+    "word": "musician",
+    "translation": "müzisyen"
+  },
+  {
+    "id": "organised",
+    "word": "organised",
+    "translation": "organize"
+  },
+  {
+    "id": "organiser",
+    "word": "organiser",
+    "translation": "organizatör"
+  },
+  {
+    "id": "organize",
+    "word": "organize",
+    "translation": "organize etmek"
+  },
+  {
+    "id": "performer",
+    "word": "performer",
+    "translation": "sanatçı"
+  },
+  {
+    "id": "perform",
+    "word": "perform",
+    "translation": "performans sergilemek"
+  },
+  {
+    "id": "wait-a-second",
+    "word": "wait a second",
+    "translation": "bir saniye bekle"
+  },
+  {
+    "id": "one-moment-please",
+    "word": "one moment please",
+    "translation": "bir an lütfen"
+  },
+  {
+    "id": "let-me-check-for-you",
+    "word": "let me check for you",
+    "translation": "sizin için kontrol edeyim"
+  },
+  {
+    "id": "misses",
+    "word": "misses",
+    "translation": "ıskalamak"
+  },
+  {
+    "id": "referee",
+    "word": "referee",
+    "translation": "hakem"
+  },
+  {
+    "id": "afraid-of",
+    "word": "afraid of",
+    "translation": "korkmak"
+  },
+  {
+    "id": "scared-of",
+    "word": "scared of",
+    "translation": "korkmuş"
+  },
+  {
+    "id": "essential-for",
+    "word": "essential for",
+    "translation": "gerekli"
+  },
+  {
+    "id": "nervous",
+    "word": "nervous",
+    "translation": "gergin"
+  },
+  {
+    "id": "tired-of",
+    "word": "tired of",
+    "translation": "bıkmış"
+  },
+  {
+    "id": "right-for",
+    "word": "right for",
+    "translation": "için doğru"
+  },
+  {
+    "id": "similar-to",
+    "word": "similar to",
+    "translation": "benzer"
+  },
+  {
+    "id": "popular-with",
+    "word": "popular with",
+    "translation": "ile popüler"
+  },
+  {
+    "id": "perfect-to",
+    "word": "perfect to",
+    "translation": "için mükemmel"
+  },
+  {
+    "id": "definitely",
+    "word": "definitely",
+    "translation": "kesinlikle"
+  },
+  {
+    "id": "speaking-of",
+    "word": "speaking of",
+    "translation": "demişken"
+  },
+  {
+    "id": "that-reminds-me",
+    "word": "that reminds me",
+    "translation": "o bana şunu hatırlattı"
+  },
+  {
+    "id": "you-ve-got-nothing",
+    "word": "you\\'ve got nothing",
+    "translation": "hiçbir şeyin yok"
+  },
+  {
+    "id": "by-the-way",
+    "word": "by the way",
+    "translation": "bu arada"
+  },
+  {
+    "id": "i-was-saying",
+    "word": "I was saying",
+    "translation": "diyordum ki"
+  },
+  {
+    "id": "i-m-still-worried",
+    "word": "I\\'m still worried",
+    "translation": "hala endişeliyim"
+  },
+  {
+    "id": "identify",
+    "word": "identify",
+    "translation": "belirlemek"
+  },
+  {
+    "id": "disappear",
+    "word": "disappear",
+    "translation": "kaybolmak"
+  },
+  {
+    "id": "value",
+    "word": "value",
+    "translation": "değer"
+  },
+  {
+    "id": "hurt",
+    "word": "hurt",
+    "translation": "incitmek"
+  },
+  {
+    "id": "adopted",
+    "word": "adopted",
+    "translation": "evlat edinmek"
+  },
+  {
+    "id": "honour",
+    "word": "honour",
+    "translation": "onur"
+  },
+  {
+    "id": "retirement",
+    "word": "retirement",
+    "translation": "emeklilik"
+  },
+  {
+    "id": "thick",
+    "word": "thick",
+    "translation": "kalın"
+  },
+  {
+    "id": "constantly",
+    "word": "constantly",
+    "translation": "sürekli"
+  },
+  {
+    "id": "reached",
+    "word": "reached",
+    "translation": "ulaşmak"
+  },
+  {
+    "id": "negotiate",
+    "word": "negotiate",
+    "translation": "müzakere"
+  },
+  {
+    "id": "pressure",
+    "word": "pressure",
+    "translation": "baskı"
+  },
+  {
+    "id": "ambitious",
+    "word": "ambitious",
+    "translation": "hırslı"
+  },
+  {
+    "id": "anxious",
+    "word": "anxious",
+    "translation": "endişeli"
+  },
+  {
+    "id": "misjudged",
+    "word": "misjudged",
+    "translation": "yanlış yargılama"
+  },
+  {
+    "id": "smoother",
+    "word": "smoother",
+    "translation": "pürüzsüz"
+  },
+  {
+    "id": "nowadays",
+    "word": "nowadays",
+    "translation": "bugünlerde"
+  },
+  {
+    "id": "presence",
+    "word": "presence",
+    "translation": "var olmak"
+  },
+  {
+    "id": "avoid",
+    "word": "avoid",
+    "translation": "kaçınmak"
+  },
+  {
+    "id": "adapted",
+    "word": "adapted",
+    "translation": "uyarlanmış"
+  },
+  {
+    "id": "award",
+    "word": "award",
+    "translation": "ödül"
+  },
+  {
+    "id": "mess-with",
+    "word": "mess with",
+    "translation": "bulaşmak"
+  },
+  {
+    "id": "miss",
+    "word": "miss",
+    "translation": "özlemek"
+  },
+  {
+    "id": "thin",
+    "word": "thin",
+    "translation": "ince"
+  },
+  {
+    "id": "closed",
+    "word": "closed",
+    "translation": "kapalı"
+  },
+  {
+    "id": "shelves",
+    "word": "shelves",
+    "translation": "raf"
+  },
+  {
+    "id": "rebellious",
+    "word": "rebellious",
+    "translation": "asi"
+  },
+  {
+    "id": "relaxed",
+    "word": "relaxed",
+    "translation": "rahat"
+  },
+  {
+    "id": "therefore",
+    "word": "therefore",
+    "translation": "bu yüzden"
+  },
+  {
+    "id": "provide",
+    "word": "provide",
+    "translation": "sağlamak"
+  },
+  {
+    "id": "deal-with",
+    "word": "deal with",
+    "translation": "ilgilenmek"
+  },
+  {
+    "id": "improve",
+    "word": "improve",
+    "translation": "iyileştirmek"
+  },
+  {
+    "id": "v-c-make-a-good-impression",
+    "word": "make a good impression",
+    "translation": "iyi bir izlenim bırakmak"
+  },
+  {
+    "id": "v-c-i-m-not-so-sure-about-that",
+    "word": "I\\'m not so sure about that",
+    "translation": "Ondan o kadar emin değilim"
+  },
+  {
+    "id": "v-c-i-see-where-you-re-coming-from",
+    "word": "I see where you\\'re coming from",
+    "translation": "Ne demek istediğini anlıyorum"
+  },
+  {
+    "id": "v-c-to-be-turned-into",
+    "word": "to be turned into",
+    "translation": "dönüştürülmek"
+  },
+  {
+    "id": "v-c-take-it-back",
+    "word": "take it back",
+    "translation": "geri götürmek, iade etmek"
+  },
+  {
+    "id": "v-c-turn-it-off-and-on-again",
+    "word": "turn it off and on again",
+    "translation": "kapatıp tekrar açmak"
+  },
+  {
+    "id": "v-c-claim-on-your-insurance",
+    "word": "claim on your insurance",
+    "translation": "sigortadan talep etmek"
+  },
+  {
+    "id": "v-c-what-have-i-got-to-lose",
+    "word": "what have I got to lose",
+    "translation": "kaybedecek neyim var ki"
+  },
+  {
+    "id": "v-c-broken-down",
+    "word": "broken down",
+    "translation": "bozulmak (araba, makine vb.)"
+  },
+  {
+    "id": "v-c-spill",
+    "word": "spill",
+    "translation": "dökmek (sıvı)"
+  },
+  {
+    "id": "v-c-annoying",
+    "word": "annoying",
+    "translation": "sinir bozucu"
+  },
+  {
+    "id": "v-c-frozen-screen",
+    "word": "frozen screen",
+    "translation": "donmuş ekran"
+  },
+  {
+    "id": "v-c-you-won-t-believe-what-i-did",
+    "word": "you won\\'t believe what I did",
+    "translation": "ne yaptığıma inanamayacaksın"
+  },
+  {
+    "id": "v-c-it-turned-out",
+    "word": "it turned out",
+    "translation": "ortaya çıktı ki, meğerse"
+  },
+  {
+    "id": "v-c-coincidence",
+    "word": "coincidence",
+    "translation": "tesadüf"
+  },
+  {
+    "id": "v-c-in-the-end",
+    "word": "in the end",
+    "translation": "sonunda"
+  },
+  {
+    "id": "v-c-luckily",
+    "word": "luckily",
+    "translation": "şans eseri, neyse ki"
+  },
+  {
+    "id": "v-c-straight-away",
+    "word": "straight away",
+    "translation": "hemen, derhal"
+  },
+  {
+    "id": "v-c-freecycling",
+    "word": "freecycling",
+    "translation": "bedava eşya takası"
+  },
+  {
+    "id": "v-c-get-a-refund",
+    "word": "get a refund",
+    "translation": "para iadesi almak"
+  },
+  {
+    "id": "v-c-do-you-need-a-hand",
+    "word": "do you need a hand",
+    "translation": "yardıma ihtiyacın var mı"
+  },
+  {
+    "id": "v-c-ask-a-favour-in-return",
+    "word": "ask a favour in return",
+    "translation": "karşılığında bir iyilik istemek"
+  },
+  {
+    "id": "v-c-give-someone-a-hand",
+    "word": "give someone a hand",
+    "translation": "birine yardım etmek"
+  },
+  {
+    "id": "v-c-take-photos",
+    "word": "take photos",
+    "translation": "fotoğraf çekmek"
+  },
+  {
+    "id": "v-c-give-someone-a-lift",
+    "word": "give someone a lift",
+    "translation": "birini arabayla bırakmak"
+  },
+  {
+    "id": "v-c-talk-through",
+    "word": "talk through",
+    "translation": "enine boyuna konuşmak, tartışmak"
+  },
+  {
+    "id": "v-c-for-example",
+    "word": "for example",
+    "translation": "örneğin"
+  },
+  {
+    "id": "v-c-spread-my-wings",
+    "word": "spread my wings",
+    "translation": "kanatlarını açmak, yeni şeyler denemek"
+  },
+  {
+    "id": "v-c-resigned",
+    "word": "resigned",
+    "translation": "istifa etmek"
+  },
+  {
+    "id": "v-c-bored-in-my-job",
+    "word": "bored in my job",
+    "translation": "işimden sıkıldım"
+  },
+  {
+    "id": "v-c-ask-for-recommendations",
+    "word": "ask for recommendations",
+    "translation": "tavsiye istemek"
+  },
+  {
+    "id": "v-c-worth-asking",
+    "word": "worth asking",
+    "translation": "sormaya değer"
+  },
+  {
+    "id": "v-c-huge-diamond",
+    "word": "huge diamond",
+    "translation": "kocaman elmas"
+  },
+  {
+    "id": "v-c-ridiculous",
+    "word": "ridiculous",
+    "translation": "saçma, gülünç"
+  },
+  {
+    "id": "v-c-take-presents",
+    "word": "take presents",
+    "translation": "hediye götürmek"
+  },
+  {
+    "id": "v-c-arrive-on-time",
+    "word": "arrive on time",
+    "translation": "zamanında varmak"
+  },
+  {
+    "id": "v-c-take-your-shoes-off",
+    "word": "take your shoes off",
+    "translation": "ayakkabılarını çıkarmak"
+  },
+  {
+    "id": "v-c-is-there-anything-we-can-do-to-help",
+    "word": "is there anything we can do to help",
+    "translation": "yardım edebileceğimiz bir şey var mı"
+  },
+  {
+    "id": "v-c-is-it-ok-if-i",
+    "word": "is it OK if I",
+    "translation": "yapsam olur mu / sorun olur mu"
+  },
+  {
+    "id": "v-c-it-s-all-under-control",
+    "word": "it\\'s all under control",
+    "translation": "her şey kontrol altında"
+  },
+  {
+    "id": "v-c-do-you-mind-if-i",
+    "word": "do you mind if I",
+    "translation": "yapsam sakıncası var mı"
+  },
+  {
+    "id": "v-c-not-at-all",
+    "word": "not at all",
+    "translation": "hiç de bile, rica ederim"
+  },
+  {
+    "id": "v-c-it-s-hot-in-here",
+    "word": "it\\'s hot in here",
+    "translation": "burası çok sıcak"
+  },
+  {
+    "id": "v-c-i-imagine-you-re",
+    "word": "I imagine you\\'re",
+    "translation": "olduğunu tahmin ediyorum"
+  },
+  {
+    "id": "v-c-that-must-be-exciting",
+    "word": "that must be exciting",
+    "translation": "bu heyecan verici olmalı"
+  },
+  {
+    "id": "v-c-action-shots",
+    "word": "action shots",
+    "translation": "hareketli çekimler"
+  },
+  {
+    "id": "v-c-generally",
+    "word": "generally",
+    "translation": "genellikle"
+  },
+  {
+    "id": "v-c-normally",
+    "word": "normally",
+    "translation": "normalde"
+  },
+  {
+    "id": "v-c-typically",
+    "word": "typically",
+    "translation": "tipik olarak"
+  },
+  {
+    "id": "v-c-as-a-rule",
+    "word": "as a rule",
+    "translation": "kural olarak, genel olarak"
+  },
+  {
+    "id": "v-c-a-couple-of",
+    "word": "a couple of",
+    "translation": "birkaç"
+  },
+  {
+    "id": "v-c-sort-of-thing",
+    "word": "sort of thing",
+    "translation": "o tarz şeyler"
+  },
+  {
+    "id": "v-c-kind-of-thing",
+    "word": "kind of thing",
+    "translation": "bu tarz bir şey"
+  },
+  {
+    "id": "v-c-vague-language",
+    "word": "vague language",
+    "translation": "belirsiz dil"
+  },
+  {
+    "id": "v-c-except-for",
+    "word": "except for",
+    "translation": "haricinde, -den başka"
+  },
+  {
+    "id": "v-c-it-s-meant-to-be",
+    "word": "it\\'s meant to be",
+    "translation": "olduğu söyleniyor, olması bekleniyor"
+  },
+  {
+    "id": "v-c-highly-recommended",
+    "word": "highly recommended",
+    "translation": "şiddetle tavsiye edilen"
+  },
+  {
+    "id": "v-c-it-s-supposed-to-be",
+    "word": "it\\'s supposed to be",
+    "translation": "olduğu söyleniyor, olması bekleniyor"
+  },
+  {
+    "id": "v-c-i-m-not-a-big-fan-of",
+    "word": "I\\'m not a big fan of",
+    "translation": "nın büyük bir hayranı değilim, pek sevmem"
+  },
+  {
+    "id": "v-c-i-doubt",
+    "word": "I doubt",
+    "translation": "şüpheliyim"
+  },
+  {
+    "id": "v-c-just-a-moment",
+    "word": "just a moment",
+    "translation": "sadece bir an, bir saniye"
+  },
+  {
+    "id": "v-c-let-me-check",
+    "word": "let me check",
+    "translation": "kontrol edeyim"
+  },
+  {
+    "id": "v-c-public-speaking",
+    "word": "public speaking",
+    "translation": "topluluk önünde konuşma"
+  },
+  {
+    "id": "v-c-what-if-she-says-no",
+    "word": "what if she says no",
+    "translation": "ya hayır derse"
+  },
+  {
+    "id": "v-c-as-i-was-saying",
+    "word": "as I was saying",
+    "translation": "dediğim gibi"
+  },
+  {
+    "id": "v-c-changing-the-subject",
+    "word": "changing the subject",
+    "translation": "konuyu değiştirmek"
+  }
+]
