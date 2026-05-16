@@ -1,7 +1,9 @@
 import { useState, useMemo, useCallback, memo, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
+// @ts-ignore
 import { FixedSizeList } from 'react-window';
+// @ts-ignore
 import { AutoSizer } from 'react-virtualized-auto-sizer';
 import { Search, BookOpen, Check, Star, ArrowRight, Sparkles, ChevronLeft, ChevronRight, ChevronsLeft, ChevronsRight, List as ListIcon } from 'lucide-react';
 import { vocabularyData } from '../data/vocabularyData';
