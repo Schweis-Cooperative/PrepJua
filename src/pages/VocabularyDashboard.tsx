@@ -170,6 +170,8 @@ export default function VocabularyDashboard() {
   const totalWords = vocabularyData.length;
   const learnedCount = learnedWords.length;
 
+  const AutoSizerAny = AutoSizer as any;
+
   // Virtualization Grid Row Component
   const Row = useCallback(({ index, style, data }: any) => {
     const { items, columns, isLearned, onToggle } = data;
@@ -301,8 +303,8 @@ export default function VocabularyDashboard() {
       {/* Word Grid — Virtualized for locked 60 FPS */}
       <div className="h-[600px] w-full">
         {filteredWords.length > 0 ? (
-          <AutoSizer>
-            {({ height, width }: { height: number; width: number }) => {
+          <AutoSizerAny>
+            {({ height, width }: any) => {
               const columns = width >= 1024 ? 3 : width >= 640 ? 2 : 1;
               const rowCount = Math.ceil(pageWords.length / columns);
               const rowHeight = 260; // Approximate card height + gap
