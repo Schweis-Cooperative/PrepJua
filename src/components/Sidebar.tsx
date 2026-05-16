@@ -16,6 +16,8 @@ import {
   BookA,
   Trophy,
   Layers,
+  Brain,
+  BarChart3,
 } from 'lucide-react';
 
 const navItems = [
@@ -30,6 +32,8 @@ const navItems = [
   { path: '/irregular-verbs', label: 'Irregular Verbs', icon: BookMarked, color: 'text-teal-400' },
   { path: '/mistake-book', label: 'Mistake Book', icon: AlertTriangle, color: 'text-rose-400' },
   { path: '/cheat-sheet', label: 'Cheat Sheet', icon: Scroll, color: 'text-amber-400' },
+  { path: '/practice', label: 'Practice Mode', icon: Brain, color: 'text-pink-400' },
+  { path: '/analytics', label: 'Analytics', icon: BarChart3, color: 'text-violet-400' },
   { path: '/profile', label: 'Profile', icon: User, color: 'text-zinc-400' },
 ];
 

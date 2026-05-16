@@ -27,6 +27,8 @@ import CheatSheet from './pages/CheatSheet';
 import MistakeBook from './pages/MistakeBook';
 import WordpowerHub from './pages/WordpowerHub';
 import WordpowerBlock from './pages/WordpowerBlock';
+import PracticeMode from './pages/PracticeMode';
+import AnalyticsDashboard from './pages/AnalyticsDashboard';
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -54,6 +56,8 @@ function AnimatedRoutes() {
         <Route path="/mistake-book" element={<PageTransition><ErrorBoundary FallbackComponent={ErrorFallback}><MistakeBook /></ErrorBoundary></PageTransition>} />
         <Route path="/wordpower" element={<PageTransition><ErrorBoundary FallbackComponent={ErrorFallback}><WordpowerHub /></ErrorBoundary></PageTransition>} />
         <Route path="/wordpower/:id" element={<PageTransition><ErrorBoundary FallbackComponent={ErrorFallback}><WordpowerBlock /></ErrorBoundary></PageTransition>} />
+        <Route path="/practice" element={<PageTransition><ErrorBoundary FallbackComponent={ErrorFallback}><PracticeMode /></ErrorBoundary></PageTransition>} />
+        <Route path="/analytics" element={<PageTransition><ErrorBoundary FallbackComponent={ErrorFallback}><AnalyticsDashboard /></ErrorBoundary></PageTransition>} />
       </Routes>
     </AnimatePresence>
   );

@@ -1,7 +1,7 @@
 import { useState, useMemo, useCallback, memo, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Search, BookOpen, Check, Star, ArrowRight, Sparkles, ChevronLeft, ChevronRight, ChevronsLeft, ChevronsRight, List as ListIcon, Bookmark, Flame } from 'lucide-react';
+import { Search, BookOpen, Check, Star, ArrowRight, Sparkles, ChevronLeft, ChevronRight, ChevronsLeft, ChevronsRight, List as ListIcon, Bookmark, Flame, Brain } from 'lucide-react';
 import { vocabularyData } from '../data/vocabularyData';
 import { useProgress } from '../hooks/useProgress';
 import { useLocalStorage } from '../hooks/useLocalStorage';
@@ -202,6 +202,7 @@ export default function VocabularyDashboard() {
     toggleLearnedWord,
     isWordLearned,
     streak,
+    dueToday,
     customCollections,
     createCollection,
     toggleWordInCollection,
@@ -313,7 +314,7 @@ export default function VocabularyDashboard() {
               Master {totalWords} essential words for your exam
             </p>
           </div>
-          <div className="flex gap-2">
+          <div className="flex flex-wrap gap-2">
             <Link
               to="/quiz"
               className="flex items-center gap-2 px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-sm font-medium transition-colors"
@@ -321,6 +322,19 @@ export default function VocabularyDashboard() {
             >
               <Sparkles size={16} />
               Quick Quiz
+            </Link>
+            <Link
+              to="/practice"
+              className="flex items-center gap-2 px-4 py-2 bg-pink-600/10 hover:bg-pink-600/20 text-pink-400 border border-pink-500/20 rounded-xl text-sm font-medium transition-colors"
+              id="practice-mode-btn"
+            >
+              <Brain size={16} />
+              Practice
+              {dueToday.length > 0 && (
+                <span className="ml-1 px-1.5 py-0.5 bg-amber-500 text-white text-[10px] font-bold rounded-full">
+                  {dueToday.length}
+                </span>
+              )}
             </Link>
             <Link
               to="/learned-quiz"

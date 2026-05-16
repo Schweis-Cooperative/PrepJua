@@ -1,23 +1,27 @@
-import React, { createContext, useContext, useEffect, useState, useCallback, useRef } from 'react';
+import React, { createContext, useContext, useEffect, useState, useCallback, useRef, useMemo } from 'react';
 import { getStorageItem, setStorageItemAsync } from '../utils/storage';
 import { logActivity, logWordToggle } from '../utils/logger';
 import { vocabularyData } from '../data/vocabularyData';
-import type { StreakState, CustomCollection } from '../types/progress';
-import { DEFAULT_PROGRESS } from '../types/progress';
+import type { StreakState, CustomCollection, SRSCard, ActivityEvent } from '../types/progress';
+import { DEFAULT_PROGRESS, LEITNER_INTERVALS } from '../types/progress';
 
 // ─── Helpers ───────────────────────────────────────────────────────────
 
-/** Get today's date as YYYY-MM-DD in the local timezone */
 function getTodayDate(): string {
   return new Date().toISOString().slice(0, 10);
 }
 
-/** Check if two YYYY-MM-DD date strings are consecutive calendar days */
 function isConsecutiveDay(prev: string, current: string): boolean {
   if (!prev) return false;
   const prevDate = new Date(prev + 'T00:00:00');
   const diff = new Date(current + 'T00:00:00').getTime() - prevDate.getTime();
-  return diff === 86400000; // exactly 1 day in ms
+  return diff === 86400000;
+}
+
+function addDays(dateStr: string, days: number): string {
+  const d = new Date(dateStr + 'T00:00:00');
+  d.setDate(d.getDate() + days);
+  return d.toISOString().slice(0, 10);
 }
 
 // ─── Context Interface ─────────────────────────────────────────────────
@@ -45,10 +49,17 @@ interface ProgressContextType {
   toggleWordInCollection: (collectionId: string, wordId: string) => void;
   isWordInCollection: (collectionId: string, wordId: string) => boolean;
   getCollectionsForWord: (wordId: string) => CustomCollection[];
+  // SRS (Leitner)
+  srsCards: SRSCard[];
+  dueToday: SRSCard[];
+  promoteWord: (wordId: string) => void;
+  demoteWord: (wordId: string) => void;
+  getSRSCard: (wordId: string) => SRSCard | undefined;
+  // Activity history
+  activityHistory: ActivityEvent[];
   // Data portability
   exportData: () => string;
   importData: (json: string) => boolean;
-  // Loading state
   isHydrated: boolean;
 }
 
@@ -57,7 +68,6 @@ const ProgressContext = createContext<ProgressContextType | undefined>(undefined
 // ─── Provider ──────────────────────────────────────────────────────────
 
 export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  // ── State (hydrated from localStorage synchronously for instant render) ──
   const [learnedWords, setLearnedWords] = useState<string[]>(
     () => getStorageItem('learnedWords', DEFAULT_PROGRESS.learnedWords)
   );
@@ -76,18 +86,18 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   const [customCollections, setCustomCollections] = useState<CustomCollection[]>(
     () => getStorageItem('customCollections', DEFAULT_PROGRESS.customCollections)
   );
-  const [isHydrated, setIsHydrated] = useState(true);
+  const [srsCards, setSrsCards] = useState<SRSCard[]>(
+    () => getStorageItem('srsCards', DEFAULT_PROGRESS.srsCards)
+  );
+  const [activityHistory, setActivityHistory] = useState<ActivityEvent[]>(
+    () => getStorageItem('activityHistory', DEFAULT_PROGRESS.activityHistory)
+  );
+  const [isHydrated] = useState(true);
 
-  // Ref to debounce IndexedDB writes (batches rapid updates)
   const writeTimers = useRef<Record<string, ReturnType<typeof setTimeout>>>({});
 
-  // ── Debounced async persist to IndexedDB ─────────────────────────────
   const persistAsync = useCallback((key: string, value: unknown) => {
-    // Clear any pending write for this key
-    if (writeTimers.current[key]) {
-      clearTimeout(writeTimers.current[key]);
-    }
-    // Debounce: write after 300ms of inactivity
+    if (writeTimers.current[key]) clearTimeout(writeTimers.current[key]);
     writeTimers.current[key] = setTimeout(() => {
       setStorageItemAsync(key, value).catch((err) =>
         console.error(`[ProgressContext] Failed to persist "${key}":`, err)
@@ -95,36 +105,93 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     }, 300);
   }, []);
 
-  // ── Persist state changes (async, non-blocking via IndexedDB) ────────
   useEffect(() => { persistAsync('learnedWords', learnedWords); }, [learnedWords, persistAsync]);
   useEffect(() => { persistAsync('completedGrammar', completedGrammar); }, [completedGrammar, persistAsync]);
   useEffect(() => { persistAsync('completedUoe', completedUoe); }, [completedUoe, persistAsync]);
   useEffect(() => { persistAsync('completedReading', completedReading); }, [completedReading, persistAsync]);
   useEffect(() => { persistAsync('streak', streak); }, [streak, persistAsync]);
   useEffect(() => { persistAsync('customCollections', customCollections); }, [customCollections, persistAsync]);
+  useEffect(() => { persistAsync('srsCards', srsCards); }, [srsCards, persistAsync]);
+  useEffect(() => { persistAsync('activityHistory', activityHistory); }, [activityHistory, persistAsync]);
 
-  // ── Streak: update on first interaction of the day ───────────────────
-  const recordActivity = useCallback(() => {
+  // ── Activity history: record daily stats ─────────────────────────────
+  const recordDailyActivity = useCallback((wordsLearned: number, reviewsDone: number) => {
     const today = getTodayDate();
-    setStreak(prev => {
-      if (prev.lastActiveDate === today) {
-        return prev; // Already active today, no change
+    setActivityHistory(prev => {
+      const existing = prev.find(e => e.date === today);
+      if (existing) {
+        return prev.map(e =>
+          e.date === today
+            ? { ...e, wordsLearned: e.wordsLearned + wordsLearned, reviewsDone: e.reviewsDone + reviewsDone }
+            : e
+        );
       }
-      const isConsecutive = isConsecutiveDay(prev.lastActiveDate, today);
-      const newCurrent = isConsecutive ? prev.current + 1 : 1;
-      const newLongest = Math.max(prev.longest, newCurrent);
-      return {
-        current: newCurrent,
-        longest: newLongest,
-        lastActiveDate: today,
-      };
+      return [...prev, { date: today, wordsLearned, reviewsDone }];
     });
   }, []);
 
-  // Record streak on mount (user opened the app today)
-  useEffect(() => {
+  // ── Streak ───────────────────────────────────────────────────────────
+  const recordActivity = useCallback(() => {
+    const today = getTodayDate();
+    setStreak(prev => {
+      if (prev.lastActiveDate === today) return prev;
+      const isConsecutive = isConsecutiveDay(prev.lastActiveDate, today);
+      const newCurrent = isConsecutive ? prev.current + 1 : 1;
+      return { current: newCurrent, longest: Math.max(prev.longest, newCurrent), lastActiveDate: today };
+    });
+  }, []);
+
+  useEffect(() => { recordActivity(); }, [recordActivity]);
+
+  // ── SRS Engine ───────────────────────────────────────────────────────
+
+  /** Words due for review today or earlier */
+  const dueToday = useMemo(() => {
+    const today = getTodayDate();
+    return srsCards.filter(c => c.nextReviewDate <= today);
+  }, [srsCards]);
+
+  /** Promote a word to the next Leitner box (correct answer) */
+  const promoteWord = useCallback((wordId: string) => {
+    const today = getTodayDate();
+    setSrsCards(prev => {
+      const idx = prev.findIndex(c => c.wordId === wordId);
+      if (idx === -1) {
+        // New word — enter Box 1
+        const interval = LEITNER_INTERVALS[1];
+        return [...prev, { wordId, box: 1, nextReviewDate: addDays(today, interval), lastReviewedAt: new Date().toISOString() }];
+      }
+      const card = prev[idx];
+      const newBox = Math.min(card.box + 1, 5);
+      const interval = LEITNER_INTERVALS[newBox];
+      const updated = [...prev];
+      updated[idx] = { ...card, box: newBox, nextReviewDate: addDays(today, interval), lastReviewedAt: new Date().toISOString() };
+      return updated;
+    });
+    recordDailyActivity(0, 1);
     recordActivity();
-  }, [recordActivity]);
+  }, [recordDailyActivity, recordActivity]);
+
+  /** Demote a word back to Box 1 (wrong answer) */
+  const demoteWord = useCallback((wordId: string) => {
+    const today = getTodayDate();
+    setSrsCards(prev => {
+      const idx = prev.findIndex(c => c.wordId === wordId);
+      if (idx === -1) {
+        return [...prev, { wordId, box: 1, nextReviewDate: addDays(today, 1), lastReviewedAt: new Date().toISOString() }];
+      }
+      const updated = [...prev];
+      updated[idx] = { ...prev[idx], box: 1, nextReviewDate: addDays(today, 1), lastReviewedAt: new Date().toISOString() };
+      return updated;
+    });
+    recordDailyActivity(0, 1);
+    recordActivity();
+  }, [recordDailyActivity, recordActivity]);
+
+  const getSRSCard = useCallback(
+    (wordId: string) => srsCards.find(c => c.wordId === wordId),
+    [srsCards]
+  );
 
   // ── Vocabulary ───────────────────────────────────────────────────────
   const toggleLearnedWord = useCallback((wordId: string) => {
@@ -135,10 +202,19 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
       const wasLearned = prev.includes(wordId);
       const newValue = wasLearned ? prev.filter(id => id !== wordId) : [...prev, wordId];
       logWordToggle(wordId, wordText, !wasLearned);
+      if (!wasLearned) {
+        // When marking learned, also enter into SRS if not already there
+        setSrsCards(srs => {
+          if (srs.find(c => c.wordId === wordId)) return srs;
+          const today = getTodayDate();
+          return [...srs, { wordId, box: 1, nextReviewDate: addDays(today, 1), lastReviewedAt: new Date().toISOString() }];
+        });
+      }
       return newValue;
     });
+    recordDailyActivity(1, 0);
     recordActivity();
-  }, [recordActivity]);
+  }, [recordActivity, recordDailyActivity]);
 
   const removeLearnedWord = useCallback((wordId: string) => {
     setLearnedWords(prev => prev.filter(id => id !== wordId));
@@ -171,17 +247,12 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   // ── Custom Collections ───────────────────────────────────────────────
   const createCollection = useCallback((name: string) => {
     const id = `col_${Date.now()}_${Math.random().toString(36).slice(2, 8)}`;
-    setCustomCollections(prev => [
-      ...prev,
-      { id, name, wordIds: [], createdAt: new Date().toISOString() },
-    ]);
+    setCustomCollections(prev => [...prev, { id, name, wordIds: [], createdAt: new Date().toISOString() }]);
     logActivity(`Created Collection: "${name}"`);
   }, []);
 
   const renameCollection = useCallback((id: string, newName: string) => {
-    setCustomCollections(prev =>
-      prev.map(c => (c.id === id ? { ...c, name: newName } : c))
-    );
+    setCustomCollections(prev => prev.map(c => (c.id === id ? { ...c, name: newName } : c)));
   }, []);
 
   const deleteCollection = useCallback((id: string) => {
@@ -194,12 +265,7 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
       prev.map(c => {
         if (c.id !== collectionId) return c;
         const has = c.wordIds.includes(wordId);
-        return {
-          ...c,
-          wordIds: has
-            ? c.wordIds.filter(w => w !== wordId)
-            : [...c.wordIds, wordId],
-        };
+        return { ...c, wordIds: has ? c.wordIds.filter(w => w !== wordId) : [...c.wordIds, wordId] };
       })
     );
     recordActivity();
@@ -220,18 +286,13 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
 
   // ── Data portability ─────────────────────────────────────────────────
   const exportData = useCallback(() => {
-    const data = {
-      learnedWords,
-      completedGrammar,
-      completedUoe,
-      completedReading,
-      streak,
-      customCollections,
+    return JSON.stringify({
+      learnedWords, completedGrammar, completedUoe, completedReading,
+      streak, customCollections, srsCards, activityHistory,
       timestamp: new Date().toISOString(),
       username: getStorageItem('username', 'User'),
-    };
-    return JSON.stringify(data, null, 2);
-  }, [learnedWords, completedGrammar, completedUoe, completedReading, streak, customCollections]);
+    }, null, 2);
+  }, [learnedWords, completedGrammar, completedUoe, completedReading, streak, customCollections, srsCards, activityHistory]);
 
   const importData = useCallback((json: string) => {
     try {
@@ -242,6 +303,8 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
       if (data.completedReading) setCompletedReading(data.completedReading);
       if (data.streak) setStreak(data.streak);
       if (data.customCollections) setCustomCollections(data.customCollections);
+      if (data.srsCards) setSrsCards(data.srsCards);
+      if (data.activityHistory) setActivityHistory(data.activityHistory);
       logActivity('Imported Progress Data');
       return true;
     } catch (e) {
@@ -250,30 +313,18 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     }
   }, []);
 
-  // ── Render ───────────────────────────────────────────────────────────
   return (
     <ProgressContext.Provider value={{
-      learnedWords,
-      toggleLearnedWord,
-      removeLearnedWord,
-      isWordLearned,
-      completedGrammar,
-      completeGrammarTopic,
-      completedUoe,
-      completeUoeTest,
-      completedReading,
-      completeReadingTest,
+      learnedWords, toggleLearnedWord, removeLearnedWord, isWordLearned,
+      completedGrammar, completeGrammarTopic,
+      completedUoe, completeUoeTest,
+      completedReading, completeReadingTest,
       streak,
-      customCollections,
-      createCollection,
-      renameCollection,
-      deleteCollection,
-      toggleWordInCollection,
-      isWordInCollection,
-      getCollectionsForWord,
-      exportData,
-      importData,
-      isHydrated,
+      customCollections, createCollection, renameCollection, deleteCollection,
+      toggleWordInCollection, isWordInCollection, getCollectionsForWord,
+      srsCards, dueToday, promoteWord, demoteWord, getSRSCard,
+      activityHistory,
+      exportData, importData, isHydrated,
     }}>
       {children}
     </ProgressContext.Provider>
