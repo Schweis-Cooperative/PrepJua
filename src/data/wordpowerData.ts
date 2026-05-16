@@ -812,4 +812,79 @@ export const wordpowerData: WordpowerBlock[] = [
     ],
   },
 
+
+  {
+    id: 'wp-look',
+    unit: 9,
+    rootWord: 'look',
+    title: 'Wordpower: look',
+    description: 'Look verb usage',
+    usages: [
+      { id: 'wp-look-1', meaning: 'Look at (a photo, a flower)', meaningTr: 'appearance (görünüşüne bakmak)', examples: [] },
+      { id: 'wp-look-2', meaning: 'Watch (a film)', meaningTr: 'movement (hareketi izlemek)', examples: [] },
+      { id: 'wp-look-3', meaning: 'See', meaningTr: 'visit, understand, be able to recognise', examples: [] },
+      { id: 'wp-look-4', meaning: 'Hear', meaningTr: 'be able to recognise', examples: [] },
+      { id: 'wp-look-5', meaning: 'Listen to (voice record)', meaningTr: 'sound (sesi dinlemek)', examples: [] }
+    ],
+    exercises: []
+  },
+  {
+    id: 'wp-over',
+    unit: 7,
+    rootWord: 'over',
+    title: 'Wordpower: over',
+    description: 'Over prepositions and expressions',
+    usages: [
+      { id: 'wp-over-1', meaning: 'over by', meaningTr: 'olup bitmek', examples: [] },
+      { id: 'wp-over-2', meaning: 'over the lake', meaningTr: 'karşısında', examples: [] },
+      { id: 'wp-over-3', meaning: 'over 1 million', meaningTr: 'daha fazla', examples: [] },
+      { id: 'wp-over-4', meaning: 'over the summer', meaningTr: 'sırasında', examples: [] },
+      { id: 'wp-over-5', meaning: 'all over', meaningTr: 'kaplamak', examples: [] }
+    ],
+    exercises: []
+  },
+  {
+    id: 'wp-in-on',
+    unit: 8,
+    rootWord: 'in / on',
+    title: 'Wordpower: in / on + noun',
+    description: 'Usage of in and on with nouns',
+    usages: [
+      { id: 'wp-io-1', meaning: 'in the picture', meaningTr: 'resimde', examples: [] },
+      { id: 'wp-io-2', meaning: 'in the first paragraph', meaningTr: 'ilk paragrafta', examples: [] },
+      { id: 'wp-io-3', meaning: 'in print', meaningTr: 'yazılı olarak', examples: [] },
+      { id: 'wp-io-4', meaning: 'in euros', meaningTr: 'euro cinsinden', examples: [] },
+      { id: 'wp-io-5', meaning: 'in size', meaningTr: 'boyutunda', examples: [] },
+      { id: 'wp-io-6', meaning: 'in stock', meaningTr: 'stokta', examples: [] },
+      { id: 'wp-io-7', meaning: 'in pencil', meaningTr: 'kurşun kalemle', examples: [] },
+      { id: 'wp-io-8', meaning: 'on my phone', meaningTr: 'telefonumda', examples: [] },
+      { id: 'wp-io-9', meaning: 'on page', meaningTr: 'sayfada', examples: [] },
+      { id: 'wp-io-10', meaning: 'on the radio', meaningTr: 'radyoda', examples: [] },
+      { id: 'wp-io-11', meaning: 'on the sign', meaningTr: 'tabelada', examples: [] },
+      { id: 'wp-io-12', meaning: 'on the ticket', meaningTr: 'bilette', examples: [] }
+    ],
+    exercises: []
+  },
+  {
+    id: 'wp-confusing',
+    unit: 0,
+    rootWord: 'Confusing Words',
+    title: 'Wordpower: Confusing Words',
+    description: 'Commonly confused verbs and adverbs',
+    usages: [
+      { id: 'wp-cw-1', meaning: 'lend to', meaningTr: 'ödünç vermek', examples: [] },
+      { id: 'wp-cw-2', meaning: 'borrow from', meaningTr: 'ödünç almak', examples: [] },
+      { id: 'wp-cw-3', meaning: 'miss', meaningTr: 'kaçırmak, özlemek', examples: [] },
+      { id: 'wp-cw-4', meaning: 'lose', meaningTr: 'kaybetmek', examples: [] },
+      { id: 'wp-cw-5', meaning: 'take', meaningTr: 'almak', examples: [] },
+      { id: 'wp-cw-6', meaning: 'bring', meaningTr: 'getirmek', examples: [] },
+      { id: 'wp-cw-7', meaning: 'raise', meaningTr: 'kaldırmak', examples: [] },
+      { id: 'wp-cw-8', meaning: 'rise', meaningTr: 'yükselmek', examples: [] },
+      { id: 'wp-cw-9', meaning: 'robbed', meaningTr: 'soygun yapmak', examples: [] },
+      { id: 'wp-cw-10', meaning: 'stole', meaningTr: 'çalmak', examples: [] },
+      { id: 'wp-cw-11', meaning: 'currently', meaningTr: 'şu sıralar', examples: [] },
+      { id: 'wp-cw-12', meaning: 'actually', meaningTr: 'aslında', examples: [] }
+    ],
+    exercises: []
+  },
 ];

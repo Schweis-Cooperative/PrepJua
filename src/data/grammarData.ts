@@ -33,6 +33,9 @@ Cevap: People from generations that didn't grow up with online friendships.
 - What **did** a fire damage? (Yangın neye zarar verdi?)
     `,
     tips: [
+      "Handwritten Tip: Subject Questions (Özne Soruları) genelde TEKİL SORU olarak adlandırılır. Doğrudan özneyi sorar. Örnek: Who told you the news? (1 Fiil bulunur).",
+      "Handwritten Tip: Object Questions (Nesne Soruları). Örnek: Why were you late? (1 Ana Fiil + 1 Yardımcı Fiil bulunur).",
+      "Handwritten Rule: Present Simple & Continuous -> know, understand, want, own fiilleri ING ALMAZ (State verbs).",
       "Nesne sorularında (object questions) soru kelimesi nesneyi sorar. Bu durumda do/does/did yardımcı fiillerini kullanırız.",
       "Özne sorularında (subject questions) soru kelimesi doğrudan öznenin yerini tutar. Bu yüzden do/does/did KULLANILMAZ ve fiil normal çekimlenir.",
     ],
