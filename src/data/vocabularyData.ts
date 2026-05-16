@@ -6,7 +6,7 @@ export const vocabularyData: VocabularyWord[] = [
     word: 'reach out',
     translation: 'Ulaşmak',
     example: '', 
-    category: 'phrasal verb',
+    category: 'phrase',
   },
   {
     id: 'v-new-hw-2',
