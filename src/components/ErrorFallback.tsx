@@ -1,10 +1,13 @@
-import { FallbackProps } from 'react-error-boundary';
+interface MyFallbackProps {
+  error: Error;
+  resetErrorBoundary: () => void;
+}
 
 /**
  * Dark-theme error fallback UI.
  * Displayed when a React rendering error is caught by an ErrorBoundary.
  */
-export default function ErrorFallback({ error, resetErrorBoundary }: FallbackProps) {
+export default function ErrorFallback({ error, resetErrorBoundary }: MyFallbackProps) {
   return (
     <div className="flex flex-col items-center justify-center min-h-[400px] px-6 py-12">
       <div className="bg-zinc-900 border border-red-500/20 rounded-2xl p-8 max-w-md w-full text-center shadow-xl">

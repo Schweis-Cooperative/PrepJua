@@ -6,18 +6,9 @@ export interface WritingTopic {
 }
 
 export interface WritingResult {
-  score: number;
-  generalFeedback: string;
-  structureFeedback: string;
-  grammarFeedback: string;
-  corrections: WritingCorrection[];
-  improvedEssay: string;
-}
-
-export interface WritingCorrection {
-  original: string;
-  corrected: string;
-  explanation: string;
+  cefrLevel: string;
+  grammarCorrections: string[];
+  vocabularyUpgrades: string[];
 }
 
 export interface WritingScoreEntry {

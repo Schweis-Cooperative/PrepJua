@@ -43,68 +43,23 @@ export async function gradeEssay(
   essay: string,
   images?: string[]
 ): Promise<string> {
-  const client = getClient();
-  if (!client) {
-    return JSON.stringify({
-      score: 0,
-      generalFeedback: 'Please set your Gemini API key in Settings to use essay grading.',
-      structureFeedback: '',
-      grammarFeedback: '',
-      corrections: [],
-      improvedEssay: '',
-    });
-  }
-
   try {
-    const prompt = `You are an expert English essay grader. Grade the following essay and return ONLY valid JSON with no markdown formatting.
-
-Topic: ${topic}
-
-Essay:
-${essay}
-
-Return this exact JSON structure:
-{
-  "score": <number 0-100>,
-  "generalFeedback": "<overall assessment>",
-  "structureFeedback": "<feedback on essay structure, paragraphing, coherence>",
-  "grammarFeedback": "<feedback on grammar, spelling, punctuation>",
-  "corrections": [
-    {"original": "<incorrect phrase>", "corrected": "<corrected phrase>", "explanation": "<why>"}
-  ],
-  "improvedEssay": "<the essay rewritten with improvements>"
-}
-
-Be thorough but constructive. Limit corrections to the 10 most important ones.`;
-
-    const contents: Array<{ text?: string; inlineData?: { mimeType: string; data: string } }> = [{ text: prompt }];
-
-    if (images && images.length > 0) {
-      images.forEach((base64) => {
-        contents.push({
-          inlineData: {
-            mimeType: 'image/jpeg',
-            data: base64,
-          },
-        });
-      });
-    }
-
-    const response = await client.models.generateContent({
-      model: 'gemini-2.0-flash',
-      contents: [{ role: 'user', parts: contents }],
+    const response = await fetch('/api/evaluate-writing', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ essay: `Topic: ${topic}\n\nEssay:\n${essay}` }),
     });
-
-    return response.text || '{}';
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    const data = await response.json();
+    return JSON.stringify(data);
   } catch (error) {
     console.error('Essay grading error:', error);
     return JSON.stringify({
-      score: 0,
-      generalFeedback: 'Failed to grade essay. Please check your API key and try again.',
-      structureFeedback: '',
-      grammarFeedback: '',
-      corrections: [],
-      improvedEssay: '',
+      cefrLevel: 'Error',
+      grammarCorrections: ['Failed to reach the AI server. Please try again later.'],
+      vocabularyUpgrades: [],
     });
   }
 }

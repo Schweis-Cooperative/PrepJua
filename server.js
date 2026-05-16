@@ -3,6 +3,12 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import compression from 'compression';
+import sqlite3 from 'sqlite3';
+import { GoogleGenAI } from '@google/genai';
+import cors from 'cors';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -11,6 +17,7 @@ const app = express();
 const PORT = parseInt(process.env.PORT || '3001', 10);
 
 // ── Middleware ──────────────────────────────────────────────────
+app.use(cors());
 app.use(compression());
 app.use(express.json({ limit: '1mb' }));
 // Trust the first proxy (Nginx) so req.ip reflects the real client
@@ -21,6 +28,30 @@ const userLogsDir = path.join(__dirname, 'user_logs');
 if (!fs.existsSync(userLogsDir)) {
   fs.mkdirSync(userLogsDir, { recursive: true });
 }
+
+// ── Database Initialization ─────────────────────────────────────
+const db = new sqlite3.Database(path.join(__dirname, 'prepjua.db'), (err) => {
+  if (err) {
+    console.error('[DB] Failed to connect to SQLite:', err.message);
+  } else {
+    console.log('[DB] Connected to SQLite prepjua.db');
+    db.serialize(() => {
+      db.run(`CREATE TABLE IF NOT EXISTS users (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        username TEXT UNIQUE NOT NULL,
+        password_hash TEXT,
+        created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+      )`);
+      db.run(`CREATE TABLE IF NOT EXISTS progress (
+        user_id INTEGER PRIMARY KEY,
+        schema_version INTEGER DEFAULT 1,
+        data_json TEXT NOT NULL,
+        updated_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+        FOREIGN KEY(user_id) REFERENCES users(id)
+      )`);
+    });
+  }
+});
 
 // ── Helpers ────────────────────────────────────────────────────
 
@@ -128,6 +159,105 @@ app.post('/api/log', async (req, res) => {
 
 app.get('/api/health', (_req, res) => {
   res.json({ status: 'ok', port: PORT, uptime: process.uptime() });
+});
+
+// ── Sync Routes ────────────────────────────────────────────────
+app.post('/api/sync/push', (req, res) => {
+  const { username, data } = req.body;
+  if (!username || !data) {
+    return res.status(400).json({ error: 'Missing username or data' });
+  }
+
+  // Upsert user
+  db.run(`INSERT OR IGNORE INTO users (username) VALUES (?)`, [username], function(err) {
+    if (err) {
+      console.error('[DB] User insert error:', err);
+      return res.status(500).json({ error: 'Database error' });
+    }
+    
+    // Get user_id
+    db.get(`SELECT id FROM users WHERE username = ?`, [username], (err, row) => {
+      if (err || !row) {
+        return res.status(500).json({ error: 'User lookup failed' });
+      }
+      
+      const userId = row.id;
+      // Upsert progress
+      const dataStr = typeof data === 'string' ? data : JSON.stringify(data);
+      db.run(
+        `INSERT INTO progress (user_id, schema_version, data_json, updated_at) 
+         VALUES (?, 1, ?, CURRENT_TIMESTAMP)
+         ON CONFLICT(user_id) DO UPDATE SET 
+         data_json = excluded.data_json, 
+         updated_at = CURRENT_TIMESTAMP`,
+        [userId, dataStr],
+        function(err) {
+          if (err) {
+            console.error('[DB] Progress upsert error:', err);
+            return res.status(500).json({ error: 'Failed to save progress' });
+          }
+          res.json({ success: true, timestamp: new Date().toISOString() });
+        }
+      );
+    });
+  });
+});
+
+app.get('/api/sync/pull/:username', (req, res) => {
+  const { username } = req.params;
+  
+  db.get(
+    `SELECT p.data_json FROM progress p
+     JOIN users u ON u.id = p.user_id
+     WHERE u.username = ?`, 
+    [username], 
+    (err, row) => {
+      if (err) {
+        console.error('[DB] Progress pull error:', err);
+        return res.status(500).json({ error: 'Database error' });
+      }
+      if (!row) {
+        return res.json({ success: true, data: null });
+      }
+      try {
+        const parsed = JSON.parse(row.data_json);
+        res.json({ success: true, data: parsed });
+      } catch (e) {
+        res.json({ success: true, data: row.data_json });
+      }
+    }
+  );
+});
+
+// ── AI Writing Evaluation ──────────────────────────────────────
+const aiClient = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY || process.env.VITE_GEMINI_API_KEY });
+
+app.post('/api/evaluate-writing', async (req, res) => {
+  const { essay } = req.body;
+  if (!essay) {
+    return res.status(400).json({ error: 'Missing essay' });
+  }
+
+  try {
+    const prompt = \`You are an expert CEFR English evaluator. Analyze this B1/B2 essay. Return a raw JSON object with exactly three fields: 1. cefrLevel (string), 2. grammarCorrections (array of strings), 3. vocabularyUpgrades (array of strings). Do not include markdown code blocks like \`\`\`json.
+    
+Essay:
+\${essay}\`;
+
+    const response = await aiClient.models.generateContent({
+      model: 'gemini-3.0-flash',
+      contents: prompt,
+    });
+
+    const rawText = response.text || '{}';
+    const cleanJsonStr = rawText.replace(/\`\`\`json\n?/g, '').replace(/\`\`\`\n?/g, '').trim();
+    const parsed = JSON.parse(cleanJsonStr);
+    
+    res.json(parsed);
+  } catch (error) {
+    console.error('[AI] Evaluate writing error:', error);
+    res.status(500).json({ error: 'AI evaluation failed' });
+  }
 });
 
 // ── Static files + SPA fallback (production only) ──────────────

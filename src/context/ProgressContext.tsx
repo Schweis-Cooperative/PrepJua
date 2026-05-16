@@ -92,9 +92,58 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   const [activityHistory, setActivityHistory] = useState<ActivityEvent[]>(
     () => getStorageItem('activityHistory', DEFAULT_PROGRESS.activityHistory)
   );
-  const [isHydrated] = useState(true);
+  const [isHydrated, setIsHydrated] = useState(false);
 
   const writeTimers = useRef<Record<string, ReturnType<typeof setTimeout>>>({});
+  const syncTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  // ── Cloud Sync Push ──────────────────────────────────────────────────
+  const syncToCloud = useCallback(() => {
+    const username = getStorageItem('username', '');
+    if (!username || username === 'Anonymous' || username === 'Unknown User') return;
+
+    if (syncTimer.current) clearTimeout(syncTimer.current);
+    syncTimer.current = setTimeout(() => {
+      const payload = {
+        username,
+        data: {
+          learnedWords, completedGrammar, completedUoe, completedReading,
+          streak, customCollections, srsCards, activityHistory,
+        }
+      };
+      fetch('/api/sync/push', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      }).catch(err => console.error('[Sync Push] Failed:', err));
+    }, 2000); // Debounce cloud sync by 2 seconds
+  }, [learnedWords, completedGrammar, completedUoe, completedReading, streak, customCollections, srsCards, activityHistory]);
+
+  // ── Cloud Sync Pull (On Mount) ───────────────────────────────────────
+  useEffect(() => {
+    const username = getStorageItem('username', '');
+    if (!username || username === 'Anonymous' || username === 'Unknown User') {
+      setIsHydrated(true);
+      return;
+    }
+
+    fetch(`/api/sync/pull/${encodeURIComponent(username)}`)
+      .then(res => res.json())
+      .then(res => {
+        if (res.success && res.data) {
+          if (res.data.learnedWords) setLearnedWords(res.data.learnedWords);
+          if (res.data.completedGrammar) setCompletedGrammar(res.data.completedGrammar);
+          if (res.data.completedUoe) setCompletedUoe(res.data.completedUoe);
+          if (res.data.completedReading) setCompletedReading(res.data.completedReading);
+          if (res.data.streak) setStreak(res.data.streak);
+          if (res.data.customCollections) setCustomCollections(res.data.customCollections);
+          if (res.data.srsCards) setSrsCards(res.data.srsCards);
+          if (res.data.activityHistory) setActivityHistory(res.data.activityHistory);
+        }
+      })
+      .catch(err => console.error('[Sync Pull] Failed:', err))
+      .finally(() => setIsHydrated(true));
+  }, []);
 
   const persistAsync = useCallback((key: string, value: unknown) => {
     if (writeTimers.current[key]) clearTimeout(writeTimers.current[key]);
@@ -105,14 +154,14 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     }, 300);
   }, []);
 
-  useEffect(() => { persistAsync('learnedWords', learnedWords); }, [learnedWords, persistAsync]);
-  useEffect(() => { persistAsync('completedGrammar', completedGrammar); }, [completedGrammar, persistAsync]);
-  useEffect(() => { persistAsync('completedUoe', completedUoe); }, [completedUoe, persistAsync]);
-  useEffect(() => { persistAsync('completedReading', completedReading); }, [completedReading, persistAsync]);
-  useEffect(() => { persistAsync('streak', streak); }, [streak, persistAsync]);
-  useEffect(() => { persistAsync('customCollections', customCollections); }, [customCollections, persistAsync]);
-  useEffect(() => { persistAsync('srsCards', srsCards); }, [srsCards, persistAsync]);
-  useEffect(() => { persistAsync('activityHistory', activityHistory); }, [activityHistory, persistAsync]);
+  useEffect(() => { persistAsync('learnedWords', learnedWords); syncToCloud(); }, [learnedWords, persistAsync, syncToCloud]);
+  useEffect(() => { persistAsync('completedGrammar', completedGrammar); syncToCloud(); }, [completedGrammar, persistAsync, syncToCloud]);
+  useEffect(() => { persistAsync('completedUoe', completedUoe); syncToCloud(); }, [completedUoe, persistAsync, syncToCloud]);
+  useEffect(() => { persistAsync('completedReading', completedReading); syncToCloud(); }, [completedReading, persistAsync, syncToCloud]);
+  useEffect(() => { persistAsync('streak', streak); syncToCloud(); }, [streak, persistAsync, syncToCloud]);
+  useEffect(() => { persistAsync('customCollections', customCollections); syncToCloud(); }, [customCollections, persistAsync, syncToCloud]);
+  useEffect(() => { persistAsync('srsCards', srsCards); syncToCloud(); }, [srsCards, persistAsync, syncToCloud]);
+  useEffect(() => { persistAsync('activityHistory', activityHistory); syncToCloud(); }, [activityHistory, persistAsync, syncToCloud]);
 
   // ── Activity history: record daily stats ─────────────────────────────
   const recordDailyActivity = useCallback((wordsLearned: number, reviewsDone: number) => {

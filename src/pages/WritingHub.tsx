@@ -61,12 +61,12 @@ export default function WritingHub() {
         id: crypto.randomUUID(),
         topicId: selectedTopic.id,
         topicTitle: customTopic || selectedTopic.title,
-        score: parsed.score,
+        cefrLevel: parsed.cefrLevel,
         date: new Date().toISOString(),
         result: parsed,
       };
       setWritingScores((prev) => [entry, ...prev]);
-      logAI('Essay Grading', `Topic: ${entry.topicTitle} — Score: ${parsed.score}/100`);
+      logAI('Essay Grading', `Topic: ${entry.topicTitle} — CEFR: ${parsed.cefrLevel}`);
     } catch (e) {
       console.error('Failed to parse grading result:', e);
     } finally {
@@ -166,56 +166,43 @@ export default function WritingHub() {
         </div>
       ) : result ? (
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="space-y-6">
-          {/* Result view remains same as before but with slightly polished UI */}
           <div className="glass-card rounded-2xl p-8 text-center relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-b from-indigo-500/5 to-transparent pointer-events-none" />
-            <CircularProgress
-              value={result.score}
-              color={result.score >= 70 ? '#10b981' : result.score >= 40 ? '#f59e0b' : '#ef4444'}
-            />
-            <p className="text-sm text-zinc-400 mt-4">Overall Writing Competency</p>
-            <p className="text-xs text-zinc-600 mt-1">Based on B1+ CEFR Standards</p>
+            <h2 className="text-4xl font-bold text-indigo-400 mb-2">{result.cefrLevel}</h2>
+            <p className="text-sm text-zinc-400">Estimated CEFR Level</p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
-            {[
-              { title: 'General Insights', content: result.generalFeedback, color: 'indigo' },
-              { title: 'Structural Flow', content: result.structureFeedback, color: 'violet' },
-              { title: 'Linguistic Range', content: result.grammarFeedback, color: 'amber' },
-            ].map((fb) => (
-              <div key={fb.title} className={`glass-card rounded-xl p-6 border-t-4 border-t-${fb.color}-500/30`}>
-                <h3 className={`text-xs font-bold uppercase tracking-wider text-${fb.color}-400 mb-3`}>{fb.title}</h3>
-                <p className="text-sm text-zinc-300 leading-relaxed">{fb.content}</p>
-              </div>
-            ))}
-          </div>
-
-          {result.corrections.length > 0 && (
-            <div className="glass-card rounded-2xl p-6">
-              <h3 className="text-sm font-bold text-rose-300 mb-4">Granular Corrections</h3>
-              <div className="space-y-3">
-                {result.corrections.map((c, i) => (
-                  <div key={i} className="p-4 bg-zinc-800/30 rounded-xl border border-zinc-700/30 flex flex-col sm:flex-row gap-4">
-                    <div className="flex-1">
-                      <div className="flex items-center gap-2 mb-1">
-                        <span className="text-xs font-bold text-rose-400 line-through opacity-70">{c.original}</span>
-                        <ChevronRight size={12} className="text-zinc-600" />
-                        <span className="text-xs font-bold text-emerald-400">{c.corrected}</span>
-                      </div>
-                      <p className="text-[11px] text-zinc-500">{c.explanation}</p>
-                    </div>
-                  </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+            <div className="glass-card rounded-xl p-6 border-t-4 border-t-amber-500/30">
+              <h3 className="text-xs font-bold uppercase tracking-wider text-amber-400 mb-4">Grammar Corrections</h3>
+              <ul className="space-y-3 text-sm text-zinc-300">
+                {result.grammarCorrections && result.grammarCorrections.map((corr, idx) => (
+                  <li key={idx} className="flex gap-2">
+                    <ChevronRight size={16} className="text-zinc-600 shrink-0 mt-0.5" />
+                    <span className="leading-relaxed">{corr}</span>
+                  </li>
                 ))}
-              </div>
+                {(!result.grammarCorrections || result.grammarCorrections.length === 0) && (
+                  <p className="text-zinc-500 italic">No major grammar issues found.</p>
+                )}
+              </ul>
             </div>
-          )}
 
-          {result.improvedEssay && (
-            <div className="glass-card rounded-2xl p-6 bg-emerald-500/5 border-emerald-500/10">
-              <h3 className="text-sm font-bold text-emerald-400 mb-3">Model Solution (Improved)</h3>
-              <p className="text-sm text-zinc-300 leading-relaxed whitespace-pre-wrap selection:bg-emerald-500/20">{result.improvedEssay}</p>
+            <div className="glass-card rounded-xl p-6 border-t-4 border-t-emerald-500/30">
+              <h3 className="text-xs font-bold uppercase tracking-wider text-emerald-400 mb-4">Vocabulary Upgrades</h3>
+              <ul className="space-y-3 text-sm text-zinc-300">
+                {result.vocabularyUpgrades && result.vocabularyUpgrades.map((upg, idx) => (
+                  <li key={idx} className="flex gap-2">
+                    <ChevronRight size={16} className="text-zinc-600 shrink-0 mt-0.5" />
+                    <span className="leading-relaxed">{upg}</span>
+                  </li>
+                ))}
+                {(!result.vocabularyUpgrades || result.vocabularyUpgrades.length === 0) && (
+                  <p className="text-zinc-500 italic">No significant vocabulary upgrades suggested.</p>
+                )}
+              </ul>
             </div>
-          )}
+          </div>
 
           <button onClick={() => { setResult(null); setEssay(''); setImages([]); }} className="w-full py-4 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl text-sm font-bold transition-all shadow-lg shadow-indigo-500/20">
             Write Another Essay
