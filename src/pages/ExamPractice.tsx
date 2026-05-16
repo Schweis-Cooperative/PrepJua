@@ -343,8 +343,10 @@ export default function ExamPractice() {
   }
 
 
+  if (!exam) return null;
+
   if (finished) {
-    if (!exam) return null;
+
     return (
       <div className="max-w-2xl mx-auto">
         <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} className="glass-card rounded-2xl p-8 text-center">

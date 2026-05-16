@@ -1944,1428 +1944,1428 @@ export const vocabularyData: VocabularyWord[] = [
   {
     id: 'successful',
     word: 'successful',
-    definition: 'başarılı',
+    translation: 'başarılı',
     example: '',
     category: 'phrase'
   },
   {
     id: 'talented',
     word: 'talented',
-    definition: 'yetenekli',
+    translation: 'yetenekli',
     example: '',
     category: 'phrase'
   },
   {
     id: 'intelligent',
     word: 'intelligent',
-    definition: 'zeki',
+    translation: 'zeki',
     example: '',
     category: 'phrase'
   },
   {
     id: 'confident',
     word: 'confident',
-    definition: 'öz güvenli',
+    translation: 'öz güvenli',
     example: '',
     category: 'phrase'
   },
   {
     id: 'determined',
     word: 'determined',
-    definition: 'kararlı',
+    translation: 'kararlı',
     example: '',
     category: 'phrase'
   },
   {
     id: 'achievement',
     word: 'achievement',
-    definition: 'başarı',
+    translation: 'başarı',
     example: '',
     category: 'phrase'
   },
   {
     id: 'attitude',
     word: 'attitude',
-    definition: 'tutum',
+    translation: 'tutum',
     example: '',
     category: 'phrase'
   },
   {
     id: 'give-up',
     word: 'give up',
-    definition: 'vazgeçmek',
+    translation: 'vazgeçmek',
     example: '',
     category: 'phrase'
   },
   {
     id: 'sociable',
     word: 'sociable',
-    definition: 'sosyal',
+    translation: 'sosyal',
     example: '',
     category: 'phrase'
   },
   {
     id: 'outgoing',
     word: 'outgoing',
-    definition: 'uyumlu',
+    translation: 'uyumlu',
     example: '',
     category: 'phrase'
   },
   {
     id: 'talkative',
     word: 'talkative',
-    definition: 'konuşkan',
+    translation: 'konuşkan',
     example: '',
     category: 'phrase'
   },
   {
     id: 'shy',
     word: 'shy',
-    definition: 'utangaç',
+    translation: 'utangaç',
     example: '',
     category: 'phrase'
   },
   {
     id: 'reserved',
     word: 'reserved',
-    definition: 'duygu belli etmeyen',
+    translation: 'duygu belli etmeyen',
     example: '',
     category: 'phrase'
   },
   {
     id: 'lively',
     word: 'lively',
-    definition: 'canlı',
+    translation: 'canlı',
     example: '',
     category: 'phrase'
   },
   {
     id: 'serious',
     word: 'serious',
-    definition: 'ciddi',
+    translation: 'ciddi',
     example: '',
     category: 'phrase'
   },
   {
     id: 'sensitive',
     word: 'sensitive',
-    definition: 'hassas',
+    translation: 'hassas',
     example: '',
     category: 'phrase'
   },
   {
     id: 'valued',
     word: 'valued',
-    definition: 'değerli',
+    translation: 'değerli',
     example: '',
     category: 'phrase'
   },
   {
     id: 'movement',
     word: 'movement',
-    definition: 'eylem',
+    translation: 'eylem',
     example: '',
     category: 'phrase'
   },
   {
     id: 'despite',
     word: 'despite',
-    definition: 'rağmen',
+    translation: 'rağmen',
     example: '',
     category: 'phrase'
   },
   {
     id: 'songwriters',
     word: 'songwriters',
-    definition: 'söz yazarı',
+    translation: 'söz yazarı',
     example: '',
     category: 'phrase'
   },
   {
     id: 'bright',
     word: 'bright',
-    definition: 'zeki',
+    translation: 'zeki',
     example: '',
     category: 'phrase'
   },
   {
     id: 'towards',
     word: 'towards',
-    definition: 'karşı',
+    translation: 'karşı',
     example: '',
     category: 'phrase'
   },
   {
     id: 'ability',
     word: 'ability',
-    definition: 'yetenek',
+    translation: 'yetenek',
     example: '',
     category: 'phrase'
   },
   {
     id: 'pick-up',
     word: 'pick up',
-    definition: 'almak, teslim almak',
+    translation: 'almak, teslim almak',
     example: '',
     category: 'phrase'
   },
   {
     id: 'pollution',
     word: 'pollution',
-    definition: 'kirlilik',
+    translation: 'kirlilik',
     example: '',
     category: 'phrase'
   },
   {
     id: 'endangered',
     word: 'endangered',
-    definition: 'tehlikede',
+    translation: 'tehlikede',
     example: '',
     category: 'phrase'
   },
   {
     id: 'damaged',
     word: 'damaged',
-    definition: 'zarar görmüş',
+    translation: 'zarar görmüş',
     example: '',
     category: 'phrase'
   },
   {
     id: 'protect',
     word: 'protect',
-    definition: 'korumak',
+    translation: 'korumak',
     example: '',
     category: 'phrase'
   },
   {
     id: 'environment',
     word: 'environment',
-    definition: 'çevre',
+    translation: 'çevre',
     example: '',
     category: 'phrase'
   },
   {
     id: 'creature',
     word: 'creature',
-    definition: 'yaratık',
+    translation: 'yaratık',
     example: '',
     category: 'phrase'
   },
   {
     id: 'destroy',
     word: 'destroy',
-    definition: 'yerle bir etmek',
+    translation: 'yerle bir etmek',
     example: '',
     category: 'phrase'
   },
   {
     id: 'species',
     word: 'species',
-    definition: 'tür',
+    translation: 'tür',
     example: '',
     category: 'phrase'
   },
   {
     id: 'survive',
     word: 'survive',
-    definition: 'hayatta kalmak',
+    translation: 'hayatta kalmak',
     example: '',
     category: 'phrase'
   },
   {
     id: 'limit',
     word: 'limit',
-    definition: 'sınırlamak',
+    translation: 'sınırlamak',
     example: '',
     category: 'phrase'
   },
   {
     id: 'branch',
     word: 'branch',
-    definition: 'dal, branş',
+    translation: 'dal, branş',
     example: '',
     category: 'phrase'
   },
   {
     id: 'petals',
     word: 'petals',
-    definition: 'taç yaprak',
+    translation: 'taç yaprak',
     example: '',
     category: 'phrase'
   },
   {
     id: 'feathers',
     word: 'feathers',
-    definition: 'tüy',
+    translation: 'tüy',
     example: '',
     category: 'phrase'
   },
   {
     id: 'scales',
     word: 'scales',
-    definition: 'pul',
+    translation: 'pul',
     example: '',
     category: 'phrase'
   },
   {
     id: 'fur',
     word: 'fur',
-    definition: 'kürk',
+    translation: 'kürk',
     example: '',
     category: 'phrase'
   },
   {
     id: 'bay',
     word: 'bay',
-    definition: 'koy',
+    translation: 'koy',
     example: '',
     category: 'phrase'
   },
   {
     id: 'waterfall',
     word: 'waterfall',
-    definition: 'şelale',
+    translation: 'şelale',
     example: '',
     category: 'phrase'
   },
   {
     id: 'cave',
     word: 'cave',
-    definition: 'mağara',
+    translation: 'mağara',
     example: '',
     category: 'phrase'
   },
   {
     id: 'paws',
     word: 'paws',
-    definition: 'pati',
+    translation: 'pati',
     example: '',
     category: 'phrase'
   },
   {
     id: 'web',
     word: 'web',
-    definition: 'ağ',
+    translation: 'ağ',
     example: '',
     category: 'phrase'
   },
   {
     id: 'hook',
     word: 'hook',
-    definition: 'kanca',
+    translation: 'kanca',
     example: '',
     category: 'phrase'
   },
   {
     id: 'sticking',
     word: 'sticking',
-    definition: 'yapışmak',
+    translation: 'yapışmak',
     example: '',
     category: 'phrase'
   },
   {
     id: 'arctic',
     word: 'arctic',
-    definition: 'kutup',
+    translation: 'kutup',
     example: '',
     category: 'phrase'
   },
   {
     id: 'inspire',
     word: 'inspire',
-    definition: 'ilham almak',
+    translation: 'ilham almak',
     example: '',
     category: 'phrase'
   },
   {
     id: 'seeds',
     word: 'seeds',
-    definition: 'tohum',
+    translation: 'tohum',
     example: '',
     category: 'phrase'
   },
   {
     id: 'rose',
     word: 'rose',
-    definition: 'gül',
+    translation: 'gül',
     example: '',
     category: 'phrase'
   },
   {
     id: 'pine-tree',
     word: 'pine tree',
-    definition: 'çam ağacı',
+    translation: 'çam ağacı',
     example: '',
     category: 'phrase'
   },
   {
     id: 'souvenir-shop',
     word: 'souvenir shop',
-    definition: 'hediyelik eşya dükkanı',
+    translation: 'hediyelik eşya dükkanı',
     example: '',
     category: 'phrase'
   },
   {
     id: 'bottle-opener',
     word: 'bottle opener',
-    definition: 'şişe açacağı',
+    translation: 'şişe açacağı',
     example: '',
     category: 'phrase'
   },
   {
     id: 'window-seat',
     word: 'window seat',
-    definition: 'cam kenarı',
+    translation: 'cam kenarı',
     example: '',
     category: 'phrase'
   },
   {
     id: 'dishwasher',
     word: 'dishwasher',
-    definition: 'bulaşık makinesi',
+    translation: 'bulaşık makinesi',
     example: '',
     category: 'phrase'
   },
   {
     id: 'insect-repellent',
     word: 'insect repellent',
-    definition: 'böcek savar',
+    translation: 'böcek savar',
     example: '',
     category: 'phrase'
   },
   {
     id: 'insights',
     word: 'insights',
-    definition: 'iç yüzünü anlamak',
+    translation: 'iç yüzünü anlamak',
     example: '',
     category: 'phrase'
   },
   {
     id: 'approach-to',
     word: 'approach to',
-    definition: 'yaklaşım',
+    translation: 'yaklaşım',
     example: '',
     category: 'phrase'
   },
   {
     id: 'vaccinations',
     word: 'vaccinations',
-    definition: 'aşı',
+    translation: 'aşı',
     example: '',
     category: 'phrase'
   },
   {
     id: 'plantain',
     word: 'plantain',
-    definition: 'muz türü',
+    translation: 'muz türü',
     example: '',
     category: 'phrase'
   },
   {
     id: 'contribute',
     word: 'contribute',
-    definition: 'katkıda bulunmak',
+    translation: 'katkıda bulunmak',
     example: '',
     category: 'phrase'
   },
   {
     id: 'herbs',
     word: 'herbs',
-    definition: 'bitki',
+    translation: 'bitki',
     example: '',
     category: 'phrase'
   },
   {
     id: 'mention',
     word: 'mention',
-    definition: 'bahsetmek',
+    translation: 'bahsetmek',
     example: '',
     category: 'phrase'
   },
   {
     id: 'in-advance',
     word: 'in advance',
-    definition: 'önceden',
+    translation: 'önceden',
     example: '',
     category: 'phrase'
   },
   {
     id: 'steamed-rice',
     word: 'steamed rice',
-    definition: 'buharda pilav',
+    translation: 'buharda pilav',
     example: '',
     category: 'phrase'
   },
   {
     id: 'randomly',
     word: 'randomly',
-    definition: 'rastgele',
+    translation: 'rastgele',
     example: '',
     category: 'phrase'
   },
   {
     id: 'explore',
     word: 'explore',
-    definition: 'keşfetmek',
+    translation: 'keşfetmek',
     example: '',
     category: 'phrase'
   },
   {
     id: 'bride',
     word: 'bride',
-    definition: 'gelin',
+    translation: 'gelin',
     example: '',
     category: 'phrase'
   },
   {
     id: 'groom',
     word: 'groom',
-    definition: 'damat',
+    translation: 'damat',
     example: '',
     category: 'phrase'
   },
   {
     id: 'moving-house',
     word: 'moving house',
-    definition: 'ev taşımak',
+    translation: 'ev taşımak',
     example: '',
     category: 'phrase'
   },
   {
     id: 'move-out-of',
     word: 'move out of',
-    definition: 'bir yerden çıkmak',
+    translation: 'bir yerden çıkmak',
     example: '',
     category: 'phrase'
   },
   {
     id: 'terrace',
     word: 'terrace',
-    definition: 'teras',
+    translation: 'teras',
     example: '',
     category: 'phrase'
   },
   {
     id: 'renting',
     word: 'renting',
-    definition: 'kiralamak',
+    translation: 'kiralamak',
     example: '',
     category: 'phrase'
   },
   {
     id: 'block',
     word: 'block',
-    definition: 'apartman',
+    translation: 'apartman',
     example: '',
     category: 'phrase'
   },
   {
     id: 'neighbourhood',
     word: 'neighbourhood',
-    definition: 'mahalle',
+    translation: 'mahalle',
     example: '',
     category: 'phrase'
   },
   {
     id: 'ground-floor',
     word: 'ground floor',
-    definition: 'zemin kat',
+    translation: 'zemin kat',
     example: '',
     category: 'phrase'
   },
   {
     id: 'landing',
     word: 'landing',
-    definition: 'sahanlık',
+    translation: 'sahanlık',
     example: '',
     category: 'phrase'
   },
   {
     id: 'argue-with',
     word: 'argue with',
-    definition: 'tartışmak',
+    translation: 'tartışmak',
     example: '',
     category: 'phrase'
   },
   {
     id: 'cope-with',
     word: 'cope with',
-    definition: 'başa çıkmak',
+    translation: 'başa çıkmak',
     example: '',
     category: 'phrase'
   },
   {
     id: 'care-about',
     word: 'care about',
-    definition: 'umursamak',
+    translation: 'umursamak',
     example: '',
     category: 'phrase'
   },
   {
     id: 'worry-about',
     word: 'worry about',
-    definition: 'endişelenmek',
+    translation: 'endişelenmek',
     example: '',
     category: 'phrase'
   },
   {
     id: 'complain-about',
     word: 'complain about',
-    definition: 'şikayet etmek',
+    translation: 'şikayet etmek',
     example: '',
     category: 'phrase'
   },
   {
     id: 'rely-on',
     word: 'rely on',
-    definition: 'güvenmek',
+    translation: 'güvenmek',
     example: '',
     category: 'phrase'
   },
   {
     id: 'depend-on',
     word: 'depend on',
-    definition: 'bağlı olmak',
+    translation: 'bağlı olmak',
     example: '',
     category: 'phrase'
   },
   {
     id: 'apologise-for',
     word: 'apologise for',
-    definition: 'özür dilemek',
+    translation: 'özür dilemek',
     example: '',
     category: 'phrase'
   },
   {
     id: 'believe-in',
     word: 'believe in',
-    definition: 'inanmak',
+    translation: 'inanmak',
     example: '',
     category: 'phrase'
   },
   {
     id: 'succeed-in',
     word: 'succeed in',
-    definition: 'başarmak',
+    translation: 'başarmak',
     example: '',
     category: 'phrase'
   },
   {
     id: 'belong-to',
     word: 'belong to',
-    definition: 'ait olmak',
+    translation: 'ait olmak',
     example: '',
     category: 'phrase'
   },
   {
     id: 'apologise-to',
     word: 'apologise to',
-    definition: 'özür dilemek',
+    translation: 'özür dilemek',
     example: '',
     category: 'phrase'
   },
   {
     id: 'complain-to',
     word: 'complain to',
-    definition: 'şikayet etmek',
+    translation: 'şikayet etmek',
     example: '',
     category: 'phrase'
   },
   {
     id: 'outskirts',
     word: 'outskirts',
-    definition: 'şehrin etekleri',
+    translation: 'şehrin etekleri',
     example: '',
     category: 'phrase'
   },
   {
     id: 'entire',
     word: 'entire',
-    definition: 'tamamı',
+    translation: 'tamamı',
     example: '',
     category: 'phrase'
   },
   {
     id: 'accommodation',
     word: 'accommodation',
-    definition: 'konaklama',
+    translation: 'konaklama',
     example: '',
     category: 'phrase'
   },
   {
     id: 'range',
     word: 'range',
-    definition: 'aralık',
+    translation: 'aralık',
     example: '',
     category: 'phrase'
   },
   {
     id: 'hosts',
     word: 'hosts',
-    definition: 'ev sahipleri',
+    translation: 'ev sahipleri',
     example: '',
     category: 'phrase'
   },
   {
     id: 'nearby',
     word: 'nearby',
-    definition: 'yakınlarda',
+    translation: 'yakınlarda',
     example: '',
     category: 'phrase'
   },
   {
     id: 'theft',
     word: 'theft',
-    definition: 'hırsızlık',
+    translation: 'hırsızlık',
     example: '',
     category: 'phrase'
   },
   {
     id: 'create',
     word: 'create',
-    definition: 'yaratmak',
+    translation: 'yaratmak',
     example: '',
     category: 'phrase'
   },
   {
     id: 'hold-a-meeting',
     word: 'hold a meeting',
-    definition: 'toplantı yapmak',
+    translation: 'toplantı yapmak',
     example: '',
     category: 'phrase'
   },
   {
     id: 'subscriber',
     word: 'subscriber',
-    definition: 'abone',
+    translation: 'abone',
     example: '',
     category: 'phrase'
   },
   {
     id: 'series',
     word: 'series',
-    definition: 'dizi',
+    translation: 'dizi',
     example: '',
     category: 'phrase'
   },
   {
     id: 'episode',
     word: 'episode',
-    definition: 'bölüm',
+    translation: 'bölüm',
     example: '',
     category: 'phrase'
   },
   {
     id: 'deliver',
     word: 'deliver',
-    definition: 'teslimat',
+    translation: 'teslimat',
     example: '',
     category: 'phrase'
   },
   {
     id: 'post-on',
     word: 'post on',
-    definition: 'gönderi paylaşmak',
+    translation: 'gönderi paylaşmak',
     example: '',
     category: 'phrase'
   },
   {
     id: 'advise',
     word: 'advise',
-    definition: 'tavsiye etmek',
+    translation: 'tavsiye etmek',
     example: '',
     category: 'phrase'
   },
   {
     id: 'were-offering',
     word: 'were offering',
-    definition: 'teklif yapmak',
+    translation: 'teklif yapmak',
     example: '',
     category: 'phrase'
   },
   {
     id: 'warn',
     word: 'warn',
-    definition: 'uyarmak',
+    translation: 'uyarmak',
     example: '',
     category: 'phrase'
   },
   {
     id: 'promise',
     word: 'promise',
-    definition: 'söz vermek',
+    translation: 'söz vermek',
     example: '',
     category: 'phrase'
   },
   {
     id: 'recommend',
     word: 'recommend',
-    definition: 'tavsiye',
+    translation: 'tavsiye',
     example: '',
     category: 'phrase'
   },
   {
     id: 'threaten',
     word: 'threaten',
-    definition: 'tehdit etmek',
+    translation: 'tehdit etmek',
     example: '',
     category: 'phrase'
   },
   {
     id: 'offer',
     word: 'offer',
-    definition: 'teklif etmek',
+    translation: 'teklif etmek',
     example: '',
     category: 'phrase'
   },
   {
     id: 'suggest',
     word: 'suggest',
-    definition: 'önermek',
+    translation: 'önermek',
     example: '',
     category: 'phrase'
   },
   {
     id: 'attend',
     word: 'attend',
-    definition: 'katılmak',
+    translation: 'katılmak',
     example: '',
     category: 'phrase'
   },
   {
     id: 'basis',
     word: 'basis',
-    definition: 'temel',
+    translation: 'temel',
     example: '',
     category: 'phrase'
   },
   {
     id: 'come-across',
     word: 'come across',
-    definition: 'karşılaşmak',
+    translation: 'karşılaşmak',
     example: '',
     category: 'phrase'
   },
   {
     id: 'genuine',
     word: 'genuine',
-    definition: 'gerçek',
+    translation: 'gerçek',
     example: '',
     category: 'phrase'
   },
   {
     id: 'kept',
     word: 'kept',
-    definition: 'tutmak, sürmek',
+    translation: 'tutmak, sürmek',
     example: '',
     category: 'phrase'
   },
   {
     id: 'submitted',
     word: 'submitted',
-    definition: 'teslim etmek',
+    translation: 'teslim etmek',
     example: '',
     category: 'phrase'
   },
   {
     id: 'setting-up',
     word: 'setting up',
-    definition: 'kurmak',
+    translation: 'kurmak',
     example: '',
     category: 'phrase'
   },
   {
     id: 'get-through',
     word: 'get through',
-    definition: 'başarmak',
+    translation: 'başarmak',
     example: '',
     category: 'phrase'
   },
   {
     id: 'according-to',
     word: 'according to',
-    definition: 'göre',
+    translation: 'göre',
     example: '',
     category: 'phrase'
   },
   {
     id: 'wished',
     word: 'wished',
-    definition: 'dilemek',
+    translation: 'dilemek',
     example: '',
     category: 'phrase'
   },
   {
     id: 'enquiries',
     word: 'enquiries',
-    definition: 'soruşturma',
+    translation: 'soruşturma',
     example: '',
     category: 'phrase'
   },
   {
     id: 'pretending',
     word: 'pretending',
-    definition: 'mış gibi yapmak',
+    translation: 'mış gibi yapmak',
     example: '',
     category: 'phrase'
   },
   {
     id: 'believe-to',
     word: 'believe to',
-    definition: 'inanmak',
+    translation: 'inanmak',
     example: '',
     category: 'phrase'
   },
   {
     id: 'disappointed',
     word: 'disappointed',
-    definition: 'hayal kırıklığına uğramış',
+    translation: 'hayal kırıklığına uğramış',
     example: '',
     category: 'phrase'
   },
   {
     id: 'disappointing',
     word: 'disappointing',
-    definition: 'hayal kırıklığı yaratan',
+    translation: 'hayal kırıklığı yaratan',
     example: '',
     category: 'phrase'
   },
   {
     id: 'amused',
     word: 'amused',
-    definition: 'eğlenmiş',
+    translation: 'eğlenmiş',
     example: '',
     category: 'phrase'
   },
   {
     id: 'amusing',
     word: 'amusing',
-    definition: 'eğlenceli',
+    translation: 'eğlenceli',
     example: '',
     category: 'phrase'
   },
   {
     id: 'depressed',
     word: 'depressed',
-    definition: 'depresif',
+    translation: 'depresif',
     example: '',
     category: 'phrase'
   },
   {
     id: 'depressing',
     word: 'depressing',
-    definition: 'üzücü',
+    translation: 'üzücü',
     example: '',
     category: 'phrase'
   },
   {
     id: 'character',
     word: 'character',
-    definition: 'karakter',
+    translation: 'karakter',
     example: '',
     category: 'phrase'
   },
   {
     id: 'event',
     word: 'event',
-    definition: 'etkinlik',
+    translation: 'etkinlik',
     example: '',
     category: 'phrase'
   },
   {
     id: 'gulf',
     word: 'gulf',
-    definition: 'körfez',
+    translation: 'körfez',
     example: '',
     category: 'phrase'
   },
   {
     id: 'profits',
     word: 'profits',
-    definition: 'kâr',
+    translation: 'kâr',
     example: '',
     category: 'phrase'
   },
   {
     id: 'charity',
     word: 'charity',
-    definition: 'hayır kurumu',
+    translation: 'hayır kurumu',
     example: '',
     category: 'phrase'
   },
   {
     id: 'beauty',
     word: 'beauty',
-    definition: 'güzellik',
+    translation: 'güzellik',
     example: '',
     category: 'phrase'
   },
   {
     id: 'celebration',
     word: 'celebration',
-    definition: 'kutlama',
+    translation: 'kutlama',
     example: '',
     category: 'phrase'
   },
   {
     id: 'celebrate',
     word: 'celebrate',
-    definition: 'kutlamak',
+    translation: 'kutlamak',
     example: '',
     category: 'phrase'
   },
   {
     id: 'charitable',
     word: 'charitable',
-    definition: 'hayırsever',
+    translation: 'hayırsever',
     example: '',
     category: 'phrase'
   },
   {
     id: 'creative',
     word: 'creative',
-    definition: 'yaratıcı',
+    translation: 'yaratıcı',
     example: '',
     category: 'phrase'
   },
   {
     id: 'creativity',
     word: 'creativity',
-    definition: 'yaratıcılık',
+    translation: 'yaratıcılık',
     example: '',
     category: 'phrase'
   },
   {
     id: 'cultural',
     word: 'cultural',
-    definition: 'kültürel',
+    translation: 'kültürel',
     example: '',
     category: 'phrase'
   },
   {
     id: 'development',
     word: 'development',
-    definition: 'gelişim',
+    translation: 'gelişim',
     example: '',
     category: 'phrase'
   },
   {
     id: 'musical',
     word: 'musical',
-    definition: 'müzikal',
+    translation: 'müzikal',
     example: '',
     category: 'phrase'
   },
   {
     id: 'musician',
     word: 'musician',
-    definition: 'müzisyen',
+    translation: 'müzisyen',
     example: '',
     category: 'phrase'
   },
   {
     id: 'organised',
     word: 'organised',
-    definition: 'organize',
+    translation: 'organize',
     example: '',
     category: 'phrase'
   },
   {
     id: 'organiser',
     word: 'organiser',
-    definition: 'organizatör',
+    translation: 'organizatör',
     example: '',
     category: 'phrase'
   },
   {
     id: 'organize',
     word: 'organize',
-    definition: 'organize etmek',
+    translation: 'organize etmek',
     example: '',
     category: 'phrase'
   },
   {
     id: 'performer',
     word: 'performer',
-    definition: 'sanatçı',
+    translation: 'sanatçı',
     example: '',
     category: 'phrase'
   },
   {
     id: 'perform',
     word: 'perform',
-    definition: 'performans sergilemek',
+    translation: 'performans sergilemek',
     example: '',
     category: 'phrase'
   },
   {
     id: 'wait-a-second',
     word: 'wait a second',
-    definition: 'bir saniye bekle',
+    translation: 'bir saniye bekle',
     example: '',
     category: 'phrase'
   },
   {
     id: 'one-moment-please',
     word: 'one moment please',
-    definition: 'bir an lütfen',
+    translation: 'bir an lütfen',
     example: '',
     category: 'phrase'
   },
   {
     id: 'let-me-check-for-you',
     word: 'let me check for you',
-    definition: 'sizin için kontrol edeyim',
+    translation: 'sizin için kontrol edeyim',
     example: '',
     category: 'phrase'
   },
   {
     id: 'misses',
     word: 'misses',
-    definition: 'ıskalamak',
+    translation: 'ıskalamak',
     example: '',
     category: 'phrase'
   },
   {
     id: 'referee',
     word: 'referee',
-    definition: 'hakem',
+    translation: 'hakem',
     example: '',
     category: 'phrase'
   },
   {
     id: 'afraid-of',
     word: 'afraid of',
-    definition: 'korkmak',
+    translation: 'korkmak',
     example: '',
     category: 'phrase'
   },
   {
     id: 'scared-of',
     word: 'scared of',
-    definition: 'korkmuş',
+    translation: 'korkmuş',
     example: '',
     category: 'phrase'
   },
   {
     id: 'essential-for',
     word: 'essential for',
-    definition: 'gerekli',
+    translation: 'gerekli',
     example: '',
     category: 'phrase'
   },
   {
     id: 'nervous',
     word: 'nervous',
-    definition: 'gergin',
+    translation: 'gergin',
     example: '',
     category: 'phrase'
   },
   {
     id: 'tired-of',
     word: 'tired of',
-    definition: 'bıkmış',
+    translation: 'bıkmış',
     example: '',
     category: 'phrase'
   },
   {
     id: 'right-for',
     word: 'right for',
-    definition: 'için doğru',
+    translation: 'için doğru',
     example: '',
     category: 'phrase'
   },
   {
     id: 'similar-to',
     word: 'similar to',
-    definition: 'benzer',
+    translation: 'benzer',
     example: '',
     category: 'phrase'
   },
   {
     id: 'popular-with',
     word: 'popular with',
-    definition: 'ile popüler',
+    translation: 'ile popüler',
     example: '',
     category: 'phrase'
   },
   {
     id: 'perfect-to',
     word: 'perfect to',
-    definition: 'için mükemmel',
+    translation: 'için mükemmel',
     example: '',
     category: 'phrase'
   },
   {
     id: 'definitely',
     word: 'definitely',
-    definition: 'kesinlikle',
+    translation: 'kesinlikle',
     example: '',
     category: 'phrase'
   },
   {
     id: 'speaking-of',
     word: 'speaking of',
-    definition: 'demişken',
+    translation: 'demişken',
     example: '',
     category: 'phrase'
   },
   {
     id: 'that-reminds-me',
     word: 'that reminds me',
-    definition: 'o bana şunu hatırlattı',
+    translation: 'o bana şunu hatırlattı',
     example: '',
     category: 'phrase'
   },
   {
     id: 'you-ve-got-nothing',
     word: 'you\'ve got nothing',
-    definition: 'hiçbir şeyin yok',
+    translation: 'hiçbir şeyin yok',
     example: '',
     category: 'phrase'
   },
   {
     id: 'by-the-way',
     word: 'by the way',
-    definition: 'bu arada',
+    translation: 'bu arada',
     example: '',
     category: 'phrase'
   },
   {
     id: 'i-was-saying',
     word: 'I was saying',
-    definition: 'diyordum ki',
+    translation: 'diyordum ki',
     example: '',
     category: 'phrase'
   },
   {
     id: 'i-m-still-worried',
     word: 'I\'m still worried',
-    definition: 'hala endişeliyim',
+    translation: 'hala endişeliyim',
     example: '',
     category: 'phrase'
   },
   {
     id: 'identify',
     word: 'identify',
-    definition: 'belirlemek',
+    translation: 'belirlemek',
     example: '',
     category: 'phrase'
   },
   {
     id: 'disappear',
     word: 'disappear',
-    definition: 'kaybolmak',
+    translation: 'kaybolmak',
     example: '',
     category: 'phrase'
   },
   {
     id: 'value',
     word: 'value',
-    definition: 'değer',
+    translation: 'değer',
     example: '',
     category: 'phrase'
   },
   {
     id: 'hurt',
     word: 'hurt',
-    definition: 'incitmek',
+    translation: 'incitmek',
     example: '',
     category: 'phrase'
   },
   {
     id: 'adopted',
     word: 'adopted',
-    definition: 'evlat edinmek',
+    translation: 'evlat edinmek',
     example: '',
     category: 'phrase'
   },
   {
     id: 'honour',
     word: 'honour',
-    definition: 'onur',
+    translation: 'onur',
     example: '',
     category: 'phrase'
   },
   {
     id: 'retirement',
     word: 'retirement',
-    definition: 'emeklilik',
+    translation: 'emeklilik',
     example: '',
     category: 'phrase'
   },
   {
     id: 'thick',
     word: 'thick',
-    definition: 'kalın',
+    translation: 'kalın',
     example: '',
     category: 'phrase'
   },
   {
     id: 'constantly',
     word: 'constantly',
-    definition: 'sürekli',
+    translation: 'sürekli',
     example: '',
     category: 'phrase'
   },
   {
     id: 'reached',
     word: 'reached',
-    definition: 'ulaşmak',
+    translation: 'ulaşmak',
     example: '',
     category: 'phrase'
   },
   {
     id: 'negotiate',
     word: 'negotiate',
-    definition: 'müzakere',
+    translation: 'müzakere',
     example: '',
     category: 'phrase'
   },
   {
     id: 'pressure',
     word: 'pressure',
-    definition: 'baskı',
+    translation: 'baskı',
     example: '',
     category: 'phrase'
   },
   {
     id: 'ambitious',
     word: 'ambitious',
-    definition: 'hırslı',
+    translation: 'hırslı',
     example: '',
     category: 'phrase'
   },
   {
     id: 'anxious',
     word: 'anxious',
-    definition: 'endişeli',
+    translation: 'endişeli',
     example: '',
     category: 'phrase'
   },
   {
     id: 'misjudged',
     word: 'misjudged',
-    definition: 'yanlış yargılama',
+    translation: 'yanlış yargılama',
     example: '',
     category: 'phrase'
   },
   {
     id: 'smoother',
     word: 'smoother',
-    definition: 'pürüzsüz',
+    translation: 'pürüzsüz',
     example: '',
     category: 'phrase'
   },
   {
     id: 'nowadays',
     word: 'nowadays',
-    definition: 'bugünlerde',
+    translation: 'bugünlerde',
     example: '',
     category: 'phrase'
   },
   {
     id: 'presence',
     word: 'presence',
-    definition: 'var olmak',
+    translation: 'var olmak',
     example: '',
     category: 'phrase'
   },
   {
     id: 'avoid',
     word: 'avoid',
-    definition: 'kaçınmak',
+    translation: 'kaçınmak',
     example: '',
     category: 'phrase'
   },
   {
     id: 'adapted',
     word: 'adapted',
-    definition: 'uyarlanmış',
+    translation: 'uyarlanmış',
     example: '',
     category: 'phrase'
   },
   {
     id: 'award',
     word: 'award',
-    definition: 'ödül',
+    translation: 'ödül',
     example: '',
     category: 'phrase'
   },
   {
     id: 'mess-with',
     word: 'mess with',
-    definition: 'bulaşmak',
+    translation: 'bulaşmak',
     example: '',
     category: 'phrase'
   },
   {
     id: 'miss',
     word: 'miss',
-    definition: 'özlemek',
+    translation: 'özlemek',
     example: '',
     category: 'phrase'
   },
   {
     id: 'thin',
     word: 'thin',
-    definition: 'ince',
+    translation: 'ince',
     example: '',
     category: 'phrase'
   },
   {
     id: 'closed',
     word: 'closed',
-    definition: 'kapalı',
+    translation: 'kapalı',
     example: '',
     category: 'phrase'
   },
   {
     id: 'shelves',
     word: 'shelves',
-    definition: 'raf',
+    translation: 'raf',
     example: '',
     category: 'phrase'
   },
   {
     id: 'rebellious',
     word: 'rebellious',
-    definition: 'asi',
+    translation: 'asi',
     example: '',
     category: 'phrase'
   },
   {
     id: 'relaxed',
     word: 'relaxed',
-    definition: 'rahat',
+    translation: 'rahat',
     example: '',
     category: 'phrase'
   },
   {
     id: 'therefore',
     word: 'therefore',
-    definition: 'bu yüzden',
+    translation: 'bu yüzden',
     example: '',
     category: 'phrase'
   },
   {
     id: 'provide',
     word: 'provide',
-    definition: 'sağlamak',
+    translation: 'sağlamak',
     example: '',
     category: 'phrase'
   },
   {
     id: 'deal-with',
     word: 'deal with',
-    definition: 'ilgilenmek',
+    translation: 'ilgilenmek',
     example: '',
     category: 'phrase'
   },
   {
     id: 'improve',
     word: 'improve',
-    definition: 'iyileştirmek',
+    translation: 'iyileştirmek',
     example: '',
     category: 'phrase'
   },
