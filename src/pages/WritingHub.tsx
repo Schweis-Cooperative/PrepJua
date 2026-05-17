@@ -4,7 +4,6 @@ import { PenTool, Upload, Loader2, Lightbulb, ChevronRight, MessageSquare, Info,
 import { writingTopics } from '../data/cheatSheetData';
 import { writingTips } from '../data/writingTipsData';
 import { gradeEssay } from '../utils/ai';
-import { CircularProgress } from '../components/ProgressBar';
 import { useLocalStorage } from '../hooks/useLocalStorage';
 import type { WritingResult, WritingScoreEntry } from '../types/writing';
 import { logAI } from '../utils/logger';

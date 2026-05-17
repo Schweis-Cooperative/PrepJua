@@ -1,13 +1,10 @@
-interface MyFallbackProps {
-  error: Error;
-  resetErrorBoundary: () => void;
-}
+import type { FallbackProps } from 'react-error-boundary';
 
 /**
  * Dark-theme error fallback UI.
  * Displayed when a React rendering error is caught by an ErrorBoundary.
  */
-export default function ErrorFallback({ error, resetErrorBoundary }: MyFallbackProps) {
+export default function ErrorFallback({ error, resetErrorBoundary }: FallbackProps) {
   return (
     <div className="flex flex-col items-center justify-center min-h-[400px] px-6 py-12">
       <div className="bg-zinc-900 border border-red-500/20 rounded-2xl p-8 max-w-md w-full text-center shadow-xl">
@@ -41,13 +38,13 @@ export default function ErrorFallback({ error, resetErrorBoundary }: MyFallbackP
         </p>
 
         {/* Error detail (collapsed) */}
-        {error?.message && (
+        {!!error && (
           <details className="mb-5 text-left">
             <summary className="text-xs text-zinc-600 cursor-pointer hover:text-zinc-400 transition-colors">
               Technical details
             </summary>
             <pre className="mt-2 text-[11px] text-red-400/70 bg-zinc-950 border border-zinc-800 rounded-lg p-3 overflow-x-auto whitespace-pre-wrap break-words">
-              {error.message}
+              {error instanceof Error ? error.message : String(error)}
             </pre>
           </details>
         )}

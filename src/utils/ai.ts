@@ -41,7 +41,7 @@ Explain why "${correctAnswer}" is correct and why "${userAnswer}" is wrong. Be c
 export async function gradeEssay(
   topic: string,
   essay: string,
-  images?: string[]
+  _images?: string[]
 ): Promise<string> {
   const apiKey = getStorageItem<string>('apiKey', '');
   

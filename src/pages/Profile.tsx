@@ -47,7 +47,7 @@ export default function Profile() {
   const completedUoeCount = Object.values(completedUoe).filter((v) => v > 0).length;
   const completedReadingCount = Object.values(completedReading).filter((v) => v > 0).length;
   const avgWritingScore = writingScores.length > 0
-    ? Math.round(writingScores.reduce((sum, s) => sum + s.score, 0) / writingScores.length)
+    ? Math.round(writingScores.reduce((sum, s) => sum + (s.score || 0), 0) / writingScores.length)
     : 0;
 
   const stats = [
@@ -223,8 +223,8 @@ export default function Profile() {
                       <p className="text-sm text-zinc-200 truncate">{entry.topicTitle}</p>
                       <p className="text-[10px] text-zinc-600 font-medium">{formatDate(entry.date)}</p>
                     </div>
-                    <span className={`text-lg font-bold ${entry.score >= 70 ? 'text-emerald-400' : entry.score >= 40 ? 'text-amber-400' : 'text-rose-400'}`}>
-                      {entry.score}
+                    <span className={`text-lg font-bold ${(entry.score || 0) >= 70 || ['C1', 'C2', 'B2'].includes(entry.cefrLevel || '') ? 'text-emerald-400' : (entry.score || 0) >= 40 || ['B1', 'A2'].includes(entry.cefrLevel || '') ? 'text-amber-400' : 'text-rose-400'}`}>
+                      {entry.cefrLevel || entry.score || 'N/A'}
                     </span>
                   </div>
                 ))}

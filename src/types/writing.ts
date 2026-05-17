@@ -15,7 +15,8 @@ export interface WritingScoreEntry {
   id: string;
   topicId: string;
   topicTitle: string;
-  score: number;
+  score?: number;
+  cefrLevel?: string;
   date: string;
   result: WritingResult;
 }

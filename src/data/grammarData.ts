@@ -1424,6 +1424,11 @@ We use a **reflexive pronoun** (myself, yourself, herself, ourselves, etc.) to s
 - She didn't get her nails done — she did them **herself**.
 - We didn't have the room painted — we painted it **ourselves**.
     `,
+    tips: [
+      "have + nesne + V3 yapısında işi başkasına yaptırma (arrange/pay) veya başımıza gelen kötü bir olay anlatılır.",
+      "Get yapısı, Have yapısına göre daha samimi/günlük bir dildedir.",
+      "Kendi yaptığımız işleri vurgulamak için myself, herself gibi reflexive zamirler ekleriz."
+    ],
     questions: [
       {
         id: "causative-q1",
