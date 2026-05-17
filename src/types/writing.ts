@@ -2,7 +2,7 @@ export interface WritingTopic {
   id: string;
   title: string;
   prompt: string;
-  type: 'opinion' | 'argumentative' | 'descriptive' | 'narrative';
+  type: 'opinion' | 'argumentative' | 'descriptive' | 'narrative' | 'cause-effect' | 'problem-solution';
 }
 
 export interface WritingResult {

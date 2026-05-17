@@ -402,6 +402,132 @@ Geçmişteki bir noktadan veya olaydan önce **uzun süre devam etmiş olan (sü
         correctAnswer: 0,
         explanation: 'Durum fiili + daha önce tamamlanmış eylem: wasn\'t + had just finished.',
       },
+      // ── Academic Skills: Narrative Tenses (The Weekend at My Aunt’s Café) ──
+      {
+        id: 'narrative-as-q1',
+        question: 'Academic Skills: "Last summer, I visited my aunt\'s small family-run café for a long weekend. She ________ the business for almost twenty years..."',
+        options: ['ran', 'was running', 'had run'],
+        correctAnswer: 2,
+        explanation: 'Biz oraya gitmeden önceki 20 yıllık süreci belirttiği için (daha geçmişteki durum/eylem) Past Perfect Tense ("had run") kullanılır.',
+      },
+      {
+        id: 'narrative-as-q2',
+        question: 'Academic Skills: "I arrived early on Saturday morning, and she ________ already preparing breakfast."',
+        options: ['was', 'had been', 'did'],
+        correctAnswer: 0,
+        explanation: 'Cumartesi sabahı oraya ulaştığımdaki arka planda devam eden eylem Past Continuous Tense ("was") ile ifade edilir.',
+      },
+      {
+        id: 'narrative-as-q3',
+        question: 'Academic Skills: "When I walked in, she was talking to a customer who ________ to the café for years."',
+        options: ['came', 'had been coming', 'was coming'],
+        correctAnswer: 1,
+        explanation: 'Geçmişteki bir noktaya (walked in / was talking) kadar uzun süredir devam edegelen bir eylemi anlattığı için Past Perfect Continuous Tense ("had been coming") kullanılır.',
+      },
+      {
+        id: 'narrative-as-q4',
+        question: 'Academic Skills: "Before I arrived, my cousin ________ the tables and had set up the outdoor seating."',
+        options: ['cleaned', 'was cleaning', 'had cleaned'],
+        correctAnswer: 2,
+        explanation: 'Benim varışımdan daha önce yapılmış/tamamlanmış olan eylemleri anlatmak için Past Perfect Tense ("had cleaned") kullanılır.',
+      },
+      {
+        id: 'narrative-as-q5',
+        question: 'Academic Skills: "He told me he ________ in the café every summer since he was twelve."',
+        options: ['was helping', 'had been helping', 'helped'],
+        correctAnswer: 1,
+        explanation: 'Geçmişteki konuşma anından ("told me") önce başlayıp o ana kadar devam eden ve sürece vurgu yapan eylem için Past Perfect Continuous Tense ("had been helping") kullanılır.',
+      },
+      {
+        id: 'narrative-as-q6',
+        question: 'Academic Skills: "While he ________ coffee, my aunt asked me to help her carry boxes from the storage room."',
+        options: ['made', 'was making', 'had made'],
+        correctAnswer: 1,
+        explanation: '"While" bağlacından sonra genellikle geçmişte devam etmekte olan uzun eylemleri belirtmek için Past Continuous Tense ("was making") kullanılır.',
+      },
+      {
+        id: 'narrative-as-q7',
+        question: 'Academic Skills: "The café was unusually busy that morning because a local festival ________ place nearby."',
+        options: ['took', 'had taken', 'was taking'],
+        correctAnswer: 2,
+        explanation: 'O sabah festivalin arka planda devam etmekte olduğunu (süregiden durumu) açıklamak için Past Continuous Tense ("was taking place") kullanılır.',
+      },
+      {
+        id: 'narrative-as-q8',
+        question: 'Academic Skills: "At one point, she argued with my cousin because he ________ to order more milk."',
+        options: ['forgot', 'had forgotten', 'was forgetting'],
+        correctAnswer: 1,
+        explanation: 'Süt sipariş etmeyi unutma eylemi, tartışma eyleminden ("argued") daha önce gerçekleşip bittiği için Past Perfect Tense ("had forgotten") kullanılır.',
+      },
+      {
+        id: 'narrative-as-q9',
+        question: 'Academic Skills: "She later admitted she ________ stressed for days."',
+        options: ['was feeling', 'had been feeling', 'felt'],
+        correctAnswer: 1,
+        explanation: 'İtiraf etme anından ("admitted") önceki günleri kapsayan sürekli bir hissi/durumu (sürece vurgu) belirtmek için Past Perfect Continuous Tense ("had been feeling") kullanılır.',
+      },
+      {
+        id: 'narrative-as-q10',
+        question: 'Academic Skills: Which narrative tense describes "a long continuous action before a point in the past"? (e.g., "He had been helping since he was twelve.")',
+        options: ['Past Continuous', 'Past Perfect Continuous', 'Past Perfect', 'Past Simple'],
+        correctAnswer: 1,
+        explanation: 'Geçmişteki bir noktadan veya olaydan önce uzun süre devam etmiş olan (sürece odaklanan) eylemleri anlatmak için Past Perfect Continuous kullanılır.',
+      },
+      {
+        id: 'narrative-as-q11',
+        question: 'Academic Skills: Rewrite using "when": "I was walking home. It started to rain."',
+        options: [
+          'I was walking home when it started to rain.',
+          'I walked home when it was starting to rain.',
+          'I had walked home when it started to rain.'
+        ],
+        correctAnswer: 0,
+        explanation: 'Geçmişte devam etmekte olan bir eylem (Past Continuous) "when" bağlacı ve ardından gelen anlık bir olayla (Past Simple) kesildiğinde bu yapı kullanılır.',
+      },
+      {
+        id: 'narrative-as-q12',
+        question: 'Academic Skills: Rewrite using "while": "She was cooking. I was setting the table."',
+        options: [
+          'While she cooked, I had set the table.',
+          'While she was cooking, I was setting the table.',
+          'She had cooked while I set the table.'
+        ],
+        correctAnswer: 1,
+        explanation: 'Geçmişte aynı anda devam eden iki paralel eylemi anlatmak için "while" bağlacı ile her iki cümlede de Past Continuous kullanılır.',
+      },
+      {
+        id: 'narrative-as-q13',
+        question: 'Academic Skills: Rewrite using "as": "I was leaving the house. The phone rang."',
+        options: [
+          'As I was leaving the house, the phone rang.',
+          'As I left the house, the phone had rung.',
+          'I had left the house as the phone was ringing.'
+        ],
+        correctAnswer: 0,
+        explanation: '"As" bağlacı "-iken" anlamında, bir eylemin tam gerçekleştiği sırada meydana gelen başka bir olayı Past Continuous ve Past Simple kullanarak bağlar.',
+      },
+      {
+        id: 'narrative-as-q14',
+        question: 'Academic Skills: Rewrite using "after": "I finished the meal. I paid the bill."',
+        options: [
+          'After I was finishing the meal, I paid the bill.',
+          'After I had finished the meal, I paid the bill.',
+          'After I finished the meal, I had paid the bill.'
+        ],
+        correctAnswer: 1,
+        explanation: 'Geçmişte gerçekleşen iki olaydan daha önce yapılanı (yemeği bitirmek) vurgulamak için "after" bağlacından sonra Past Perfect, ardından gelen olay için ise Past Simple kullanılır.',
+      },
+      {
+        id: 'narrative-as-q15',
+        question: 'Academic Skills: Rewrite using "by the time": "We arrived. The movie had already started."',
+        options: [
+          'By the time we arrived, the movie had already started.',
+          'By the time we were arriving, the movie started.',
+          'We arrived by the time the movie was starting.'
+        ],
+        correctAnswer: 0,
+        explanation: '"By the time", "-dığı zamana kadar / çoktan olmuştu" anlamını katmak için Past Simple (varış) ile Past Perfect (filmin başlamış olması) yapılarını birbirine bağlar.',
+      },
     ],
   },
 
@@ -489,6 +615,41 @@ Geçmişteki **alışkanlıkları** ve **durumları** anlatmak için *used to* k
         correctAnswer: 2,
         explanation: 'Geçmişteki uzun süreli bir his, her ikisi de kullanılabilir.',
       },
+      {
+        id: 'used-to-as-q1',
+        question: 'Academic Skills: "We ________ in a small apartment before we moved to this big suburban house."',
+        options: ['used to live', 'would live', 'Her ikisi de doğru'],
+        correctAnswer: 0,
+        explanation: '"Live" bir durum fiili (state verb) olduğu için geçmişteki durumları anlatırken "would" KULLANILAMAZ. Yalnızca "used to live" doğrudur.',
+      },
+      {
+        id: 'used-to-as-q2',
+        question: 'Academic Skills: "At first, it was very difficult, but I gradually got used to ________ at 5 AM every morning."',
+        options: ['waking up', 'wake up', 'woke up'],
+        correctAnswer: 0,
+        explanation: '"Get used to" (alışmak) yapısından sonra gelen fiil mutlaka "-ing" takısı alır.',
+      },
+      {
+        id: 'used-to-as-q3',
+        question: 'Academic Skills: "Every summer, my grandmother ________ fresh pastries for all the kids in the neighborhood."',
+        options: ['would cook', 'get used to cooking', 'was used to cook'],
+        correctAnswer: 0,
+        explanation: 'Geçmişte tekrarlanan aksiyonları/alışkanlıkları anlatmak için Past Simple ve used to dışında "would + V1" yapısı kullanılabilir.',
+      },
+      {
+        id: 'used-to-as-q4',
+        question: 'Academic Skills: "Since they lived in a crowded city for ten years, they ________ the heavy traffic and noise."',
+        options: ['are used to', 'got used to', 'used to'],
+        correctAnswer: 0,
+        explanation: 'Hâlihazırda alışkın olma durumunu ("zaten alışkınlar") ifade etmek için "be used to + noun" yapısı kullanılır.',
+      },
+      {
+        id: 'used-to-as-q5',
+        question: 'Academic Skills: "My sister ________ like seafood, but now she eats it almost every week."',
+        options: ["didn't use to", "didn't used to", "never would"],
+        correctAnswer: 0,
+        explanation: '"Used to" yapısının olumsuzunda "did not/didn\'t" yardımcı fiili kullanıldığında fiil yalın hale döner: "didn\'t use to" (d takısı düşer).',
+      },
     ],
   },
 
@@ -570,6 +731,48 @@ Geçmişteki **alışkanlıkları** ve **durumları** anlatmak için *used to* k
         options: ["I'll be sick", "I'm going to be sick"],
         correctAnswer: 1,
         explanation: 'Kanıta dayalı tahmin (karnı ağrıyor) = going to.',
+      },
+      {
+        id: 'gf5a-q6',
+        question: 'Academic Skills: "If we don\'t hurry, by the time we get to the station, the train ________."',
+        options: ['will have left', 'will be leaving', 'will leave'],
+        correctAnswer: 0,
+        explanation: 'Geçmişte veya gelecekte belirli bir andan ("by the time we get to the station") önce tamamlanmış olacak eylemleri anlatmak için Future Perfect ("will have left") kullanılır.',
+      },
+      {
+        id: 'gf5a-q7',
+        question: 'Academic Skills: "This time tomorrow, we will be getting on the plane, and we ________ about work!"',
+        options: ["won't be thinking", "won't have thought", "don't think"],
+        correctAnswer: 0,
+        explanation: 'Gelecekte belirli bir zamanda devam etmekte olacak sürekli eylemler için Future Continuous ("won\'t be thinking") kullanılır.',
+      },
+      {
+        id: 'gf5a-q8',
+        question: 'Academic Skills: "I don\'t know exactly when someone will buy my old car, but I hope I ________ it by the end of the month."',
+        options: ['will have sold', 'will be selling', 'will sell'],
+        correctAnswer: 0,
+        explanation: 'Gelecekteki belirli bir sınırdan ("by the end of the month") önce tamamlanması umulan eylem için Future Perfect Tense ("will have sold") kullanılır.',
+      },
+      {
+        id: 'gf5a-q9',
+        question: 'Academic Skills: "Please do not phone me at 5 PM tomorrow because I ________ home from work at that time."',
+        options: ['will still be driving', 'will have driven', 'will drive'],
+        correctAnswer: 0,
+        explanation: 'Gelecekte belirli bir saatte sürmekte/yapılmakta olacak eylemleri anlatmak için Future Continuous Tense ("will still be driving") kullanılır.',
+      },
+      {
+        id: 'gf5a-q10',
+        question: 'Academic Skills: "By this time next year, he ________ from the university and will be looking for a job."',
+        options: ['will have graduated', 'will be graduating', 'will graduate'],
+        correctAnswer: 0,
+        explanation: 'Gelecekteki bir zaman noktasına kadar tamamlanmış olacak eğitim mezuniyeti için Future Perfect Tense ("will have graduated") kullanılır.',
+      },
+      {
+        id: 'gf5a-q11',
+        question: 'Academic Skills: "In ten years\' time, I hope I ________ my own family-run bistro."',
+        options: ['will be running', 'will have run', 'will run'],
+        correctAnswer: 0,
+        explanation: 'Gelecekteki bir süreçte sürdürülecek olan rol, rutin veya durum için Future Continuous ("will be running") kullanımı uygundur.',
       },
     ],
   },
@@ -1439,17 +1642,66 @@ We use a **reflexive pronoun** (myself, yourself, herself, ourselves, etc.) to s
       },
       {
         id: "causative-q2",
-        question: "A thief broke their window to get in. -> They __________.",
-        options: ["got their window broke", "had their window broken", "had broken their window"],
-        correctAnswer: 1,
-        explanation: "Olumsuz ve istenmeyen bir eylem olduğu için 'have + object + V3' (had their window broken) kullanılır.",
+        question: "A tailor will shorten his trousers tomorrow. -> He __________.",
+        options: ["will get his trousers shortened tomorrow", "will got his trousers shortened tomorrow", "is getting his trousers shorten tomorrow"],
+        correctAnswer: 0,
+        explanation: "Gelecek zaman causative yapısı: 'will get + object (his trousers) + V3 (shortened)' kullanılır.",
       },
       {
         id: "causative-q3",
-        question: "I didn't ask anyone to iron my clothes. -> I ironed them __________.",
-        options: ["myself", "by myself", "mine"],
+        question: "A plumber fixed our sink last week. -> We __________.",
+        options: ["had fixed our sink last week", "had our sink fixed last week", "got our sink fix last week"],
+        correctAnswer: 1,
+        explanation: "Geçmiş zaman causative yapısı: 'had/got + object + V3 (fixed)' kullanılır.",
+      },
+      {
+        id: "causative-q4",
+        question: "A gardener cuts their lawn every Saturday. -> They __________.",
+        options: ["get their lawn cut every Saturday", "have cut their lawn every Saturday", "get their lawn to cut every Saturday"],
         correctAnswer: 0,
-        explanation: "Eylemi başkasına yaptırmayıp kendimiz yaptığımızı vurgulamak için reflexive pronoun (myself) kullanılır.",
+        explanation: "Geniş zaman (Present Simple) causative yapısı: 'get + object + V3 (cut)' kullanılır. 'Cut' fiilinin 3. hali yine 'cut'tır.",
+      },
+      {
+        id: "causative-q5",
+        question: "Someone scratched her car in the car park. -> She __________.",
+        options: ["had her car scratched in the car park", "got scratched her car in the car park", "had scratched her car in the car park"],
+        correctAnswer: 0,
+        explanation: "Olumsuz/istem dışı olaylar için de 'have + object + V3' (had her car scratched) yapısı kullanılır.",
+      },
+      {
+        id: "causative-q6",
+        question: "A thief broke their window to get in. -> They __________.",
+        options: ["had broken their window to get in", "got their window broke to get in", "had their window broken to get in"],
+        correctAnswer: 2,
+        explanation: "Beklenmedik olumsuz olaylarda (adverse events) 'have/get + object + V3' yapısı kullanılır: 'had their window broken'.",
+      },
+      {
+        id: "causative-q7",
+        question: "I didn't ask anyone to iron my clothes. -> I __________.",
+        options: ["ironed them myself", "had them ironed by myself", "ironed them by myself"],
+        correctAnswer: 0,
+        explanation: "İşi başkasına yaptırmayıp kendimiz yaptığımızda reflexive pronoun (myself) kullanılır: 'I ironed them myself'.",
+      },
+      {
+        id: "causative-q8",
+        question: "She didn't pay anyone to bake the cake. -> She __________.",
+        options: ["had the cake baked herself", "baked the cake herself", "got the cake baked by herself"],
+        correctAnswer: 1,
+        explanation: "Birine ödeme yapmayıp işi kendi başına (herself) gerçekleştirdiğini belirtmek için: 'She baked the cake herself'.",
+      },
+      {
+        id: "causative-q9",
+        question: "They didn't hire anyone to decorate the hall. -> They __________.",
+        options: ["decorated the hall themselves", "had the hall decorated themselves", "got decorated the hall themselves"],
+        correctAnswer: 0,
+        explanation: "İşi bizzat kendileri yaptıklarını vurgulamak için reflexive pronoun (themselves) kullanılır: 'decorated the hall themselves'.",
+      },
+      {
+        id: "causative-q10",
+        question: "A photographer takes my portrait every year. -> I __________.",
+        options: ["have taken my portrait every year", "have my portrait taken every year", "get my portrait take every year"],
+        correctAnswer: 1,
+        explanation: "Geniş zaman (every year) causative yapısı: 'have + object (my portrait) + V3 (taken)' kullanılır.",
       }
     ],
   },
@@ -1605,6 +1857,70 @@ If + past simple, would have + V3
         options: ["If I know", "If I knew", "If I had known"],
         correctAnswer: 2,
         explanation: "Raporu sunamadı (geçmişte kaldı). 'would have submitted' Type 3 temel cümlesidir. Bu yüzden If kısmı 'had known' olmalıdır."
+      },
+      {
+        id: "if-q3",
+        question: "If water ______ (reach) 0°C, it freezes.",
+        options: ["reaches", "reached", "will reach"],
+        correctAnswer: 0,
+        explanation: "Sıcaklık ve bilimsel gerçekler genel doğrulardır ve Zero Conditional (If + Simple Present, Simple Present) kullanır: reaches."
+      },
+      {
+        id: "if-q4",
+        question: "I will call you if my phone ______ (not-run) out of battery.",
+        options: ["didn't run", "doesn't run", "won't run"],
+        correctAnswer: 1,
+        explanation: "Gelecekte olası durumlar için 1st Conditional (will + V1, If + Simple Present) kullanılır. Olumsuz yapı 'doesn't run' olmalıdır."
+      },
+      {
+        id: "if-q5",
+        question: "If she ______ (be) more careful, she wouldn't have spilled the coffee.",
+        options: ["were", "had been", "is"],
+        correctAnswer: 1,
+        explanation: "Geçmişte yaşanmış ve bitmiş hayali bir durumu (kahve dökülmüş) ifade etmek için 3rd Conditional (If + Past Perfect, would have + V3) kullanılır: had been."
+      },
+      {
+        id: "if-q6",
+        question: "If he ______ (study) more, he would know the answer now.",
+        options: ["studied", "had studied", "studies"],
+        correctAnswer: 1,
+        explanation: "Geçmişteki bir eylemin (ders çalışmak) şu anki etkisini (cevabı bilmek) belirtmek için Mixed Conditional (Past -> Present: If + Past Perfect, would + V1) kullanılır: had studied."
+      },
+      {
+        id: "if-q7",
+        question: "You would feel healthier if you ______ (exercise) regularly.",
+        options: ["exercised", "had exercised", "would exercise"],
+        correctAnswer: 0,
+        explanation: "Şu anki veya gelecekteki hayali bir durum için 2nd Conditional (would + V1, If + Simple Past) kullanılır: exercised."
+      },
+      {
+        id: "if-q8",
+        question: "If they ______ (leave) earlier, they wouldn't be stuck in traffic now.",
+        options: ["left", "had left", "were leaving"],
+        correctAnswer: 1,
+        explanation: "Geçmişteki bir eylemsizliğin (erken çıkmamak) şu anki sonucunu (trafikte sıkışmak) anlattığı için Mixed Conditional (If + Past Perfect, would + V1) kullanılır: had left."
+      },
+      {
+        id: "if-q9",
+        question: "Rewrite using a conditional: 'We didn't see The Two Towers because the cinema was closed.'",
+        options: [
+          "If the cinema hadn't been closed, we would have seen The Two Towers.",
+          "If the cinema weren't closed, we would see The Two Towers.",
+          "If the cinema hadn't been closed, we would see The Two Towers."
+        ],
+        correctAnswer: 0,
+        explanation: "Geçmişte sinemanın kapalı olması ve filmin izlenememesi 3rd Conditional (unreal past) ile ifade edilir: If + Past Perfect, would have + V3."
+      },
+      {
+        id: "if-q10",
+        question: "Rewrite using a conditional: 'I didn't take the earlier train, so now I'm late for work.'",
+        options: [
+          "If I had taken the earlier train, I wouldn't have been late for work.",
+          "If I had taken the earlier train, I wouldn't be late for work now.",
+          "If I took the earlier train, I wouldn't be late for work now."
+        ],
+        correctAnswer: 1,
+        explanation: "Geçmişte trenin kaçırılması ve şu an işe geç kalınması durumunu (Past -> Present) bağladığı için Mixed Conditional (If + Past Perfect, would + V1) kullanılır."
       }
     ],
   },
@@ -1656,6 +1972,62 @@ Geçmişte olmuş ya da olmamış ve artık değiştirilemeyecek şeyler için d
         options: ["don't make", "wouldn't make", "hadn't made"],
         correctAnswer: 1,
         explanation: "Başkalarının (komşuların) rahatsız edici bir alışkanlığını değiştirmesini istediğimiz için 'wouldn't make' kullanılır."
+      },
+      {
+        id: "wish-q3",
+        question: "I want to be taller. -> I wish I ______ taller.",
+        options: ["would be", "were", "had been"],
+        correctAnswer: 1,
+        explanation: "Kendi kendimiz için gelecek dileği bildirirken 'would' KULLANILMAZ (I wish I would be... yanlıştır). Şu anki duruma dair dilekler için 'wish + past simple' kullanılır: I wish I were taller."
+      },
+      {
+        id: "wish-q4",
+        question: "I didn't study for the exam. -> I wish I ______ for the exam.",
+        options: ["studied", "would study", "had studied"],
+        correctAnswer: 2,
+        explanation: "Geçmişteki bir pişmanlığı (sınava çalışmamış olmak) belirtmek için 'wish + past perfect' kullanılır: had studied."
+      },
+      {
+        id: "wish-q5",
+        question: "She lives in a very noisy neighborhood. -> She wishes she ______ in a quieter neighborhood.",
+        options: ["lived", "had lived", "would live"],
+        correctAnswer: 0,
+        explanation: "Şu anki gerçekliğin (gürültülü mahalle) aksini dile getirmek için 'wish + past simple' kullanılır: lived."
+      },
+      {
+        id: "wish-q6",
+        question: "He always arrives late. -> I wish he ______ on time.",
+        options: ["arrived", "would arrive", "had arrived"],
+        correctAnswer: 1,
+        explanation: "Başkalarının rahatsız edici alışkanlıklarının veya durumların gelecekte değişmesini istemek için 'wish + would + V1' kullanılır: would arrive."
+      },
+      {
+        id: "wish-q7",
+        question: "Julia wishes she ______ (can) play the guitar well.",
+        options: ["could", "would can", "could have"],
+        correctAnswer: 0,
+        explanation: "Şu anki yetenek veya durumlarla ilgili dileklerde can fiili past simple hali olan 'could' kelimesine dönüşür."
+      },
+      {
+        id: "wish-q8",
+        question: "Sam wishes he ______ (take) the job offer he received last month.",
+        options: ["took", "would take", "had taken"],
+        correctAnswer: 2,
+        explanation: "Geçen ayki bir iş teklifi geçmiştedir. Geçmişe yönelik pişmanlıklar için 'wish + past perfect' kullanılır: had taken."
+      },
+      {
+        id: "wish-q9",
+        question: "We wish we ______ (be) on holiday instead of sitting in this office.",
+        options: ["were", "had been", "are"],
+        correctAnswer: 0,
+        explanation: "Şu anda ofiste oturma gerçeğinin aksine tatilde olmayı dilemek için present wish (past simple) kullanılır: were."
+      },
+      {
+        id: "wish-q10",
+        question: "If only we ______ (buy) that jacket when it was on sale last week!",
+        options: ["bought", "had bought", "would buy"],
+        correctAnswer: 1,
+        explanation: "Geçen haftaki bir duruma (ceketin indirimde olması) dair güçlü pişmanlık 'If only + past perfect' ile ifade edilir: had bought."
       }
     ],
   },
@@ -1703,6 +2075,62 @@ Geçmişteki kararları veya eylemleri sorgulamak için.
         options: ["should wear", "should have worn", "must wear"],
         correctAnswer: 1,
         explanation: "Geçmişte yapılması gereken bir eylem olduğu için 'should have worn' (giyinmeliydin/sürmeliydin) kullanılır."
+      },
+      {
+        id: "should-q3",
+        question: "You forgot to take your umbrella and it started raining heavily. -> You ______ your umbrella.",
+        options: ["should have taken", "should take", "must have taken"],
+        correctAnswer: 0,
+        explanation: "Geçmişte şemsiyeyi almamış olmak pişmanlık sebebidir. Geçmişte yapılması iyi olan ama yapılmayan durumlar için 'should have + V3' kullanılır."
+      },
+      {
+        id: "should-q4",
+        question: "They didn't bring enough food for the picnic, so everyone was hungry. -> They ______ more food.",
+        options: ["should bring", "should have brought", "can't have brought"],
+        correctAnswer: 1,
+        explanation: "Piknik için yeterli yemek getirmemiş olmaları bir hatadır. 'Gerekenden daha fazla yemek getirmeliydiler' pişmanlığı için 'should have brought' kullanılır."
+      },
+      {
+        id: "should-q5",
+        question: "Mark didn't save his work on the computer. It crashed and he lost everything. -> Mark ______ his work.",
+        options: ["should save", "should have saved", "must have saved"],
+        correctAnswer: 1,
+        explanation: "Bilgisayar çökmeden önce çalışmayı kaydetmesi gerekirdi ama kaydetmedi. Eleştiri/tavsiye için 'should have saved' kullanılır."
+      },
+      {
+        id: "should-q6",
+        question: "You ate too much spicy food last night and got sick. -> You ______ so much spicy food.",
+        options: ["shouldn't have eaten", "shouldn't eat", "can't have eaten"],
+        correctAnswer: 0,
+        explanation: "Geçmişte yapılan ama yapılmaması gereken eylemlere yönelik eleştiriler için 'shouldn't have + V3' kullanılır: shouldn't have eaten."
+      },
+      {
+        id: "should-q7",
+        question: "He drove extremely fast in the heavy storm. -> He ______ so fast in the storm.",
+        options: ["shouldn't have driven", "shouldn't drive", "must not have driven"],
+        correctAnswer: 0,
+        explanation: "Fırtınada çok hızlı sürmesi geçmişte kalmış tehlikeli bir eylemdir. 'Sürmemeliydi' eleştirisi için 'shouldn't have driven' kullanılır."
+      },
+      {
+        id: "should-q8",
+        question: "I feel very lost and confused. ______ more research before moving abroad?",
+        options: ["Should I have done", "Should I do", "Must I have done"],
+        correctAnswer: 0,
+        explanation: "Geçmişteki bir eylemi/seçimi sorgulamak için 'Should + subject + have + V3?' yapısı kullanılır."
+      },
+      {
+        id: "should-q9",
+        question: "The student failed the term project because they didn't follow the structural guidelines. -> The student ______ the guidelines.",
+        options: ["should follow", "should have followed", "could follow"],
+        correctAnswer: 1,
+        explanation: "Geçmişte kuralları takip etmesi gerekirdi ama etmedi. Geçmişe yönelik yapıcı eleştiri için 'should have followed' kullanılır."
+      },
+      {
+        id: "should-q10",
+        question: "You shouted at your classmate during the group presentation. -> You ______ at your classmate.",
+        options: ["shouldn't have shouted", "shouldn't shout", "can't have shouted"],
+        correctAnswer: 0,
+        explanation: "Grup sunumu sırasında sınıf arkadaşına bağırmak geçmişte yapılmış kötü bir davranıştır. 'Bağırmamalıydın' demek için 'shouldn't have shouted' kullanılır."
       }
     ],
   },
@@ -1754,6 +2182,281 @@ Geçmişte gerçekleşen olaylar hakkında ne kadar emin olduğumuza göre farkl
         options: ["must have", "can't have", "should have"],
         correctAnswer: 0,
         explanation: "Çalışmadan geçtiğine göre güçlü bir çıkarım var: Kesin kopya çekmiştir (must have cheated)."
+      },
+      {
+        id: "deduction-q3",
+        question: "Emma looks tired. She ______ stayed up all night studying.",
+        options: ["must have", "can't have", "might not have"],
+        correctAnswer: 0,
+        explanation: "Emma yorgun göründüğü için tüm gece çalışmış olduğuna dair elimizde güçlü bir kanıt vardır. Kesinlik çıkarımı için 'must have + V3' kullanılır."
+      },
+      {
+        id: "deduction-q4",
+        question: "Tom is smiling. He ______ received good news.",
+        options: ["can't have", "must have", "might not have"],
+        correctAnswer: 1,
+        explanation: "Gülümsemesi elimizdeki kanıttır. Kesinlik belirten olumlu çıkarım: 'must have' (iyi haber almış olmalı)."
+      },
+      {
+        id: "deduction-q5",
+        question: "A girl walks into the classroom looking wet. She's holding a broken umbrella. -> She ______ caught in the rain.",
+        options: ["must have been", "can't have been", "might not have been"],
+        correctAnswer: 0,
+        explanation: "Sırılsıklam ve şemsiyesi kırık olduğuna göre kesin yağmura yakalanmıştır. Geçmiş edilgen kesinlik çıkarımı için 'must have been caught' kullanılır."
+      },
+      {
+        id: "deduction-q6",
+        question: "A man enters his office with mud on his shoes and clothes. He ______ walked through the muddy fields.",
+        options: ["can't have", "must have", "might not have"],
+        correctAnswer: 1,
+        explanation: "Ayakkabılarında ve kıyafetlerinde çamur olduğuna göre kesin çamurlu alanlardan yürümüştür: 'must have'."
+      },
+      {
+        id: "deduction-q7",
+        question: "A woman comes into the office smiling and jumping up and down holding a paper. -> She ______ received excellent exam results.",
+        options: ["can't have", "might not have", "must have"],
+        correctAnswer: 2,
+        explanation: "Kağıt tutup zıpladığına göre sınavdan kötü haber almış olamaz, kesin harika sonuçlar almıştır: 'must have'."
+      },
+      {
+        id: "deduction-q8",
+        question: "A boy comes home late looking tired and hungry. He's carrying a soccer ball and a medal. -> He ______ won the match.",
+        options: ["must have", "can't have", "might not have"],
+        correctAnswer: 0,
+        explanation: "Boynunda madalya ve elinde futbol topu olduğuna göre maçı kazanmış olmalıdır: 'must have'."
+      },
+      {
+        id: "deduction-q9",
+        question: "A boy comes into the kitchen with dirty hands. He's carrying a fish in a small bucket. -> He ______ stayed at home all day.",
+        options: ["must have", "can't have", "might have"],
+        correctAnswer: 1,
+        explanation: "Elinde kova ve balıkla çamurlu geldiğine göre evde oturmuş olması imkansızdır. Geçmişteki kesin imkansızlık çıkarımları için 'can't have + V3' kullanılır."
+      },
+      {
+        id: "deduction-q10",
+        question: "A man comes home late at night, looking nervous. He's holding a broken watch. -> He ______ lost track of the time.",
+        options: ["must have", "can't have", "might have"],
+        correctAnswer: 2,
+        explanation: "Saatinin bozuk olması nedeniyle zamanı kaybetmiş olması olasıdır (might have lost track of the time)."
+      }
+    ],
+  },
+  // ═══════════════════════════════════════════════════════════════
+  // ACADEMIC SKILLS: Cause & Effect Connectors
+  // ═══════════════════════════════════════════════════════════════
+  {
+    id: "cause-effect-connectors",
+    title: "Sebep-Sonuç Bağlaçları (Cause & Effect Connectors)",
+    description: "İngilizce akademik yazımda sebep ve sonuç ilişkilerini bağlaçlar, edatlar ve fiillerle doğru ifade etme yöntemleri.",
+    content: `
+## Cause & Effect Connectors (Sebep ve Sonuç Bağlaçları)
+
+İngilizce akademik makalelerde ve sınavlarda sebep-sonuç ilişkilerini akıcı ve doğru bir şekilde kurabilmek için farklı dilbilgisi kurallarına tabi olan bağlaçlar, edatlar ve fiiller kullanılır. Bu yapılar dört ana grupta incelenir:
+
+### 1. Subordinating Conjunctions (Sebep Bildiren Bağlaçlar)
+Bu bağlaçlardan sonra daima **tam cümle (Özne + Yüklem + Nesne)** gelir.
+* **because** (çünkü / -dığı için): *Many people prefer online shopping **because** it is fast and convenient.*
+* **since / as** (-dığı için, -den dolayı): ***Since** stress affects concentration, students often perform poorly in exams. / **As** pollution levels rise, more people suffer from respiratory diseases.*
+* **owing to the fact that** (-ması gerçeğinden dolayı): *Many people started working from home **owing to the fact that** remote technology became more accessible.*
+
+### 2. Prepositions (Sebep Bildiren Edatlar/İlgeçler)
+Bu edat gruplarından sonra **tam cümle GELEMEZ**. Sadece bir **isim (noun)**, **isim öbeği (noun phrase)** veya **fiilimsi (-ing gerund phrase)** gelir.
+* **because of / due to / owing to / on account of** (-den dolayı, yüzünden):
+  - *Teenagers often sleep less **because of** the excessive use of electronic devices at night.*
+  - *The number of endangered animals is increasing **due to** habitat destruction.*
+  - *Many small businesses closed **owing to** the economic crisis.*
+  - *Several flights were cancelled **on account of** bad weather conditions.*
+* **as a result of / as a consequence of** (-ın sonucu olarak):
+  - *Many people changed their shopping habits **as a result of** the rise in online marketplaces.*
+  - *Several species have become endangered **as a consequence of** deforestation.*
+
+### 3. Transition Adverbs (Sonuç Bildiren Geçiş Zarfları)
+İki bağımsız cümleyi birbirine bağlarken kullanılır. Genellikle noktalı virgül (;) ile virgülden (,) önce veya yeni bir cümlenin başında bir virgülle kullanılırlar.
+* **thus / therefore / hence** (bu yüzden, böylece, dolayısıyla):
+  - *Air pollution has reached dangerous levels; **thus**, the government needs to take immediate action.*
+  - *The heavy rain continued for three days; **therefore**, several areas were flooded.*
+
+### 4. Verbs & Nouns of Cause and Effect (Sebep-Sonuç Fiil ve İsimleri)
+Cümle içerisinde normal fiil veya isim öbeği olarak görev alırlar.
+* **lead to / give rise to / result in** (-e yol açmak, ile sonuçlanmak):
+  - *Spending too much time on social media can **lead to** lower academic performance.*
+  - *The increase in car ownership has **given rise to** serious traffic congestion.*
+  - *Lack of sleep may **result in** lower productivity and increased stress.*
+* **affect / influence** (etkilemek):
+  - *Poor nutrition can **affect** students' concentration and energy levels during classes.*
+  - *Parents' attitudes strongly **influence** children's behavior and study habits.*
+* **a cause of / a reason for** (-ın bir sebebi / -ın bir nedeni):
+  - *Lack of physical activity is **a cause of** many health problems such as obesity.*
+  - *One important **reason for** students' low motivation is the lack of clear learning goals.*
+    `,
+    tips: [
+      "Handwritten Tip: 'because, since, as' ve 'owing to the fact that' sonrasında TAM CÜMLE (Özne + Yüklem) alır.",
+      "Handwritten Tip: 'because of, due to, owing to, on account of, as a result of' ve 'as a consequence of' sonrasında sadece İSİM veya İSİM ÖBEĞİ (-ing) alır, asla tam cümle almaz.",
+      "Handwritten Tip: 'therefore, thus, hence' kelimeleri geçiş zarflarıdır. Genellikle '; therefore,' veya cümle başında 'Therefore,' şeklinde virgülle kullanılırlar.",
+      "Handwritten Tip: 'result in' fiili bir şeyin yol açtığı SONUCU belirtirken, 'result from' ise bir şeyin KAYNAĞINI (sebebini) belirtir."
+    ],
+    questions: [
+      // ── Fill in the Blanks (Exercise 4) ──
+      {
+        id: "cause-effect-q1",
+        question: "Many people suffer from stress _______________ the fast life style in modern life.",
+        options: ["because of", "because"],
+        correctAnswer: 0,
+        explanation: "'the fast life style' bir isim öbeğidir, bu yüzden prepozisyon olan 'because of' kullanılmalıdır.",
+      },
+      {
+        id: "cause-effect-q2",
+        question: "Air pollution is one of the main factors that _______________ global warming.",
+        options: ["leads to", "leads"],
+        correctAnswer: 0,
+        explanation: "'lead to' bir şeye yol açmak anlamına gelen fiilsel yapıdır. 'that' relative pronoun tekil fiil gerektirir (factors that lead to / factor that leads to). Burada factor/factors yapısına göre 'leads to' doğru cevaptır.",
+      },
+      {
+        id: "cause-effect-q3",
+        question: "The advantages of online education has _______________ changes in traditional teaching methods.",
+        options: ["given rise to", "resulted in to"],
+        correctAnswer: 0,
+        explanation: "'give rise to' (yol açmak, ortaya çıkarmak) doğru öbektir. 'resulted in' edat olarak 'to' almaz, doğrudan nesne alır.",
+      },
+      {
+        id: "cause-effect-q4",
+        question: "The heavy rain continued for three days; _______________, several areas were flooded.",
+        options: ["therefore", "because of"],
+        correctAnswer: 0,
+        explanation: "Noktalı virgül ve virgülden önce sonuç bildiren geçiş zarfı 'therefore' kullanılır. 'because of' edattır, bu şekilde kullanılamaz.",
+      },
+      {
+        id: "cause-effect-q5",
+        question: "Poor time management can _______________ low grades.",
+        options: ["result in", "result from"],
+        correctAnswer: 0,
+        explanation: "Zaman yönetimi eksikliği düşük notlarla sonuçlanır (yol açar), bu yüzden 'result in' kullanılır.",
+      },
+      {
+        id: "cause-effect-q6",
+        question: "Teenagers' sleeping routines are strongly _______________ by their smartphone use.",
+        options: ["influenced", "influence"],
+        correctAnswer: 0,
+        explanation: "Cümle edilgendir (are strongly ... by) ve fiilin 3. hali olan 'influenced' kullanılmalıdır.",
+      },
+      {
+        id: "cause-effect-q7",
+        question: "The company lost many customers _______________ its poor service quality.",
+        options: ["due to", "owing to the fact that"],
+        correctAnswer: 0,
+        explanation: "'its poor service quality' isim öbeği olduğu için edat olan 'due to' kullanılır. 'owing to the fact that' arkasından tam cümle gerektirir.",
+      },
+      {
+        id: "cause-effect-q8",
+        question: "Lack of exercise is often _______________ many health problems in adults.",
+        options: ["a cause of", "lead to"],
+        correctAnswer: 0,
+        explanation: "'is' fiilinden sonra isim öbeği olan 'a cause of' (bir sebebidir) gelmelidir.",
+      },
+      {
+        id: "cause-effect-q9",
+        question: "_______________ more people recycle regularly, the amount of waste will decrease.",
+        options: ["Since", "Due to"],
+        correctAnswer: 0,
+        explanation: "'more people recycle' tam cümle olduğu için bağlaç olan 'Since' (çünkü, -dığı için) kullanılmalıdır.",
+      },
+      {
+        id: "cause-effect-q10",
+        question: "Many businesses closed down _______________ people bought less during the pandemic.",
+        options: ["because", "because of"],
+        correctAnswer: 0,
+        explanation: "'people bought less' bir tam cümle (Özne + Yüklem) olduğu için bağlaç olan 'because' kullanılmalıdır.",
+      },
+      // ── Sentence Rewriting (Exercise 5) ──
+      {
+        id: "cause-effect-q11",
+        question: "Rewrite using 'owing to': 'People cannot sleep well because the city is very noisy at night.'",
+        options: [
+          "People cannot sleep well owing to the city's noise at night.",
+          "People cannot sleep well owing to the city is very noisy at night."
+        ],
+        correctAnswer: 0,
+        explanation: "'owing to' bir edattır ve arkasından tam cümle değil isim öbeği (the city's noise / the city being noisy) alır.",
+      },
+      {
+        id: "cause-effect-q12",
+        question: "Rewrite using 'as a consequence of': 'Many tourists did not go to the island because the volcano erupted last week.'",
+        options: [
+          "Many tourists did not go to the island as a consequence of the volcano eruption last week.",
+          "Many tourists did not go to the island as a consequence of the volcano erupted last week."
+        ],
+        correctAnswer: 0,
+        explanation: "'as a consequence of' edat öbeğidir, bu yüzden isim tamlaması gerektirir.",
+      },
+      {
+        id: "cause-effect-q13",
+        question: "Rewrite using 'on account of': 'The school cancelled outdoor activities because the weather was extremely hot.'",
+        options: [
+          "The school cancelled outdoor activities on account of the extremely hot weather.",
+          "The school cancelled outdoor activities on account of the weather was extremely hot."
+        ],
+        correctAnswer: 0,
+        explanation: "'on account of' edatından sonra tam cümle gelmez, isim öbeği (the extremely hot weather) gelir.",
+      },
+      {
+        id: "cause-effect-q14",
+        question: "Rewrite using 'since': 'Children are spending less time outside because they play online games too much.'",
+        options: [
+          "Since they play online games too much, children are spending less time outside.",
+          "Since playing online games too much, children are spending less time outside."
+        ],
+        correctAnswer: 0,
+        explanation: "'since' (çünkü) bir bağlaçtır ve arkasından tam cümle (they play...) gerektirir.",
+      },
+      {
+        id: "cause-effect-q15",
+        question: "Rewrite using 'as a result of': 'More people are using bicycles because the city built new bike lanes.'",
+        options: [
+          "More people are using bicycles as a result of the new bike lanes built by the city.",
+          "More people are using bicycles as a result of the city built new bike lanes."
+        ],
+        correctAnswer: 0,
+        explanation: "'as a result of' edatından sonra isim öbeği gelmelidir.",
+      },
+      {
+        id: "cause-effect-q16",
+        question: "Rewrite using 'due to': 'Many villages lost their farmland because the river flooded last month.'",
+        options: [
+          "Many villages lost their farmland due to the river flooding last month.",
+          "Many villages lost their farmland due to the river flooded last month."
+        ],
+        correctAnswer: 0,
+        explanation: "'due to' edatından sonra noun phrase veya gerund (the river flooding...) gelmelidir.",
+      },
+      {
+        id: "cause-effect-q17",
+        question: "Rewrite using 'as': 'Some animals move to different areas because the temperature in their habitat is rising.'",
+        options: [
+          "As the temperature in their habitat is rising, some animals move to different areas.",
+          "As rising temperature in their habitat, some animals move to different areas."
+        ],
+        correctAnswer: 0,
+        explanation: "'as' bağlaçtır ve arkasından tam bir cümle (the temperature is rising) alır.",
+      },
+      {
+        id: "cause-effect-q18",
+        question: "Rewrite using 'because of': 'People are buying fewer printed books because digital books are cheaper and easier to carry.'",
+        options: [
+          "People are buying fewer printed books because of digital books being cheaper and easier to carry.",
+          "People are buying fewer printed books because of digital books are cheaper and easier to carry."
+        ],
+        correctAnswer: 0,
+        explanation: "'because of' edatından sonra tam cümle gelmez, isimleşmiş gerund yapısı (being cheaper...) gelir.",
+      },
+      {
+        id: "cause-effect-q19",
+        question: "Rewrite using 'resulted in': 'Students got higher points because teachers added more practice activities in class.'",
+        options: [
+          "Adding more practice activities in class resulted in students getting higher points.",
+          "Adding more practice activities in class resulted from students getting higher points."
+        ],
+        correctAnswer: 0,
+        explanation: "'result in' (bir şeyle sonuçlanmak/yol açmak) doğru anlamı verir. 'result from' ise den kaynaklanmak demektir.",
       }
     ],
   }
