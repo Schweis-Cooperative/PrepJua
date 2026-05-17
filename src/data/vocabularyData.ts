@@ -3831,5 +3831,100 @@ export const vocabularyData: VocabularyWord[] = [
     translation: 'konuyu değiştirmek',
     example: 'Anyway, changing the subject completely, what are you doing this weekend? - Her neyse, konuyu tamamen değiştirirsek, bu hafta sonu ne yapıyorsun?',
     category: 'phrase',
+  },
+  
+  // ═══════════════════════════════════════════════════════════════
+  // ACADEMIC SKILLS: High-Value Vocabulary (B1+/B2)
+  // ═══════════════════════════════════════════════════════════════
+  {
+    id: 'v-academic-1',
+    word: 'transformational',
+    translation: 'dönüştürücü',
+    example: 'Technology in the hands of great teachers can be transformational. - Harika öğretmenlerin elinde teknoloji dönüştürücü olabilir.',
+    category: 'adjective',
+  },
+  {
+    id: 'v-academic-2',
+    word: 'stimulate',
+    translation: 'teşvik etmek, uyarmak, canlandırmak',
+    example: 'Reading science fiction stimulates imagination and introduces new ideas. - Bilim kurgu okumak hayal gücünü canlandırır ve yeni fikirler sunar.',
+    category: 'verb',
+  },
+  {
+    id: 'v-academic-3',
+    word: 'flexible',
+    translation: 'esnek',
+    example: 'Smartphones can support students and make learning more flexible. - Akıllı telefonlar öğrencileri destekleyebilir ve öğrenmeyi daha esnek hale getirebilir.',
+    category: 'adjective',
+  },
+  {
+    id: 'v-academic-4',
+    word: 'anxiety',
+    translation: 'endişe, kaygı',
+    example: 'Yoga benefits both the body and mind by increasing flexibility and reducing anxiety. - Yoga, esnekliği artırarak ve kaygıyı azaltarak hem bedene hem de zihne fayda sağlar.',
+    category: 'noun',
+  },
+  {
+    id: 'v-academic-5',
+    word: 'framework',
+    translation: 'çerçeve, yapı',
+    example: 'A solid essay needs a strong structural framework. - Sağlam bir makalenin güçlü bir yapısal çerçeveye ihtiyacı vardır.',
+    category: 'noun',
+  },
+  {
+    id: 'v-academic-6',
+    word: 'comprehensive',
+    translation: 'kapsamlı, detaylı',
+    example: 'The professor provided a comprehensive overview of the historical period. - Profesör tarihi döneme dair kapsamlı bir genel bakış sundu.',
+    category: 'adjective',
+  },
+  {
+    id: 'v-academic-7',
+    word: 'interactive',
+    translation: 'etkileşimli',
+    example: 'Interactive whiteboards allow students to participate directly in lessons. - Etkileşimli akıllı tahtalar öğrencilerin derslere doğrudan katılmasına olanak tanır.',
+    category: 'adjective',
+  },
+  {
+    id: 'v-academic-8',
+    word: 'give rise to',
+    translation: 'sebep olmak, yol açmak',
+    example: 'The increase in car ownership has given rise to serious traffic congestion in big cities. - Araç sahipliğindeki artış, büyük şehirlerde ciddi trafik sıkışıklığına yol açtı.',
+    category: 'phrase',
+  },
+  {
+    id: 'v-academic-9',
+    word: 'owing to',
+    translation: 'den dolayı, yüzünden',
+    example: 'Many small businesses closed owing to the economic crisis. - Birçok küçük işletme ekonomik krizden dolayı kapandı.',
+    category: 'phrase',
+  },
+  {
+    id: 'v-academic-10',
+    word: 'as a consequence of',
+    translation: 'sonucunda',
+    example: 'Several species have become endangered as a consequence of deforestation. - Ormansızlaşmanın bir sonucu olarak birçok türün nesli tükenmekte.',
+    category: 'phrase',
+  },
+  {
+    id: 'v-academic-11',
+    word: 'sustainability',
+    translation: 'sürdürülebilirlik',
+    example: 'Universities should require students to take at least one sustainability course. - Üniversiteler öğrencilerin en az bir sürdürülebilirlik dersi almasını zorunlu kılmalıdır.',
+    category: 'noun',
+  },
+  {
+    id: 'v-academic-12',
+    word: 'procrastination',
+    translation: 'erteleme, geciktirme',
+    example: 'What are the main causes of procrastination among university students? - Üniversite öğrencileri arasındaki ertelemenin temel nedenleri nelerdir?',
+    category: 'noun',
+  },
+  {
+    id: 'v-academic-13',
+    word: 'congestion',
+    translation: 'sıkışıklık, tıkanıklık',
+    example: 'Traffic congestion is a major problem in modern cities. - Trafik sıkışıklığı modern şehirlerde büyük bir sorundur.',
+    category: 'noun',
   }
 ];

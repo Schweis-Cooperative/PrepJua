@@ -304,11 +304,25 @@ Hikâyedeki bir olaydan **daha önce** gerçekleşmiş bir olayı anlatmak için
 ### by + zaman ifadesi ile kullanım:
 - *I started reading it on Monday and **by Friday** I'd **read** the whole book.*
 - ***By the time they arrived**, everyone else **had gone** home.*
+
+## Past Perfect Continuous (Geçmişte Devam Eden Tamamlanmış Zaman)
+
+Geçmişteki bir noktadan veya olaydan önce **uzun süre devam etmiş olan (sürece odaklanan)** eylemleri anlatmak için kullanılır (had been + V-ing).
+
+- *My aunt **had been feeling** stressed for days before we arrived.*
+- *He told me he **had been helping** in the café every summer since he was twelve.*
+
+### Academic Skills: Narrative Tenses Summary
+- **Past Simple:** A short completed action in the past.
+- **Past Continuous:** An action in progress at a moment in the past.
+- **Past Perfect:** An action happening before another action.
+- **Past Perfect Continuous:** A long continuous action before a point in the past.
     `,
     tips: [
-      'Past Simple: Geçmişteki ana olayları sırayla anlatır.',
-      'Past Continuous: Arka plan bilgisi verir veya ana olayla kesilen uzun eylemleri anlatır.',
-      'Past Perfect: Hikâyedeki bir olaydan daha önce gerçekleşen olayı anlatır.',
+      'Past Simple: Geçmişteki ana olayları sırayla anlatır (A short completed action in the past).',
+      'Past Continuous: Arka plan bilgisi verir veya ana olayla kesilen uzun eylemleri anlatır (An action in progress at a moment in the past).',
+      'Past Perfect: Hikâyedeki bir olaydan daha önce gerçekleşen olayı anlatır (An action happening before another action).',
+      'Past Perfect Continuous: Geçmişteki bir noktadan önce devam eden uzun süreli eylemler için kullanılır (A long continuous action before a point in the past).',
       'Durum fiilleri (be, know, like, want) ile Past Continuous KULLANILMAZ.',
       'by + zaman ifadesi Past Perfect ile sıkça kullanılır.',
     ],
@@ -1376,4 +1390,366 @@ If Wendy **had had** better handwriting, my business **wouldn't have been** such
     ],
   },
 
+  // ═══════════════════════════════════════════════════════════════
+  // ACADEMIC SKILLS: Causatives
+  // ═══════════════════════════════════════════════════════════════
+  {
+    id: "causative-have-get",
+    title: "Causative (Ettirgen Çatı): Have / Get",
+    description: "Başkasına yaptırılan işler, olumsuz olaylar ve kendi yaptığımız işler (reflexives) için Causative kullanımı.",
+    content: `
+## Causative: have/get + object + past participle
+
+### 1. Başkasına Yaptırılan (Ücret Karşılığı veya Ayarlanan) İşler
+We use the structure **have/get + object + past participle** to talk about things that we arrange or pay for but don’t actually do ourselves. *Have* is slightly more formal than *get*.
+
+**Tense Examples:**
+- **Present Simple:** I **have** my car **washed** every week. (Arabamı her hafta yıkatırım.) / I **get** my hair **cut** once a month.
+- **Past Simple:** She **had** her phone **repaired** yesterday. / He **got** his suit **cleaned** for the wedding.
+- **Future (will):** We'll **have** the documents **delivered** tomorrow. / I'll **get** my bike **fixed** next week.
+- **Present Perfect:** They've **had** their house **painted** recently. / She's **got** her laptop **updated**.
+
+**Not:** Bazen eylemi yapan kişiyi (agent) belirtmek istediğimizde cümlenin sonuna **"by + person/thing"** ekleriz.
+- I had my hair cut **by a new stylist**.
+
+### 2. İstem Dışı / Olumsuz Olaylar (Adverse Events)
+We also use *have + object + past participle* to describe something that happens to us **without arranging or paying for it**, often something negative.
+- He **had** his wallet **stolen**. (Cüzdanını çaldırdı.)
+- She **had** her car **broken into**. (Arabasına zorla girildi.)
+- They **had** their roof **damaged** in the storm. (Fırtınada çatıları hasar gördü.)
+
+### 3. Kendi Yaptığımız İşler (Reflexive Pronouns)
+We use a **reflexive pronoun** (myself, yourself, herself, ourselves, etc.) to show that we did the action ourselves instead of paying or asking someone to do it.
+- It was too expensive to get my hair cut, so I cut it **myself**.
+- She didn't get her nails done — she did them **herself**.
+- We didn't have the room painted — we painted it **ourselves**.
+    `,
+    questions: [
+      {
+        id: "causative-q1",
+        question: "A specialist is designing my website. -> I am __________.",
+        options: ["having my website designed", "designing my website", "having designed my website"],
+        correctAnswer: 0,
+        explanation: "Şu an devam eden bir eylem olduğu için Present Continuous (am having + object + V3) kullanılır.",
+      },
+      {
+        id: "causative-q2",
+        question: "A thief broke their window to get in. -> They __________.",
+        options: ["got their window broke", "had their window broken", "had broken their window"],
+        correctAnswer: 1,
+        explanation: "Olumsuz ve istenmeyen bir eylem olduğu için 'have + object + V3' (had their window broken) kullanılır.",
+      },
+      {
+        id: "causative-q3",
+        question: "I didn't ask anyone to iron my clothes. -> I ironed them __________.",
+        options: ["myself", "by myself", "mine"],
+        correctAnswer: 0,
+        explanation: "Eylemi başkasına yaptırmayıp kendimiz yaptığımızı vurgulamak için reflexive pronoun (myself) kullanılır.",
+      }
+    ],
+  },
+
+  // ═══════════════════════════════════════════════════════════════
+  // ACADEMIC SKILLS: Past Habits & States
+  // ═══════════════════════════════════════════════════════════════
+  {
+    id: "past-habits-states",
+    title: "Past Habits: Used to, Would, Get used to, Be used to",
+    description: "Geçmiş alışkanlıklar ve yeni durumlara alışma süreçlerini ifade etme.",
+    content: `
+## 1. Used to + V1
+Geçmişteki alışkanlıkları veya geçmişte doğru olup artık geçerli olmayan durumları (states) anlatmak için kullanılır.
+- *When my siblings and I were younger, we **used to spend** every afternoon at our grandmother's house.*
+- *I **used to live** in London.* (Durum/State - "would" kullanılamaz)
+
+## 2. Would + V1
+Sadece geçmişteki **tekrarlanan eylemleri (repeated actions)** anlatmak için kullanılır. Durum bildiren fiillerle (state verbs) KULLANILAMAZ.
+- *On weekends, we **would explore** the nearby park.*
+- ❌ ~~I would live in London.~~ (Yanlış, 'used to' kullanılmalı)
+
+## 3. Get used to + noun / -ing
+Yeni bir duruma **alışma sürecini (become comfortable with something new)** ifade eder.
+- *We had to **get used to** a completely new routine.*
+- *I slowly **got used to cooking** simple meals for myself.*
+
+## 4. Be used to + noun / -ing
+Bir duruma **zaten alışkın olmayı (already comfortable with something)** ifade eder.
+- *Now, we **are used to living** independently in different cities.*
+    `,
+    tips: [
+      "'Used to' hem geçmiş eylemler hem de durumlar (states) için kullanılır.",
+      "'Would' sadece geçmişte tekrarlanan eylemler için kullanılır. State verbs (be, live, like, know) ile KULLANILMAZ.",
+      "'Get used to' ve 'be used to' yapılarından sonra fiil yalın halde gelmez, her zaman isim (noun) veya fiilimsi (V-ing) gelir."
+    ],
+    questions: [
+      {
+        id: "habits-q1",
+        question: "I ______ have long hair when I was a child, but now I keep it short.",
+        options: ["would", "used to", "got used to"],
+        correctAnswer: 1,
+        explanation: "'Have' burada durum (state) bildirdiği için 'would' KULLANILAMAZ. 'used to' doğru cevaptır."
+      },
+      {
+        id: "habits-q2",
+        question: "At first, driving on the left was difficult, but I eventually ______ it.",
+        options: ["was used to", "used to", "got used to"],
+        correctAnswer: 2,
+        explanation: "Zamanla oluşan bir alışma sürecini (become comfortable) anlattığı için 'got used to' kullanılır."
+      }
+    ],
+  },
+
+  // ═══════════════════════════════════════════════════════════════
+  // ACADEMIC SKILLS: Future Times
+  // ═══════════════════════════════════════════════════════════════
+  {
+    id: "future-perfect-continuous",
+    title: "Future Times: Future Perfect & Future Continuous",
+    description: "Gelecekte tamamlanmış olacak eylemler (Future Perfect) ve devam ediyor olacak eylemler (Future Continuous).",
+    content: `
+## 1. Future Continuous (will be + V-ing)
+Gelecekte belirli bir zamanda **devam etmekte olacak** veya rutin hale gelecek eylemleri ifade eder.
+- *Don't phone me at 5 pm. I **'ll still be driving** home from work at that time.* (Belirli bir zamanda devam eden)
+- *In 10 years' time, I hope I **will be running** a bistro.*
+- *Emma **will be starting** school in September.* (Gelecekteki planlanmış olaylar / rutinler)
+
+## 2. Future Perfect (will have + V3)
+Gelecekte belirli bir zamandan **önce tamamlanmış olacak** eylemleri ifade eder. Genellikle **"by"** veya **"by the time"** zaman ifadeleriyle sıkça kullanılır.
+- *By the year 2040, life **will have changed** dramatically.*
+- *They **will have built** the skyscraper by January.*
+- *The next time you see me, I **will have had** a haircut.*
+    `,
+    tips: [
+      "Future Continuous (will be doing): Gelecekteki o an itibarıyla olay eylem halinde olacaktır.",
+      "Future Perfect (will have done): Gelecekteki o an itibarıyla olay bitmiş/tamamlanmış olacaktır.",
+      "'By' (e/a kadar) edatı Future Perfect zamanın en yaygın ipucudur (By Friday, By 2050 vb.)."
+    ],
+    questions: [
+      {
+        id: "future-q1",
+        question: "Don't call me at 8:00 AM. I ______ the kids to school at that time.",
+        options: ["will have taken", "will be taking", "take"],
+        correctAnswer: 1,
+        explanation: "Saat 8:00'da eylem (okula götürme) devam ediyor olacağı için Future Continuous (will be taking) kullanılır."
+      },
+      {
+        id: "future-q2",
+        question: "By the time we get to the station, the train ______.",
+        options: ["will be leaving", "will have left", "is leaving"],
+        correctAnswer: 1,
+        explanation: "Biz istasyona vardığımızda trenin gitme eylemi çoktan tamamlanmış olacağı için Future Perfect (will have left) kullanılır."
+      }
+    ],
+  },
+
+  // ═══════════════════════════════════════════════════════════════
+  // ACADEMIC SKILLS: Conditionals (If Clauses)
+  // ═══════════════════════════════════════════════════════════════
+  {
+    id: "conditionals-if-clauses",
+    title: "Conditionals: If Clauses & Mixed Conditionals",
+    description: "Koşul cümlelerinin 4 ana tipi ve zaman uyumsuzluğunda kullanılan karışık (mixed) tipleri.",
+    content: `
+## Type 0 (General Truths)
+**Yapı:** If + present simple, present simple
+Genel gerçekler, doğa olayları veya her zaman geçerli kurallar.
+- *If you **heat** water to 100°C, it **boils**.*
+
+## Type 1 (Real/Possible Future)
+**Yapı:** If + present simple, will + base verb
+Gelecekte olması muhtemel durumlar.
+- *If it **rains** tomorrow, I **will take** an umbrella.*
+
+## Type 2 (Unreal Present/Future)
+**Yapı:** If + past simple, would + base verb
+Şu anda veya gelecekte hayali, gerçek dışı veya imkansız durumlar.
+- *If I **won** the lottery, I **would travel** the world.*
+- *If I **were** you, I wouldn't do that.*
+
+## Type 3 (Unreal Past)
+**Yapı:** If + past perfect, would have + past participle (V3)
+Geçmişte yaşanmış bitmiş, artık değiştirilemeyecek olaylar için "öyle olsaydı böyle olurdu" (ama olmadı) anlamı.
+- *If I **had studied** harder, I **would have passed** the exam.*
+
+## Mixed Conditionals (Karışık Tipler)
+Eğer "If" kısmının zamanı ile "Temel cümlenin" zamanı farklıysa Mixed Type kullanılır.
+**1. Past olayı → Present etkiliyorsa (Type 3 + Type 2):**
+If + past perfect, would + base verb
+- *If I **had studied** medicine, I **would be** a doctor now.* (Geçmişte tıp okusaydım, ŞU AN doktor olurdum.)
+
+**2. Present durumu → Past'ı etkilemişse (Type 2 + Type 3):**
+If + past simple, would have + V3
+- *If she **were** more confident, she **would have asked** for a promotion last year.* (Genel olarak kendine güvenen biri olsaydı, GEÇEN YIL terfi isterdi.)
+    `,
+    tips: [
+      "Type 2'de şimdiki zaman kurgusu yapılmasına rağmen 'Past Simple' kullanılır.",
+      "Mixed Type 1: Geçmişteki bir olayın şu anki sonucudur (had done -> would do).",
+      "Mixed Type 2: Şu anki genel bir özelliğin geçmişteki bir olaya etkisidir (were -> would have done)."
+    ],
+    questions: [
+      {
+        id: "if-q1",
+        question: "If I ______ (not-wake) up so early this morning, I wouldn't be so tired now.",
+        options: ["didn't wake", "haven't woken", "hadn't woken"],
+        correctAnswer: 2,
+        explanation: "Bu sabah erken uyanmış (geçmiş eylem), şu an yorgun (şimdiki sonuç). Bu bir Mixed Conditional (Type 3 + Type 2) örneğidir. O yüzden 'hadn't woken' gelmelidir."
+      },
+      {
+        id: "if-q2",
+        question: "I ______ the deadline, I would have submitted the report.",
+        options: ["If I know", "If I knew", "If I had known"],
+        correctAnswer: 2,
+        explanation: "Raporu sunamadı (geçmişte kaldı). 'would have submitted' Type 3 temel cümlesidir. Bu yüzden If kısmı 'had known' olmalıdır."
+      }
+    ],
+  },
+
+  // ═══════════════════════════════════════════════════════════════
+  // ACADEMIC SKILLS: Wish Clauses
+  // ═══════════════════════════════════════════════════════════════
+  {
+    id: "wish-clauses",
+    title: "Wish Clauses & If Only",
+    description: "Geçmişe dair pişmanlıklar veya şu an/geleceğe dair gerçekleşmesi istenen dilekler.",
+    content: `
+"Wish" ve "If only", pişmanlıkları, arzuları veya farklı olmasını istediğimiz durumları ifade etmek için kullanılır. "If only" genellikle "wish"ten daha güçlü bir duygu (strong hope/regret) belirtir.
+
+## 1. Future Desire (Gelecek Arzusu)
+**Yapı:** wish + would + base verb
+Gelecekte değişmesini istediğimiz durumlar veya birinin davranışından duyulan şikayetler için.
+- *I wish it **would stop** raining tomorrow.*
+- ⚠️ Kural: Kendi kendimiz için (I wish I would...) kullanılmaz! (Doğrusu: I wish I could / I wish I were)
+
+## 2. Unreal Present (Şu Anki İmkansız Dilek)
+**Yapı:** wish + past simple
+Şu anki gerçekliğe aykırı durumlar.
+- *I wish I **knew** more languages.* (I don't know, but I want to.)
+- *If only I **were** taller.*
+
+## 3. Past Regret (Geçmiş Pişmanlığı)
+**Yapı:** wish + past perfect (had + V3)
+Geçmişte olmuş ya da olmamış ve artık değiştirilemeyecek şeyler için duyulan pişmanlık.
+- *She wishes she **had taken** the earlier flight.*
+- *If only I **had studied** harder!* (Keşke daha çok çalışsaydım!)
+    `,
+    tips: [
+      "'Wish' cümlelerinde şimdiki zaman (am/is/are/do) KULLANILMAZ. Bir derece geçmişe gidilir.",
+      "Kendimiz için (I / We) 'would' kullanılmaz. 'I wish I would be taller' YANLIŞTIR. 'I wish I were taller' doğrudur.",
+      "'If only' yapısal olarak 'wish' ile aynı kurallara uyar ancak duygusal olarak daha yoğundur."
+    ],
+    questions: [
+      {
+        id: "wish-q1",
+        question: "They didn't spend much money yesterday. -> They wish they ______ so much money yesterday.",
+        options: ["hadn't spent", "didn't spend", "wouldn't spend"],
+        correctAnswer: 0,
+        explanation: "'yesterday' geçmiş zaman olduğu için geçmiş pişmanlık (wish + past perfect) kullanılır: hadn't spent."
+      },
+      {
+        id: "wish-q2",
+        question: "I want my neighbors to stop making so much noise at night. -> I wish my neighbors ______ so much noise.",
+        options: ["don't make", "wouldn't make", "hadn't made"],
+        correctAnswer: 1,
+        explanation: "Başkalarının (komşuların) rahatsız edici bir alışkanlığını değiştirmesini istediğimiz için 'wouldn't make' kullanılır."
+      }
+    ],
+  },
+
+  // ═══════════════════════════════════════════════════════════════
+  // ACADEMIC SKILLS: Past Regrets (Should have)
+  // ═══════════════════════════════════════════════════════════════
+  {
+    id: "past-regrets-should-have",
+    title: "Past Regrets: Should have + V3",
+    description: "Geçmişteki kararlar üzerine tavsiye, eleştiri ve pişmanlık belirtme.",
+    content: `
+Geçmişte yapılması iyi bir fikir olan ama yapılmayan (veya tam tersi) eylemleri eleştirmek ya da pişmanlık duyduğumuzu belirtmek için kullanırız.
+
+## 1. should have + past participle (V3)
+"Yapmalıydın (ama yapmadın)." İyi bir fikirdi ancak gerçekleşmedi.
+- *I **should have studied** harder.* (Çok çalışmalıydım, ama çalışmadım.)
+- *You **should have called** me.* (Beni aramalıydın.)
+
+## 2. shouldn't have + past participle (V3)
+"Yapmamalıydın (ama yaptın)." Kötü bir fikirdi ancak gerçekleşti. (Eleştiri)
+- *You **shouldn't have shouted** at her.* (Ona bağırmamalıydın, ama bağırdın.)
+- *He **shouldn't have driven** so fast.* (O kadar hızlı sürmemeliydi.)
+
+## 3. Should + subject + have + V3?
+Geçmişteki kararları veya eylemleri sorgulamak için.
+- ***Should I have called** her?* (Onu aramalı mıydım?)
+    `,
+    tips: [
+      "'Should do' şu anki veya gelecekteki tavsiyeler içindir.",
+      "'Should have done' ise geçmişteki bir durum için artık iş işten geçtikten sonra verilen tavsiye/eleştiridir.",
+      "Anlam olarak 'I wish I had...' ile çok benzerlik gösterir."
+    ],
+    questions: [
+      {
+        id: "should-q1",
+        question: "Lisa didn't set the alarm. She woke up late. -> She ______ the alarm.",
+        options: ["should set", "should have set", "must have set"],
+        correctAnswer: 1,
+        explanation: "Geçmişte kurması gerekiyordu ama kurmadı. 'Should have set' (Kurmalıydı) kullanılır."
+      },
+      {
+        id: "should-q2",
+        question: "You didn't wear sunscreen and now you have sunburn. -> You ______ sunscreen.",
+        options: ["should wear", "should have worn", "must wear"],
+        correctAnswer: 1,
+        explanation: "Geçmişte yapılması gereken bir eylem olduğu için 'should have worn' (giyinmeliydin/sürmeliydin) kullanılır."
+      }
+    ],
+  },
+
+  // ═══════════════════════════════════════════════════════════════
+  // ACADEMIC SKILLS: Past Modals of Deduction
+  // ═══════════════════════════════════════════════════════════════
+  {
+    id: "past-modals-deduction",
+    title: "Past Modals of Deduction (Geçmişte Çıkarım)",
+    description: "Geçmişte yaşanmış olaylara dair elimizdeki kanıtlara göre kesinlik veya olasılık bildiren çıkarımlar.",
+    content: `
+Geçmişte gerçekleşen olaylar hakkında ne kadar emin olduğumuza göre farklı kipler (modals) kullanırız.
+
+## 1. Must have + V3 (Certain)
+"Kesinlikle öyle olmuştur." Geçmişte bir şeyin olduğuna dair çok güçlü bir inancımız veya kanıtımız varsa.
+- *She **must have left** early because her car is gone.* (Arabası yok, demek ki kesin erken çıkmış.)
+- *A boy comes in with dirty clothes and a soccer ball. -> He **must have played** soccer.*
+
+## 2. May / Might / Could have + V3 (Possible)
+"Öyle olmuş olabilir." Geçmişteki bir olay hakkında ihtimalden bahsederken. Kesinlik yoktur.
+- *He **might have missed** the train.* (Treni kaçırmış olabilir.)
+- *She **could have gone** to the supermarket.* (Süpermarkete gitmiş olabilir.)
+
+## 3. Can't / Couldn't have + V3 (Impossible)
+"Öyle olmuş olamaz." Geçmişte bir şeyin gerçekleşmiş olmasının imkansız olduğunu düşünüyorsak. ('Mustn't have' zıt anlamlı KULLANILMAZ).
+- *They **can't have forgotten** your birthday!* (Doğum gününü unutmuş olamazlar!)
+- *He **can't have broken** the vase. He wasn't home.* (Vazoyu o kırmış olamaz, evde değildi.)
+
+## 4. May not / Might not have + V3 (Possibly didn't happen)
+"Öyle olmamış olabilir." Olumsuz bir durumun ihtimali.
+- *She **might not have received** my email.* (E-postamı almamış olabilir.)
+    `,
+    tips: [
+      "Çıkarımlarda (deduction) geçmişin kesin olumsuzu için 'mustn't have' KULLANILMAZ; bunun yerine 'can't have' kullanılır.",
+      "'Must have done' güçlü bir tahmin (yapmış olmalı) iken, 'Should have done' bir eleştiri/pişmanlıktır (yapmalıydı)."
+    ],
+    questions: [
+      {
+        id: "deduction-q1",
+        question: "The lights are still on in the office. Everyone ______ gone home already.",
+        options: ["must have", "can't have", "might have"],
+        correctAnswer: 1,
+        explanation: "Işıklar açıksa herkesin eve gitmiş olması imkansızdır. Bu yüzden 'can't have' (gitmiş olamazlar) kullanılır."
+      },
+      {
+        id: "deduction-q2",
+        question: "Andrew didn't revise for the exam, but he's passed. I think he ______ cheated.",
+        options: ["must have", "can't have", "should have"],
+        correctAnswer: 0,
+        explanation: "Çalışmadan geçtiğine göre güçlü bir çıkarım var: Kesin kopya çekmiştir (must have cheated)."
+      }
+    ],
+  }
 ];

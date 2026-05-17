@@ -37,7 +37,9 @@ export default function GrammarTopic() {
     );
   }
 
-  const currentQuestion = topic.questions[currentIndex];
+  const questions = topic.questions || [];
+  const tips = topic.tips || [];
+  const currentQuestion = questions[currentIndex];
 
   const handleAnswer = useCallback(
     (index: number) => {
@@ -69,13 +71,13 @@ export default function GrammarTopic() {
   );
 
   const nextQuestion = () => {
-    if (currentIndex < topic.questions.length - 1) {
+    if (currentIndex < questions.length - 1) {
       setCurrentIndex((i) => i + 1);
       setSelectedAnswer(null);
     } else {
       setFinished(true);
       completeGrammarTopic(topic.id);
-      logScore('Grammar', topic.title, score, topic.questions.length);
+      logScore('Grammar', topic.title, score, questions.length);
     }
   };
 
@@ -141,7 +143,7 @@ export default function GrammarTopic() {
             activeTab === 'quiz' ? 'bg-zinc-700 text-white' : 'text-zinc-500 hover:text-zinc-300'
           }`}
         >
-          <PenTool size={14} /> Quiz ({topic.questions.length})
+          <PenTool size={14} /> Quiz ({questions.length})
         </button>
       </div>
 
@@ -153,12 +155,12 @@ export default function GrammarTopic() {
         >
           {renderContent(topic.content)}
 
-          {topic.tips.length > 0 && (
+          {tips.length > 0 && (
             <div className="mt-8 space-y-3">
               <h3 className="text-sm font-semibold text-amber-400 flex items-center gap-2">
                 <Lightbulb size={16} /> Tips
               </h3>
-              {topic.tips.map((tip, i) => (
+              {tips.map((tip, i) => (
                 <div key={i} className="flex gap-3 p-3 bg-amber-500/5 border border-amber-500/10 rounded-lg">
                   <span className="text-amber-400 text-sm">💡</span>
                   <p className="text-sm text-zinc-300">{tip}</p>
@@ -176,7 +178,7 @@ export default function GrammarTopic() {
           <CheckCircle2 size={48} className="text-emerald-400 mx-auto mb-4" />
           <h2 className="text-2xl font-bold text-white mb-2">Topic Complete!</h2>
           <p className="text-4xl font-bold text-emerald-400 mb-4">
-            {score}/{topic.questions.length}
+            {score}/{questions.length}
           </p>
           <div className="flex gap-3 justify-center">
             <Link
@@ -202,7 +204,7 @@ export default function GrammarTopic() {
         >
           <div className="flex items-center justify-between mb-4">
             <span className="text-xs text-zinc-500">
-              Question {currentIndex + 1} of {topic.questions.length}
+              Question {currentIndex + 1} of {questions.length}
             </span>
             <span className="text-xs text-emerald-400 font-medium">Score: {score}</span>
           </div>
@@ -210,7 +212,7 @@ export default function GrammarTopic() {
           <div className="w-full h-1.5 bg-zinc-800 rounded-full mb-6 overflow-hidden">
             <motion.div
               className="h-full bg-emerald-500 rounded-full"
-              animate={{ width: `${((currentIndex + 1) / topic.questions.length) * 100}%` }}
+              animate={{ width: `${((currentIndex + 1) / questions.length) * 100}%` }}
             />
           </div>
 
@@ -259,7 +261,7 @@ export default function GrammarTopic() {
                 onClick={nextQuestion}
                 className="mt-4 w-full py-3 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-sm font-medium transition-colors"
               >
-                {currentIndex < topic.questions.length - 1 ? 'Next Question' : 'See Results'}
+                {currentIndex < questions.length - 1 ? 'Next Question' : 'See Results'}
               </button>
             </motion.div>
           )}

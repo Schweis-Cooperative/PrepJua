@@ -243,10 +243,7 @@ app.post('/api/evaluate-writing', async (req, res) => {
 
   try {
     const aiClient = new GoogleGenAI({ apiKey: userKey });
-    const prompt = \`You are an expert CEFR English evaluator. Analyze this B1/B2 essay. Return a raw JSON object with exactly three fields: 1. cefrLevel (string), 2. grammarCorrections (array of strings), 3. vocabularyUpgrades (array of strings). Do not include markdown code blocks like \`\`\`json.
-    
-Essay:
-\${essay}\`;
+    const prompt = 'You are an expert CEFR English evaluator. Analyze this B1/B2 essay. Return a raw JSON object with exactly three fields: 1. cefrLevel (string), 2. grammarCorrections (array of strings), 3. vocabularyUpgrades (array of strings). Do not include markdown code blocks like ```json.\n\nEssay:\n' + essay;
 
     const response = await aiClient.models.generateContent({
       model: 'gemini-3.0-flash',
@@ -254,7 +251,7 @@ Essay:
     });
 
     const rawText = response.text || '{}';
-    const cleanJsonStr = rawText.replace(/\`\`\`json\n?/g, '').replace(/\`\`\`\n?/g, '').trim();
+    const cleanJsonStr = rawText.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim();
     const parsed = JSON.parse(cleanJsonStr);
     
     res.json(parsed);
