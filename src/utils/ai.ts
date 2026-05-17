@@ -43,10 +43,23 @@ export async function gradeEssay(
   essay: string,
   images?: string[]
 ): Promise<string> {
+  const apiKey = getStorageItem<string>('apiKey', '');
+  
+  if (!apiKey) {
+    return JSON.stringify({
+      cefrLevel: 'Missing API Key',
+      grammarCorrections: ['Please configure your personal Gemini API Key in Settings to use the AI Evaluator.'],
+      vocabularyUpgrades: [],
+    });
+  }
+
   try {
     const response = await fetch('/api/evaluate-writing', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${apiKey}`
+      },
       body: JSON.stringify({ essay: `Topic: ${topic}\n\nEssay:\n${essay}` }),
     });
     if (!response.ok) {

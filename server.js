@@ -230,15 +230,19 @@ app.get('/api/sync/pull/:username', (req, res) => {
 });
 
 // ── AI Writing Evaluation ──────────────────────────────────────
-const aiClient = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY || process.env.VITE_GEMINI_API_KEY });
-
 app.post('/api/evaluate-writing', async (req, res) => {
   const { essay } = req.body;
   if (!essay) {
     return res.status(400).json({ error: 'Missing essay' });
   }
 
+  const userKey = req.headers.authorization?.split(' ')[1];
+  if (!userKey) {
+    return res.status(401).json({ error: 'Missing Gemini API Key in Authorization header' });
+  }
+
   try {
+    const aiClient = new GoogleGenAI({ apiKey: userKey });
     const prompt = \`You are an expert CEFR English evaluator. Analyze this B1/B2 essay. Return a raw JSON object with exactly three fields: 1. cefrLevel (string), 2. grammarCorrections (array of strings), 3. vocabularyUpgrades (array of strings). Do not include markdown code blocks like \`\`\`json.
     
 Essay:
