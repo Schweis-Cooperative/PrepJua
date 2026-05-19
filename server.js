@@ -253,7 +253,7 @@ Essay:
 ${essay}`;
 
     const response = await aiClient.models.generateContent({
-      model: 'gemini-3.0-flash',
+      model: 'gemini-2.5-flash',
       contents: prompt,
     });
 
@@ -295,7 +295,7 @@ Student's answer: ${userAnswer}
 Explain why "${correctAnswer}" is correct and why "${userAnswer}" is wrong. Be concise and educational. Use simple English.`;
 
     const response = await aiClient.models.generateContent({
-      model: 'gemini-3.0-flash',
+      model: 'gemini-2.5-flash',
       contents: prompt,
     });
 
