@@ -236,9 +236,13 @@ app.post('/api/evaluate-writing', async (req, res) => {
     return res.status(400).json({ error: 'Missing essay' });
   }
 
-  const userKey = req.headers.authorization?.split(' ')[1];
+  let userKey = req.headers.authorization?.split(' ')[1];
+  if (!userKey || userKey === 'undefined' || userKey === 'null' || userKey === '') {
+    userKey = process.env.GEMINI_API_KEY;
+  }
+
   if (!userKey) {
-    return res.status(401).json({ error: 'Missing Gemini API Key in Authorization header' });
+    return res.status(401).json({ error: 'Missing Gemini API Key' });
   }
 
   try {
@@ -261,6 +265,44 @@ ${essay}`;
   } catch (error) {
     console.error('[AI] Evaluate writing error:', error);
     res.status(500).json({ error: 'AI evaluation failed' });
+  }
+});
+
+// ── AI Explanation Proxy ──────────────────────────────────────
+app.post('/api/explain', async (req, res) => {
+  const { correctAnswer, userAnswer, questionContext } = req.body;
+  if (!correctAnswer || !userAnswer || !questionContext) {
+    return res.status(400).json({ error: 'Missing parameters' });
+  }
+
+  let userKey = req.headers.authorization?.split(' ')[1];
+  if (!userKey || userKey === 'undefined' || userKey === 'null' || userKey === '') {
+    userKey = process.env.GEMINI_API_KEY;
+  }
+
+  if (!userKey) {
+    return res.status(401).json({ error: 'Missing Gemini API Key' });
+  }
+
+  try {
+    const aiClient = new GoogleGenAI({ apiKey: userKey });
+    const prompt = `You are an English language tutor. A student answered a question incorrectly.
+
+Question: ${questionContext}
+Correct answer: ${correctAnswer}
+Student's answer: ${userAnswer}
+
+Explain why "${correctAnswer}" is correct and why "${userAnswer}" is wrong. Be concise and educational. Use simple English.`;
+
+    const response = await aiClient.models.generateContent({
+      model: 'gemini-2.0-flash',
+      contents: prompt,
+    });
+
+    res.json({ explanation: response.text || 'Unable to generate explanation.' });
+  } catch (error) {
+    console.error('[AI] Explanation proxy error:', error);
+    res.status(500).json({ error: 'AI explanation failed' });
   }
 });
 
