@@ -247,7 +247,8 @@ app.post('/api/evaluate-writing', async (req, res) => {
 
   try {
     const aiClient = new GoogleGenAI({ apiKey: userKey });
-    const prompt = `You are an expert CEFR English evaluator. Analyze this B1/B2 essay. Return a raw JSON object with exactly three fields: 1. cefrLevel (string), 2. grammarCorrections (array of strings), 3. vocabularyUpgrades (array of strings). Do not include markdown code blocks (such as triple backticks followed by json).
+    const prompt = `You are an expert CEFR English evaluator. Analyze this B1/B2 essay. Return a raw JSON object with exactly three fields: 1. cefrLevel (string), 2. grammarCorrections (array of strings), 3. vocabularyUpgrades (array of strings).
+All comments, corrections, and vocabulary upgrade suggestions MUST be written in Turkish (Türkçe) to help the student understand. Be encouraging and educational. Do not include markdown code blocks (such as triple backticks followed by json).
     
 Essay:
 ${essay}`;
@@ -286,13 +287,13 @@ app.post('/api/explain', async (req, res) => {
 
   try {
     const aiClient = new GoogleGenAI({ apiKey: userKey });
-    const prompt = `You are an English language tutor. A student answered a question incorrectly.
+    const prompt = `You are an English language tutor. A student answered a question.
 
 Question: ${questionContext}
 Correct answer: ${correctAnswer}
 Student's answer: ${userAnswer}
 
-Explain why "${correctAnswer}" is correct and why "${userAnswer}" is wrong. Be concise and educational. Use simple English.`;
+Provide a detailed explanation in Turkish (Türkçe) of why "${correctAnswer}" is the correct choice. If the student's answer "${userAnswer}" is different from the correct answer, also explain why "${userAnswer}" is incorrect in Turkish. Keep your explanation concise, friendly, and highly educational.`;
 
     const response = await aiClient.models.generateContent({
       model: 'gemini-2.5-flash',
