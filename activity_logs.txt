@@ -698,3 +698,9 @@
 [2026-05-17T21:17:31.045Z] IP: 127.0.0.1 | User: Marijua | [2026-05-17T21:17:30.942Z] Action: Navigated to /reading
 [2026-05-17T21:17:31.555Z] IP: 127.0.0.1 | User: Marijua | [2026-05-17T21:17:31.531Z] Action: Navigated to /uoe
 [2026-05-17T21:17:32.280Z] IP: 127.0.0.1 | User: Marijua | [2026-05-17T21:17:32.265Z] Action: Navigated to /
+[2026-05-19T12:55:44.368Z] IP: 127.0.0.1 | User: Marijua | [2026-05-19T12:55:44.275Z] Action: Navigated to /exam-practice
+[2026-05-19T12:55:44.436Z] IP: 127.0.0.1 | User: Marijua | [2026-05-19T12:55:44.281Z] Action: Navigated to /exam-practice
+[2026-05-19T12:55:46.709Z] IP: 127.0.0.1 | User: Marijua | [2026-05-19T12:55:46.703Z] Action: ANSWER [Exam Practice]: ❌ INCORRECT | Q: "Section C, Q1: "My best friend is a _____ person, so she can make public speeches easily."" | User: "introvert" | Correct: "confident" (ws2c-q1)
+[2026-05-19T12:55:47.427Z] IP: 127.0.0.1 | User: Marijua | [2026-05-19T12:55:47.386Z] Action: AI [Explanation Requested]: Q: "Section C, Q1: "My best friend is a _____ person, so she can make public speeches easily."" | User: "introvert" | Correct: "confident"
+[2026-05-19T12:57:03.520Z] IP: 127.0.0.1 | User: Marijua | [2026-05-19T12:57:03.500Z] Action: Navigated to /exam-practice
+[2026-05-19T12:57:03.537Z] IP: 127.0.0.1 | User: Marijua | [2026-05-19T12:57:03.506Z] Action: Navigated to /exam-practice
