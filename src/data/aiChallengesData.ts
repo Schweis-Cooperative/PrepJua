@@ -803,7 +803,7 @@ export const aiChallengeExamSets: ExamSet[] = [
         question: 'It is often difficult to put my deep thoughts _____ words during public speaking.',
         options: ['into', 'on', 'with', 'to'],
         correctAnswer: 0,
-        explanation: 'Düşünceleri kelimelere dökmek ifadesi "put into words" şeklinde söylenir.',
+        explanation: 'Düşünceleri kelimelere dökmek ifadesi "put into words" şeklinde söujenir.',
         difficulty: 'medium',
         grammarFocus: 'Prepositional Phrases'
       },
@@ -1224,6 +1224,415 @@ export const aiChallengeExamSets: ExamSet[] = [
         correctAnswer: 0,
         explanation: 'Örnekleme yaparken kullanılan "for instance" (örneğin) kalıp ifadesi tamamlanmaktadır.',
         difficulty: 'medium',
+        grammarFocus: 'Prepositional Phrases'
+      }
+    ]
+  },
+  {
+    id: 'ai-challenge-hard-1',
+    title: 'AI Challenge — Hard Level Exam',
+    description: 'A comprehensive 40-question practice mock exam powered by AI. Evaluates advanced (B2/C1) grammar, structure, and vocabulary.',
+    difficulty: 'hard',
+    grammarFocus: 'Advanced Subjunctive, Advanced Modals, Conditionals Inversion, Mixed Conditionals, Advanced Inversion, Passive Gerunds, Causatives, Relative Clauses, Verb Patterns, Advanced Conjunctions',
+    questions: [
+      {
+        id: 'ai-hard-q1',
+        type: 'multiple_choice',
+        question: 'Should you require further information regarding the deep-sea ecosystems, please do not hesitate _____ the lead researcher.',
+        options: ['to contact', 'contacting', 'contact', 'to contacting'],
+        correctAnswer: 0,
+        explanation: 'Yardımcı fiil "Should" ile kurulan devrik koşul yapısında (Type 1 Conditional Inversion) ana cümle emir kipi (imperative) veya normal cümledir. "hesitate" fiili kendiden sonra "to + V1" (to contact) alır.',
+        difficulty: 'hard',
+        grammarFocus: 'Inversion / Verb Patterns'
+      },
+      {
+        id: 'ai-hard-q2',
+        type: 'multiple_choice',
+        question: 'Given the harshness of the Patagonia blizzard, they _____ prepared a secondary evacuation route beforehand.',
+        options: ['ought to have', 'must have', 'would rather', 'had better'],
+        correctAnswer: 0,
+        explanation: 'Geçmişe yönelik yapılması gereken ama yapılmamış bir zorunluluğu/tavsiyeyi belirtmek için "ought to have + V3" (yapmış olmalıydılar) kullanılır.',
+        difficulty: 'hard',
+        grammarFocus: 'Advanced Modals'
+      },
+      {
+        id: 'ai-hard-q3',
+        type: 'multiple_choice',
+        question: '_____ the safety protocols been updated earlier, the accident in the chemical laboratory could have been avoided.',
+        options: ['Had', 'If', 'Should', 'Were'],
+        correctAnswer: 0,
+        explanation: 'Geçmiş zaman koşul cümlelerinde (Third Conditional) devriklik (inversion) yapmak için "If" düşürülür ve "Had" özneden önce kullanılır.',
+        difficulty: 'hard',
+        grammarFocus: 'Conditionals Inversion'
+      },
+      {
+        id: 'ai-hard-q4',
+        type: 'multiple_choice',
+        question: 'If the local library had not secured the funding last year, it _____ open to the public today.',
+        options: ["wouldn't be", "hadn't been", "won't be", "wouldn't have been"],
+        correctAnswer: 0,
+        explanation: 'Karışık Koşul Cümlesi (Mixed Conditional): Geçmişteki koşulun (fonun güvenceye alınamamış olması) günümüzdeki etkisini (bugün açık olmaması) belirtmek için ana cümlede "would/could/might + V1" kullanılır.',
+        difficulty: 'hard',
+        grammarFocus: 'Mixed Conditionals'
+      },
+      {
+        id: 'ai-hard-q5',
+        type: 'multiple_choice',
+        question: 'Not only _____ the research findings, but they also proposed a workable solution to the rising operational costs.',
+        options: ['did they publish', 'they published', 'had they published', 'they did publish'],
+        correctAnswer: 0,
+        explanation: '"Not only... but also" yapısı cümle başına geldiğinde ilk cümle devrik (inversion) kurulur. Geçmiş zaman olduğu için "did + özne + V1" kullanılır.',
+        difficulty: 'hard',
+        grammarFocus: 'Inversion'
+      },
+      {
+        id: 'ai-hard-q6',
+        type: 'multiple_choice',
+        question: 'Our supervisor insists on _____ the project draft before it is shared with the international committee.',
+        options: ['being shown', 'showing', 'to show', 'to be shown'],
+        correctAnswer: 0,
+        explanation: '"Insist on" edatlı fiilinden sonra gerund (-ing) gelir. Cümle pasif anlam taşıdığı için (taslağın gösterilmesi) "being + V3" (being shown) yapısı uygundur.',
+        difficulty: 'hard',
+        grammarFocus: 'Passive Gerunds'
+      },
+      {
+        id: 'ai-hard-q7',
+        type: 'multiple_choice',
+        question: 'The board members finally got the legal department _____ the draft contract after weeks of debate.',
+        options: ['to approve', 'approved', 'approve', 'approving'],
+        correctAnswer: 0,
+        explanation: 'Ettirgen yapı (Causative): "get + kişi + to V1" (birini bir şey yapmaya ikna etmek/yaptırmak) yapısı kullanılır.',
+        difficulty: 'hard',
+        grammarFocus: 'Causative'
+      },
+      {
+        id: 'ai-hard-q8',
+        type: 'multiple_choice',
+        question: 'It is vital that the operations manager _____ the logistics strategy before the exhibition begins.',
+        options: ['approve', 'approves', 'to approve', 'approved'],
+        correctAnswer: 0,
+        explanation: '"It is vital/essential/important that..." yapılarından sonra gelen cümlede fiil yalın halde (Subjunctive - "approve") kullanılır.',
+        difficulty: 'hard',
+        grammarFocus: 'Subjunctive'
+      },
+      {
+        id: 'ai-hard-q9',
+        type: 'multiple_choice',
+        question: 'We climbed to the summit of the mountain, _____ peak the entire valley could be viewed.',
+        options: ['from whose', 'whose from', 'of which', 'where'],
+        correctAnswer: 0,
+        explanation: 'İlgi tümlecinde sahiplik ve yer bildiren edat birleşimi: "dağın zirvesinden" anlamını vermek için "from whose peak" (zirvesinden) kullanılır.',
+        difficulty: 'hard',
+        grammarFocus: 'Relative Clauses'
+      },
+      {
+        id: 'ai-hard-q10',
+        type: 'multiple_choice',
+        question: 'I meant _____ you about the changes in the exam schedule, but it completely slipped my mind.',
+        options: ['to tell', 'telling', 'tell', 'to telling'],
+        correctAnswer: 0,
+        explanation: '"Mean" fiili "niyet etmek, amaçlamak" anlamında kullanıldığında kendisinden sonra "to + infinitive" (to tell) alır. "Anlamına gelmek" durumunda ise "-ing" alır.',
+        difficulty: 'hard',
+        grammarFocus: 'Verb Patterns'
+      },
+      {
+        id: 'ai-hard-q11',
+        type: 'multiple_choice',
+        question: '_____ we find a more sustainable source of raw materials, the production costs will continue to rise.',
+        options: ['Unless', 'Provided that', 'As long as', 'In case'],
+        correctAnswer: 0,
+        explanation: '"Unless" (-medikçe / -mezse) olumsuz koşul bildirir. "Daha sürdürülebilir bir ham madde kaynağı bulmadıkça maliyetler artmaya devam edecek" anlamı uygundur.',
+        difficulty: 'hard',
+        grammarFocus: 'Advanced Conjunctions'
+      },
+      {
+        id: 'ai-hard-q12',
+        type: 'multiple_choice',
+        question: 'You _____ completed the entire survey yesterday; we only needed the first page.',
+        options: ["needn't have", "didn't need to", "shouldn't have", "must not have"],
+        correctAnswer: 0,
+        explanation: 'Geçmişte yapılması gerekmediği halde yapılmış eylemler için "needn\'t have + V3" (yapmana gerek yoktu ama yaptın) kullanılır.',
+        difficulty: 'hard',
+        grammarFocus: 'Advanced Modals'
+      },
+      {
+        id: 'ai-hard-q13',
+        type: 'multiple_choice',
+        question: 'The ancient ruins _____ by a local explorer during the late nineteenth century.',
+        options: ['are believed to have been discovered', 'are believed to discover', 'believe to have been discovered', 'were believed to discover'],
+        correctAnswer: 0,
+        explanation: 'Edilgen aktarım (Reporting Passive): Geçmişteki bir eylem için "Subject + are believed + to have been + V3" (keşfedilmiş olduğuna inanılıyor) yapısı kullanılır.',
+        difficulty: 'hard',
+        grammarFocus: 'Complex Passives'
+      },
+      {
+        id: 'ai-hard-q14',
+        type: 'multiple_choice',
+        question: 'The manager approved the budget extension _____ that the team deliver the project on schedule.',
+        options: ['on condition', 'unless', 'even if', 'in case'],
+        correctAnswer: 0,
+        explanation: '"On condition that" (-şartıyla) koşul bağlacıdır. Seçeneklerde "on condition" verilmiştir (arkasından gelen that ile birleşir).',
+        difficulty: 'hard',
+        grammarFocus: 'Advanced Conjunctions'
+      },
+      {
+        id: 'ai-hard-q15',
+        type: 'multiple_choice',
+        question: 'None of the participants _____ in the polar expedition suffered from severe frostbite.',
+        options: ['taking part', 'taken part', 'who takes part', 'took part'],
+        correctAnswer: 0,
+        explanation: 'Aktif sıfat tümleci kısaltması (Active Reduced Relative Clause): "who took part" ifadesi aktif olduğu için kısaltıldığında fiile "-ing" eklenir ("taking part").',
+        difficulty: 'hard',
+        grammarFocus: 'Reduced Relative Clauses'
+      },
+      {
+        id: 'ai-hard-q16',
+        type: 'multiple_choice',
+        question: 'The local government hopes to _____ major alterations in public transport by next year.',
+        options: ['bring about', 'carry out', 'put up with', 'keep up with'],
+        correctAnswer: 0,
+        explanation: '"Bir yeniliğe, değişikliğe sebep olmak / gerçekleştirmek / getirmek" anlamında "bring about" kullanılır.',
+        difficulty: 'hard',
+        grammarFocus: 'Phrasal Verbs'
+      },
+      {
+        id: 'ai-hard-q17',
+        type: 'multiple_choice',
+        question: 'We had to _____ a lot of unexpected difficulties during the deep-sea research expedition.',
+        options: ['contend with', 'run out of', 'fall out with', 'look down on'],
+        correctAnswer: 0,
+        explanation: '"Zorluklarla, engellerle mücadele etmek / uğraşmak" anlamına gelen ileri düzey phrasal verb "contend with"dir.',
+        difficulty: 'hard',
+        grammarFocus: 'Phrasal Verbs'
+      },
+      {
+        id: 'ai-hard-q18',
+        type: 'multiple_choice',
+        question: 'The project coordinator decided to _____ the proposal because it lacked a clear financial analysis.',
+        options: ['turn down', 'bring up', 'carry out', 'get away with'],
+        correctAnswer: 0,
+        explanation: '"Bir teklifi veya öneriyi reddetmek" anlamına gelen phrasal verb "turn down"dur.',
+        difficulty: 'hard',
+        grammarFocus: 'Phrasal Verbs'
+      },
+      {
+        id: 'ai-hard-q19',
+        type: 'multiple_choice',
+        question: 'The director praised the team\'s _____ in resolving the complex network issues under pressure.',
+        options: ['decisiveness', 'decisive', 'decide', 'decisively'],
+        correctAnswer: 0,
+        explanation: 'Boşluktan önce gelen iyelik ifadesinden ("team\'s") sonra bir isim gelmelidir. Sıfattan türeyen isim hali "decisiveness"tır (kararlılık).',
+        difficulty: 'hard',
+        grammarFocus: 'Word Formation'
+      },
+      {
+        id: 'ai-hard-q20',
+        type: 'multiple_choice',
+        question: 'Her scientific publications are widely regarded as _____ in the field of deep-sea ecology.',
+        options: ['authoritative', 'authority', 'authorize', 'authoritatively'],
+        correctAnswer: 0,
+        explanation: 'Boşluktan önce gelen "regarded as" yapısından sonra ismi niteleyecek bir sıfat gelmelidir. "Güvenilir/otorite sahibi" anlamında "authoritative" uygundur.',
+        difficulty: 'hard',
+        grammarFocus: 'Word Formation'
+      },
+      {
+        id: 'ai-hard-q21',
+        type: 'multiple_choice',
+        question: '_____ hindsight, we should have carried more backup battery packs for our GPS devices.',
+        options: ['In', 'With', 'By', 'On'],
+        correctAnswer: 0,
+        explanation: '"Geriye dönüp bakıldığında / geçmişe bakarak" anlamındaki kalıp ifade "In hindsight" şeklindedir.',
+        difficulty: 'hard',
+        grammarFocus: 'Prepositional Phrases'
+      },
+      {
+        id: 'ai-hard-q22',
+        type: 'multiple_choice',
+        question: 'The new regulations put the manager in a tight _____, as she had to cut costs without firing anyone.',
+        options: ['spot', 'place', 'corner', 'space'],
+        correctAnswer: 0,
+        explanation: '"Zor durumda kalmak / iki arada bir derede kalmak" anlamındaki deyimsel ifade "in a tight spot"dur.',
+        difficulty: 'hard',
+        grammarFocus: 'Idiomatic Expressions'
+      },
+      {
+        id: 'ai-hard-q23',
+        type: 'multiple_choice',
+        question: 'The Patagonia guides showed _____ resilience during the severe blizzard, saving all hikers.',
+        options: ['unwavering', 'bizarre', 'consistent', 'impatient'],
+        correctAnswer: 0,
+        explanation: '"Sarsılmaz, kararlı" anlamındaki üst düzey sıfat "unwavering"dir. Zorlu doğa koşullarında gösterilen direnci nitelemek için mükemmeldir.',
+        difficulty: 'hard',
+        grammarFocus: 'Vocabulary'
+      },
+      {
+        id: 'ai-hard-q24',
+        type: 'multiple_choice',
+        question: 'The scientists observed a _____ shift in the ecosystem after the hydrothermal vents emerged.',
+        options: ['profound', 'raw', 'filthy', 'creamy'],
+        correctAnswer: 0,
+        explanation: '"Kökten, derin, çok büyük" değişimleri tarif ederken "profound" (profound shift) sıfatı tercih edilir.',
+        difficulty: 'hard',
+        grammarFocus: 'Wordpower'
+      },
+      {
+        id: 'ai-hard-q25',
+        type: 'multiple_choice',
+        question: 'The committee has failed to _____ the underlying issues causing the budget deficit.',
+        options: ['address', 'cause', 'damage', 'face to'],
+        correctAnswer: 0,
+        explanation: '"Bir konuyu/problemi ele almak, üzerinde durmak" anlamında "address the issue" kalıbı kullanılır.',
+        difficulty: 'hard',
+        grammarFocus: 'Wordpower'
+      },
+      {
+        id: 'ai-hard-q26',
+        type: 'multiple_choice',
+        question: 'They had better _____ the security protocols before the government inspectors arrive next week.',
+        options: ['upgrade', 'to upgrade', 'upgrading', 'upgraded'],
+        correctAnswer: 0,
+        explanation: '"Had better" (yapsa iyi olur) yapısından sonra fiil her zaman yalın halde (V1 - "upgrade") gelir.',
+        difficulty: 'hard',
+        grammarFocus: 'Advanced Modals'
+      },
+      {
+        id: 'ai-hard-q27',
+        type: 'multiple_choice',
+        question: 'The project proposal, _____ details we debated for hours, was eventually rejected by the board.',
+        options: ['the details of which', 'whose details of', 'of which details', 'where details'],
+        correctAnswer: 0,
+        explanation: 'Resmi İngilizce\'de "cansız varlığın detayları" ilgi tümleci ile "the details of which" veya "whose details" şeklinde ifade edilir.',
+        difficulty: 'hard',
+        grammarFocus: 'Relative Clauses'
+      },
+      {
+        id: 'ai-hard-q28',
+        type: 'multiple_choice',
+        question: 'By next September, the research team _____ polar climate data for over a decade.',
+        options: ['will have been analyzing', 'will be analyzing', 'have been analyzing', 'would analyze'],
+        correctAnswer: 0,
+        explanation: 'Gelecekte belirli bir zamana kadar sürüyor olacak eylemin süresini belirtmek için Future Perfect Continuous (will have been + V-ing) kullanılır.',
+        difficulty: 'hard',
+        grammarFocus: 'Future Perfect Continuous'
+      },
+      {
+        id: 'ai-hard-q29',
+        type: 'multiple_choice',
+        question: 'It is essential that every applicant _____ a valid identity card during the exam registration.',
+        options: ['present', 'presents', 'to present', 'presenting'],
+        correctAnswer: 0,
+        explanation: '"It is essential that..." yapısının ardından gelen fiil yalın (Subjunctive - "present") olmalıdır.',
+        difficulty: 'hard',
+        grammarFocus: 'Subjunctive'
+      },
+      {
+        id: 'ai-hard-q30',
+        type: 'multiple_choice',
+        question: '_____ the weather to deteriorate further, the rescue helicopter will not be able to take off.',
+        options: ['Were', 'Had', 'Should', 'If'],
+        correctAnswer: 0,
+        explanation: 'Second Conditional yapısında devriklik (inversion) yapmak için "If" düşürülür ve "Were + özne + to V1" yapısı kullanılır.',
+        difficulty: 'hard',
+        grammarFocus: 'Conditionals Inversion'
+      },
+      {
+        id: 'ai-hard-q31',
+        type: 'multiple_choice',
+        question: 'We need to _____ new ideas to overcome the challenges in our local community library.',
+        options: ['come up with', 'put up with', 'carry out', 'run out of'],
+        correctAnswer: 0,
+        explanation: '"Yeni fikirler, çözümler üretmek / bulmak" anlamına gelen phrasal verb "come up with"dir.',
+        difficulty: 'hard',
+        grammarFocus: 'Phrasal Verbs'
+      },
+      {
+        id: 'ai-hard-q32',
+        type: 'multiple_choice',
+        question: 'The sudden _____ of the project funding caused a massive delay in the construction.',
+        options: ['withdrawal', 'withdraw', 'withdrawing', 'withdrawn'],
+        correctAnswer: 0,
+        explanation: 'Boşluktan önce gelen belirticiden ("the") sonra isim gelmelidir. "Withdraw" fiilinin isim hali "withdrawal"dır.',
+        difficulty: 'hard',
+        grammarFocus: 'Word Formation'
+      },
+      {
+        id: 'ai-hard-q33',
+        type: 'multiple_choice',
+        question: 'Our research department works _____ collaboration with the national space agency.',
+        options: ['in', 'on', 'with', 'by'],
+        correctAnswer: 0,
+        explanation: '"Biriyle iş birliği içinde çalışmak" ifadesi "in collaboration with" şeklinde söylenir.',
+        difficulty: 'hard',
+        grammarFocus: 'Prepositional Phrases'
+      },
+      {
+        id: 'ai-hard-q34',
+        type: 'multiple_choice',
+        question: 'The local council\'s decision to cut down the old trees was highly _____ and faced severe protests.',
+        options: ['contentious', 'consistent', 'creamy', 'bitter'],
+        correctAnswer: 0,
+        explanation: '"Tartışmalı, fikir ayrılığına yol açan" anlamındaki üst düzey sıfat "contentious"tır.',
+        difficulty: 'hard',
+        grammarFocus: 'Vocabulary'
+      },
+      {
+        id: 'ai-hard-q35',
+        type: 'multiple_choice',
+        question: 'During the crisis, the supervisor kept her _____, ensuring that the entire team remained calm.',
+        options: ['cool', 'mind', 'temper', 'head'],
+        correctAnswer: 0,
+        explanation: '"Sakinliğini korumak, soğukkanlı davranmak" anlamındaki deyimsel ifade "keep one\'s cool"dur.',
+        difficulty: 'hard',
+        grammarFocus: 'Idiomatic Expressions'
+      },
+      {
+        id: 'ai-hard-q36',
+        type: 'multiple_choice',
+        question: 'The university board recommended _____ the scientific findings to a peer-reviewed journal.',
+        options: ['submitting', 'to submit', 'submit', 'to submitting'],
+        correctAnswer: 0,
+        explanation: '"Recommend" (tavsiye etmek) fiili kendisinden sonra doğrudan bir fiil aldığında gerund (submitting) gerektirir.',
+        difficulty: 'hard',
+        grammarFocus: 'Gerunds and Infinitives'
+      },
+      {
+        id: 'ai-hard-q37',
+        type: 'multiple_choice',
+        question: 'The safety officers checked the chemical laboratory _____ detail before giving the authorization.',
+        options: ['in', 'at', 'on', 'by'],
+        correctAnswer: 0,
+        explanation: '"Ayrıntılı bir şekilde" anlamındaki kalıp ifade "in detail" şeklindedir.',
+        difficulty: 'hard',
+        grammarFocus: 'Prepositional Phrases'
+      },
+      {
+        id: 'ai-hard-q38',
+        type: 'multiple_choice',
+        question: 'Our study shows that regular physical exercise has a _____ impact on cognitive health.',
+        options: ['beneficial', 'benefit', 'beneficiary', 'beneficially'],
+        correctAnswer: 0,
+        explanation: 'Boşluktan sonra gelen isim olan "impact" kelimesini niteleyecek bir sıfat aranmaktadır. Yararlı anlamında "beneficial" sıfatı uygundur.',
+        difficulty: 'hard',
+        grammarFocus: 'Word Formation'
+      },
+      {
+        id: 'ai-hard-q39',
+        type: 'multiple_choice',
+        question: 'Many small businesses were forced to close because they _____ emergency funds during the pandemic.',
+        options: ['ran out of', 'put up with', 'came across', 'taken up'],
+        correctAnswer: 0,
+        explanation: '"Bir şeyin tükenmesi / bitmesi" anlamına gelen phrasal verb "run out of"dur.',
+        difficulty: 'hard',
+        grammarFocus: 'Phrasal Verbs'
+      },
+      {
+        id: 'ai-hard-q40',
+        type: 'multiple_choice',
+        question: 'The project coordinator managed to resolve the conflict _____ ease, impressing everyone on the board.',
+        options: ['with', 'by', 'at', 'in'],
+        correctAnswer: 0,
+        explanation: '"Kolaylıkla, rahatça" anlamındaki kalıp ifade "with ease" şeklindedir.',
+        difficulty: 'hard',
         grammarFocus: 'Prepositional Phrases'
       }
     ]
