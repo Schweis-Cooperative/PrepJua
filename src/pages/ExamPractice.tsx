@@ -1,4 +1,4 @@
-import { useState, useCallback, useMemo } from 'react';
+import { useState, useCallback, useMemo, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { 
   ClipboardList, 
@@ -17,6 +17,7 @@ import { aLevelExamSets } from '../data/aLevelExamData';
 import { bLevelExamSets } from '../data/bLevelExamData';
 import { compareAnswers } from '../utils/normalize';
 import { useMistakeBook } from '../hooks/useMistakeBook';
+import { useProgress } from '../hooks/useProgress';
 import AIExplanation from '../components/AIExplanation';
 import { logAnswer, logScore } from '../utils/logger';
 import { endOfYearExamSets } from '../data/endOfYearExamData';
@@ -44,6 +45,7 @@ export default function ExamPractice() {
   const [score, setScore] = useState(0);
   const [finished, setFinished] = useState(false);
   const { addMistake } = useMistakeBook();
+  const { saveQuizState, getQuizState, clearQuizState, completeExam } = useProgress();
 
   const allExams = useMemo(() => [...examSets, ...aLevelExamSets, ...bLevelExamSets, ...endOfYearExamSets, ...aiChallengeExamSets], []);
   const exam = useMemo(() => allExams.find((e) => e.id === selectedExam), [allExams, selectedExam]);
@@ -103,6 +105,28 @@ export default function ExamPractice() {
     });
   };
 
+  // Persist quiz state after every answer
+  useEffect(() => {
+    if (!selectedExam || !exam || finished) return;
+    if (currentIndex === 0 && !submitted) return; // Don't save blank state
+    saveQuizState(`exam-${selectedExam}`, {
+      currentIndex,
+      score,
+      finished,
+      answers: {},
+    });
+  }, [currentIndex, score, submitted, finished, selectedExam]);
+
+  // Restore saved state when an exam is selected
+  useEffect(() => {
+    if (!selectedExam) return;
+    const saved = getQuizState(`exam-${selectedExam}`);
+    if (saved && !saved.finished && saved.currentIndex > 0) {
+      setCurrentIndex(saved.currentIndex);
+      setScore(saved.score);
+    }
+  }, [selectedExam]);
+
   const nextQuestion = () => {
     if (!exam) return;
     if (currentIndex < exam.questions.length - 1) {
@@ -113,7 +137,9 @@ export default function ExamPractice() {
       setIsCorrect(false);
     } else {
       setFinished(true);
+      completeExam(exam.id);
       logScore('Exam Practice', exam.title, score, exam.questions.length);
+      clearQuizState(`exam-${exam.id}`);
     }
   };
 
@@ -134,6 +160,7 @@ export default function ExamPractice() {
   };
 
   const resetExam = () => {
+    if (selectedExam) clearQuizState(`exam-${selectedExam}`);
     setCurrentIndex(0);
     setSelectedAnswer(null);
     setTextInput('');
@@ -391,7 +418,14 @@ export default function ExamPractice() {
           <h1 className="text-xl font-bold text-white">{exam.title}</h1>
           <p className="text-xs text-zinc-500">Question {currentIndex + 1}/{exam.questions.length} · Score: {score}</p>
         </div>
-        <button onClick={() => { setSelectedExam(null); resetExam(); }} className="text-xs text-zinc-500 hover:text-zinc-300">Exit</button>
+        <div className="flex items-center gap-3">
+          {currentIndex > 0 && (
+            <button onClick={resetExam} className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-rose-400 bg-rose-500/10 border border-rose-500/20 rounded-lg hover:bg-rose-500/20 transition-all">
+              <RotateCcw size={12} /> Restart
+            </button>
+          )}
+          <button onClick={() => { setSelectedExam(null); resetExam(); }} className="text-xs text-zinc-500 hover:text-zinc-300">Exit</button>
+        </div>
       </div>
 
       <div className="w-full h-1.5 bg-zinc-800 rounded-full mb-6 overflow-hidden">

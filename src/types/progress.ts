@@ -58,22 +58,51 @@ export interface ActivityEvent {
   reviewsDone: number;
 }
 
+/** A single answer recorded during a quiz session */
+export interface QuizAnswer {
+  /** Index of the selected option (or -1 for text-input) */
+  selectedOption: number;
+  /** The raw text input (for fill-in-the-blank type) */
+  textInput?: string;
+  /** Whether this answer was correct */
+  isCorrect: boolean;
+}
+
+/** Persisted state of an in-progress quiz/test */
+export interface QuizState {
+  /** The test/quiz identifier */
+  testId: string;
+  /** Current question index the user should resume from */
+  currentIndex: number;
+  /** Running score */
+  score: number;
+  /** Per-question answers keyed by question index */
+  answers: Record<number, QuizAnswer>;
+  /** Whether the quiz was finished */
+  finished: boolean;
+  /** ISO timestamp of last interaction */
+  updatedAt: string;
+}
+
 /** Full persisted progress state shape (used for IndexedDB storage) */
 export interface PersistedProgress {
   learnedWords: string[];
   completedGrammar: Record<string, number>;
+  completedExams: Record<string, number>;
   completedUoe: Record<string, number>;
   completedReading: Record<string, number>;
   streak: StreakState;
   customCollections: CustomCollection[];
   srsCards: SRSCard[];
   activityHistory: ActivityEvent[];
+  quizStates: Record<string, QuizState>;
 }
 
 /** Default initial values for a fresh user */
 export const DEFAULT_PROGRESS: PersistedProgress = {
   learnedWords: [],
   completedGrammar: {},
+  completedExams: {},
   completedUoe: {},
   completedReading: {},
   streak: {
@@ -84,4 +113,5 @@ export const DEFAULT_PROGRESS: PersistedProgress = {
   customCollections: [],
   srsCards: [],
   activityHistory: [],
+  quizStates: {},
 };

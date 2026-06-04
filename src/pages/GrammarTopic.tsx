@@ -1,7 +1,7 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowLeft, BookOpen, CheckCircle2, XCircle, Lightbulb, PenTool } from 'lucide-react';
+import { ArrowLeft, BookOpen, CheckCircle2, XCircle, Lightbulb, PenTool, RotateCcw } from 'lucide-react';
 import { grammarData } from '../data/grammarData';
 import { useProgress } from '../hooks/useProgress';
 import { useMistakeBook } from '../hooks/useMistakeBook';
@@ -14,14 +14,24 @@ type TabType = 'lesson' | 'quiz';
 export default function GrammarTopic() {
   const { id } = useParams<{ id: string }>();
   const topic = grammarData.find((t) => t.id === id);
-  const { completeGrammarTopic } = useProgress();
+  const { completeGrammarTopic, saveQuizState, getQuizState, clearQuizState } = useProgress();
   const { addMistake } = useMistakeBook();
 
-  const [activeTab, setActiveTab] = useState<TabType>('lesson');
-  const [currentIndex, setCurrentIndex] = useState(0);
+  // Restore saved quiz state on mount
+  const savedState = id ? getQuizState(`grammar-${id}`) : undefined;
+
+  const [activeTab, setActiveTab] = useState<TabType>(savedState && !savedState.finished ? 'quiz' : 'lesson');
+  const [currentIndex, setCurrentIndex] = useState(savedState?.currentIndex ?? 0);
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
-  const [score, setScore] = useState(0);
-  const [finished, setFinished] = useState(false);
+  const [score, setScore] = useState(savedState?.score ?? 0);
+  const [finished, setFinished] = useState(savedState?.finished ?? false);
+  const [answeredQuestions, setAnsweredQuestions] = useState<Record<number, { selected: number; correct: boolean }>>(
+    savedState?.answers
+      ? Object.fromEntries(
+          Object.entries(savedState.answers).map(([k, v]) => [Number(k), { selected: v.selectedOption, correct: v.isCorrect }])
+        )
+      : {}
+  );
 
   if (!topic) {
     return (
@@ -40,6 +50,23 @@ export default function GrammarTopic() {
   const questions = topic.questions || [];
   const tips = topic.tips || [];
   const currentQuestion = questions[currentIndex];
+  const testId = `grammar-${topic.id}`;
+
+  // Persist quiz state after every meaningful change
+  useEffect(() => {
+    if (activeTab !== 'quiz' || questions.length === 0) return;
+    saveQuizState(testId, {
+      currentIndex,
+      score,
+      finished,
+      answers: Object.fromEntries(
+        Object.entries(answeredQuestions).map(([k, v]) => [
+          Number(k),
+          { selectedOption: v.selected, isCorrect: v.correct },
+        ])
+      ),
+    });
+  }, [currentIndex, score, finished, answeredQuestions, activeTab]);
 
   const handleAnswer = useCallback(
     (index: number) => {
@@ -58,6 +85,10 @@ export default function GrammarTopic() {
           correctAnswer: currentQuestion.options[currentQuestion.correctAnswer],
         });
       }
+      setAnsweredQuestions((prev) => ({
+        ...prev,
+        [currentIndex]: { selected: index, correct: isCorrect },
+      }));
       logAnswer({
         section: 'Grammar',
         questionId: currentQuestion.id,
@@ -67,7 +98,7 @@ export default function GrammarTopic() {
         isCorrect,
       });
     },
-    [selectedAnswer, currentQuestion, addMistake, topic.id]
+    [selectedAnswer, currentQuestion, addMistake, topic.id, currentIndex]
   );
 
   const nextQuestion = () => {
@@ -78,6 +109,8 @@ export default function GrammarTopic() {
       setFinished(true);
       completeGrammarTopic(topic.id);
       logScore('Grammar', topic.title, score, questions.length);
+      // Clear the saved state since the quiz is completed
+      clearQuizState(testId);
     }
   };
 
@@ -86,7 +119,11 @@ export default function GrammarTopic() {
     setSelectedAnswer(null);
     setScore(0);
     setFinished(false);
+    setAnsweredQuestions({});
+    clearQuizState(testId);
   };
+
+  const hasResumableState = savedState && !savedState.finished && savedState.currentIndex > 0;
 
   // Simple markdown rendering
   const renderContent = (content: string) => {
@@ -128,23 +165,37 @@ export default function GrammarTopic() {
       </div>
 
       {/* Tabs */}
-      <div className="flex gap-1 mb-6 bg-zinc-900 p-1 rounded-lg border border-zinc-800 w-fit">
-        <button
-          onClick={() => setActiveTab('lesson')}
-          className={`flex items-center gap-2 px-4 py-2 rounded-md text-xs font-medium transition-all ${
-            activeTab === 'lesson' ? 'bg-zinc-700 text-white' : 'text-zinc-500 hover:text-zinc-300'
-          }`}
-        >
-          <BookOpen size={14} /> Lesson
-        </button>
-        <button
-          onClick={() => setActiveTab('quiz')}
-          className={`flex items-center gap-2 px-4 py-2 rounded-md text-xs font-medium transition-all ${
-            activeTab === 'quiz' ? 'bg-zinc-700 text-white' : 'text-zinc-500 hover:text-zinc-300'
-          }`}
-        >
-          <PenTool size={14} /> Quiz ({questions.length})
-        </button>
+      <div className="flex items-center justify-between mb-6">
+        <div className="flex gap-1 bg-zinc-900 p-1 rounded-lg border border-zinc-800 w-fit">
+          <button
+            onClick={() => setActiveTab('lesson')}
+            className={`flex items-center gap-2 px-4 py-2 rounded-md text-xs font-medium transition-all ${
+              activeTab === 'lesson' ? 'bg-zinc-700 text-white' : 'text-zinc-500 hover:text-zinc-300'
+            }`}
+          >
+            <BookOpen size={14} /> Lesson
+          </button>
+          <button
+            onClick={() => setActiveTab('quiz')}
+            className={`flex items-center gap-2 px-4 py-2 rounded-md text-xs font-medium transition-all ${
+              activeTab === 'quiz' ? 'bg-zinc-700 text-white' : 'text-zinc-500 hover:text-zinc-300'
+            }`}
+          >
+            <PenTool size={14} /> Quiz ({questions.length})
+            {hasResumableState && (
+              <span className="ml-1 w-2 h-2 rounded-full bg-amber-400 animate-pulse" />
+            )}
+          </button>
+        </div>
+
+        {activeTab === 'quiz' && !finished && currentIndex > 0 && (
+          <button
+            onClick={resetQuiz}
+            className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-rose-400 bg-rose-500/10 border border-rose-500/20 rounded-lg hover:bg-rose-500/20 transition-all"
+          >
+            <RotateCcw size={12} /> Restart
+          </button>
+        )}
       </div>
 
       {activeTab === 'lesson' ? (
@@ -189,9 +240,9 @@ export default function GrammarTopic() {
             </Link>
             <button
               onClick={resetQuiz}
-              className="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-sm font-medium"
+              className="flex items-center gap-2 px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-sm font-medium"
             >
-              Try Again
+              <RotateCcw size={16} /> Try Again
             </button>
           </div>
         </motion.div>

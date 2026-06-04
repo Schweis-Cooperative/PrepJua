@@ -2,7 +2,7 @@ import React, { createContext, useContext, useEffect, useState, useCallback, use
 import { getStorageItem, setStorageItemAsync } from '../utils/storage';
 import { logActivity, logWordToggle } from '../utils/logger';
 import { vocabularyData } from '../data/vocabularyData';
-import type { StreakState, CustomCollection, SRSCard, ActivityEvent } from '../types/progress';
+import type { StreakState, CustomCollection, SRSCard, ActivityEvent, QuizState } from '../types/progress';
 import { DEFAULT_PROGRESS, LEITNER_INTERVALS } from '../types/progress';
 
 // ─── Helpers ───────────────────────────────────────────────────────────
@@ -35,10 +35,17 @@ interface ProgressContextType {
   // Module completion
   completedGrammar: Record<string, number>;
   completeGrammarTopic: (topicId: string) => void;
+  completedExams: Record<string, number>;
+  completeExam: (examId: string) => void;
   completedUoe: Record<string, number>;
   completeUoeTest: (testId: string) => void;
   completedReading: Record<string, number>;
   completeReadingTest: (testId: string) => void;
+  // Quiz state persistence
+  quizStates: Record<string, QuizState>;
+  saveQuizState: (testId: string, state: Omit<QuizState, 'testId' | 'updatedAt'>) => void;
+  getQuizState: (testId: string) => QuizState | undefined;
+  clearQuizState: (testId: string) => void;
   // Streak
   streak: StreakState;
   // Custom collections
@@ -74,6 +81,9 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   const [completedGrammar, setCompletedGrammar] = useState<Record<string, number>>(
     () => getStorageItem('completedGrammar', DEFAULT_PROGRESS.completedGrammar)
   );
+  const [completedExams, setCompletedExams] = useState<Record<string, number>>(
+    () => getStorageItem('completedExams', DEFAULT_PROGRESS.completedExams)
+  );
   const [completedUoe, setCompletedUoe] = useState<Record<string, number>>(
     () => getStorageItem('completedUoe', DEFAULT_PROGRESS.completedUoe)
   );
@@ -92,6 +102,9 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   const [activityHistory, setActivityHistory] = useState<ActivityEvent[]>(
     () => getStorageItem('activityHistory', DEFAULT_PROGRESS.activityHistory)
   );
+  const [quizStates, setQuizStates] = useState<Record<string, QuizState>>(
+    () => getStorageItem('quizStates', DEFAULT_PROGRESS.quizStates)
+  );
   const [isHydrated, setIsHydrated] = useState(false);
 
   const writeTimers = useRef<Record<string, ReturnType<typeof setTimeout>>>({});
@@ -107,8 +120,8 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
       const payload = {
         username,
         data: {
-          learnedWords, completedGrammar, completedUoe, completedReading,
-          streak, customCollections, srsCards, activityHistory,
+          learnedWords, completedGrammar, completedExams, completedUoe, completedReading,
+          streak, customCollections, srsCards, activityHistory, quizStates,
         }
       };
       fetch('/api/sync/push', {
@@ -117,7 +130,7 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
         body: JSON.stringify(payload)
       }).catch(err => console.error('[Sync Push] Failed:', err));
     }, 2000); // Debounce cloud sync by 2 seconds
-  }, [learnedWords, completedGrammar, completedUoe, completedReading, streak, customCollections, srsCards, activityHistory]);
+  }, [learnedWords, completedGrammar, completedExams, completedUoe, completedReading, streak, customCollections, srsCards, activityHistory, quizStates]);
 
   // ── Cloud Sync Pull (On Mount) ───────────────────────────────────────
   useEffect(() => {
@@ -133,12 +146,14 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
         if (res.success && res.data) {
           if (res.data.learnedWords) setLearnedWords(res.data.learnedWords);
           if (res.data.completedGrammar) setCompletedGrammar(res.data.completedGrammar);
+          if (res.data.completedExams) setCompletedExams(res.data.completedExams);
           if (res.data.completedUoe) setCompletedUoe(res.data.completedUoe);
           if (res.data.completedReading) setCompletedReading(res.data.completedReading);
           if (res.data.streak) setStreak(res.data.streak);
           if (res.data.customCollections) setCustomCollections(res.data.customCollections);
           if (res.data.srsCards) setSrsCards(res.data.srsCards);
           if (res.data.activityHistory) setActivityHistory(res.data.activityHistory);
+          if (res.data.quizStates) setQuizStates(res.data.quizStates);
         }
       })
       .catch(err => console.error('[Sync Pull] Failed:', err))
@@ -156,12 +171,14 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
 
   useEffect(() => { persistAsync('learnedWords', learnedWords); syncToCloud(); }, [learnedWords, persistAsync, syncToCloud]);
   useEffect(() => { persistAsync('completedGrammar', completedGrammar); syncToCloud(); }, [completedGrammar, persistAsync, syncToCloud]);
+  useEffect(() => { persistAsync('completedExams', completedExams); syncToCloud(); }, [completedExams, persistAsync, syncToCloud]);
   useEffect(() => { persistAsync('completedUoe', completedUoe); syncToCloud(); }, [completedUoe, persistAsync, syncToCloud]);
   useEffect(() => { persistAsync('completedReading', completedReading); syncToCloud(); }, [completedReading, persistAsync, syncToCloud]);
   useEffect(() => { persistAsync('streak', streak); syncToCloud(); }, [streak, persistAsync, syncToCloud]);
   useEffect(() => { persistAsync('customCollections', customCollections); syncToCloud(); }, [customCollections, persistAsync, syncToCloud]);
   useEffect(() => { persistAsync('srsCards', srsCards); syncToCloud(); }, [srsCards, persistAsync, syncToCloud]);
   useEffect(() => { persistAsync('activityHistory', activityHistory); syncToCloud(); }, [activityHistory, persistAsync, syncToCloud]);
+  useEffect(() => { persistAsync('quizStates', quizStates); syncToCloud(); }, [quizStates, persistAsync, syncToCloud]);
 
   // ── Activity history: record daily stats ─────────────────────────────
   const recordDailyActivity = useCallback((wordsLearned: number, reviewsDone: number) => {
@@ -281,6 +298,12 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     recordActivity();
   }, [recordActivity]);
 
+  const completeExam = useCallback((examId: string) => {
+    setCompletedExams(prev => ({ ...prev, [examId]: (prev[examId] || 0) + 1 }));
+    logActivity(`Completed Exam: ${examId}`);
+    recordActivity();
+  }, [recordActivity]);
+
   const completeUoeTest = useCallback((testId: string) => {
     setCompletedUoe(prev => ({ ...prev, [testId]: (prev[testId] || 0) + 1 }));
     logActivity(`Completed UoE Test: ${testId}`);
@@ -292,6 +315,31 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     logActivity(`Completed Reading Test: ${testId}`);
     recordActivity();
   }, [recordActivity]);
+
+  // ── Quiz State Persistence ──────────────────────────────────────────
+  const saveQuizState = useCallback((testId: string, state: Omit<QuizState, 'testId' | 'updatedAt'>) => {
+    setQuizStates(prev => ({
+      ...prev,
+      [testId]: {
+        ...state,
+        testId,
+        updatedAt: new Date().toISOString(),
+      },
+    }));
+  }, []);
+
+  const getQuizState = useCallback(
+    (testId: string) => quizStates[testId],
+    [quizStates]
+  );
+
+  const clearQuizState = useCallback((testId: string) => {
+    setQuizStates(prev => {
+      const next = { ...prev };
+      delete next[testId];
+      return next;
+    });
+  }, []);
 
   // ── Custom Collections ───────────────────────────────────────────────
   const createCollection = useCallback((name: string) => {
@@ -336,24 +384,26 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   // ── Data portability ─────────────────────────────────────────────────
   const exportData = useCallback(() => {
     return JSON.stringify({
-      learnedWords, completedGrammar, completedUoe, completedReading,
-      streak, customCollections, srsCards, activityHistory,
+      learnedWords, completedGrammar, completedExams, completedUoe, completedReading,
+      streak, customCollections, srsCards, activityHistory, quizStates,
       timestamp: new Date().toISOString(),
       username: getStorageItem('username', 'User'),
     }, null, 2);
-  }, [learnedWords, completedGrammar, completedUoe, completedReading, streak, customCollections, srsCards, activityHistory]);
+  }, [learnedWords, completedGrammar, completedExams, completedUoe, completedReading, streak, customCollections, srsCards, activityHistory, quizStates]);
 
   const importData = useCallback((json: string) => {
     try {
       const data = JSON.parse(json);
       if (data.learnedWords) setLearnedWords(data.learnedWords);
       if (data.completedGrammar) setCompletedGrammar(data.completedGrammar);
+      if (data.completedExams) setCompletedExams(data.completedExams);
       if (data.completedUoe) setCompletedUoe(data.completedUoe);
       if (data.completedReading) setCompletedReading(data.completedReading);
       if (data.streak) setStreak(data.streak);
       if (data.customCollections) setCustomCollections(data.customCollections);
       if (data.srsCards) setSrsCards(data.srsCards);
       if (data.activityHistory) setActivityHistory(data.activityHistory);
+      if (data.quizStates) setQuizStates(data.quizStates);
       logActivity('Imported Progress Data');
       return true;
     } catch (e) {
@@ -366,8 +416,10 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     <ProgressContext.Provider value={{
       learnedWords, toggleLearnedWord, removeLearnedWord, isWordLearned,
       completedGrammar, completeGrammarTopic,
+      completedExams, completeExam,
       completedUoe, completeUoeTest,
       completedReading, completeReadingTest,
+      quizStates, saveQuizState, getQuizState, clearQuizState,
       streak,
       customCollections, createCollection, renameCollection, deleteCollection,
       toggleWordInCollection, isWordInCollection, getCollectionsForWord,

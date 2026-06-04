@@ -37,7 +37,7 @@ function CustomTooltip({ active, payload, label }: any) {
 }
 
 export default function AnalyticsDashboard() {
-  const { learnedWords, srsCards, streak, activityHistory, completedGrammar, completedUoe, completedReading } = useProgress();
+  const { learnedWords, srsCards, streak, activityHistory, completedGrammar, completedExams, completedUoe, completedReading } = useProgress();
 
   const totalWords = vocabularyData.length;
   const learnedCount = learnedWords.length;
@@ -97,6 +97,7 @@ export default function AnalyticsDashboard() {
 
   // ── Module completion stats ──────────────────────────────────────────
   const grammarCompleted = Object.keys(completedGrammar).length;
+  const examsCompleted = Object.keys(completedExams).length;
   const uoeCompleted = Object.keys(completedUoe).length;
   const readingCompleted = Object.keys(completedReading).length;
 
@@ -148,8 +149,8 @@ export default function AnalyticsDashboard() {
               <TrendingUp size={16} className="text-violet-400" />
               <span className="text-xs text-zinc-500">Modules Done</span>
             </div>
-            <p className="text-2xl font-bold text-white">{grammarCompleted + uoeCompleted + readingCompleted}</p>
-            <p className="text-xs text-zinc-600">G:{grammarCompleted} · U:{uoeCompleted} · R:{readingCompleted}</p>
+            <p className="text-2xl font-bold text-white">{grammarCompleted + examsCompleted + uoeCompleted + readingCompleted}</p>
+            <p className="text-xs text-zinc-600">G:{grammarCompleted} · E:{examsCompleted} · U:{uoeCompleted} · R:{readingCompleted}</p>
           </div>
         </div>
 

@@ -27,6 +27,7 @@ export default function Profile() {
   const { 
     learnedWords, 
     completedGrammar, 
+    completedExams,
     completedUoe, 
     completedReading,
     exportData,
@@ -44,6 +45,7 @@ export default function Profile() {
   const totalWords = vocabularyData.length;
   const completedGrammarCount = Object.values(completedGrammar).filter((v) => v > 0).length;
   const totalGrammar = grammarData.length;
+  const completedExamCount = Object.values(completedExams).filter((v) => v > 0).length;
   const completedUoeCount = Object.values(completedUoe).filter((v) => v > 0).length;
   const completedReadingCount = Object.values(completedReading).filter((v) => v > 0).length;
   const avgWritingScore = writingScores.length > 0
@@ -53,6 +55,7 @@ export default function Profile() {
   const stats = [
     { label: 'Words Learned', value: learnedCount, total: totalWords, icon: BookOpen, color: 'emerald' },
     { label: 'Grammar Topics', value: completedGrammarCount, total: totalGrammar, icon: GraduationCap, color: 'emerald' },
+    { label: 'Exams Completed', value: completedExamCount, total: null, icon: FileText, color: 'amber' },
     { label: 'UoE Tests', value: completedUoeCount, total: null, icon: FileText, color: 'sky' },
     { label: 'Reading Tests', value: completedReadingCount, total: null, icon: BookOpen, color: 'violet' },
     { label: 'Essays Graded', value: writingScores.length, total: null, icon: PenTool, color: 'indigo' },
