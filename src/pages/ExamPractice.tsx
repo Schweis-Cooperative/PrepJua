@@ -8,7 +8,6 @@ import {
   ArrowLeft, 
   Cpu, 
   ShieldAlert, 
-  Sparkles,
   BookOpen,
   ChevronRight,
   GraduationCap
@@ -21,7 +20,7 @@ import { useMistakeBook } from '../hooks/useMistakeBook';
 import AIExplanation from '../components/AIExplanation';
 import { logAnswer, logScore } from '../utils/logger';
 import { endOfYearExamSets } from '../data/endOfYearExamData';
-import { aiChallengesExamSets } from '../data/aiChallengesData';
+import { aiChallengeExamSets } from '../data/aiChallengesData';
 
 const difficultyColors: Record<string, string> = {
   easy: 'bg-emerald-500/10 text-emerald-400 border-emerald-500/20',
@@ -46,7 +45,7 @@ export default function ExamPractice() {
   const [finished, setFinished] = useState(false);
   const { addMistake } = useMistakeBook();
 
-  const allExams = useMemo(() => [...examSets, ...aLevelExamSets, ...bLevelExamSets, ...endOfYearExamSets, ...aiChallengesExamSets], []);
+  const allExams = useMemo(() => [...examSets, ...aLevelExamSets, ...bLevelExamSets, ...endOfYearExamSets, ...aiChallengeExamSets], []);
   const exam = useMemo(() => allExams.find((e) => e.id === selectedExam), [allExams, selectedExam]);
 
   const handleMCAnswer = useCallback((index: number) => {
@@ -330,9 +329,9 @@ export default function ExamPractice() {
               </div>
             )}
           </div>
-        ) : category === 'ai_challenges' ? (
+        ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {aiChallengesExamSets.map((set, i) => (
+            {aiChallengeExamSets.map((set, i) => (
               <motion.button
                 key={set.id}
                 initial={{ opacity: 0, y: 20 }}
@@ -349,17 +348,9 @@ export default function ExamPractice() {
                 </div>
                 <h3 className="text-sm font-semibold text-white mb-1 group-hover:text-indigo-300 transition-colors">{set.title}</h3>
                 <p className="text-xs text-zinc-500 mb-2 line-clamp-2">{set.description}</p>
-                <span className="text-[10px] text-zinc-600 font-medium">{set.questions.length} questions · ~{Math.ceil(set.questions.length * 1.5)} min</span>
+                <span className="text-[10px] text-zinc-600 font-medium">{set.questions.length} questions</span>
               </motion.button>
             ))}
-          </div>
-        ) : (
-          <div className="glass-card rounded-2xl p-12 text-center">
-            <Sparkles size={48} className="text-zinc-700 mx-auto mb-4" />
-            <h2 className="text-lg font-bold text-zinc-400 mb-2">Coming Soon</h2>
-            <p className="text-sm text-zinc-600 max-w-xs mx-auto">
-              Our AI challenge generator is currently being calibrated for the B1+ curriculum.
-            </p>
           </div>
         )}
       </div>

@@ -1,427 +1,412 @@
 import type { ExamSet } from '../types/exam';
 
-export const aiChallengesExamSets: ExamSet[] = [
+export const aiChallengeExamSets: ExamSet[] = [
   {
-    id: 'ai-challenges-easy-1',
-    title: 'AI Challenge — Easy Level Grammar & Vocab',
-    description: 'A comprehensive 40-question practice test focusing on core B1+ vocabulary, tenses, conditionals, and wordpower expressions.',
+    id: 'ai-challenge-easy-1',
+    title: 'AI Challenge — Easy Level Exam',
+    description: 'A comprehensive 40-question practice mock exam powered by AI. Evaluates core B1+ grammar, structure, and vocabulary.',
     difficulty: 'easy',
-    grammarFocus: 'Mixed B1+ Grammar & Wordpower',
+    grammarFocus: 'Subject/Object Questions, Tenses, Conditionals, Used to, Travel & Food Vocabulary',
     questions: [
-      // ── Subject and Object Questions (Q1–Q5) ──
       {
-        id: 'ai-easy-q1',
+        id: 'ai-q1',
         type: 'multiple_choice',
-        question: 'Who _____ you to the party last night?',
-        options: ['invited', 'did invite', 'was inviting', 'invites'],
+        question: 'Who _____ you with your English homework yesterday?',
+        options: ['helped', 'did help', 'does help', 'helping'],
         correctAnswer: 0,
-        explanation: '"Who invited you?" is a subject question (özne sorusu), so we do not use the auxiliary "did".',
+        explanation: 'Özne sorusudur (Who doğrudan özneyi sorar). Bu yüzden "did" yardımcı fiili kullanılmaz ve fiilin 2. hali doğrudan yazılır.',
         difficulty: 'easy',
-        grammarFocus: 'Subject and Object Questions'
+        grammarFocus: 'Subject Questions'
       },
       {
-        id: 'ai-easy-q2',
+        id: 'ai-q2',
         type: 'multiple_choice',
-        question: 'What _____ during the meeting yesterday afternoon?',
-        options: ['happened', 'did happen', 'was happened', 'happening'],
+        question: 'What _____ you discuss during the meeting yesterday morning?',
+        options: ['did', 'does', 'were', 'had'],
         correctAnswer: 0,
-        explanation: '"What happened?" is a subject question asking about the event that took place, so "did" is not used.',
+        explanation: 'Nesne sorusudur (Soru "neyi tartıştınız" anlamına gelir). Geçmiş zaman nesne sorularında yardımcı fiil olarak "did" kullanılır.',
         difficulty: 'easy',
-        grammarFocus: 'Subject and Object Questions'
+        grammarFocus: 'Object Questions'
       },
       {
-        id: 'ai-easy-q3',
+        id: 'ai-q3',
         type: 'multiple_choice',
-        question: 'Who _____ to on the phone when I walked into the room?',
-        options: ['did you talk', 'were you talking', 'you were talking', 'talked you'],
-        correctAnswer: 1,
-        explanation: '"Who were you talking to?" is an object question in the Past Continuous. We need the auxiliary verb "were" before the subject.',
+        question: 'My sister usually _____ to music while studying, but today she is studying in silence.',
+        options: ['listens', 'is listening', 'listen', 'listened'],
+        correctAnswer: 0,
+        explanation: 'Genel alışkanlıklar ve rutinler için Geniş Zaman (Present Simple) kullanılır. Zaman zarfı "usually" bu kullanımı gerektirir.',
         difficulty: 'easy',
-        grammarFocus: 'Subject and Object Questions'
+        grammarFocus: 'Present Simple'
       },
       {
-        id: 'ai-easy-q4',
+        id: 'ai-q4',
         type: 'multiple_choice',
-        question: 'Which book _____ for your literature class last semester?',
-        options: ['did you choose', 'you chose', 'chose you', 'do you choose'],
+        question: 'Look at the sky! The weather _____ very quickly right now.',
+        options: ['is changing', 'changes', 'changed', 'has changed'],
         correctAnswer: 0,
-        explanation: 'This is an object question in the Past Simple, so we use "did" + subject + base verb: "did you choose".',
+        explanation: 'Konuşma anında gerçekleşen veya değişmekte olan durumlar için Şimdiki Zaman (Present Continuous) kullanılır.',
         difficulty: 'easy',
-        grammarFocus: 'Subject and Object Questions'
+        grammarFocus: 'Present Continuous'
       },
       {
-        id: 'ai-easy-q5',
+        id: 'ai-q5',
         type: 'multiple_choice',
-        question: 'How many people _____ at the conference next week?',
-        options: ['will attend', 'did attend', 'are attending', 'attend'],
+        question: 'I _____ my key last night, but luckily I found it this morning.',
+        options: ['lost', 'have lost', 'lose', 'was losing'],
         correctAnswer: 0,
-        explanation: 'This is a subject question about the future: "How many people will attend?" fits here as a predicted subject action.',
+        explanation: 'Geçmişte belirli bir zamanda ("last night") gerçekleşip bitmiş eylemler için Past Simple kullanılır.',
         difficulty: 'easy',
-        grammarFocus: 'Subject and Object Questions'
-      },
-
-      // ── Present Simple vs Present Continuous (Q6–Q10) ──
-      {
-        id: 'ai-easy-q6',
-        type: 'multiple_choice',
-        question: 'I can\'t talk right now because I _____ my English homework.',
-        options: ['am doing', 'do', 'done', 'was doing'],
-        correctAnswer: 0,
-        explanation: 'We use the Present Continuous ("am doing") for an action happening at the moment of speaking.',
-        difficulty: 'easy',
-        grammarFocus: 'Present Simple vs Present Continuous'
+        grammarFocus: 'Past Simple'
       },
       {
-        id: 'ai-easy-q7',
+        id: 'ai-q6',
         type: 'multiple_choice',
-        question: 'She _____ three languages fluently: English, Spanish, and Turkish.',
-        options: ['speaks', 'is speaking', 'speak', 'has spoken'],
+        question: 'We _____ each other since we were children at primary school.',
+        options: ['have known', 'know', 'knew', 'have been knowing'],
         correctAnswer: 0,
-        explanation: 'Speaking a language is a permanent state/ability, so we use the Present Simple ("speaks").',
+        explanation: '"Since" ile başlayan zaman belirteciyle Present Perfect kullanılır. "Know" bir durum fiili (state verb) olduğu için "-ing" takısı almaz.',
         difficulty: 'easy',
-        grammarFocus: 'Present Simple vs Present Continuous'
+        grammarFocus: 'Present Perfect'
       },
       {
-        id: 'ai-easy-q8',
+        id: 'ai-q7',
         type: 'multiple_choice',
-        question: 'I _____ the answer to this difficult question. Can you help me?',
-        options: ['don\'t know', 'am not knowing', 'don\'t knowing', 'not know'],
+        question: 'She is very tired because she _____ in the garden for three hours.',
+        options: ['has been working', 'is working', 'works', 'worked'],
         correctAnswer: 0,
-        explanation: '"Know" is a state verb (durum fiili) and cannot be used in the continuous form. We use the Present Simple "don\'t know".',
+        explanation: 'Geçmişte başlayıp konuşma anına kadar kesintisiz devam eden ve etkisi süren eylemler için Present Perfect Continuous kullanılır.',
         difficulty: 'easy',
-        grammarFocus: 'Present Simple vs Present Continuous'
+        grammarFocus: 'Present Perfect Continuous'
       },
       {
-        id: 'ai-easy-q9',
+        id: 'ai-q8',
         type: 'multiple_choice',
-        question: 'My brother _____ a large apartment in the city center.',
-        options: ['owns', 'is owning', 'own', 'has owned'],
+        question: 'While my mother _____ dinner, the phone suddenly rang.',
+        options: ['was cooking', 'cooked', 'has cooked', 'is cooking'],
         correctAnswer: 0,
-        explanation: '"Own" (sahip olmak) is a state verb and does not take the -ing form. We use the Present Simple "owns".',
+        explanation: 'Geçmişte devam eden bir eylemin (Past Continuous), başka bir anlık eylem tarafından (Past Simple) kesildiğini belirtmek için "while" ile Past Continuous kullanılır.',
         difficulty: 'easy',
-        grammarFocus: 'Present Simple vs Present Continuous'
+        grammarFocus: 'Past Continuous'
       },
       {
-        id: 'ai-easy-q10',
+        id: 'ai-q9',
         type: 'multiple_choice',
-        question: 'Look! The children _____ in the garden. They look very happy.',
-        options: ['are playing', 'play', 'plays', 'have played'],
+        question: 'By the time we arrived at the cinema, the movie _____ already started.',
+        options: ['had', 'was', 'has', 'did'],
         correctAnswer: 0,
-        explanation: '"Look!" indicates the action is happening right now, so we use the Present Continuous "are playing".',
+        explanation: 'Geçmişte bir eylem gerçekleşmeden önce tamamlanmış başka bir eylemi ifade etmek için Past Perfect (had + V3) kullanılır.',
         difficulty: 'easy',
-        grammarFocus: 'Present Simple vs Present Continuous'
-      },
-
-      // ── Present Perfect vs Past Simple (Q11–Q15) ──
-      {
-        id: 'ai-easy-q11',
-        type: 'multiple_choice',
-        question: 'I _____ my keys. I can\'t find them anywhere!',
-        options: ['have lost', 'lost', 'lose', 'am losing'],
-        correctAnswer: 0,
-        explanation: 'We use the Present Perfect ("have lost") for a recent action that has a strong result or effect in the present.',
-        difficulty: 'easy',
-        grammarFocus: 'Present Perfect vs Past Simple'
+        grammarFocus: 'Past Perfect'
       },
       {
-        id: 'ai-easy-q12',
+        id: 'ai-q10',
         type: 'multiple_choice',
-        question: 'We _____ to London for our summer holiday last year.',
-        options: ['went', 'have gone', 'go', 'were going'],
+        question: 'When I was a child, I _____ like eating vegetables, but now I love them.',
+        options: ["didn't use to", "didn't used to", "not used to", "used to not"],
         correctAnswer: 0,
-        explanation: '"Last year" is a specific past time reference, so we must use the Past Simple ("went").',
+        explanation: 'Geçmişteki eski alışkanlıklar veya durumların olumsuz hali "didn\'t use to" şeklinde yazılır. "use" yalın haldedir.',
         difficulty: 'easy',
-        grammarFocus: 'Present Perfect vs Past Simple'
+        grammarFocus: 'Used to'
       },
       {
-        id: 'ai-easy-q13',
+        id: 'ai-q11',
         type: 'multiple_choice',
-        question: '_____ you ever _____ a camel in the desert?',
-        options: ['Have / ridden', 'Did / ride', 'Has / ridden', 'Were / riding'],
+        question: 'I am thirsty. I think I _____ buy a cold bottle of water from the shop.',
+        options: ['will', 'am going to', 'am buying', 'shall'],
         correctAnswer: 0,
-        explanation: '"Ever" indicates a life experience (hayat tecrübesi) without a specific time, so we use the Present Perfect: "Have you ever ridden".',
+        explanation: 'Konuşma anında verilen anlık kararlar (spontaneous decisions) için "will" kullanılır.',
         difficulty: 'easy',
-        grammarFocus: 'Present Perfect vs Past Simple'
+        grammarFocus: 'Future Will'
       },
       {
-        id: 'ai-easy-q14',
+        id: 'ai-q12',
         type: 'multiple_choice',
-        question: 'Shakespeare _____ many famous plays, including Hamlet and Romeo and Juliet.',
-        options: ['wrote', 'has written', 'writes', 'was writing'],
+        question: 'We have already bought the tickets. We _____ to Rome next Tuesday.',
+        options: ['are flying', 'will fly', 'fly', 'are going fly'],
         correctAnswer: 0,
-        explanation: 'Shakespeare is a historical figure who is no longer alive, so his actions belong to a finished past time. We use the Past Simple "wrote".',
+        explanation: 'Önceden planlanmış, ayarlanmış ve hazırlıkları tamamlanmış gelecek zaman planları için Present Continuous (Şimdiki Zaman) kullanımı yaygındır.',
         difficulty: 'easy',
-        grammarFocus: 'Present Perfect vs Past Simple'
+        grammarFocus: 'Present Continuous for Future'
       },
       {
-        id: 'ai-easy-q15',
+        id: 'ai-q13',
         type: 'multiple_choice',
-        question: 'She _____ in this company since she graduated from university.',
-        options: ['has worked', 'worked', 'works', 'is working'],
+        question: 'If you _____ ice, it melts and turns into water.',
+        options: ['heat', 'will heat', 'heated', 'are heating'],
         correctAnswer: 0,
-        explanation: 'The word "since" indicates an action that started in the past and continues up to the present. We use the Present Perfect: "has worked".',
+        explanation: 'Genel geçer doğrulardan bahsettiğimiz için Zero Conditional (If + Present Simple, Present Simple) kullanılır.',
         difficulty: 'easy',
-        grammarFocus: 'Present Perfect vs Past Simple'
-      },
-
-      // ── Present Perfect vs Present Perfect Continuous (Q16–Q20) ──
-      {
-        id: 'ai-easy-q16',
-        type: 'multiple_choice',
-        question: 'I am tired because I _____ in the garden all morning.',
-        options: ['have been working', 'have worked', 'worked', 'am working'],
-        correctAnswer: 0,
-        explanation: 'We use the Present Perfect Continuous ("have been working") to emphasize the duration of a continuous activity that has just finished and has a visible result in the present.',
-        difficulty: 'easy',
-        grammarFocus: 'Present Perfect vs Present Perfect Continuous'
+        grammarFocus: 'Zero Conditional'
       },
       {
-        id: 'ai-easy-q17',
+        id: 'ai-q14',
         type: 'multiple_choice',
-        question: 'How long _____ English at school?',
-        options: ['have you been learning', 'have you learned', 'did you learn', 'do you learn'],
+        question: 'If it rains tomorrow, we _____ the football match.',
+        options: ['will cancel', 'cancel', 'cancelled', 'are cancelling'],
         correctAnswer: 0,
-        explanation: '"How long" is typically used with the Present Perfect Continuous to ask about the duration of an ongoing activity: "have you been learning".',
+        explanation: 'Gelecekte olası durumlar için First Conditional (If + Present Simple, will + V1) kullanılır.',
         difficulty: 'easy',
-        grammarFocus: 'Present Perfect vs Present Perfect Continuous'
+        grammarFocus: 'First Conditional'
       },
       {
-        id: 'ai-easy-q18',
+        id: 'ai-q15',
         type: 'multiple_choice',
-        question: 'I _____ three cups of coffee this morning.',
-        options: ['have drunk', 'have been drinking', 'drank', 'drink'],
+        question: 'We will go for a picnic tomorrow _____ it rains heavily.',
+        options: ['unless', 'if', 'in case', 'since'],
         correctAnswer: 0,
-        explanation: 'We use the Present Perfect Simple ("have drunk") when we talk about a completed quantity or the number of times an action has been completed.',
+        explanation: '"Unless", "-medikçe, -mazsa" (if not) anlamına gelir. "Yağmur şiddetli yağmadıkça pikniğe gideceğiz" anlamı uygundur.',
         difficulty: 'easy',
-        grammarFocus: 'Present Perfect vs Present Perfect Continuous'
+        grammarFocus: 'Conditionals with Unless'
       },
       {
-        id: 'ai-easy-q19',
+        id: 'ai-q16',
         type: 'multiple_choice',
-        question: 'We _____ each other for more than ten years.',
-        options: ['have known', 'have been knowing', 'knew', 'know'],
+        question: 'My brother and I have a lot _____ common; we both love playing tennis and guitar.',
+        options: ['in', 'on', 'with', 'at'],
         correctAnswer: 0,
-        explanation: '"Know" is a state verb (durum fiili), so it cannot be used in the continuous form. We must use the Present Perfect Simple "have known".',
+        explanation: '"Ortak çok yönü olmak" ifadesi İngilizce\'de "have a lot in common" kalıbı ile söylenir.',
         difficulty: 'easy',
-        grammarFocus: 'Present Perfect vs Present Perfect Continuous'
+        grammarFocus: 'Prepositions'
       },
       {
-        id: 'ai-easy-q20',
+        id: 'ai-q17',
         type: 'multiple_choice',
-        question: 'He is sweaty because he _____ for two hours.',
-        options: ['has been running', 'has run', 'ran', 'runs'],
+        question: 'She gets _____ well with her classmates, so she has many friends.',
+        options: ['on', 'up', 'over', 'by'],
         correctAnswer: 0,
-        explanation: 'We use the Present Perfect Continuous ("has been running") to emphasize the ongoing activity that results in his current state.',
+        explanation: '"Biriyle iyi geçinmek / anlaşmak" phrasal verb\'ü "get on well with" şeklindedir.',
         difficulty: 'easy',
-        grammarFocus: 'Present Perfect vs Present Perfect Continuous'
-      },
-
-      // ── Narrative Tenses (Q21–Q25) ──
-      {
-        id: 'ai-easy-q21',
-        type: 'multiple_choice',
-        question: 'While I _____ down the street, I suddenly ran into an old classmate.',
-        options: ['was walking', 'walked', 'had walked', 'have been walking'],
-        correctAnswer: 0,
-        explanation: 'We use the Past Continuous ("was walking") for an action in progress in the past when it was interrupted by another action (Past Simple: "ran").',
-        difficulty: 'easy',
-        grammarFocus: 'Narrative Tenses'
+        grammarFocus: 'Phrasal Verbs'
       },
       {
-        id: 'ai-easy-q22',
+        id: 'ai-q18',
         type: 'multiple_choice',
-        question: 'By the time we arrived at the cinema, the movie _____.',
-        options: ['had already started', 'already started', 'was already starting', 'has already started'],
+        question: 'I take _____ my father; we both have blue eyes and love painting.',
+        options: ['after', 'up', 'over', 'off'],
         correctAnswer: 0,
-        explanation: '"By the time" indicates that one past action was completed before another past action. We use the Past Perfect ("had already started").',
+        explanation: '"Bir aile büyüğüne (fiziksel veya karakter olarak) benzemek" phrasal verb\'ü "take after"dır.',
         difficulty: 'easy',
-        grammarFocus: 'Narrative Tenses'
+        grammarFocus: 'Phrasal Verbs'
       },
       {
-        id: 'ai-easy-q23',
+        id: 'ai-q19',
         type: 'multiple_choice',
-        question: 'She _____ very tired because she had been cleaning the house all afternoon.',
-        options: ['was', 'had been', 'has been', 'was being'],
+        question: 'They used to be best friends, but they began to _____ apart after moving to different cities.',
+        options: ['grow', 'get', 'take', 'go'],
         correctAnswer: 0,
-        explanation: '"Was" is the Past Simple form of the state verb "be". The second clause ("had been cleaning") explains the reason.',
+        explanation: '"Zamanla birbirinden uzaklaşmak / arkadaşlığın soğuması" phrasal verb\'ü "grow apart" olarak ifade edilir.',
         difficulty: 'easy',
-        grammarFocus: 'Narrative Tenses'
+        grammarFocus: 'Phrasal Verbs'
       },
       {
-        id: 'ai-easy-q24',
+        id: 'ai-q20',
         type: 'multiple_choice',
-        question: 'First, he opened the door, _____ his coat, and sat down on the sofa.',
-        options: ['took off', 'had taken off', 'was taking off', 'takes off'],
+        question: 'It took me several months to _____ to the cold climate of London.',
+        options: ['adapt', 'exchange', 'swap', 'replace'],
         correctAnswer: 0,
-        explanation: 'For a sequence of completed events in a past narrative, we use the Past Simple for all actions: "opened... took off... sat".',
+        explanation: '"Yeni bir duruma uyum sağlamak / adapte olmak" fiili "adapt (to)" kelimesidir.',
         difficulty: 'easy',
-        grammarFocus: 'Narrative Tenses'
+        grammarFocus: 'Vocabulary'
       },
       {
-        id: 'ai-easy-q25',
+        id: 'ai-q21',
         type: 'multiple_choice',
-        question: 'The ground was wet because it _____ heavily for hours before we went out.',
-        options: ['had been raining', 'was raining', 'rained', 'has been raining'],
+        question: 'We decided to _____ seats because I wanted to sit next to the window.',
+        options: ['swap', 'convert', 'transform', 'vary'],
         correctAnswer: 0,
-        explanation: 'We use the Past Perfect Continuous ("had been raining") to show the cause of a past situation, focusing on the duration of the activity before that point.',
+        explanation: '"Kendi aralarında yer değiştirmek / takas etmek" (gayriresmi dilde) "swap" fiiliyle ifade edilir.',
         difficulty: 'easy',
-        grammarFocus: 'Narrative Tenses'
-      },
-
-      // ── Used to vs Usually (Q26–Q30) ──
-      {
-        id: 'ai-easy-q26',
-        type: 'multiple_choice',
-        question: 'When I was a child, I _____ spend my weekends fishing with my grandfather.',
-        options: ['used to', 'usually', 'am used to', 'get used to'],
-        correctAnswer: 0,
-        explanation: 'We use "used to" to describe past habits or repeated actions in the past that no longer happen.',
-        difficulty: 'easy',
-        grammarFocus: 'Used to & Usually'
+        grammarFocus: 'Vocabulary'
       },
       {
-        id: 'ai-easy-q27',
+        id: 'ai-q22',
         type: 'multiple_choice',
-        question: 'I _____ go to the gym three times a week now to stay healthy.',
-        options: ['usually', 'used to', 'use to', 'am used to'],
+        question: 'The government wants to protect _____ species like pandas and tigers from disappearing.',
+        options: ['endangered', 'dangerous', 'filthy', 'enormous'],
         correctAnswer: 0,
-        explanation: 'For present habits and routines, we use the Present Simple with adverbs of frequency like "usually" (not "used to").',
+        explanation: '"Nesli tehlike altında olan türler" İngilizce\'de "endangered species" olarak adlandırılır.',
         difficulty: 'easy',
-        grammarFocus: 'Used to & Usually'
+        grammarFocus: 'Vocabulary'
       },
       {
-        id: 'ai-easy-q28',
+        id: 'ai-q23',
         type: 'multiple_choice',
-        question: 'My mother _____ like spicy food, but now she loves it.',
-        options: ['didn\'t use to', 'didn\'t used to', 'usually didn\'t', 'never would'],
+        question: 'We should _____ paper, glass, and plastic to protect our environment.',
+        options: ['recycle', 'damage', 'cut down', 'solve'],
         correctAnswer: 0,
-        explanation: 'The negative form of "used to" is "didn\'t use to" (without the \'d\' at the end of use).',
+        explanation: '"Geri dönüştürmek" anlamına gelen "recycle" fiili, çevre koruma bağlamında en uygun kelimedir.',
         difficulty: 'easy',
-        grammarFocus: 'Used to & Usually'
+        grammarFocus: 'Vocabulary'
       },
       {
-        id: 'ai-easy-q29',
+        id: 'ai-q24',
         type: 'multiple_choice',
-        question: 'Did you _____ play any musical instruments when you were at school?',
-        options: ['use to', 'used to', 'usually', 'using to'],
+        question: 'Instead of complaining, we need to take action and _____ the problem together.',
+        options: ['tackle', 'cause', 'face to', 'know about'],
         correctAnswer: 0,
-        explanation: 'In question forms, the auxiliary "did" is used, so "used to" becomes "use to" (did you use to...).',
+        explanation: '"Bir sorunu ele almak / çözmeye çalışmak / üstesinden gelmek" fiili "tackle" kelimesidir.',
         difficulty: 'easy',
-        grammarFocus: 'Used to & Usually'
+        grammarFocus: 'Vocabulary'
       },
       {
-        id: 'ai-easy-q30',
+        id: 'ai-q25',
         type: 'multiple_choice',
-        question: 'We _____ in a very small town, but now we live in a big city.',
-        options: ['used to live', 'would live', 'are used to living', 'get used to living'],
+        question: 'I don\'t like raw lemons because they taste very _____.',
+        options: ['sour', 'sweet', 'bitter', 'spicy'],
         correctAnswer: 0,
-        explanation: '"Live" is a state verb (durum fiili), so we cannot use "would" to describe past states. We use "used to live".',
+        explanation: 'Limonun tadı "ekşi"dir, bu yüzden doğru sıfat "sour"dır.',
         difficulty: 'easy',
-        grammarFocus: 'Used to & Usually'
-      },
-
-      // ── Future Forms (Q31–Q35) ──
-      {
-        id: 'ai-easy-q31',
-        type: 'multiple_choice',
-        question: 'A: The phone is ringing. B: Don\'t worry, I _____ it!',
-        options: ['will answer', 'am going to answer', 'answer', 'am answering'],
-        correctAnswer: 0,
-        explanation: 'For spontaneous decisions or offers made at the moment of speaking, we use "will".',
-        difficulty: 'easy',
-        grammarFocus: 'Future Forms'
+        grammarFocus: 'Vocabulary'
       },
       {
-        id: 'ai-easy-q32',
+        id: 'ai-q26',
         type: 'multiple_choice',
-        question: 'I _____ my doctor for a regular check-up tomorrow at 10:00 AM.',
-        options: ['am seeing', 'will see', 'see', 'going to see'],
+        question: 'These potato chips are very fresh and _____; you can hear the sound when I eat them.',
+        options: ['crunchy', 'creamy', 'bitter', 'raw'],
         correctAnswer: 0,
-        explanation: 'For fixed personal arrangements/appointments, we use the Present Continuous: "am seeing".',
+        explanation: 'Isırıldığında ses çıkaran, kıtır/çıtır yiyecekleri tarif etmek için "crunchy" sıfatı kullanılır.',
         difficulty: 'easy',
-        grammarFocus: 'Future Forms'
+        grammarFocus: 'Vocabulary'
       },
       {
-        id: 'ai-easy-q33',
+        id: 'ai-q27',
         type: 'multiple_choice',
-        question: 'Look at those dark clouds! It _____ rain very soon.',
-        options: ['is going to', 'will', 'shall', 'is raining'],
+        question: 'Put the milk in the fridge, or it will _____ bad.',
+        options: ['go', 'make', 'do', 'take'],
         correctAnswer: 0,
-        explanation: 'For predictions based on clear present evidence (dark clouds), we use "be going to".',
+        explanation: 'Yiyeceklerin bozulmasını ifade etmek için "go bad" kalıbı kullanılır.',
         difficulty: 'easy',
-        grammarFocus: 'Future Forms'
+        grammarFocus: 'Collocations'
       },
       {
-        id: 'ai-easy-q34',
+        id: 'ai-q28',
         type: 'multiple_choice',
-        question: 'I _____ to Spain this summer. I have already bought the plane tickets.',
-        options: ['am going to travel', 'will travel', 'travel', 'would travel'],
+        question: 'The alarm clock _____ off at 6 AM every morning.',
+        options: ['goes', 'runs', 'starts', 'rings'],
         correctAnswer: 0,
-        explanation: '"am going to travel" represents a pre-planned intention/decision.',
+        explanation: 'Alarmın çalmasını/patlamasını ifade etmek için "go off" (alarm goes off) phrasal verb\'ü kullanılır.',
         difficulty: 'easy',
-        grammarFocus: 'Future Forms'
+        grammarFocus: 'Phrasal Verbs'
       },
       {
-        id: 'ai-easy-q35',
+        id: 'ai-q29',
         type: 'multiple_choice',
-        question: 'Shall we go to the beach this afternoon? I think it _____ sunny.',
-        options: ['will be', 'is going to be', 'is being', 'shall be'],
+        question: 'You cannot get on the airplane without showing your _____ pass.',
+        options: ['boarding', 'crossing', 'campsite', 'vending'],
         correctAnswer: 0,
-        explanation: 'For general predictions about the future based on opinions or thoughts (I think), we use "will".',
+        explanation: 'Uçağa biniş kartına "boarding pass" denir.',
         difficulty: 'easy',
-        grammarFocus: 'Future Forms'
-      },
-
-      // ── Conditionals & Wordpower (Q36–Q40) ──
-      {
-        id: 'ai-easy-q36',
-        type: 'multiple_choice',
-        question: 'If you heat ice, it _____ into water.',
-        options: ['melts', 'will melt', 'melted', 'is melting'],
-        correctAnswer: 0,
-        explanation: 'This is a Zero Conditional sentence representing a general scientific truth: If + Present Simple, Present Simple.',
-        difficulty: 'easy',
-        grammarFocus: 'Zero and First Conditionals'
+        grammarFocus: 'Compound Nouns'
       },
       {
-        id: 'ai-easy-q37',
+        id: 'ai-q30',
         type: 'multiple_choice',
-        question: 'If I study hard tonight, I _____ my English exam tomorrow.',
-        options: ['will pass', 'pass', 'passed', 'am passing'],
+        question: 'During the _____ hour, the public transport is extremely crowded.',
+        options: ['rush', 'jam', 'light', 'lights'],
         correctAnswer: 0,
-        explanation: 'This is a First Conditional sentence representing a highly probable future result: If + Present Simple, will + verb.',
+        explanation: 'Trafiğin ve işe gidiş-dönüş saatlerinin en yoğun olduğu zamana "rush hour" denir.',
         difficulty: 'easy',
-        grammarFocus: 'Zero and First Conditionals'
+        grammarFocus: 'Compound Nouns'
       },
       {
-        id: 'ai-easy-q38',
+        id: 'ai-q31',
         type: 'multiple_choice',
-        question: 'We won\'t go on a picnic tomorrow _____ it stops raining.',
-        options: ['unless', 'if', 'when', 'in case'],
+        question: 'Please be quiet! The baby _____ right now.',
+        options: ['is sleeping', 'sleeps', 'slept', 'has slept'],
         correctAnswer: 0,
-        explanation: '"Unless" means "if not". We won\'t go if it doesn\'t stop raining (yağmur durmazsa gitmeyeceğiz).',
+        explanation: '"Right now" ve "Please be quiet!" ifadeleri eylemin şu an devam ettiğini gösterir, bu yüzden Present Continuous kullanılır.',
         difficulty: 'easy',
-        grammarFocus: 'Zero and First Conditionals'
+        grammarFocus: 'Present Continuous'
       },
       {
-        id: 'ai-easy-q39',
+        id: 'ai-q32',
         type: 'multiple_choice',
-        question: 'Please come in and _____ at home!',
-        options: ['make yourself', 'help yourself', 'do yourself', 'enjoy yourself'],
+        question: '_____ you ever visited a rainforest?',
+        options: ['Have', 'Did', 'Were', 'Do'],
         correctAnswer: 0,
-        explanation: '"make yourself at home" is a fixed collocation meaning "feel comfortable in my home" (kendi evindeymiş gibi hisset).',
+        explanation: 'Hayat tecrübelerini sorarken "Have you ever + V3?" yapısı (Present Perfect) kullanılır.',
         difficulty: 'easy',
-        grammarFocus: 'Wordpower: yourself'
+        grammarFocus: 'Present Perfect'
       },
       {
-        id: 'ai-easy-q40',
+        id: 'ai-q33',
         type: 'multiple_choice',
-        question: 'I was already full after dinner, but the chocolate cake looked so delicious that I decided to _____.',
-        options: ['have a bite', 'have a look', 'have fun', 'have a go'],
+        question: 'I _____ along the street when I suddenly saw my old English teacher.',
+        options: ['was walking', 'walked', 'had walked', 'have walked'],
         correctAnswer: 0,
-        explanation: '"have a bite" (or have a bite to eat) means to eat a small amount of food.',
+        explanation: 'Geçmişte devam eden bir eylem sırasında başka bir eylemin gerçekleşmesini anlatmak için Past Continuous (was walking) kullanılır.',
         difficulty: 'easy',
-        grammarFocus: 'Wordpower: have'
+        grammarFocus: 'Past Continuous'
+      },
+      {
+        id: 'ai-q34',
+        type: 'multiple_choice',
+        question: 'We _____ live in a small village, but now we live in a big city.',
+        options: ['used to', 'usually', 'would', 'are used to'],
+        correctAnswer: 0,
+        explanation: 'Geçmişteki kalıcı durumları (live fiili gibi durum bildiren fiillerle) anlatmak için "used to" kullanılır. "Would" bu tür durum fiilleriyle kullanılmaz.',
+        difficulty: 'easy',
+        grammarFocus: 'Used to'
+      },
+      {
+        id: 'ai-q35',
+        type: 'multiple_choice',
+        question: 'I promise I _____ call you as soon as I arrive at the hotel.',
+        options: ['will', 'am going to', 'am calling', 'shall'],
+        correctAnswer: 0,
+        explanation: 'Söz verme (promises) cümlelerinde "will" kullanılır.',
+        difficulty: 'easy',
+        grammarFocus: 'Future Will'
+      },
+      {
+        id: 'ai-q36',
+        type: 'multiple_choice',
+        question: 'If you study hard, you _____ pass the English exam easily.',
+        options: ['will', 'would', 'did', 'passed'],
+        correctAnswer: 0,
+        explanation: 'First Conditional yapısında koşul cümlesi Present Simple ise ana cümle "will + V1" yapısında olur.',
+        difficulty: 'easy',
+        grammarFocus: 'First Conditional'
+      },
+      {
+        id: 'ai-q37',
+        type: 'multiple_choice',
+        question: 'My phone is broken. Can you help me _____ this problem?',
+        options: ['solve', 'cause', 'face', 'damage'],
+        correctAnswer: 0,
+        explanation: '"Bir problemi çözmek" ifadesi "solve the problem" şeklinde kullanılır.',
+        difficulty: 'easy',
+        grammarFocus: 'Vocabulary'
+      },
+      {
+        id: 'ai-q38',
+        type: 'multiple_choice',
+        question: 'This soup is delicious because it contains fresh _____ like parsley and mint.',
+        options: ['herbs', 'cuisines', 'campsites', 'vending'],
+        correctAnswer: 0,
+        explanation: 'Maydanoz (parsley) ve nane (mint) gibi taze baharat/otlar için "herbs" kelimesi kullanılır.',
+        difficulty: 'easy',
+        grammarFocus: 'Vocabulary'
+      },
+      {
+        id: 'ai-q39',
+        type: 'multiple_choice',
+        question: 'I had a job interview yesterday and it went really _____. I got the job!',
+        options: ['well', 'badly', 'off', 'wrong'],
+        correctAnswer: 0,
+        explanation: 'Bir işin iyi gitmesini ifade etmek için "go well" (went well) kalıbı kullanılır.',
+        difficulty: 'easy',
+        grammarFocus: 'Collocations'
+      },
+      {
+        id: 'ai-q40',
+        type: 'multiple_choice',
+        question: 'We were late for the flight because we got stuck in a traffic _____.',
+        options: ['jam', 'lights', 'crossing', 'lane'],
+        correctAnswer: 0,
+        explanation: 'Trafik sıkışıklığına girmek "get stuck in a traffic jam" ifadesiyle söylenir.',
+        difficulty: 'easy',
+        grammarFocus: 'Compound Nouns'
       }
     ]
   }
