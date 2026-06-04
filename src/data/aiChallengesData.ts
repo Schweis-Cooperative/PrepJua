@@ -164,7 +164,7 @@ export const aiChallengeExamSets: ExamSet[] = [
         question: 'My brother and I have a lot _____ common; we both love playing tennis and guitar.',
         options: ['in', 'on', 'with', 'at'],
         correctAnswer: 0,
-        explanation: '"Ortak çok yönü olmak" ifadesi İngilizce\'de "have a lot in common" kalıbı ile söylenir.',
+        explanation: '"Ortak çok yönü olmak" ifadesi İngilizce\'de "have a lot in common" kalıbı ile söujenir.',
         difficulty: 'easy',
         grammarFocus: 'Prepositions'
       },
@@ -404,7 +404,7 @@ export const aiChallengeExamSets: ExamSet[] = [
         question: 'We were late for the flight because we got stuck in a traffic _____.',
         options: ['jam', 'lights', 'crossing', 'lane'],
         correctAnswer: 0,
-        explanation: 'Trafik sıkışıklığına girmek "get stuck in a traffic jam" ifadesiyle söylenir.',
+        explanation: 'Trafik sıkışıklığına girmek "get stuck in a traffic jam" ifadesiyle söujenir.',
         difficulty: 'easy',
         grammarFocus: 'Compound Nouns'
       }
@@ -816,6 +816,415 @@ export const aiChallengeExamSets: ExamSet[] = [
         explanation: 'Olumsuz bir cümleye katılım göstermek için "Me neither" (ben de sevmem/katılmam) kullanılır.',
         difficulty: 'medium',
         grammarFocus: 'Agreement'
+      }
+    ]
+  },
+  {
+    id: 'ai-challenge-mediumplus-1',
+    title: 'AI Challenge — Medium+ Level Exam',
+    description: 'A comprehensive 40-question practice mock exam powered by AI. Evaluates upper-intermediate (B2) grammar, structure, and vocabulary.',
+    difficulty: 'medium',
+    grammarFocus: 'Mixed Conditionals, Inversion, Complex Passives, Advanced Modals, Reduced Relative Clauses, Advanced Phrasal Verbs, Word Formation',
+    questions: [
+      {
+        id: 'ai-medplus-q1',
+        type: 'multiple_choice',
+        question: 'If Elena _____ the map before setting off on her Patagonia hike, she wouldn\'t be lost in the blizzard right now.',
+        options: ['had checked', 'checked', 'has checked', 'would have checked'],
+        correctAnswer: 0,
+        explanation: 'Karışık Koşul Cümlesi (Mixed Conditional - Type 3 & 2): Geçmişteki bir eylemin (haritayı kontrol etme) günümüzdeki sonucunu (kayıp olmama) anlatmak için If kısmında Past Perfect, ana cümlede ise "would + V1" kullanılır.',
+        difficulty: 'medium',
+        grammarFocus: 'Mixed Conditionals'
+      },
+      {
+        id: 'ai-medplus-q2',
+        type: 'multiple_choice',
+        question: 'If my brother _____ so patient, he would have lost his temper during the difficult negotiations yesterday.',
+        options: ["weren't", "hadn't been", "isn't", "wouldn't be"],
+        correctAnswer: 0,
+        explanation: 'Karışık Koşul Cümlesi (Mixed Conditional - Type 2 & 3): Kişinin genel bir özelliğinin (sabırlı olmama) geçmişteki bir duruma etkisini anlatmak için If kısmında Past Simple (weren\'t), ana cümlede ise "would have + V3" kullanılır.',
+        difficulty: 'medium',
+        grammarFocus: 'Mixed Conditionals'
+      },
+      {
+        id: 'ai-medplus-q3',
+        type: 'multiple_choice',
+        question: 'Seldom _____ such a dramatic and inspiring survival story in the patagonian wilderness.',
+        options: ['have we heard', 'we have heard', 'did we heard', 'we heard'],
+        correctAnswer: 0,
+        explanation: 'Seldom, rarely, barely gibi olumsuz zarflarla başlayan cümlelerde devriklik (inversion) yapılır. Yardımcı fiil (have) özneden önce gelir.',
+        difficulty: 'medium',
+        grammarFocus: 'Inversion'
+      },
+      {
+        id: 'ai-medplus-q4',
+        type: 'multiple_choice',
+        question: 'No sooner _____ at the campsite than the heavy snowstorm began to block all the mountain trails.',
+        options: ['had they arrived', 'they arrived', 'did they arrived', 'they had arrived'],
+        correctAnswer: 0,
+        explanation: '"No sooner... than" yapısında devrik cümle kullanımı yaygındır ve geçmişteki ardışık eylemleri anlatırken "had + özne + V3" yapısı kullanılır.',
+        difficulty: 'medium',
+        grammarFocus: 'Inversion'
+      },
+      {
+        id: 'ai-medplus-q5',
+        type: 'multiple_choice',
+        question: 'Deep-sea ecosystems _____ life without any sunlight near hydrothermal vents.',
+        options: ['are believed to support', 'are believed supporting', 'believe to support', 'were believed to supported'],
+        correctAnswer: 0,
+        explanation: 'Etken-Edilgen dönüşümü: "It is believed that deep-sea ecosystems support..." yapısı "Subject + be believed + to V1" şeklinde kısaltılır.',
+        difficulty: 'medium',
+        grammarFocus: 'Complex Passives'
+      },
+      {
+        id: 'ai-medplus-q6',
+        type: 'multiple_choice',
+        question: 'The candidate _____ the exam rules beforehand, but she claims she didn\'t receive any notification.',
+        options: ['is said to have been told', 'says to have told', 'is said to tell', 'was said to have told'],
+        correctAnswer: 0,
+        explanation: 'Geçmişte yapılmış pasif bir eyleme yönelik iddiayı belirtmek için "Subject + be said + to have been + V3" (söylenmiş olduğu söyleniyor) yapısı kullanılır.',
+        difficulty: 'medium',
+        grammarFocus: 'Complex Passives'
+      },
+      {
+        id: 'ai-medplus-q7',
+        type: 'multiple_choice',
+        question: 'I would rather you _____ the confidential documents with the client yesterday morning.',
+        options: ["hadn't shared", "didn't share", "not share", "wouldn't share"],
+        correctAnswer: 0,
+        explanation: '"Would rather" kalıbından sonra gelen özne farklıysa ve eylem geçmiş zamana aitse Past Perfect (hadn\'t shared) kullanılır.',
+        difficulty: 'medium',
+        grammarFocus: 'Advanced Modals'
+      },
+      {
+        id: 'ai-medplus-q8',
+        type: 'multiple_choice',
+        question: 'The project team regrets _____ you that the funding for the local library extension has been suspended.',
+        options: ['to inform', 'informing', 'inform', 'to informing'],
+        correctAnswer: 0,
+        explanation: 'Üzücü bir haberi vermekten duyulan pişmanlığı/üzüntüyü ifade ederken "regret" fiilinden sonra "to + infinitive" (to inform) gelir.',
+        difficulty: 'medium',
+        grammarFocus: 'Gerunds and Infinitives'
+      },
+      {
+        id: 'ai-medplus-q9',
+        type: 'multiple_choice',
+        question: 'We proposed _____ the obsolete office systems with modern cloud infrastructure to cut down on costs.',
+        options: ['replacing', 'to replace', 'replace', 'to replacing'],
+        correctAnswer: 0,
+        explanation: '"Propose" (önermek) fiili kendisinden sonra doğrudan bir fiil geldiğinde "-ing" (gerund) yapısı alır.',
+        difficulty: 'medium',
+        grammarFocus: 'Gerunds and Infinitives'
+      },
+      {
+        id: 'ai-medplus-q10',
+        type: 'multiple_choice',
+        question: 'The international committee consists of fifteen scientists, many of _____ have studied polar climate change.',
+        options: ['whom', 'which', 'who', 'whose'],
+        correctAnswer: 0,
+        explanation: 'Preposition (of) arkasından insanları nitelemek için "whom" ilgi zamiri kullanılır. "Who" bu konumda doğrudan kullanılamaz.',
+        difficulty: 'medium',
+        grammarFocus: 'Relative Clauses'
+      },
+      {
+        id: 'ai-medplus-q11',
+        type: 'multiple_choice',
+        question: 'The emergency plan, details of _____ were kept secret from the public, was successfully executed yesterday.',
+        options: ['which', 'whom', 'what', 'whose'],
+        correctAnswer: 0,
+        explanation: 'Cansız bir varlığı (planı) niteleyen prepositional relative clause yapısında "of which" kullanılır.',
+        difficulty: 'medium',
+        grammarFocus: 'Relative Clauses'
+      },
+      {
+        id: 'ai-medplus-q12',
+        type: 'multiple_choice',
+        question: 'Any student _____ in the long-term research project is expected to submit a weekly progress report.',
+        options: ['involved', 'involving', 'who involved', 'was involved'],
+        correctAnswer: 0,
+        explanation: 'Sıfat tümleci kısaltması (Reduced Relative Clause): "who is involved" yapısı pasif anlam taşıdığı için kısaltıldığında sadece V3 ("involved") kalır.',
+        difficulty: 'medium',
+        grammarFocus: 'Reduced Relative Clauses'
+      },
+      {
+        id: 'ai-medplus-q13',
+        type: 'multiple_choice',
+        question: 'But for his timely warning during the blizzard, the mountain guides _____ their way in the Patagonia storm.',
+        options: ['would have lost', 'would lose', 'had lost', 'lost'],
+        correctAnswer: 0,
+        explanation: '"But for" (-olmasaydı) yapısı gizli bir koşul cümlesidir. Geçmişteki gerçek dışı durumdan bahsettiği için ana cümlede "would have + V3" (would have lost) kullanılır.',
+        difficulty: 'medium',
+        grammarFocus: 'Mixed Conditionals'
+      },
+      {
+        id: 'ai-medplus-q14',
+        type: 'multiple_choice',
+        question: 'We will go ahead with the deep-sea exploration project _____ the weather conditions remain stable.',
+        options: ['provided that', 'unless', 'even if', 'in case'],
+        correctAnswer: 0,
+        explanation: '"Provided that" (koşuluyla / şartıyla), "as long as" ile aynı anlamda bir koşul bağlacıdır.',
+        difficulty: 'medium',
+        grammarFocus: 'Advanced Conjunctions'
+      },
+      {
+        id: 'ai-medplus-q15',
+        type: 'multiple_choice',
+        question: 'You should carry backup battery packs for your GPS device _____ it runs out of power during the expedition.',
+        options: ['in case', 'unless', 'so that', 'on condition that'],
+        correctAnswer: 0,
+        explanation: '"In case" (-durumunda / -ihtimaline karşı) tedbir bildiren cümlelerde kullanılır.',
+        difficulty: 'medium',
+        grammarFocus: 'Advanced Conjunctions'
+      },
+      {
+        id: 'ai-medplus-q16',
+        type: 'multiple_choice',
+        question: 'I wish the local council _____ cutting down the old trees in our neighborhood; it makes me so angry.',
+        options: ['would stop', 'had stopped', 'stopped', 'will stop'],
+        correctAnswer: 0,
+        explanation: 'Şimdiki zamandaki rahatsız edici veya değiştirilmek istenen alışkanlıkları/durumları belirtmek için "wish + would + V1" yapısı kullanılır.',
+        difficulty: 'medium',
+        grammarFocus: 'Wish Clauses'
+      },
+      {
+        id: 'ai-medplus-q17',
+        type: 'multiple_choice',
+        question: 'The manager made the developers _____ the entire source code to fix the security vulnerability.',
+        options: ['rewrite', 'to rewrite', 'rewriting', 'rewritten'],
+        correctAnswer: 0,
+        explanation: 'Ettirgen "make" fiili aktif yapıda yalın fiil (bare infinitive - "rewrite") alır.',
+        difficulty: 'medium',
+        grammarFocus: 'Gerunds and Infinitives'
+      },
+      {
+        id: 'ai-medplus-q18',
+        type: 'multiple_choice',
+        question: 'The scientists need to _____ more research to determine the exact effects of the new substance on wildlife.',
+        options: ['carry out', 'bring about', 'take up', 'put up with'],
+        correctAnswer: 0,
+        explanation: '"Bir araştırmayı, görevi veya planı yürütmek/gerçekleştirmek" anlamındaki phrasal verb "carry out"dur.',
+        difficulty: 'medium',
+        grammarFocus: 'Phrasal Verbs'
+      },
+      {
+        id: 'ai-medplus-q19',
+        type: 'multiple_choice',
+        question: 'The dramatic changes in the climate have _____ serious challenges for the agricultural sector.',
+        options: ['brought about', 'come across', 'run out of', 'held back'],
+        correctAnswer: 0,
+        explanation: '"Bir duruma sebep olmak / yol açmak" anlamındaki phrasal verb "bring about"dur.',
+        difficulty: 'medium',
+        grammarFocus: 'Phrasal Verbs'
+      },
+      {
+        id: 'ai-medplus-q20',
+        type: 'multiple_choice',
+        question: 'I cannot _____ his irritating behavior and lack of punctuality any longer.',
+        options: ['put up with', 'get along with', 'look forward to', 'keep up with'],
+        correctAnswer: 0,
+        explanation: '"Bir olumsuz duruma veya kişiye katlanmak / tolere etmek" anlamına gelen phrasal verb "put up with"dir.',
+        difficulty: 'medium',
+        grammarFocus: 'Phrasal Verbs'
+      },
+      {
+        id: 'ai-medplus-q21',
+        type: 'multiple_choice',
+        question: 'While sorting through the archive files, I _____ an interesting document about early polar exploration.',
+        options: ['came across', 'brought up', 'cut off', 'took after'],
+        correctAnswer: 0,
+        explanation: '"Tesadüfen karşılaşmak / bulmak" anlamına gelen phrasal verb "come across"dur.',
+        difficulty: 'medium',
+        grammarFocus: 'Phrasal Verbs'
+      },
+      {
+        id: 'ai-medplus-q22',
+        type: 'multiple_choice',
+        question: 'She decided to _____ photography as a hobby after her retirement.',
+        options: ['take up', 'take after', 'take charge', 'take over'],
+        correctAnswer: 0,
+        explanation: '"Yeni bir hobiye, aktiviteye veya işe başlamak" anlamındaki phrasal verb "take up"tır.',
+        difficulty: 'medium',
+        grammarFocus: 'Phrasal Verbs'
+      },
+      {
+        id: 'ai-medplus-q23',
+        type: 'multiple_choice',
+        question: 'The local government stressed the _____ of protecting endangered species from extinction.',
+        options: ['necessity', 'necessary', 'necessitate', 'necessarily'],
+        correctAnswer: 0,
+        explanation: 'İsimleştiren "-ity" son ekiyle türetilen "necessity" (gereklilik), boşluğa uygun isim formudur.',
+        difficulty: 'medium',
+        grammarFocus: 'Word Formation'
+      },
+      {
+        id: 'ai-medplus-q24',
+        type: 'multiple_choice',
+        question: 'It is highly _____ that the weather will clear up before tomorrow morning\'s flight.',
+        options: ['unlikely', 'dislike', 'improbable', 'unusual'],
+        correctAnswer: 0,
+        explanation: '"İhtimal dışı / olası olmayan" anlamındaki sıfat "unlikely"dır.',
+        difficulty: 'medium',
+        grammarFocus: 'Word Formation'
+      },
+      {
+        id: 'ai-medplus-q25',
+        type: 'multiple_choice',
+        question: 'The architect suggested making a minor _____ to the building design to improve energy efficiency.',
+        options: ['alteration', 'exchange', 'conversion', 'replacement'],
+        correctAnswer: 0,
+        explanation: 'Bir şey üzerinde yapılan ufak değişiklik/düzeltme anlamındaki isim "alteration"dır (alter fiilinden).',
+        difficulty: 'medium',
+        grammarFocus: 'Vocabulary'
+      },
+      {
+        id: 'ai-medplus-q26',
+        type: 'multiple_choice',
+        question: 'Don\'t let these fresh herbs _____ to waste; use them in the tomato soup tonight.',
+        options: ['go', 'make', 'run', 'take'],
+        correctAnswer: 0,
+        explanation: 'Ziyan olmak / boşa gitmek deyimsel ifadesi "go to waste" şeklindedir.',
+        difficulty: 'medium',
+        grammarFocus: 'Wordpower'
+      },
+      {
+        id: 'ai-medplus-q27',
+        type: 'multiple_choice',
+        question: 'The security protocol demands that everyone _____ their ID badges visible at all times.',
+        options: ['keep', 'keeps', 'to keep', 'keeping'],
+        correctAnswer: 0,
+        explanation: 'İngilizce\'de "demand, insist, suggest, recommend" gibi talep/öneri bildiren fiillerden sonraki "that" cümlelerinde fiilin yalın hali (Subjunctive) kullanılır.',
+        difficulty: 'medium',
+        grammarFocus: 'Subjunctive'
+      },
+      {
+        id: 'ai-medplus-q28',
+        type: 'multiple_choice',
+        question: 'You _____ taken the expensive taxi; I would have gladly picked you up from the airport.',
+        options: ["needn't have", "didn't need to", "must not have", "shouldn't have"],
+        correctAnswer: 0,
+        explanation: 'Geçmişte gerek olmadığı halde yapılmış ve boşa gitmiş eylemleri anlatmak için "needn\'t have + V3" (yapmana gerek yoktu ama yaptın) kullanılır.',
+        difficulty: 'medium',
+        grammarFocus: 'Advanced Modals'
+      },
+      {
+        id: 'ai-medplus-q29',
+        type: 'multiple_choice',
+        question: 'The document _____ by the committee yesterday details the new environmental guidelines.',
+        options: ['approved', 'approving', 'which approved', 'was approved'],
+        correctAnswer: 0,
+        explanation: 'Sıfat tümleci kısaltması (Relative Clause Reduction): "which was approved by..." yapısı "approved by..." şeklinde kısaltılır.',
+        difficulty: 'medium',
+        grammarFocus: 'Reduced Relative Clauses'
+      },
+      {
+        id: 'ai-medplus-q30',
+        type: 'multiple_choice',
+        question: 'The development team is dedicated to _____ the user interface based on student feedback.',
+        options: ['improving', 'improve', 'to improve', 'improved'],
+        correctAnswer: 0,
+        explanation: '"Be dedicated to" (kendini adamak) yapısındaki "to" bir edattır (preposition) ve arkasından isim veya fiilin "-ing" hali (gerund) gelir.',
+        difficulty: 'medium',
+        grammarFocus: 'Gerunds and Infinitives'
+      },
+      {
+        id: 'ai-medplus-q31',
+        type: 'multiple_choice',
+        question: 'The sudden _____ of the key witness forced the court to delay the trial.',
+        options: ['disappearance', 'disappear', 'disappeared', 'appearance'],
+        correctAnswer: 0,
+        explanation: 'İsimleştiren "-ance" son ekiyle türetilen "disappearance" (ortadan kaybolma), iyelik veya belirtici sonrasında gelen isim formudur.',
+        difficulty: 'medium',
+        grammarFocus: 'Word Formation'
+      },
+      {
+        id: 'ai-medplus-q32',
+        type: 'multiple_choice',
+        question: 'It is hard for rural students to _____ the rapid updates in digital education tools.',
+        options: ['keep up with', 'run out of', 'fall out with', 'look down on'],
+        correctAnswer: 0,
+        explanation: '"Hızına ayak uydurmak / takip etmek / geri kalmamak" anlamına gelen phrasal verb "keep up with"dir.',
+        difficulty: 'medium',
+        grammarFocus: 'Phrasal Verbs'
+      },
+      {
+        id: 'ai-medplus-q33',
+        type: 'multiple_choice',
+        question: 'The arctic guide\'s extensive knowledge of mountain paths is _____ to our expedition\'s success.',
+        options: ['integral', 'bizarre', 'impatient', 'underrated'],
+        correctAnswer: 0,
+        explanation: '"Temel, ayrılmaz, bütünleyici parça" anlamına gelen sıfat "integral"dir.',
+        difficulty: 'medium',
+        grammarFocus: 'Vocabulary'
+      },
+      {
+        id: 'ai-medplus-q34',
+        type: 'multiple_choice',
+        question: 'Before launching the software, the team must _____ all technical errors.',
+        options: ['resolve', 'cause', 'face', 'damage'],
+        correctAnswer: 0,
+        explanation: 'Sorunları/hata/anlaşmazlıkları çözmek anlamında "resolve" (çözüme kavuşturmak) kelimesi en uygun fiildir.',
+        difficulty: 'medium',
+        grammarFocus: 'Vocabulary'
+      },
+      {
+        id: 'ai-medplus-q35',
+        type: 'multiple_choice',
+        question: 'I love making guacamole using raw avocados because it has a rich, _____ texture.',
+        options: ['creamy', 'bitter', 'crunchy', 'sour'],
+        correctAnswer: 0,
+        explanation: 'Avokadonun yumuşak ve pürüzsüz yapısı "creamy" (kremsi/yumuşak) sıfatıyla tarif edilir.',
+        difficulty: 'medium',
+        grammarFocus: 'Vocabulary'
+      },
+      {
+        id: 'ai-medplus-q36',
+        type: 'multiple_choice',
+        question: 'My supervisor objects to _____ the project deadline without a valid reason.',
+        options: ['extending', 'extend', 'to extend', 'extended'],
+        correctAnswer: 0,
+        explanation: '"Object to" (itiraz etmek) yapısındaki "to" bir edattır (preposition) ve arkasından gerund ("extending") gelir.',
+        difficulty: 'medium',
+        grammarFocus: 'Gerunds and Infinitives'
+      },
+      {
+        id: 'ai-medplus-q37',
+        type: 'multiple_choice',
+        question: 'Due to the storm, the flights were delayed; _____ a result, hundreds of passengers were stranded at the airport.',
+        options: ['as', 'by', 'for', 'in'],
+        correctAnswer: 0,
+        explanation: 'Neden-sonuç bildiren kalıp ifade "as a result" (sonuç olarak) şeklindedir.',
+        difficulty: 'medium',
+        grammarFocus: 'Prepositional Phrases'
+      },
+      {
+        id: 'ai-medplus-q38',
+        type: 'multiple_choice',
+        question: 'The researcher\'s presentation was very _____, providing clear solutions to the traffic problem.',
+        options: ['informative', 'information', 'inform', 'informatively'],
+        correctAnswer: 0,
+        explanation: 'Özneyi ("presentation") niteleyen sıfat aranmaktadır. Bilgilendirici anlamında "informative" sıfatı uygundur.',
+        difficulty: 'medium',
+        grammarFocus: 'Word Formation'
+      },
+      {
+        id: 'ai-medplus-q39',
+        type: 'multiple_choice',
+        question: 'They struggled to _____ a workable solution to the complex network issues.',
+        options: ['come up with', 'look forward to', 'put up with', 'run out of'],
+        correctAnswer: 0,
+        explanation: '"Bir fikir/çözüm yolu bulmak veya üretmek" anlamına gelen phrasal verb "come up with"dir.',
+        difficulty: 'medium',
+        grammarFocus: 'Phrasal Verbs'
+      },
+      {
+        id: 'ai-medplus-q40',
+        type: 'multiple_choice',
+        question: 'We chose that hotel because it was close to public transport, and _____ instance, there was a metro station right outside.',
+        options: ['for', 'as', 'by', 'in'],
+        correctAnswer: 0,
+        explanation: 'Örnekleme yaparken kullanılan "for instance" (örneğin) kalıp ifadesi tamamlanmaktadır.',
+        difficulty: 'medium',
+        grammarFocus: 'Prepositional Phrases'
       }
     ]
   }
