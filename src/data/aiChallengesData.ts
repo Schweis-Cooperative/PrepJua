@@ -413,409 +413,409 @@ export const aiChallengeExamSets: ExamSet[] = [
   {
     id: 'ai-challenge-medium-1',
     title: 'AI Challenge — Medium Level Exam',
-    description: 'An intermediate 40-question practice mock exam powered by AI. Evaluates B1/B2 grammar structures and vocabulary.',
+    description: 'A comprehensive 40-question practice mock exam powered by AI. Evaluates intermediate (B1/B2) grammar, structure, and vocabulary.',
     difficulty: 'medium',
-    grammarFocus: 'Narrative Tenses, Passives, Modals of Obligation/Speculation, Second/Third Conditionals, Relative Clauses',
+    grammarFocus: 'Narrative Tenses, Modals, Causatives, Conditionals, Relative Clauses, Phrasal Verbs, Word Formation',
     questions: [
       {
         id: 'ai-med-q1',
         type: 'multiple_choice',
-        question: 'I _____ this book all afternoon, but I _____ only fifty pages so far.',
-        options: ['have been reading / have read', 'have read / have been reading', 'am reading / read', 'was reading / have read'],
+        question: 'By the time the rescue team finally reached the stranded climbers, they _____ for over twelve hours in the freezing storm.',
+        options: ['had been waiting', 'were waiting', 'have been waiting', 'would wait'],
         correctAnswer: 0,
-        explanation: 'Süregiden bir eylemi ve onun geçici etkisini anlatmak için ilk kısımda Present Perfect Continuous ("have been reading"), şu ana kadar elde edilen miktarı/sonucu belirtmek için ise ikinci kısımda Present Perfect Simple ("have read") kullanılır.',
+        explanation: 'Geçmişte başka bir eylemden önce başlayıp o ana kadar devam eden eylemin süresini belirtmek için Past Perfect Continuous (had been waiting) kullanılır.',
         difficulty: 'medium',
-        grammarFocus: 'Present Perfect Continuous vs Simple'
+        grammarFocus: 'Past Perfect Continuous'
       },
       {
         id: 'ai-med-q2',
         type: 'multiple_choice',
-        question: 'By the time the ambulance arrived, the police officers _____ already _____ the injured driver.',
-        options: ['had / rescued', 'were / rescuing', 'did / rescue', 'have / rescued'],
+        question: 'David looked absolutely shocked when he heard the news. He _____ known about the secret plan beforehand.',
+        options: ["can't have", "must have", "shouldn't have", "didn't need to"],
         correctAnswer: 0,
-        explanation: 'Geçmişte gerçekleşen bir olaydan ("arrived") daha önce tamamlanmış olan bir eylemi anlatmak için Past Perfect Tense ("had rescued") kullanılır.',
+        explanation: 'Geçmişe yönelik güçlü bir olumsuz çıkarım (deduction) yapmak için "can\'t have + V3" (bilmiş olması imkansız/olamaz) yapısı kullanılır.',
         difficulty: 'medium',
-        grammarFocus: 'Past Perfect'
+        grammarFocus: 'Modals of Past Deduction'
       },
       {
         id: 'ai-med-q3',
         type: 'multiple_choice',
-        question: 'When we were children, my grandfather _____ always take us to the local park, but he didn\'t use to _____ pets in the house.',
-        options: ['would / keep', 'used to / keeping', 'would / keeping', 'used / keep'],
+        question: 'I really _____ shared the draft proposal with the client before the team leader reviewed and approved it.',
+        options: ["shouldn't have", "must not have", "didn't have to", "couldn't have"],
         correctAnswer: 0,
-        explanation: 'Geçmişteki tekrarlanan aksiyonlar için "would" kullanılabilir. "Didn\'t use to" yapısından sonra ise yalın fiil ("keep") gelir.',
+        explanation: 'Geçmişte yapılan bir hatadan dolayı pişmanlığı belirtmek için "shouldn\'t have + V3" (yapmamalıydım ama yaptım) kullanılır.',
         difficulty: 'medium',
-        grammarFocus: 'Used to & Would'
+        grammarFocus: 'Modals of Regret'
       },
       {
         id: 'ai-med-q4',
         type: 'multiple_choice',
-        question: 'Although the storm was severe, the pilot _____ land the plane safely on the second attempt.',
-        options: ['was able to', 'could', 'can', 'managed'],
+        question: 'Instead of painting the living room ourselves, we decided to have it _____ by a professional team.',
+        options: ['painted', 'paint', 'painting', 'to paint'],
         correctAnswer: 0,
-        explanation: 'Geçmişte yaşanmış belirli bir zorluk durumunda başarıyla tamamlanan tekil bir eylemi anlatmak için "could" yerine "was able to" veya "managed to" kullanılır. Seçeneklerde "managed" yanında "to" olmadığı için "was able to" doğrudur.',
+        explanation: 'Ettirgen yapı (Causative): "have + nesne + V3" yapısı kullanılır (bir şeyi birine yaptırmak).',
         difficulty: 'medium',
-        grammarFocus: 'Modals of Ability'
+        grammarFocus: 'Causative'
       },
       {
         id: 'ai-med-q5',
         type: 'multiple_choice',
-        question: 'Please don\'t call me at 9 PM tonight because I _____ my favorite TV series at that time.',
-        options: ['will be watching', 'will watch', 'will have watched', 'am going to watch'],
+        question: 'If our local library _____ open on Sundays, I would study there instead of noisy coffee shops.',
+        options: ['were', 'is', 'would be', 'had been'],
         correctAnswer: 0,
-        explanation: 'Gelecekte belirli bir zaman diliminde devam ediyor olacak sürekli bir eylemi anlatmak için Future Continuous Tense ("will be watching") kullanılır.',
+        explanation: 'Şimdiki zamanda hayali/gerçek dışı durumları anlatan Second Conditional cümlelerinde "If" kısmında Past Simple (be fiili için were) kullanılır.',
         difficulty: 'medium',
-        grammarFocus: 'Future Continuous'
+        grammarFocus: 'Second Conditional'
       },
       {
         id: 'ai-med-q6',
         type: 'multiple_choice',
-        question: 'By the end of next month, our team _____ the development of the new mobile application.',
-        options: ['will have completed', 'will be completing', 'will complete', 'completes'],
+        question: 'If the security team had checked the cameras earlier, the thief _____ caught before escaping.',
+        options: ['would have been', 'would be', 'had been', 'was'],
         correctAnswer: 0,
-        explanation: 'Gelecekteki belirli bir noktaya ("by the end of next month") kadar tamamlanmış olacak eylemleri anlatmak için Future Perfect Tense ("will have completed") kullanılır.',
+        explanation: 'Geçmişte gerçekleşmemiş durumlar için Third Conditional (If + Past Perfect, would have + V3) kullanılır. Pasif yapı olduğu için "would have been V3" uygundur.',
         difficulty: 'medium',
-        grammarFocus: 'Future Perfect'
+        grammarFocus: 'Third Conditional'
       },
       {
         id: 'ai-med-q7',
         type: 'multiple_choice',
-        question: 'You _____ wear a tie in the office, but most employees prefer to wear one anyway.',
-        options: ["don't have to", "mustn't", "shouldn't", "ought not to"],
+        question: '_____ the severe weather warnings, the hiking group decided to continue their climb up the mountain.',
+        options: ['Despite', 'Although', 'Even though', 'Whereas'],
         correctAnswer: 0,
-        explanation: 'Zorunluluk olmaması durumunu belirtmek için "don\'t have to" (zorunda değilsin) kullanılır. "Mustn\'t" ise yasak belirtir.',
+        explanation: '"Despite" (rağmen) arkasından bir isim öbeği (noun phrase) alır. "Although" ve "Even though" ise tam cümle alır.',
         difficulty: 'medium',
-        grammarFocus: 'Modals of Obligation'
+        grammarFocus: 'Contrast Linkers'
       },
       {
         id: 'ai-med-q8',
         type: 'multiple_choice',
-        question: 'I had a great time at the party, but I _____ stay up so late because I had an early meeting the next morning.',
-        options: ['shouldn’t have', 'mustn’t have', 'didn’t need', 'had to'],
+        question: 'The young candidate, _____ research proposal won the national science award, will join our lab next month.',
+        options: ['whose', 'who', 'whom', 'which'],
         correctAnswer: 0,
-        explanation: 'Geçmişte yapılmaması gereken ama yapılan bir eyleme yönelik pişmanlık veya eleştiri belirtmek için "shouldn\'t have + V3" yapısı kullanılır.',
+        explanation: 'İyelik bildirmek (adayın araştırma önerisi) için ilgi zamiri olarak "whose" kullanılır.',
         difficulty: 'medium',
-        grammarFocus: 'Past Modals of Obligation'
+        grammarFocus: 'Relative Clauses'
       },
       {
         id: 'ai-med-q9',
         type: 'multiple_choice',
-        question: 'Look! The lights in their house are turned off and their car is gone. They _____ be out.',
-        options: ['must', 'can\'t', 'might not', 'should'],
+        question: 'It was his lack of patience _____ ultimately caused the negotiations to fail.',
+        options: ['that', 'which', 'what', 'who'],
         correctAnswer: 0,
-        explanation: 'Güçlü bir kanıta dayanarak yapılan olumlu çıkarımlarda (yüksek olasılık) "must" modal yapısı kullanılır ("dışarıda olmalılar").',
+        explanation: 'Vurgulu cümle (Cleft Sentence) yapısı: "It is/was + vurgulanan öge + that/who..." şeklinde kurulur.',
         difficulty: 'medium',
-        grammarFocus: 'Modals of Deduction'
+        grammarFocus: 'Cleft Sentences'
       },
       {
         id: 'ai-med-q10',
         type: 'multiple_choice',
-        question: 'The window is broken and some money is missing. The thief _____ entered through the kitchen window.',
-        options: ['must have', 'can\'t have', 'should have', 'would have'],
+        question: 'I distinctly remember _____ the windows before leaving the house, so someone must have broken in.',
+        options: ['locking', 'to lock', 'locked', 'lock'],
         correctAnswer: 0,
-        explanation: 'Geçmişe yönelik güçlü bir kanıta dayanan olumlu çıkarımlarda "must have + V3" yapısı kullanılır.',
+        explanation: 'Geçmişte yapılmış bir eylemi hatırlamak anlamında "remember" fiilinden sonra "-ing" (gerund) gelir. (Hatırlayıp kilitledim).',
         difficulty: 'medium',
-        grammarFocus: 'Past Modals of Deduction'
+        grammarFocus: 'Verb Patterns'
       },
       {
         id: 'ai-med-q11',
         type: 'multiple_choice',
-        question: 'I tried to call both of my friends, but _____ of them answered their phones because they were in class.',
-        options: ['neither', 'either', 'both', 'none'],
+        question: 'Please don\'t forget _____ the gas valve before you go on holiday.',
+        options: ['to turn off', 'turning off', 'turned off', 'turn off'],
         correctAnswer: 0,
-        explanation: 'İki kişiden veya nesneden bahsederken, ikisinin de olumsuz olduğunu belirtmek için "neither (of)" kullanılır.',
+        explanation: 'Gelecekte yapılması gereken bir şeyi unutmamak anlamında "forget" fiilinden sonra "to + infinitive" gelir.',
         difficulty: 'medium',
-        grammarFocus: 'Quantifiers'
+        grammarFocus: 'Verb Patterns'
       },
       {
         id: 'ai-med-q12',
         type: 'multiple_choice',
-        question: 'You can choose _____ the red jacket or the blue one; unfortunately, you cannot have both.',
-        options: ['either', 'neither', 'both', 'none'],
+        question: 'Since the museum offered free admission on Thursday, we _____ pay for the tickets.',
+        options: ["didn't have to", "must not", "shouldn't", "needn't have"],
         correctAnswer: 0,
-        explanation: 'İki seçenekten birini seçme durumunu ("ya ... ya da ...") ifade etmek için "either ... or ..." kalıbı kullanılır.',
+        explanation: 'Geçmişte bir şeyin yapılmasına gerek olmadığını ve bu yüzden yapılmadığını ifade etmek için "didn\'t have to" kullanılır.',
         difficulty: 'medium',
-        grammarFocus: 'Quantifiers'
+        grammarFocus: 'Modals of Necessity'
       },
       {
         id: 'ai-med-q13',
         type: 'multiple_choice',
-        question: 'David said, \'I have already booked the flight.\' -> David told me that he _____ already _____ the flight.',
-        options: ['had / booked', 'has / booked', 'was / booking', 'would / book'],
+        question: 'This time tomorrow, we _____ over the Alps on our way to Geneva.',
+        options: ['will be flying', 'will fly', 'will have flown', 'are flying'],
         correctAnswer: 0,
-        explanation: 'Dolaylı anlatımda (Reported Speech), ana cümle geçmiş zaman ("told") ile kurulduğunda aktarılan cümledeki Present Perfect, Past Perfect\'e ("had booked") dönüşür.',
+        explanation: 'Gelecekte belirli bir anda devam etmekte olacak eylemler için Future Continuous (will be flying) kullanılır.',
         difficulty: 'medium',
-        grammarFocus: 'Reported Speech'
+        grammarFocus: 'Future Continuous'
       },
       {
         id: 'ai-med-q14',
         type: 'multiple_choice',
-        question: 'The manager _____ us that the project deadline had been extended by one week.',
-        options: ['told', 'said', 'explained', 'suggested'],
+        question: 'By the end of this month, the construction company _____ the entire ring road project.',
+        options: ['will have completed', 'will complete', 'will be completing', 'is completing'],
         correctAnswer: 0,
-        explanation: '"Tell" fiili kendisinden sonra dolaysız bir nesne (object - "us") alır. "Said" veya "explained" fiillerinden sonra doğrudan nesne gelmez (said to us / explained to us şeklinde olmalıdır).',
+        explanation: 'Gelecekte belirli bir tarihten önce tamamlanmış olacak eylemler için Future Perfect (will have + V3) kullanılır.',
         difficulty: 'medium',
-        grammarFocus: 'Reported Speech'
+        grammarFocus: 'Future Perfect'
       },
       {
         id: 'ai-med-q15',
         type: 'multiple_choice',
-        question: 'She decided to avoid _____ coffee in the evening to improve her sleep quality.',
-        options: ['drinking', 'to drink', 'drink', 'to drinking'],
+        question: 'After two hours of intense walking, the hikers stopped _____ some fresh mountain water.',
+        options: ['to drink', 'drinking', 'drink', 'to drinking'],
         correctAnswer: 0,
-        explanation: '"Avoid" fiilinden sonra gelen diğer fiil gerund (-ing) yapısında olmalıdır.',
+        explanation: 'Bir amaç doğrultusunda devam eden eylemi yarıda kesmek/durmak anlamında "stop + to infinitive" kullanılır.',
         difficulty: 'medium',
         grammarFocus: 'Verb Patterns'
       },
       {
         id: 'ai-med-q16',
         type: 'multiple_choice',
-        question: 'The teacher encouraged all the students _____ in the speaking competition.',
-        options: ['to participate', 'participating', 'participate', 'to participating'],
+        question: 'The manager\'s sudden _____ to approve the budget extension surprised the entire development team.',
+        options: ['refusal', 'refuse', 'refusing', 'refused'],
         correctAnswer: 0,
-        explanation: '"Encourage someone to do something" yapısı gereği fiil infinitive ("to + V1") biçiminde kullanılır.',
+        explanation: 'Boşluktan önce gelen iyelik ifadesinden ("manager\'s") sonra bir isim gelmelidir. "Refuse" fiilinin isim hali "refusal"dır.',
         difficulty: 'medium',
-        grammarFocus: 'Verb Patterns'
+        grammarFocus: 'Word Formation'
       },
       {
         id: 'ai-med-q17',
         type: 'multiple_choice',
-        question: 'The old library building _____ down next month to build a modern cultural center.',
-        options: ['will be knocked', 'is knocked', 'will knock', 'was knocked'],
+        question: 'Dealing with constant customer complaints requires a great deal of _____ and emotional resilience.',
+        options: ['patience', 'patient', 'impatient', 'patiently'],
         correctAnswer: 0,
-        explanation: 'Gelecek zaman pasif yapısı (Future Passive) "will be + V3" (will be knocked) şeklinde kurulur.',
+        explanation: '"A great deal of" ifadesinden sonra sayılamayan bir isim gelmelidir. "Patient" sıfatının isim hali "patience"tır.',
         difficulty: 'medium',
-        grammarFocus: 'The Passive'
+        grammarFocus: 'Word Formation'
       },
       {
         id: 'ai-med-q18',
         type: 'multiple_choice',
-        question: 'Our school website _____ by a professional web design company last year.',
-        options: ['was designed', 'designed', 'has been designed', 'is designed'],
+        question: 'We had to _____ our camping trip because we did not prepare enough emergency supplies.',
+        options: ['cut short', 'run out of', 'fall out with', 'put off'],
         correctAnswer: 0,
-        explanation: 'Geçmiş zaman edilgen yapısı (Past Passive) "was/were + V3" ile kurulur. Eylemin kimin tarafından yapıldığını belirtmek için "by" kullanılır.',
+        explanation: 'Bir etkinliği/seyahati beklenenden erken bitirmek/kesmek anlamında "cut short" kullanılır.',
         difficulty: 'medium',
-        grammarFocus: 'The Passive'
+        grammarFocus: 'Phrasal Verbs'
       },
       {
         id: 'ai-med-q19',
         type: 'multiple_choice',
-        question: 'The woman _____ suitcase was lost at the airport went to the customer service office.',
-        options: ['whose', 'who', 'whom', 'which'],
+        question: 'I was surprised when Sarah told me she had _____ her best friend over a minor financial dispute.',
+        options: ['fallen out with', 'run out of', 'got away with', 'looked down on'],
         correctAnswer: 0,
-        explanation: 'Sahiplik bildiren relative clause yapılarında "whose" kullanılır ("bavulu kaybolan kadın").',
+        explanation: '"Biriyle tartışıp küsmek/bozuşmak" anlamına gelen phrasal verb "fall out with"dir.',
         difficulty: 'medium',
-        grammarFocus: 'Relative Clauses'
+        grammarFocus: 'Phrasal Verbs'
       },
       {
         id: 'ai-med-q20',
         type: 'multiple_choice',
-        question: 'Our hotel room, _____ had a beautiful view of the sea, was very spacious.',
-        options: ['which', 'that', 'where', 'whose'],
+        question: 'The suspect managed to _____ committing the fraud because the police lacked concrete evidence.',
+        options: ['get away with', 'cope with', 'come up with', 'look forward to'],
         correctAnswer: 0,
-        explanation: 'Tanımlayıcı olmayan relative clause (non-defining relative clause - virgüller arasında yazılan) yapılarında cansız nesneler için "that" kullanılamaz, "which" tercih edilmelidir.',
+        explanation: 'Yaptığı bir cezadan veya kötü durumdan sıyrılmak/ceza almadan kurtulmak anlamında "get away with" kullanılır.',
         difficulty: 'medium',
-        grammarFocus: 'Relative Clauses'
+        grammarFocus: 'Phrasal Verbs'
       },
       {
         id: 'ai-med-q21',
         type: 'multiple_choice',
-        question: 'If I _____ more free time, I _____ take up a new hobby like photography.',
-        options: ['had / would', 'have / will', 'had / will', 'would have / had'],
+        question: 'Although they were close in high school, they slowly started to _____ after attending different universities.',
+        options: ['grow apart', 'hang out', 'mix up', 'bring up'],
         correctAnswer: 0,
-        explanation: 'Şu anki hayali veya gerçek dışı durumları anlatmak için Second Conditional (If + Past Simple, would + V1) yapısı kullanılır.',
+        explanation: 'Zamanla bağların kopması, arkadaşlıktan uzaklaşılması anlamında "grow apart" phrasal verb\'ü kullanılır.',
         difficulty: 'medium',
-        grammarFocus: 'Second Conditional'
+        grammarFocus: 'Vocabulary'
       },
       {
         id: 'ai-med-q22',
         type: 'multiple_choice',
-        question: 'If we _____ a map with us, we _____ got lost in the forest yesterday.',
-        options: ["had taken / wouldn't have", "took / wouldn't have", "had taken / won't have", "take / wouldn't"],
+        question: 'The old train station was completely _____ into a modern art gallery last year.',
+        options: ['transformed', 'swapped', 'altered', 'exchanged'],
         correctAnswer: 0,
-        explanation: 'Geçmişte yaşanmış gerçek dışı/gerçekleşmemiş bir durumu anlatmak için Third Conditional (If + Past Perfect, would have + V3) yapısı kullanılır.',
+        explanation: 'Bir şeyin şeklini veya yapısını tamamen değiştirmek, dönüştürmek anlamında "transform" fiili kullanılır.',
         difficulty: 'medium',
-        grammarFocus: 'Third Conditional'
+        grammarFocus: 'Vocabulary'
       },
       {
         id: 'ai-med-q23',
         type: 'multiple_choice',
-        question: 'Over the years, the two childhood friends slowly _____ apart due to their busy lives.',
-        options: ['grew', 'went', 'got', 'kept'],
+        question: 'To survive the economic downturn, the company needs to _____ the problem of rising operational costs.',
+        options: ['tackle', 'cause', 'damage', 'face to'],
         correctAnswer: 0,
-        explanation: '"Zamanla birbirinden uzaklaşmak / kopmak" phrasal verb\'ü "grow apart"dır (geçmiş zaman hali "grew apart").',
+        explanation: 'Bir problemi çözmek için kararlılıkla ele almak anlamında "tackle" fiili kullanılır.',
         difficulty: 'medium',
         grammarFocus: 'Vocabulary'
       },
       {
         id: 'ai-med-q24',
         type: 'multiple_choice',
-        question: 'He really _____ after his mother; they are both very creative and passionate about art.',
-        options: ['takes', 'gets', 'grows', 'brings'],
+        question: 'This dark chocolate has a slightly _____ orange filling that goes perfectly with black coffee.',
+        options: ['bitter', 'creamy', 'fresh', 'raw'],
         correctAnswer: 0,
-        explanation: '"Aile büyüklerinden birine benzemek" phrasal verb\'ü "take after"dır.',
+        explanation: 'Kakaonun veya bazı narenciyelerin bıraktığı keskin ve acımsı tat "bitter" kelimesiyle ifade edilir.',
         difficulty: 'medium',
         grammarFocus: 'Vocabulary'
       },
       {
         id: 'ai-med-q25',
         type: 'multiple_choice',
-        question: 'The old factory building was _____ into a modern art gallery last year.',
-        options: ['converted', 'exchanged', 'swapped', 'replaced'],
+        question: 'Drivers are advised to avoid the city center during the morning _____ due to roadworks.',
+        options: ['rush hour', 'traffic jam', 'pedestrian crossing', 'cycle lane'],
         correctAnswer: 0,
-        explanation: '"Bir binayı veya nesneyi başka bir forma/işleve dönüştürmek" fiili "convert (into)"dur.',
-        difficulty: 'medium',
-        grammarFocus: 'Vocabulary'
-      },
-      {
-        id: 'ai-med-q26',
-        type: 'multiple_choice',
-        question: 'I had to _____ my old computer with a new one because it was too slow for my work.',
-        options: ['replace', 'alter', 'adjust', 'convert'],
-        correctAnswer: 0,
-        explanation: '"Eski veya çalışmayan bir şeyi yenisiyle değiştirmek/yerine koymak" fiili "replace"dir.',
-        difficulty: 'medium',
-        grammarFocus: 'Vocabulary'
-      },
-      {
-        id: 'ai-med-q27',
-        type: 'multiple_choice',
-        question: 'Many unique animal species are facing extinction because their natural _____ is being destroyed.',
-        options: ['habitat', 'rainforest', 'valley', 'stream'],
-        correctAnswer: 0,
-        explanation: 'Hayvanların "doğal yaşam alanı/ortamı" "natural habitat" olarak ifade edilir.',
-        difficulty: 'medium',
-        grammarFocus: 'Vocabulary'
-      },
-      {
-        id: 'ai-med-q28',
-        type: 'multiple_choice',
-        question: 'The oil spill in the ocean has caused severe _____ to the local marine life.',
-        options: ['damage', 'tackle', 'recycle', 'solve'],
-        correctAnswer: 0,
-        explanation: '"Zarar / hasar" anlamına gelen "damage" kelimesi "cause damage" (zarar vermek) kalıbı ile sıkça kullanılır.',
-        difficulty: 'medium',
-        grammarFocus: 'Vocabulary'
-      },
-      {
-        id: 'ai-med-q29',
-        type: 'multiple_choice',
-        question: 'The local government is trying to _____ the issue of traffic congestion by expanding the subway network.',
-        options: ['tackle', 'cause', 'face', 'aware'],
-        correctAnswer: 0,
-        explanation: '"Bir sorunla mücadele etmek / üstesinden gelmeye çalışmak" fiili "tackle" kelimesidir.',
-        difficulty: 'medium',
-        grammarFocus: 'Vocabulary'
-      },
-      {
-        id: 'ai-med-q30',
-        type: 'multiple_choice',
-        question: 'This soup has a very _____ texture because it contains fresh cream and butter.',
-        options: ['creamy', 'spicy', 'sour', 'bitter'],
-        correctAnswer: 0,
-        explanation: 'Kremalı veya yumuşak dokulu yiyecekleri tarif etmek için "creamy" sıfatı kullanılır.',
-        difficulty: 'medium',
-        grammarFocus: 'Vocabulary'
-      },
-      {
-        id: 'ai-med-q31',
-        type: 'multiple_choice',
-        question: 'Be careful! The chicken curry is extremely _____; it has a lot of red hot chillies in it.',
-        options: ['spicy', 'crunchy', 'bitter', 'raw'],
-        correctAnswer: 0,
-        explanation: 'Baharatlı ve acılı yiyecekleri tarif etmek için "spicy" sıfatı kullanılır.',
-        difficulty: 'medium',
-        grammarFocus: 'Vocabulary'
-      },
-      {
-        id: 'ai-med-q32',
-        type: 'multiple_choice',
-        question: 'The milk in the carton has gone _____; it smells terrible, so you should throw it away.',
-        options: ['off', 'well', 'wrong', 'badly'],
-        correctAnswer: 0,
-        explanation: 'Süt ve et gibi yiyeceklerin bozulmasını/kokmasını belirtmek için "go off" phrasal verb\'ü kullanılır.',
-        difficulty: 'medium',
-        grammarFocus: 'Phrasal Verbs'
-      },
-      {
-        id: 'ai-med-q33',
-        type: 'multiple_choice',
-        question: 'Although we made careful plans, everything went _____ at the last minute.',
-        options: ['wrong', 'off', 'well', 'badly'],
-        correctAnswer: 0,
-        explanation: 'İşlerin ters gitmesi veya bozulmasını belirtmek için "go wrong" kalıbı kullanılır.',
-        difficulty: 'medium',
-        grammarFocus: 'Collocations'
-      },
-      {
-        id: 'ai-med-q34',
-        type: 'multiple_choice',
-        question: 'We were stuck in a massive traffic _____ on our way to the airport and missed our flight.',
-        options: ['jam', 'lights', 'crossing', 'lane'],
-        correctAnswer: 0,
-        explanation: '"Trafik sıkışıklığı" "traffic jam" olarak adlandırılır.',
+        explanation: 'Trafiğin en yoğun olduğu saatleri belirtmek için "rush hour" bileşik ismi kullanılır.',
         difficulty: 'medium',
         grammarFocus: 'Compound Nouns'
       },
       {
-        id: 'ai-med-q35',
+        id: 'ai-med-q26',
         type: 'multiple_choice',
-        question: 'You must stand on the platform behind the yellow line and wait for the train to arrive at the station _____.',
-        options: ['platform', 'boarding', 'campsite', 'crossing'],
+        question: 'I _____ this report all afternoon, and I have only completed three pages so far.',
+        options: ['have been writing', 'have written', 'wrote', 'am writing'],
         correctAnswer: 0,
-        explanation: 'İstasyonlarda trenlerin yanaştığı perona/yola "platform" denir.',
+        explanation: 'Öğleden beri devam eden ve hala bitmemiş yazma eylemini vurgulamak için Present Perfect Continuous (have been writing) kullanımı uygundur.',
         difficulty: 'medium',
-        grammarFocus: 'Vocabulary'
+        grammarFocus: 'Present Perfect Continuous'
       },
       {
-        id: 'ai-med-q36',
+        id: 'ai-med-q27',
         type: 'multiple_choice',
-        question: 'I don\'t mind _____ you with your project, but I can\'t start until I finish my own work.',
-        options: ['helping', 'to help', 'help', 'to helping'],
-        correctAnswer: 0,
-        explanation: '"Mind" fiilinden sonra gelen fiil gerund (-ing) yapısında olmalıdır.',
-        difficulty: 'medium',
-        grammarFocus: 'Verb Patterns'
-      },
-      {
-        id: 'ai-med-q37',
-        type: 'multiple_choice',
-        question: 'A: Did you like the two movies? B: Honestly, I thought _____ of them were quite boring.',
-        options: ['both', 'either', 'neither', 'none'],
-        correctAnswer: 0,
-        explanation: 'İki şeyin her ikisini de kapsayarak olumlu fiille ("were") anlatırken "both" kullanılır.',
-        difficulty: 'medium',
-        grammarFocus: 'Quantifiers'
-      },
-      {
-        id: 'ai-med-q38',
-        type: 'multiple_choice',
-        question: 'The village _____ I spent my childhood holidays is now a popular tourist destination.',
+        question: 'The village _____ we stayed during our Patagonia trip was famous for its wild nature.',
         options: ['where', 'which', 'that', 'whose'],
         correctAnswer: 0,
-        explanation: 'Yer bildiren relative clause yapılarında "where" (veya in which) kullanılır.',
+        explanation: 'Yer niteleyen sıfat tümleçlerinde (relative clause) edat kullanılmadığında yer bildiren "where" ilgi zarfı tercih edilir.',
         difficulty: 'medium',
         grammarFocus: 'Relative Clauses'
       },
       {
+        id: 'ai-med-q28',
+        type: 'multiple_choice',
+        question: 'I wish I _____ more attention to the safety briefing before the diving expedition began.',
+        options: ['had paid', 'paid', 'would pay', 'have paid'],
+        correctAnswer: 0,
+        explanation: 'Geçmişe yönelik keşkeler (regrets) ifade edilirken "wish + Past Perfect" yapısı kullanılır.',
+        difficulty: 'medium',
+        grammarFocus: 'Wish Clauses'
+      },
+      {
+        id: 'ai-med-q29',
+        type: 'multiple_choice',
+        question: 'Elena said that she _____ a strange sense of calm during the Patagonia blizzard the previous week.',
+        options: ['had felt', 'feels', 'has felt', 'is feeling'],
+        correctAnswer: 0,
+        explanation: 'Dolaylı anlatımda (Reported Speech), ana cümle geçmiş zamandaysa aktarılan geçmiş zaman eylemi Past Perfect\'e (had felt) dönüşür.',
+        difficulty: 'medium',
+        grammarFocus: 'Reported Speech'
+      },
+      {
+        id: 'ai-med-q30',
+        type: 'multiple_choice',
+        question: 'The research findings on deep-sea ecosystems _____ in a major scientific journal next month.',
+        options: ['will be published', 'will publish', 'are publishing', 'have published'],
+        correctAnswer: 0,
+        explanation: 'Gelecek zamanda pasif yapı (yayınlanacak) için "will be + V3" (will be published) kullanılır.',
+        difficulty: 'medium',
+        grammarFocus: 'Passive Voice'
+      },
+      {
+        id: 'ai-med-q31',
+        type: 'multiple_choice',
+        question: 'Police arrested a notorious _____ who was caught hiding expensive clothes inside his coat.',
+        options: ['shoplifter', 'shoplifting', 'shoplifted', 'shoplift'],
+        correctAnswer: 0,
+        explanation: 'Mağazadan hırsızlık yapan kişiyi tanımlamak için "shoplifter" ismi kullanılır.',
+        difficulty: 'medium',
+        grammarFocus: 'Word Formation'
+      },
+      {
+        id: 'ai-med-q32',
+        type: 'multiple_choice',
+        question: 'His behavior during the board meeting was completely _____; no one could understand his actions.',
+        options: ['bizarre', 'bizarrely', 'bizarreness', 'consistent'],
+        correctAnswer: 0,
+        explanation: 'Boşluktan önce gelen "was completely" ifadesinden sonra özneyi niteleyen bir sıfat gelmelidir ("bizarre" - tuhaf/garip).',
+        difficulty: 'medium',
+        grammarFocus: 'Word Formation'
+      },
+      {
+        id: 'ai-med-q33',
+        type: 'multiple_choice',
+        question: 'The operations manager is _____ charge of organizing the logistics for the exhibition.',
+        options: ['in', 'on', 'at', 'with'],
+        correctAnswer: 0,
+        explanation: 'Sorumluluk bildiren "bir şeyin başında/sorumlusu olmak" kalıbı "in charge of" şeklindedir.',
+        difficulty: 'medium',
+        grammarFocus: 'Prepositional Phrases'
+      },
+      {
+        id: 'ai-med-q34',
+        type: 'multiple_choice',
+        question: 'We decided to _____ on coffee because we were spending too much money at coffee shops.',
+        options: ['cut down', 'calm down', 'run away', 'get away'],
+        correctAnswer: 0,
+        explanation: 'Bir şeyin tüketimini veya kullanımını azaltmak anlamında "cut down (on)" phrasal verb\'ü kullanılır.',
+        difficulty: 'medium',
+        grammarFocus: 'Phrasal Verbs'
+      },
+      {
+        id: 'ai-med-q35',
+        type: 'multiple_choice',
+        question: 'I had never tried skiing before, but my friends convinced me to have a _____.',
+        options: ['go', 'try', 'do', 'run'],
+        correctAnswer: 0,
+        explanation: 'Bir şeyi denemek, şansını denemek anlamındaki deyimsel ifade "have a go"dur.',
+        difficulty: 'medium',
+        grammarFocus: 'Idiomatic Expressions'
+      },
+      {
+        id: 'ai-med-q36',
+        type: 'multiple_choice',
+        question: 'Unless you _____ the safety gear, you are not allowed to enter the chemical laboratory.',
+        options: ['wear', 'will wear', 'wore', 'are wearing'],
+        correctAnswer: 0,
+        explanation: '"Unless" (-medikçe) ile kurulan genel kural cümlelerinde geniş zaman (Present Simple) kullanılır ve "unless" anlamca olumsuzdur.',
+        difficulty: 'medium',
+        grammarFocus: 'Zero Conditional with Unless'
+      },
+      {
+        id: 'ai-med-q37',
+        type: 'multiple_choice',
+        question: 'They debated the strategy for hours, but _____ the end, they agreed on the original plan.',
+        options: ['in', 'at', 'on', 'by'],
+        correctAnswer: 0,
+        explanation: 'Sonunda, nihayetinde anlamındaki kalıp ifade "in the end" şeklindedir.',
+        difficulty: 'medium',
+        grammarFocus: 'Prepositional Phrases'
+      },
+      {
+        id: 'ai-med-q38',
+        type: 'multiple_choice',
+        question: 'Our school encourages students to be _____ with their studies, as research takes a long time.',
+        options: ['patient', 'patience', 'impatient', 'patiently'],
+        correctAnswer: 0,
+        explanation: 'Özneyi niteleyen sıfat aranmaktadır. Sabırlı olmak anlamında "patient" sıfatı uygundur.',
+        difficulty: 'medium',
+        grammarFocus: 'Word Formation'
+      },
+      {
         id: 'ai-med-q39',
         type: 'multiple_choice',
-        question: 'Unless we _____ our carbon footprint immediately, climate change _____ get much worse.',
-        options: ['reduce / will', 'will reduce / will', 'reduced / would', 'reduce / does'],
+        question: 'It is often difficult to put my deep thoughts _____ words during public speaking.',
+        options: ['into', 'on', 'with', 'to'],
         correctAnswer: 0,
-        explanation: '"Unless" cümlesinde Present Simple ("reduce") kullanılır, ana cümlede ise gelecek zaman tahmini için "will" kullanılır.',
+        explanation: 'Düşünceleri kelimelere dökmek ifadesi "put into words" şeklinde söylenir.',
         difficulty: 'medium',
-        grammarFocus: 'Conditionals'
+        grammarFocus: 'Prepositional Phrases'
       },
       {
         id: 'ai-med-q40',
         type: 'multiple_choice',
-        question: 'If they _____ the train timetable, they _____ have missed their connection.',
-        options: ["had checked / wouldn't", "checked / wouldn't", "have checked / won't", "had checked / didn't"],
+        question: 'A: "I don\'t enjoy crowded public transport during rush hour." B: "Me _____. It is extremely exhausting."',
+        options: ['neither', 'too', 'so', 'either'],
         correctAnswer: 0,
-        explanation: 'Geçmişteki gerçek dışı durumu anlatan Third Conditional yapısında conditional clause "had + V3" (had checked), main clause ise "would/could/might not + have + V3" (wouldn\'t have missed) yapısındadır.',
+        explanation: 'Olumsuz bir cümleye katılım göstermek için "Me neither" (ben de sevmem/katılmam) kullanılır.',
         difficulty: 'medium',
-        grammarFocus: 'Third Conditional'
+        grammarFocus: 'Agreement'
       }
     ]
   }
