@@ -679,7 +679,7 @@ If Wendy **had had** better handwriting, my business **wouldn't have been** such
         explanation: "Geçmişte kalmış, gerçek dışı (unreal) olaylardan ve onların muhtemel sonuçlarından bahsetmek içindir.",
       },
       {
-        id: "gf10b-q2",
+        id: "gf10b-q2"
         question: "Grammar Focus 10B: What is the correct form of the third conditional?",
         options: ["If + past simple, would + past participle", "If + past perfect, would have + past participle"],
         correctAnswer: 1,
@@ -694,7 +694,6 @@ If Wendy **had had** better handwriting, my business **wouldn't have been** such
       }
     ],
   },
-`;
-
+`
 file = file.replace('];', units7to10 + '\n];');
 fs.writeFileSync('src/data/grammarData.ts', file);

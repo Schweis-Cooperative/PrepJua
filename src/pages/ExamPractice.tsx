@@ -21,6 +21,7 @@ import { useMistakeBook } from '../hooks/useMistakeBook';
 import AIExplanation from '../components/AIExplanation';
 import { logAnswer, logScore } from '../utils/logger';
 import { endOfYearExamSets } from '../data/endOfYearExamData';
+import { aiChallengesExamSets } from '../data/aiChallengesData';
 
 const difficultyColors: Record<string, string> = {
   easy: 'bg-emerald-500/10 text-emerald-400 border-emerald-500/20',
@@ -45,7 +46,7 @@ export default function ExamPractice() {
   const [finished, setFinished] = useState(false);
   const { addMistake } = useMistakeBook();
 
-  const allExams = useMemo(() => [...examSets, ...aLevelExamSets, ...bLevelExamSets, ...endOfYearExamSets], []);
+  const allExams = useMemo(() => [...examSets, ...aLevelExamSets, ...bLevelExamSets, ...endOfYearExamSets, ...aiChallengesExamSets], []);
   const exam = useMemo(() => allExams.find((e) => e.id === selectedExam), [allExams, selectedExam]);
 
   const handleMCAnswer = useCallback((index: number) => {
@@ -328,6 +329,29 @@ export default function ExamPractice() {
                 )}
               </div>
             )}
+          </div>
+        ) : category === 'ai_challenges' ? (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {aiChallengesExamSets.map((set, i) => (
+              <motion.button
+                key={set.id}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: i * 0.05 }}
+                onClick={() => setSelectedExam(set.id)}
+                className="group text-left glass-card rounded-xl p-5 hover:border-indigo-500/30 transition-all"
+              >
+                <div className="flex items-center gap-2 mb-3">
+                  <Cpu size={20} className="text-indigo-400" />
+                  <span className={`text-[10px] font-medium px-2 py-0.5 rounded-full border ${difficultyColors[set.difficulty]}`}>
+                    {set.difficulty.charAt(0).toUpperCase() + set.difficulty.slice(1)}
+                  </span>
+                </div>
+                <h3 className="text-sm font-semibold text-white mb-1 group-hover:text-indigo-300 transition-colors">{set.title}</h3>
+                <p className="text-xs text-zinc-500 mb-2 line-clamp-2">{set.description}</p>
+                <span className="text-[10px] text-zinc-600 font-medium">{set.questions.length} questions · ~{Math.ceil(set.questions.length * 1.5)} min</span>
+              </motion.button>
+            ))}
           </div>
         ) : (
           <div className="glass-card rounded-2xl p-12 text-center">
