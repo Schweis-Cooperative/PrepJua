@@ -78,9 +78,10 @@ export default function Sidebar() {
         {/* Logo */}
         <div className="p-6 border-b border-zinc-800/80">
           <Link to="/" className="flex items-center gap-3 group" onClick={() => setIsOpen(false)}>
-
+            <img src="/logo.jpeg" alt="Logo" className="w-8 h-8 rounded-lg object-cover border border-zinc-800 group-hover:border-emerald-500/50 transition-colors duration-200" />
             <div>
-              <h1 className="text-lg font-bold text-white tracking-tight">Schweis Projects</h1>
+              <h1 className="text-sm font-bold text-white tracking-tight group-hover:text-emerald-400 transition-colors duration-200">PrepJua</h1>
+              <p className="text-[10px] text-zinc-500 font-medium">by Schweis Projects</p>
             </div>
           </Link>
         </div>
